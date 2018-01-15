@@ -12,6 +12,10 @@ module Withdraws
       if two_factor_auth_verified?
         if @withdraw.save
           @withdraw.submit!
+          # we emulate admins transitions - accept
+          @withdraw.accept!
+          # ... and process for automated withdrawal processing
+          @withdraw.process!
           render nothing: true
         else
           render text: @withdraw.errors.full_messages.join(', '), status: 403
@@ -42,7 +46,7 @@ module Withdraws
     def withdraw_params
       params[:withdraw][:currency] = channel.currency
       params[:withdraw][:member_id] = current_user.id
-      params.require(:withdraw).permit(:fund_source_id, :member_id, :currency, :sum)
+      params.require(:withdraw).permit(:fund_uid, :member_id, :currency, :sum)
     end
 
   end

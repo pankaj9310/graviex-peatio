@@ -41,7 +41,7 @@ namespace :solvency do
         end.join(',')
 
         begin
-          doc = open "http://#{type}.blockr.io/api/v1/address/balance/" << addresses, redirect: false
+          doc = open "http://blockr.io/api/v1/address/balance/" << addresses, redirect: false
           proof.addresses = [JSON.parse(doc.read)['data']].flatten
           puts "address balances fetched."
         rescue OpenURI::HTTPRedirect => e

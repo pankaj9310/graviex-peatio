@@ -5,3 +5,5 @@ pusher = new Pusher gon.pusher.key,
   wssPort: gon.pusher.wssPort
 
 window.pusher = pusher
+
+

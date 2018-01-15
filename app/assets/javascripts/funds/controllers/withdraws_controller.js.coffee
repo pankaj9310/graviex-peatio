@@ -1,6 +1,7 @@
 app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon', 'fundSourceService', 'ngDialog', ($scope, $stateParams, $http, $gon, fundSourceService, ngDialog) ->
 
   _selectedFundSourceId = null
+  _selectedFundSourceUId = null
   _selectedFundSourceIdInList = (list) ->
     for fs in list
       return true if fs.id is _selectedFundSourceId
@@ -30,9 +31,11 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
   defaultFundSource = fundSourceService.defaultFundSource currency:currency
   if defaultFundSource
     _selectedFundSourceId = defaultFundSource.id
+    _selectedFundSourceUId = defaultFundSource.uid
   else
     fund_sources = $scope.fund_sources()
     _selectedFundSourceId = fund_sources[0].id if fund_sources.length
+    _selectedFundSourceUId = fund_sources[0].uid if fund_sources.length
 
   # set current default fundSource as selected
   $scope.$watch ->
@@ -44,7 +47,7 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
   @createWithdraw = (currency) ->
     withdraw_channel = WithdrawChannel.findBy('currency', currency)
     account = withdraw_channel.account()
-    data = { withdraw: { member_id: current_user.id, currency: currency, sum: @withdraw.sum, fund_source_id: _selectedFundSourceId } }
+    data = { withdraw: { member_id: current_user.id, currency: currency, sum: @withdraw.sum, fund_source_id: _selectedFundSourceId, fund_uid: _selectedFundSourceUId } }
 
     if current_user.app_activated or current_user.sms_activated
       type = $('.two_factor_auth_type').val()
@@ -68,12 +71,14 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
     @withdraw.sum = Number($scope.account.balance)
 
   $scope.openFundSourceManagerPanel = ->
-    if $scope.currency == $gon.fiat_currency
-      template = '/templates/fund_sources/bank.html'
-      className = 'ngdialog-theme-default custom-width'
-    else
-      template = '/templates/fund_sources/coin.html'
-      className = 'ngdialog-theme-default custom-width coin'
+    # TODO:
+    # we do not have fiat ccy, so we do not need banks dialog
+    #if $scope.currency == $gon.fiat_currency
+    #  template = '/templates/fund_sources/bank.html'
+    #  className = 'ngdialog-theme-default custom-width'
+    #else
+    template = '/templates/fund_sources/coin.html'
+    className = 'ngdialog-theme-default custom-width coin'
 
     ngDialog.open
       template:template

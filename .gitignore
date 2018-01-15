@@ -38,6 +38,8 @@ tags
 # Ignore vim temporary files
 **/*.swp
 **/*.swo
+**/*.1
+**/*.*_
 
 # Ignore RubyMine files
 .idea

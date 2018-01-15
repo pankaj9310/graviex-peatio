@@ -129,6 +129,7 @@ class Member < ActiveRecord::Base
 
   def notify(event, data)
     ::Pusher["private-#{sn}"].trigger_async event, data
+    Rails.logger.info "Member.Notify: private-#{sn} #{event} #{data}"
   end
 
   def to_s

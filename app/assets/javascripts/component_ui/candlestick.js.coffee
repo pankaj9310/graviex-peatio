@@ -243,8 +243,9 @@ INDICATOR = {MA: false, EMA: false}
           labels:
             enabled: true
             align: 'right'
+            formatter: -> Highcharts.numberFormat @.value, gon.market.bid.fixed
             x: 2
-            y: 3
+            y: -5
             zIndex: -7
           gridLineColor: '#222'
           gridLineDashStyle: 'ShortDot'
@@ -438,3 +439,4 @@ INDICATOR = {MA: false, EMA: false}
     @on document, 'market::candlestick::trades', @updateByTrades
     @on document, 'switch::main_indicator_switch', @switchMainIndicator
     @on document, 'switch::type_switch', @switchType
+

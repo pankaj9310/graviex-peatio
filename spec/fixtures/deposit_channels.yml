@@ -5,12 +5,19 @@
   min_confirm: 1
   max_confirm: 3
 - id: 400
-  key: bank
-  currency: cny
-  sort_order: 2
-  bank_accounts:
-    -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'
+  key: gravio
+  currency: gio
+  min_confirm: 1
+  max_confirm: 6
+- id: 600
+  key: doge
+  currency: doge
+  min_confirm: 1
+  max_confirm: 6
+- id: 800
+  key: ltc
+  currency: ltc
+  min_confirm: 1
+  max_confirm: 6
+
+

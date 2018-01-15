@@ -4,7 +4,7 @@ module FundSourceable
   included do
     attr_accessor :fund_source
     before_validation :set_fund_source_attributes, on: :create
-    validates :fund_source, presence: true, on: :create
+    #validates :fund_source, presence: true, on: :create
   end
 
   def set_fund_source_attributes

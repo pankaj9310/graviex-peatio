@@ -56,7 +56,7 @@ ARGV.each do |id|
 
   manual_ack  = AMQPConfig.data[:binding][id][:manual_ack]
   queue.subscribe(manual_ack: manual_ack) do |delivery_info, metadata, payload|
-    logger.info "Received: #{payload}"
+    logger.info "Received: #{worker.class.name} #{payload}"
     begin
       worker.process JSON.parse(payload), metadata, delivery_info
     rescue Exception => e
