@@ -1,0 +1,11 @@
+- unless @one_gravios.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {gravios: @one_gravios}
+- unless @all_gravios.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {gravios: @all_gravios}
+
+- if @all_gravios.empty? and @one_gravios.empty?
+  h3.text-info.text-center = t('.empty')

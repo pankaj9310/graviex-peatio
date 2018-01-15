@@ -1,0 +1,11 @@
+- unless @one_doges.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {doges: @one_doges}
+- unless @all_doges.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {doges: @all_doges}
+
+- if @all_doges.empty? and @one_doges.empty?
+  h3.text-info.text-center = t('.empty')

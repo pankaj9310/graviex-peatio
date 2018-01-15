@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @gravio.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @gravio, :id
+          = item_for @gravio, :created_at
+          = item_for @gravio, :aasm_state_text
+          hr.split
+          = item_for @gravio.member, :name
+          = item_for @gravio, :fund_extra
+          = item_for @gravio, :fund_uid do
+            span = @gravio.fund_uid.truncate(22)
+          = item_for @gravio, :amount
+          hr.split
+          = item_for @gravio, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @gravio.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @gravio]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @gravio.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @gravio]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @gravio.member}
+    = render partial: 'shared/admin/account', locals: {account: @gravio.account}

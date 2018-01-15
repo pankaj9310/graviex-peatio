@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @doge.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @doge, :id
+          = item_for @doge, :created_at
+          = item_for @doge, :aasm_state_text
+          hr.split
+          = item_for @doge.member, :name
+          = item_for @doge, :fund_extra
+          = item_for @doge, :fund_uid do
+            span = @doge.fund_uid.truncate(22)
+          = item_for @doge, :amount
+          hr.split
+          = item_for @doge, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @doge.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @doge]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @doge.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @doge]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @doge.member}
+    = render partial: 'shared/admin/account', locals: {account: @doge.account}
