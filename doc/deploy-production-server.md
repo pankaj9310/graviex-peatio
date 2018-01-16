@@ -138,6 +138,20 @@ Install nginx and passenger
 
     sudo apt-get install nginx-extras passenger
 
+# Note: If you are on Ubuntu 16.04 do the following
+Install our PGP key and add HTTPS support for APT
+    
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+    sudo apt-get install -y apt-transport-https ca-certificates
+
+Add our APT repository
+
+    sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger xenial main > /etc/apt/sources.list.d/passenger.list'
+    sudo apt-get update
+
+Install Passenger + Nginx
+    sudo apt-get install -y nginx-extras passenger    
+
 Next, we need to update the Nginx configuration to point Passenger to the version of Ruby that we're using. You'll want to open up /etc/nginx/nginx.conf in your favorite editor,
 
     sudo vim /etc/nginx/nginx.conf
