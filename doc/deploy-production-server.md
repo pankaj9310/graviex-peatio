@@ -221,6 +221,12 @@ More details to visit [pusher official website](http://pusher.com)
 
     # Initialize the database and load the seed data
     bundle exec rake db:setup
+    
+**If error occured - try to fix client.rb**
+    change 
+        :connect_flags => REMEMBER_OPTIONS | LONG_PASSWORD | LONG_FLAG | TRANSACTIONS | PROTOCOL_41 | SECURE_CONNECTION,
+    to
+        :connect_flags => REMEMBER_OPTIONS | LONG_PASSWORD | LONG_FLAG | TRANSACTIONS | PROTOCOL_41,
 
 **Precompile assets**
 
