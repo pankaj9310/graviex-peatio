@@ -138,7 +138,7 @@ Install nginx and passenger
 
     sudo apt-get install nginx-extras passenger
 
-# Note: If you are on Ubuntu 16.04 do the following
+#### Note: If you are on Ubuntu 16.04 do the following
 Install our PGP key and add HTTPS support for APT
     
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
