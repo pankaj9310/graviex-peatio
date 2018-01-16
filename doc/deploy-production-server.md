@@ -150,6 +150,7 @@ Add our APT repository
     sudo apt-get update
 
 Install Passenger + Nginx
+
     sudo apt-get install -y nginx-extras passenger    
 
 Next, we need to update the Nginx configuration to point Passenger to the version of Ruby that we're using. You'll want to open up /etc/nginx/nginx.conf in your favorite editor,
