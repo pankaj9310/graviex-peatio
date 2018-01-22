@@ -253,7 +253,7 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
-      #withdraws
+      #withdraws1
     errors:
       models:
         order_bid:
@@ -340,7 +340,7 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
-        #withdraws_msg
+        #withdraws_msg1
         two_factor:
           attributes:
             otp:
@@ -389,7 +389,7 @@ en:
       pts: PTS
       ltc: LTC
       gio: GIO
-      #market
+      #market1
   currency:
     satoshi:
       key: BTC
@@ -926,7 +926,7 @@ en:
         gio_format: '0.00000000'
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
-        #funds_show
+        #funds_show1
         reason:
           cny:
             strike_add: Plus
