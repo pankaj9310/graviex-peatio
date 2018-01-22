@@ -24,6 +24,7 @@ en:
       withdraws/gravio: Withdraw
       withdraws/doge: Withdraw
       withdraws/ltc: Withdraw
+      #models
     attributes:
       api_token:
         access_key: Access Key
@@ -195,6 +196,7 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
+      #dposits
       withdraws/satoshi:
         id: ID
         member_name: Account
@@ -251,6 +253,7 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      #withdraws
     errors:
       models:
         order_bid:
@@ -304,6 +307,7 @@ en:
               doge_invalid: Invalid Address
               ltc_ismine: Used Address
               ltc_invalid: Invalid Address
+              #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
           attributes:
@@ -336,6 +340,7 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        #withdraws_msg
         two_factor:
           attributes:
             otp:
@@ -384,6 +389,7 @@ en:
       pts: PTS
       ltc: LTC
       gio: GIO
+      #market
   currency:
     satoshi:
       key: BTC
@@ -425,6 +431,7 @@ en:
       code: PTS
       name: Protoshare
       format: '0,0.0000'
+    #currency
   datagrid:
     empty: no data found
     filters:
@@ -591,6 +598,7 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    #deposit_channel
   deposits/bank:
     aasm_state:
       submitting: Submitting
@@ -614,6 +622,7 @@ en:
       doges:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
+      #private_deposits
       banks:
         destroy:
           notice: Revocation request is successful.
@@ -777,6 +786,7 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      #withdraws_msgs
     tickets:
       index:
         new_ticket: New Ticket
@@ -850,15 +860,18 @@ en:
         gio-assets: GIO Assets
         doge-assets: DOGE Assets
         ltc-assets: LTC Assets
+        #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-gio: Verify My GIO Assets
         verify-doge: Verify My DOGE Assets
         verify-ltc: Verify My LTC Assets
+        #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
         doge-assets-total: 'Total DOGE assets of exchange: '
         ltc-assets-total: 'Total LTC assets of exchange: '
+        #liab_assest
       liability_proof:
         title: Proof of Liabilities
         intro: As an exchange, our liabilities refer to the sum of money (in both
@@ -895,6 +908,7 @@ en:
         intro: All of exchange's LTC assets are listed here.
         total: Total LTC Assets
         address: Address
+      #coin_assests
       cny_assets:
         title: CNY Assets
         intro: All of exchange's CNY assets are listed here.
@@ -912,6 +926,7 @@ en:
         gio_format: '0.00000000'
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
+        #funds_show
         reason:
           cny:
             strike_add: Plus
@@ -943,6 +958,7 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          #funds_show_reason
         ref:
           system: System
           default: Default
@@ -989,6 +1005,7 @@ en:
         gio_html: "<i class='fa fa-check'></i><span>GIO Markets</span>"
         doge_html: "<i class='fa fa-check'></i><span>DOGE Markets</span>"
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
+        #market_list
         price: Price
         change: "24h %"
       range_switch:
@@ -1183,6 +1200,7 @@ en:
         gio_format: '0.00000000'
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
+        #shared_balances
         total: Total
   guides:
     private:
@@ -1298,6 +1316,7 @@ en:
         doge:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        #withdraw_amount
     hints:
       deposit:
         bank:
@@ -1334,6 +1353,7 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         doge:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
+        #withdraw_sum
     creating: Creating...
     updating: Updating...
     buttons:
@@ -1404,6 +1424,7 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        #withdraw_labels
   admin:
     deposits:
       banks:
@@ -1443,6 +1464,7 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
+      #admin_deposits
     tickets:
       view: View
       close: Close Ticket
@@ -1564,6 +1586,7 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      #admin_widraws
   deposits/satoshi:
     aasm_state:
       submitted: Submitted
@@ -1588,6 +1611,7 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
+  #deposit_coin
   doorkeeper:
     scopes:
       profile: Read your basic profile (e.g. name, email) and account balances
@@ -1677,6 +1701,7 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    #easy_table
     bank:
       sn: SN
       amount: Amount
@@ -1711,6 +1736,7 @@ en:
       gio: GIO
       doge: DOGE
       ltc: LTC
+      #enum_currence
     order:
       state:
         done: DONE
@@ -1741,6 +1767,7 @@ en:
         gravio: Graviocoin
         doge: Dogecoin
         ltc: Litecoin
+        #fund_source
         bank: Bank
     id_document:
       id_document_type:
@@ -2230,6 +2257,7 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
   withdraws/bank:
@@ -2292,4 +2320,5 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
+  #withdraws_coin
 
