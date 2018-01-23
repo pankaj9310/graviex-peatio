@@ -563,7 +563,13 @@ class Update:
 		file_data_new = file_data.replace("#currency", "when '" + cfg_json["code"] + "' then '" + cfg_json["code"] + "s'\n      #currency")
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "w") as f:
 			f.write(file_data_new)
+		return id;
 
+class Db:
+	def CreateQuery(self, cfg_json, folder, currency_id):
+		coin_update_path = "./Coins/" + cfg_json["name"] + "/" + folder
+		with open(coin_update_path + "/update_accounts.sql", "w+") as f:
+			f.write("insert into accounts(member_id, currency)\n	select member_id, " + str(currency_id) + " from members")
 
 if __name__ == '__main__':
 	print "start adding coin"
@@ -578,4 +584,8 @@ if __name__ == '__main__':
 	backup.Process(cfg_json, "Update")
 
 	update = Update()
-	update.Process(cfg_json, "Update")
+	currency_id = update.Process(cfg_json, "Update")
+
+	db = Db()
+	db.CreateQuery(cfg_json, "Update", currency_id)
+	print "finished successfully"
