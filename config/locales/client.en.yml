@@ -45,6 +45,7 @@ en:
         gio: GIO
         doge: DOGE
         ltc: LTC
+        eth: ETH
       deposit_cny:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
@@ -77,6 +78,9 @@ en:
 
       deposit_ltc:
         title: LTC Deposit
+
+      deposit_eth:
+        title: ETH Deposit
 
       deposit_coin:
         address: Address
@@ -136,6 +140,9 @@ en:
       withdraw_ltc:
         title: LTC Withdraw
 
+      withdraw_eth:
+        title: ETH Withdraw
+
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
         label: Label
@@ -193,6 +200,7 @@ en:
         gio: GIO Market
         doge: DOGE Market
         ltc: LTC Market
+        eth: ETH Market
 
 
 

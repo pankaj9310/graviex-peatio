@@ -1,8 +1,9 @@
 .tabbable
   ul.nav.nav-tabs
     li.active: a.btc-proof href="#btc-proof" data-toggle="tab" == t('.verify-btc')
-    li:        a.gio-proof href="#gio-proof" data-toggle="tab" == t('.verify-gio')
-    li:        a.doge-proof href="#doge-proof" data-toggle="tab" == t('.verify-doge')
+    li: a.gio-proof href="#gio-proof" data-toggle="tab" == t('.verify-gio')
+    li: a.doge-proof href="#doge-proof" data-toggle="tab" == t('.verify-doge')
+    li: a.ltc-proof href="#ltc-proof" data-toggle="tab" == t('.verify-ltc')
 
   .tab-content
     #btc-proof.tab-pane.active: .trade-wrapper

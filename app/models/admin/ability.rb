@@ -21,6 +21,8 @@ module Admin
       can :manage, ::Deposits::Gravio
       can :manage, ::Deposits::Doge
       can :manage, ::Deposits::Ltc
+      can :manage, ::Deposits::Ether
+
 
       can :menu, Withdraw
       can :manage, ::Withdraws::Bank
@@ -28,6 +30,7 @@ module Admin
       can :manage, ::Withdraws::Gravio
       can :manage, ::Withdraws::Doge
       can :manage, ::Withdraws::Ltc
+      can :manage, ::Withdraws::Ether
 
     end
   end

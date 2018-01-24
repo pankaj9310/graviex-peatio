@@ -16,7 +16,19 @@ end
 
 while($running) do
   Currency.all.each do |currency|
-    currency.refresh_balance if currency.coin?
+    begin
+      $stdout.print "Processing coin = " + currency.code + " (" 
+      currency.refresh_balance if currency.coin?
+      currency.refresh_status if currency.coin?
+      if currency.is_online == "online" 
+        $stdout.print "+" + currency.is_online + ")\n"
+      else
+        $stdout.print "-" + currency.is_online + ")\n"
+      end
+    rescue => ex
+      $stdout.print "?" + currency.is_online + ")\n"
+      $stderr.print "[error]: " + ex.message + "\n" + ex.backtrace.join("\n") + "\n"
+    end
   end
 
   sleep 5

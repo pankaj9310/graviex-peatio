@@ -28,11 +28,11 @@ html lang="en"
         = render partial: 'indicator_switch'
 
         - if ENV['CHAT_FEATURE']
-          #chat_tabs_wrapper.float
+          chat_tabs_wrapper.float
             ul.nav.nav-tabs.tabs-right.sideways
               li: a href='#chat_content' data-toggle='tab' = t('.chat')
             .tab-content
-              #chat_content.tab-pane
+              chat_content.tab-pane
                 = render partial: 'chat'
 
         = render partial: 'order_book'

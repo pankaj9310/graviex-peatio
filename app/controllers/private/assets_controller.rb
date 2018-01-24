@@ -7,12 +7,14 @@ module Private
       @gio_proof   = Proof.current :gio
       @doge_proof   = Proof.current :doge
       @ltc_proof   = Proof.current :ltc
+      @eth_proof   = Proof.current :eth
 
       if current_user
         @btc_account = current_user.accounts.with_currency(:btc).first
         @gio_account = current_user.accounts.with_currency(:gio).first
         @doge_account = current_user.accounts.with_currency(:doge).first
         @ltc_account = current_user.accounts.with_currency(:ltc).first
+        @eth_account = current_user.accounts.with_currency(:eth).first
       end
     end
 

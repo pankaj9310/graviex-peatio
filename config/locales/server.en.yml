@@ -24,6 +24,7 @@ en:
       withdraws/gravio: Withdraw
       withdraws/doge: Withdraw
       withdraws/ltc: Withdraw
+      withdraws/ether: Withdraw
     attributes:
       api_token:
         access_key: Access Key
@@ -195,6 +196,12 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
+      deposits/ether:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
       withdraws/satoshi:
         id: ID
         member_name: Account
@@ -238,6 +245,20 @@ en:
         remark: Remark
         fee: Fee
       withdraws/doge:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/ether:
         id: ID
         member_name: Account
         currency_obj_key_text: Currency
@@ -304,6 +325,8 @@ en:
               doge_invalid: Invalid Address
               ltc_ismine: Used Address
               ltc_invalid: Invalid Address
+              ether_ismine: Used Address
+              ether_invalid: Invalid Address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
           attributes:
@@ -331,6 +354,12 @@ en:
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
         withdraws/ltc:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/ether:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -384,6 +413,7 @@ en:
       pts: PTS
       ltc: LTC
       gio: GIO
+      eth: ETH
   currency:
     satoshi:
       key: BTC
@@ -404,6 +434,11 @@ en:
       key: DOGE
       code: DOGE
       name: Dogecoin
+      format: '0,0.0000'
+    ether:
+      key: ETH
+      code: ETH
+      name: Ethereum
       format: '0,0.0000'
     bitsharesx:
       key: BTS
@@ -591,6 +626,13 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    ether:
+      key: Block Chain
+      title: Ethereum Deposits
+      intro: Deposit ethereum from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
   deposits/bank:
     aasm_state:
       submitting: Submitting
@@ -612,6 +654,9 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       doges:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      ethers:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       banks:
@@ -700,7 +745,10 @@ en:
         total: Total
         withdraw_history: Withdrawal History
       create:
+        amount_empty_error: Amount is empty.
         two_factors_error: Two factor authentication failed.
+        unverified_withdraw_limit_error: 'Unverified account single withdraw limit exceeded > %{limit}. Please, perform account verification procedure.'
+        unverified_withdraw_day_limit_error: 'Unverified account day withdraw limit exceeded > %{limit}. Please, perform account verification procedure.'
       banks:
         update:
           notice: Bank Transfer withdrawal application has been submitted, we will
@@ -763,6 +811,21 @@ en:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
       doges:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      ethers:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
@@ -850,15 +913,18 @@ en:
         gio-assets: GIO Assets
         doge-assets: DOGE Assets
         ltc-assets: LTC Assets
+        eth-assets: ETH Assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-gio: Verify My GIO Assets
         verify-doge: Verify My DOGE Assets
         verify-ltc: Verify My LTC Assets
+        verify-eth: Verify My ETH Assets
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
         doge-assets-total: 'Total DOGE assets of exchange: '
         ltc-assets-total: 'Total LTC assets of exchange: '
+        eth-assets-total: 'Total ETH assets of exchange: '
       liability_proof:
         title: Proof of Liabilities
         intro: As an exchange, our liabilities refer to the sum of money (in both
@@ -866,7 +932,7 @@ en:
           this page, we present you our liabilities. We also provide you a way to
           verify that your account balance is indeed part of our liabilities.
         how-to-verify: How to verify an exchange is solvent?
-        how-to-verify-uri: https://peatio.com/documents/liability_proof
+        how-to-verify-uri: https://graviex.net/documents/liability_proof
       liability_data:
         liability-proof-generating: Proof of Liability generation in process, please
           come back after 30 minutes.
@@ -895,6 +961,11 @@ en:
         intro: All of exchange's LTC assets are listed here.
         total: Total LTC Assets
         address: Address
+      eth_assets:
+        title: ETH Assets
+        intro: All of exchange's ETH assets are listed here.
+        total: Total ETH Assets
+        address: Address
       cny_assets:
         title: CNY Assets
         intro: All of exchange's CNY assets are listed here.
@@ -912,6 +983,7 @@ en:
         gio_format: '0.00000000'
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
+        eth_format: '0.00000000'
         reason:
           cny:
             strike_add: Plus
@@ -938,6 +1010,12 @@ en:
             withdraw: Withdraw
             fix: Fix
           ltc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          eth:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -989,6 +1067,7 @@ en:
         gio_html: "<i class='fa fa-check'></i><span>GIO Markets</span>"
         doge_html: "<i class='fa fa-check'></i><span>DOGE Markets</span>"
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
+        eth_html: "<i class='fa fa-check'></i><span>ETH Markets</span>"
         price: Price
         change: "24h %"
       range_switch:
@@ -1183,6 +1262,7 @@ en:
         gio_format: '0.00000000'
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
+        eth_format: '0.00000000'
         total: Total
   guides:
     private:
@@ -1266,7 +1346,7 @@ en:
         email: E-mail Address
         password: Password
       identity:
-        email: Example：xiaobai@example.com
+        email: Example：user@example.com
         password: Please set your login password
         password_confirmation: Confirm your password
         edit:
@@ -1281,7 +1361,7 @@ en:
         origin_volume: Sell Volume
         sum: Total Turnover
       reset_password:
-        email: For example：xiaobai@example.com
+        email: For example：user@example.com
         password: Please set your login password!
       withdraw:
         bank:
@@ -1296,6 +1376,9 @@ en:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
         doge:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        eth:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
     hints:
@@ -1333,6 +1416,8 @@ en:
         ltc:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         doge:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        eth:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -1404,6 +1489,13 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        eth:
+          fee: Fee
+          sum: Amount
+          fund_uid: Ethereum Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
   admin:
     deposits:
       banks:
@@ -1438,6 +1530,12 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       doges:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      ethers:
         update:
           notice: The deposit was successful.
         index:
@@ -1564,6 +1662,18 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      ethers:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
   deposits/satoshi:
     aasm_state:
       submitted: Submitted
@@ -1583,6 +1693,12 @@ en:
       checked: Checked
       warning: Warning
   deposits/doge:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/eth:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1677,6 +1793,14 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    eth:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     bank:
       sn: SN
       amount: Amount
@@ -1711,6 +1835,7 @@ en:
       gio: GIO
       doge: DOGE
       ltc: LTC
+      eth: ETH
     order:
       state:
         done: DONE
@@ -1742,6 +1867,7 @@ en:
         doge: Dogecoin
         ltc: Litecoin
         bank: Bank
+        eth: Ethereum
     id_document:
       id_document_type:
         id_card: ID Card
@@ -2230,6 +2356,13 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    doge:
+      key: Blockchain
+      title: Ethereum Blockchain
+      intro: Withdraw Ethereum to your own Ethereum wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
   withdraws/bank:
@@ -2281,6 +2414,18 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/doge:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/eth:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

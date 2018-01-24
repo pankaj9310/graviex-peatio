@@ -19,4 +19,9 @@
   currency: ltc
   min_confirm: 1
   max_confirm: 6
+- id: 1000
+  key: ether
+  currency: eth
+  min_confirm: 1
+  max_confirm: 6
 

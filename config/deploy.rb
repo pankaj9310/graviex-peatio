@@ -8,7 +8,7 @@ set :repository, 'https://github.com/peatio/peatio.git'
 set :user, 'deploy'
 set :deploy_to, '/home/deploy/peatio'
 set :branch, 'master'
-set :domain, 'demo.peatio.com'
+set :domain, 'demo.graviex.net'
 
 set :shared_paths, [
   'config/database.yml',

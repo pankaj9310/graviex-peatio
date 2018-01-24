@@ -30,4 +30,12 @@
   fee: 0.002
   inuse: true
   type: WithdrawChannelLtc
+- id: 1000
+  key: eth
+  currency: eth
+  fixed: 8
+  max: 1000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelEth
 

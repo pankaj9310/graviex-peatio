@@ -64,8 +64,8 @@ class Formatter
   mask_fixed_price: (price) ->
     @mask_price @fixPriceGroup(price)
 
-  ticker_fill: ['', '0', '00', '000', '0000', '00000', '000000', '0000000', '00000000']
-  ticker_price: (price, fillTo=8) ->
+  ticker_fill: ['', '0', '00', '000', '0000', '00000', '000000', '0000000', '00000000', '000000000']
+  ticker_price: (price, fillTo=9) ->
     [left, right] = price.split('.')
     if fill = @ticker_fill[fillTo-right.length]
       "#{left}.<g>#{right}</g><span class='fill'>#{fill}</span>"

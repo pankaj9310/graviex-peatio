@@ -9,6 +9,35 @@ module Withdraws
     def create
       @withdraw = model_kls.new(withdraw_params)
 
+      @verified = current_user.id_document_verified?
+      @local_sum = params[:withdraw][:sum]
+
+      if !@local_sum
+        render text: I18n.t('private.withdraws.create.amount_empty_error'), status: 403
+        return
+      end
+
+      if !@verified && channel.currency_obj.withdraw_limit < @local_sum
+        render text: I18n.t('private.withdraws.create.unverified_withdraw_limit_error', limit: channel.currency_obj.withdraw_limit), status: 403
+        return
+      end
+
+      @current_date = DateTime.now.to_date
+      @current_date_time = DateTime.now
+      @current_withdraws = Withdraw.with_aasm_state(:almost_done).where(currency: @channel.currency_obj.id, created_at: @current_date...@current_date_time).pluck(:amount)
+      @withdraw_amount = @current_withdraws.sum
+
+      if !@withdraw_amount
+        @withdraw_amount = 0
+      end
+
+      #Rails.logger.info "withdraw_day_limit " + channel.currency_obj.withdraw_day_limit.to_s + " db_amount " + @withdraw_amount.to_s
+
+      if !@verified && channel.currency_obj.withdraw_day_limit < @withdraw_amount
+        render text: I18n.t('private.withdraws.create.unverified_withdraw_day_limit_error', limit: channel.currency_obj.withdraw_day_limit), status: 403
+        return
+      end
+
       if two_factor_auth_verified?
         if @withdraw.save
           @withdraw.submit!
@@ -19,9 +48,11 @@ module Withdraws
           render nothing: true
         else
           render text: @withdraw.errors.full_messages.join(', '), status: 403
+          return
         end
       else
         render text: I18n.t('private.withdraws.create.two_factors_error'), status: 403
+        return
       end
     end
 

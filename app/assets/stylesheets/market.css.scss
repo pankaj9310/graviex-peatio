@@ -294,7 +294,7 @@ header {
   }
 }
 
-#chat_tabs_wrapper {
+chat_tabs_wrapper {
   bottom: $gutter; left: $gutter;
   min-height: 300px;
   @include float-wrapper(260px, 300px);
@@ -463,13 +463,13 @@ header {
 
 /* layout position
 ----------------------------------------------- */
-#ask_entry, #bid_entry { width: $entry-width; height: $entry-height; }
+#ask_entry, #bid_entry { width: $entry-width; height: $right-entry-height; }
 .entry-right { bottom: $gutter; right: $gutter + $entry-width + $gutter; }
 .entry-left { bottom: $gutter; right: $gutter; }
 
 #ticker {
   width: $ticker-width; height: $ticker-height;
-  bottom: $gutter_4x + $entry-height + $my-orders-height + $depths-height; right: $gutter;
+  bottom: $gutter_4x + $right-entry-height + $my-orders-height + $depths-height; right: $gutter;
 
   .ask, .last, .bid {
     text-align: center;
@@ -494,6 +494,7 @@ header {
   }
 
   table.asks, table.bids {
+    font-size: 12px;
     .new {
       background-color: #333;
       div { display: none; }
@@ -532,7 +533,7 @@ header {
 
 #depths_wrapper {
   width: $order-book-width; height: $depths-height;
-  bottom: $gutter-3x + $my-orders-height + $entry-height; right: $gutter;
+  bottom: $gutter-3x + $my-orders-height + $right-entry-height; right: $gutter;
 
   .panel-body {
     padding: 0;
@@ -618,6 +619,10 @@ header {
       &.all { tr { display: block; } }
       &.cny { tr.quote-cny { display: block; } }
       &.btc { tr.quote-btc { display: block; } }
+      &.ltc { tr.quote-ltc { display: block; } }
+      &.doge { tr.quote-doge { display: block; } }
+      &.gio { tr.quote-gio { display: block; } }
+      &.eth { tr.quote-eth { display: block; } }
     }
   }
 }
@@ -626,13 +631,13 @@ header {
   .dropdown-wrapper {
     position: absolute;
     height: $my-orders-height;
-    bottom: $gutter-2x + $entry-height; right: $order-book-width + $gutter;
+    bottom: $gutter-2x + $right-entry-height; right: $order-book-width + $gutter;
   }
 }
 
 #my_orders {
   width: $my-orders-width; height: $my-orders-height;
-  bottom: $gutter-2x + $entry-height; right: $gutter;
+  bottom: $gutter-2x + $right-entry-height; right: $gutter;
 
   .panel-body-content {
     height: $my-orders-height - $gutter-2x;

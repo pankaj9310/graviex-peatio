@@ -14,7 +14,8 @@ $gutter-5x: $gutter * 5;
 $gutter-6x: $gutter * 6;
 
 $entry-width: 242px;
-$entry-height: 196px;
+$entry-height: 576px;
+$right-entry-height: 196px;
 
 $ticker-width: $entry-width * 2 + $gutter;
 $ticker-height: 55px;
@@ -26,9 +27,9 @@ $my-orders-width: $depths-width;
 $my-orders-height: 92px;
 
 $order-book-width: $depths-width;
-$order-book-height: $min-height - $navbar-height - $entry-height - $ticker-height - $depths-height - $my-orders-height - $gutter-6x;
+$order-book-height: $min-height - $navbar-height - $right-entry-height - $ticker-height - $depths-height - $my-orders-height - $gutter-6x;
 
-$market-list-width: 280px;
+$market-list-width: 300px;
 $market-list-height: $entry-height;
 
 $market-trades-width: $market-list-width;

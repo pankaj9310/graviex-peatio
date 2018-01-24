@@ -10,7 +10,7 @@ class Global
 
     def trigger(event, data)
       Pusher.trigger_async(channel, event, data)
-      #logger.info "Pusher_3: #{channel}, #{data}"
+      Rails.logger.info "Pusher_3: #{channel}, #{data}"
     end
 
     def daemon_statuses
@@ -84,12 +84,12 @@ class Global
   def trigger_orderbook
     data = {asks: asks, bids: bids}
     Pusher.trigger_async(channel, "update", data)
-    #logger.info "Pusher_1: #{channel}, #{data}"
+    Rails.logger.info "Pusher_1: #{channel}, #{data}"
   end
 
   def trigger_trades(trades)
     Pusher.trigger_async(channel, "trades", trades: trades)
-    #logger.info "Pusher_2: #{channel}, #{trades}"
+    Rails.logger.info "Pusher_2: #{channel}, #{trades}"
   end
 
   def at

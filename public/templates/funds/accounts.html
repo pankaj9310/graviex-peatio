@@ -4,10 +4,15 @@
     'withdraw-now': accountsCtrl.isWithdraw() }"
     data-currency="{{account.currency}}">
 
-    <td class="currency-logo"><img ng-src="/icon-{{account.currency}}.png" alt=""><span class="currency-symbol">{{ account.currency | uppercase }}</span></td>
+    <td class="currency-logo">
+      <img ng-src="/icon-{{account.currency}}.png" alt="">
+      <span class="currency-symbol">{{ account.currency | uppercase }}</span>
+      <img class="currency-state" ng-src="/icon-{{account.is_online}}.png" alt="">
+    </td>
     <td class="currency-balance-col">
       <p class="currency-balance"><span class="currency-sign"></span>{{account.balance | round_down }}</p>
       <span class="currency-balance-locked"><i class="fa fa-lock"></i> {{account.locked}}</span>
+      <span class="currency-info">{{account.blocks + ' / ' + account.blocktime}}</span>
     </td>
     <td class="currency-actions">
       <p class="currency-deposit"><a href="#" ng-click="accountsCtrl.deposit(account); $event.preventDefault()" >{{ 'funds.deposit' | t }}</a></p>

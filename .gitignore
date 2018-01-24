@@ -49,3 +49,11 @@ tags
 .ruby-version
 .DS_Store
 .agignore
+
+# Ignore specific files
+*.key
+*.crt
+*.csr
+enable_ssl.txt
+run_slanger.sh
+

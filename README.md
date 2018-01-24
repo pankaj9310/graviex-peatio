@@ -118,8 +118,8 @@ Want to report a bug, request a feature, contribute or translate Peatio?
 
 * Browse our [issues](https://github.com/peatio/peatio/issues), comment on proposals, report bugs.
 * Clone the peatio repo, make some changes according to our development guidelines and issue a pull-request with your changes.
-* Anything you want to tell us please send it to [community@peatio.com](mailto:community@peatio.com)
-* If you need technical support or customization service, contact us: [sales@peatio.com](mailto:sales@peatio.com)
+* Anything you want to tell us please send it to [community@graviex.net](mailto:community@graviex.net)
+* If you need technical support or customization service, contact us: [sales@graviex.net](mailto:sales@graviex.net)
 
 
 ### License

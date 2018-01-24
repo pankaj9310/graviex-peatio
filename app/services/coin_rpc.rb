@@ -14,7 +14,15 @@ class CoinRPC
   def self.[](currency)
     c = Currency.find_by_code(currency.to_s)
     if c && c.rpc
-      name = c[:handler] || 'BTC'
+      if c.proto == 'ETH'
+        name = 'ETH'
+      elsif c.proto == 'BTC'
+        name = 'BTC'
+      else
+        name = c[:handler]
+      end
+
+      # Rails.logger.info "Making class " + name + "(" + currency.to_s + ")\n"
       "::CoinRPC::#{name}".constantize.new(c.rpc)
     end
   end
@@ -33,6 +41,7 @@ class CoinRPC
       resp = JSON.parse( http_post_request(post_body) )
       raise JSONRPCError, resp['error'] if resp['error']
       result = resp['result']
+
       result.symbolize_keys! if result.is_a? Hash
       result
     end
@@ -43,9 +52,19 @@ class CoinRPC
       request.basic_auth @uri.user, @uri.password
       request.content_type = 'application/json'
       request.body = post_body
-      http.request(request).body
+      @reply = http.request(request).body
+      # Rails.logger.info @reply
+      return @reply
     rescue Errno::ECONNREFUSED => e
       raise ConnectionRefusedError
+    end
+
+    def safe_getblockchaininfo
+      begin
+        getblockchaininfo
+      rescue
+        'N/A'
+      end
     end
 
     def safe_getbalance
@@ -55,6 +74,49 @@ class CoinRPC
         'N/A'
       end
     end
+  end
+
+  class ETH < self
+    def handle(name, *args)
+      post_body = {"jsonrpc" => "2.0", 'method' => name, 'params' => args, 'id' => '1' }.to_json
+      resp = JSON.parse( http_post_request(post_body) )
+      raise JSONRPCError, resp['error'] if resp['error']
+      result = resp['result']
+      result.symbolize_keys! if result.is_a? Hash
+      result
+    end
+    def http_post_request(post_body)
+      http    = Net::HTTP.new(@uri.host, @uri.port)
+      request = Net::HTTP::Post.new(@uri.request_uri)
+      request.basic_auth @uri.user, @uri.password
+      request.content_type = 'application/json'
+      request.body = post_body
+      @reply = http.request(request).body
+      # Rails.logger.info @reply
+      return @reply
+    rescue Errno::ECONNREFUSED => e
+      raise ConnectionRefusedError
+    end
+
+    def safe_getbalance
+      begin
+        (open('http://192.168.0.203:8080/cgi-bin/total.cgi').read.rstrip.to_f)
+      rescue
+        'N/A'
+      end
+    end
+
+    def getblockchaininfo
+      @lastBlock = eth_getBlockByNumber("latest", true)
+      Rails.logger.info @lastBlock
+
+      {
+        blocks: @lastBlock[:number].to_i(10),
+        headers: 0,
+        mediantime: @lastBlock[:timestamp].to_i(10)
+      }
+    end
+
   end
 
 end
