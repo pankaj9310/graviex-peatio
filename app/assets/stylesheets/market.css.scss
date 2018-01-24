@@ -618,6 +618,10 @@ header {
       &.all { tr { display: block; } }
       &.cny { tr.quote-cny { display: block; } }
       &.btc { tr.quote-btc { display: block; } }
+      &.ltc { tr.quote-btc { display: block; } }
+      &.doge { tr.quote-btc { display: block; } }
+      &.gio { tr.quote-btc { display: block; } }
+      /*markets*/
     }
   }
 }
