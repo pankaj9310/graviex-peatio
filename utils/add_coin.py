@@ -146,6 +146,10 @@ class Backup:
 		if not os.path.exists(coin_path_backup_app_assets_javascripts_funds_models):
 			os.makedirs(coin_path_backup_app_assets_javascripts_funds_models)
 		copyfile("../app/assets/javascripts/funds/models/withdraw.js.coffee", coin_path_backup_app_assets_javascripts_funds_models + "/withdraw.js.coffee")
+		coin_path_backup_app_assets_stylesheets = coin_path_backup_app_assets + "/stylesheets"
+		if not os.path.exists(coin_path_backup_app_assets_stylesheets):
+			os.makedirs(coin_path_backup_app_assets_stylesheets)
+		copyfile("../app/assets/stylesheets/market.css.scss", coin_path_backup_app_assets_stylesheets + "/market.css.scss")
 
 
 class Update:
@@ -401,7 +405,7 @@ class Update:
 		liab_f_data = None
 		with open(coin_update_path + "/app/views/private/assets/_liability_tabs.html.slim", "r") as f:
 			liab_f_data = f.read();
-		liab_f_data_new = liab_f_data.replace("#li", "li:        a." + cfg_json["code"] + "-proof href=\"#" + cfg_json["code"] + "-proof\" data-toggle=\"tab\" == t('.verify-" + cfg_json["code"] + "')\n    #li")
+		liab_f_data_new = liab_f_data.replace("/li", "li:        a." + cfg_json["code"] + "-proof href=\"#" + cfg_json["code"] + "-proof\" data-toggle=\"tab\" == t('.verify-" + cfg_json["code"] + "')\n    /li")
 		liab_f_data_new = liab_f_data_new + "    #" + cfg_json["code"] + "-proof.tab-pane:        .trade-wrapper\n"
 		liab_f_data_new = liab_f_data_new + "      .assets\n"
 		liab_f_data_new = liab_f_data_new + "        span.title = t('." + cfg_json["code"] + "-assets-total')\n"
@@ -414,14 +418,14 @@ class Update:
 		file_data = None
 		with open(coin_update_path + "/app/views/private/assets/index.html.slim", "r") as f:
 			file_data = f.read();
-		pos = file_data.find("#li")
+		pos = file_data.find("/li")
 		if pos == -1:
 			raise Exception("Not found #li /app/views/private/assets/index.html.slim")
 		data_id = int(file_data[pos + 3 : file_data.find(" ", pos)])
 		data_id = data_id + 1
-		tag_str = "#li" + str(data_id-1)
-		file_data_new = file_data.replace(tag_str, "      li        data-scroll-nav='" + str(data_id) + "'\n        a = t('." + cfg_json["code"] + "-assets')\n" + "#li" + str(data_id) + "\n")
-		file_data_new = file_data_new.replace("#div", "    div data-scroll-index=" + str(data_id) + " = render '" + cfg_json["code"] + "_assets'\n#div")
+		tag_str = "/li" + str(data_id-1)
+		file_data_new = file_data.replace(tag_str, "      li        data-scroll-nav='" + str(data_id) + "'\n        a = t('." + cfg_json["code"] + "-assets')\n" + "/li" + str(data_id) + "\n")
+		file_data_new = file_data_new.replace("/div", "    div data-scroll-index=" + str(data_id) + " = render '" + cfg_json["code"] + "_assets'\n/div")
 		with open(coin_update_path + "/app/views/private/assets/index.html.slim", "w") as f:
 			f.write(file_data_new)
 		with open(coin_update_path + "/app/views/private/withdraws/" + cfg_json["key"] + "s/edit.html.slim", "w+") as f:
@@ -562,6 +566,12 @@ class Update:
 			file_data = f.read();
 		file_data_new = file_data.replace("#currency", "when '" + cfg_json["code"] + "' then '" + cfg_json["code"] + "s'\n      #currency")
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "w") as f:
+			f.write(file_data_new)
+		file_data = None
+		with open(coin_update_path + "/app/assets/stylesheets/market.css.scss", "r") as f:
+			file_data = f.read();
+		file_data_new = file_data.replace("/*markets*/", "&." + cfg_json["code"] + " { tr.quote-btc { display: block; } }\n      /*markets*/")
+		with open(coin_update_path + "/app/assets/stylesheets/market.css.scss", "w") as f:
 			f.write(file_data_new)
 		return id;
 
