@@ -46,6 +46,7 @@ en:
         doge: DOGE
         ltc: LTC
         eth: ETH
+        #funds
       deposit_cny:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
@@ -81,6 +82,8 @@ en:
 
       deposit_eth:
         title: ETH Deposit
+
+      #deposit
 
       deposit_coin:
         address: Address
@@ -143,6 +146,8 @@ en:
       withdraw_eth:
         title: ETH Withdraw
 
+      #withdraw
+
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
         label: Label
@@ -201,6 +206,7 @@ en:
         doge: DOGE Market
         ltc: LTC Market
         eth: ETH Market
+        #market
 
 
 

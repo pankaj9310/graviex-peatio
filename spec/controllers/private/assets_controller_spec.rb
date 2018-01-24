@@ -23,6 +23,7 @@ describe Private::AssetsController do
       it { expect(assigns(:gio_account)).to be_nil }
       it { expect(assigns(:doge_account)).to be_nil }
       it { expect(assigns(:ltc_account)).to be_nil }
+      #it
 
     end
   end

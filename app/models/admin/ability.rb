@@ -22,7 +22,7 @@ module Admin
       can :manage, ::Deposits::Doge
       can :manage, ::Deposits::Ltc
       can :manage, ::Deposits::Ether
-
+      #deposit
 
       can :menu, Withdraw
       can :manage, ::Withdraws::Bank
@@ -31,6 +31,7 @@ module Admin
       can :manage, ::Withdraws::Doge
       can :manage, ::Withdraws::Ltc
       can :manage, ::Withdraws::Ether
+      #withdraw
 
     end
   end

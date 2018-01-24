@@ -8,6 +8,7 @@ module Private
       @doge_proof   = Proof.current :doge
       @ltc_proof   = Proof.current :ltc
       @eth_proof   = Proof.current :eth
+      #proof
 
       if current_user
         @btc_account = current_user.accounts.with_currency(:btc).first
@@ -15,6 +16,7 @@ module Private
         @doge_account = current_user.accounts.with_currency(:doge).first
         @ltc_account = current_user.accounts.with_currency(:ltc).first
         @eth_account = current_user.accounts.with_currency(:eth).first
+        #account
       end
     end
 
