@@ -24,7 +24,7 @@ module Withdraws
 
       @current_date = DateTime.now.to_date
       @current_date_time = DateTime.now
-      @current_withdraws = Withdraw.with_aasm_state(:almost_done).where(currency: @channel.currency_obj.id, created_at: @current_date...@current_date_time).pluck(:amount)
+      @current_withdraws = Withdraw.with_aasm_state(:done).where(member_id: current_user.id, currency: @channel.currency_obj.id, created_at: @current_date...@current_date_time).pluck(:amount)
       @withdraw_amount = @current_withdraws.sum
 
       if !@withdraw_amount

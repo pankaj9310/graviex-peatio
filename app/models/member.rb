@@ -97,6 +97,15 @@ class Member < ActiveRecord::Base
     end
   end
 
+  def has_gio_deposite_50
+    @gio_account = self.accounts.with_currency(:gio).first
+    if @gio_account
+      if @gio_account.balance > 1000000
+        return true
+      end
+    end
+    return false
+  end
 
   def create_auth_for_identity(identity)
     self.authentications.create(provider: 'identity', uid: identity.id)

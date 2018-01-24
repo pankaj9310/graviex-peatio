@@ -7,13 +7,11 @@ header.text-center
         h3 = t(:slogan)
     #getstart.row
       - unless current_user
-        .col-xs-4.col-xs-offset-8
-          a href="#{signin_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signin")
-        - if ENV['WEIBO_AUTH'] == "true"
-          .col-xs-4
-            a href="/auth/weibo" class="btn btn-primary btn-lg btn-block" role="button" = t("header.login_via_weibo")
-        .col-xs-4
-          a href="#{signup_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signup")
+        .col-xs-6.col-xs-offset-9.text-center
+          a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
+          a href="#{signin_path}" class="btn btn-success btn-lg btn-block" style="background-color: #999999; border-color: #999999" onMouseOver="this.style.backgroundColor='#737373'" onMouseOut="this.style.backgroundColor='#999999'" role="button" = t("header.signin")
+          - if ENV['SIGNUP_ALLOWED'] == "true" 
+            a href="#{signup_path}" class="btn btn-warning btn-lg btn-block" role="button" = t("header.signup")
       - else
         .col-xs-6.col-xs-offset-9.text-center
           a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
