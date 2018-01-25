@@ -3,6 +3,7 @@
     total_assets: '#total_assets'
 
   @updateAccount = (event, data) ->
+    #console.log(event, data)
     for currency, account of data
       amount = (new BigNumber(account.locked)).plus(new BigNumber(account.balance))
       @$node.find("tr.#{currency} span.amount").text(formatter.round(amount, 2))
@@ -12,16 +13,19 @@
     fiatCurrency = gon.fiat_currency
     symbol = gon.currencies[fiatCurrency].symbol
     sum = 0
+    available = 0
 
     for currency, account of @accounts
       if currency is fiatCurrency
+        available += +account.balance
         sum += +account.balance
         sum += +account.locked
       else if ticker = @tickers["#{currency}#{fiatCurrency}"]
+        available += +account.balance * +ticker.last
         sum += +account.balance * +ticker.last
         sum += +account.locked * +ticker.last
 
-    @select('total_assets').text "#{symbol}#{formatter.round sum, 2}"
+    @select('total_assets').text "#{symbol}#{formatter.round sum, 4}/#{formatter.round available, 4}"
 
   @after 'initialize', ->
     @accounts = gon.accounts

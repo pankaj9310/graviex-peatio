@@ -1,5 +1,5 @@
 class Account extends PeatioModel.Model
-  @configure 'Account', 'member_id', 'currency', 'balance', 'locked', 'created_at', 'updated_at', 'in', 'out', 'deposit_address', 'name_text', 'is_online', 'blocks', 'headers', 'blocktime'
+  @configure 'Account', 'member_id', 'currency', 'balance', 'locked', 'created_at', 'updated_at', 'in', 'out', 'deposit_address', 'name_text', 'is_online', 'blocks', 'headers', 'blocktime', 'gio_discount'
 
   @initData: (records) ->
     PeatioModel.Ajax.disable ->

@@ -100,7 +100,7 @@ class Member < ActiveRecord::Base
   def has_gio_deposite_50
     @gio_account = self.accounts.with_currency(:gio).first
     if @gio_account
-      if @gio_account.balance > 1000000
+      if @gio_account.balance > 500
         return true
       end
     end

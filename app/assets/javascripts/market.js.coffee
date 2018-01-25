@@ -38,6 +38,7 @@ $ ->
 
   HeaderUI.attachTo('header')
   AccountSummaryUI.attachTo('#account_summary')
+  SettingsUI.attachTo('#settings')
 
   FloatUI.attachTo('.float')
   KeyBindUI.attachTo(document)

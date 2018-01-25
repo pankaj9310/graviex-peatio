@@ -206,7 +206,8 @@ class ApplicationController < ActionController::Base
         memo[account.currency] = {
           currency: account.currency,
           balance: account.balance,
-          locked: account.locked
+          locked: account.locked,
+          # gio_discount: account.gio_discount
         } if account.currency_obj.try(:visible)
         memo
       end

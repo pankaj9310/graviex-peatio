@@ -11,6 +11,8 @@ li.dropdown.account-settings class = dropdown_class
     li: a href = settings_path
       i.fa.fa-user
       span = t('header.my_profile')
+      - if current_user.has_gio_deposite_50
+        i[class='fa fa-star' style='color: #e6b800']
     li: a href = tickets_path
       i.fa.fa-comments
       span = t('header.tickets')
