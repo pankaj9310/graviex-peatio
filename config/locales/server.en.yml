@@ -1396,7 +1396,7 @@ en:
         doge:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
-        eth:
+        ether:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
         #withdraw_amount
@@ -1436,7 +1436,7 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         doge:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
-        eth:
+        ether:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -1509,7 +1509,7 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
-        eth:
+        ether:
           fee: Fee
           sum: Amount
           fund_uid: Ethereum Address
@@ -1721,7 +1721,7 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
-  deposits/eth:
+  deposits/ether:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1817,7 +1817,7 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
-    eth:
+    ether:
       amount: Amount
       txid: TxId
       created_at: Created At
@@ -1894,7 +1894,7 @@ en:
         ltc: Litecoin
         #fund_source
         bank: Bank
-        eth: Ethereum
+        ether: Ethereum
     id_document:
       id_document_type:
         id_card: ID Card
@@ -2383,7 +2383,7 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
-    eth:
+    ether:
       key: Blockchain
       title: Ethereum Blockchain
       intro: Withdraw Ethereum to your own Ethereum wallet
@@ -2453,7 +2453,7 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
-  withdraws/eth:
+  withdraws/ether:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

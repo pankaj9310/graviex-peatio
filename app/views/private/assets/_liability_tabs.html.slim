@@ -4,6 +4,7 @@
     li: a.gio-proof href="#gio-proof" data-toggle="tab" == t('.verify-gio')
     li: a.doge-proof href="#doge-proof" data-toggle="tab" == t('.verify-doge')
     li: a.ltc-proof href="#ltc-proof" data-toggle="tab" == t('.verify-ltc')
+    li: a.eth-proof href="#eth-proof" data-toggle="tab" == t('.verify-eth')
     /li
 
   .tab-content
@@ -38,4 +39,12 @@
           == t("currency.icon.ltc")
           = @ltc_proof.sum
       = render 'liability_data', account: @ltc_account, proof: @ltc_proof
+
+    #eth-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.eth-assets-total')
+        span.currency
+          == t("currency.icon.eth")
+          = @eth_proof.sum
+      = render 'liability_data', account: @eth_account, proof: @eth_proof
 

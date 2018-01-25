@@ -31,7 +31,7 @@
   inuse: true
   type: WithdrawChannelLtc
 - id: 1000
-  key: eth
+  key: ether
   currency: eth
   fixed: 8
   max: 1000
