@@ -3,9 +3,11 @@
     formSel: 'form'
     successSel: '.status-success'
     infoSel: '.status-info'
+    feeSel: '.status-fee'
     dangerSel: '.status-danger'
     priceAlertSel: '.hint-price-disadvantage'
     positionsLabelSel: '.hint-positions'
+    feeLabelSel: '.hint-fee'
 
     priceSel: 'input[id$=price]'
     volumeSel: 'input[id$=volume]'
@@ -23,6 +25,7 @@
     @select('successSel').text('')
     @select('infoSel').text('')
     @select('dangerSel').text('')
+    @select('feeSel').text('')
 
   @resetForm = (event) ->
     @trigger 'place_order::reset::price'
@@ -104,11 +107,17 @@
     order[@usedInput] = 0 unless order[@usedInput]
     available = formatter.fix type, @getBalance().minus(order[@usedInput])
 
+    if @select('priceSel').val() != 0.0
+      @select('feeLabelSel').hide().text(formatter.fixPriceGroup(order.fee)).fadeIn()
+    else
+      @select('feeLabelSel').fadeOut().text('')
+
     if BigNumber(available).equals(0)
       @select('positionsLabelSel').hide().text(gon.i18n.place_order["full_#{type}"]).fadeIn()
     else
       @select('positionsLabelSel').fadeOut().text('')
     node.text(available)
+    #console.log("priceorder/order_fee = " + order.fee)
 
   @priceAlertHide = (event) ->
     @select('priceAlertSel').fadeOut ->

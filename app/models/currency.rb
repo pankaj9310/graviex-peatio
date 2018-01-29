@@ -98,6 +98,7 @@ class Currency < ActiveYamlBase
     end
 
     if @local_status
+      Rails.logger.info @local_status
       Rails.cache.write(blocks_count_cache_key, @local_status[:blocks]) if coin?
       Rails.cache.write(headers_count_cache_key, @local_status[:headers]) if coin?
       Rails.cache.write(blocktime_cache_key, Time.at(@local_status[:mediantime]).to_datetime.strftime("%Y-%m-%d %H:%M:%S")) if coin?

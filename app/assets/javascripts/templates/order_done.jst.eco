@@ -2,16 +2,16 @@
   <td class='time text-left col-xs-6'>
     <%- formatter.fulltime @at %>
   </td>
-  <td class='kind text-left col-xs-2 <%- formatter.trend @kind %>'>
+  <td class='kind text-left col-xs-6 <%- formatter.trend @kind %>' style='padding: 0 50px 0 0'>
     <%- formatter.short_trade @kind %>
   </td>
-  <td class='price text-right col-xs-4'>
+  <td class='price text-right col-xs-4' style='padding: 0 30px 0 0'>
     <%= formatter.fix_bid @price %>
   </td>
-  <td class='volume text-right col-xs-4'>
+  <td class='volume text-right col-xs-4' style='padding: 0 70px 0 0'>
     <%= formatter.fix_ask @volume %>
   </td>
-  <td class='amount text-right col-xs-5'>
+  <td class='amount text-right col-xs-5' style='padding: 0 70px 0 0'>
     <%- formatter.amount @volume, @price %>
   </td>
   <td class='col-xs-3'></td>

@@ -64,3 +64,4 @@ $ ->
   $('.panel-body-content').niceScroll
     autohidemode: true
     cursorborder: "none"
+

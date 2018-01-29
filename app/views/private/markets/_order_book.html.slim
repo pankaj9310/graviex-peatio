@@ -3,13 +3,13 @@
     #order_book_header.row
       .col-xs-12.col-left: table.table
         thead: tr
-          th.amount.text-left.col-xs-8 = t('.amount')
-          th.volume.text-left.col-xs-10 = t('.volume')
-          th.price.text-right.col-xs-12 = t('.bid')
+          th[class='amount text-right col-xs-6' style='padding: 0 15px 0 0'] = t('.amount')
+          th[class='volume text-right col-xs-6' style='padding: 0 3px 0 0'] = t('.volume')
+          th[class='price text-right col-xs-6' style='padding: 0 0 0 0'] = t('.bid')
       .col-xs-12: table.table.table-head
         thead: tr
-          th[class='price text-left col-xs-12' style='padding: 0 0 0 0'] = t('.ask')
-          th[class='volume text-left col-xs-10' style='padding: 0 0 0 0'] = t('.volume')
+          th[class='price text-right col-xs-7' style='padding: 0 0 0 0'] = t('.ask')
+          th[class='volume text-right col-xs-8' style='padding: 0 0 0 0'] = t('.volume')
           th.amount.text-right.col-xs-10 = t('.amount')
   .panel-body.panel-body-content
     #order_book_body.row

@@ -10,7 +10,7 @@ class Global
 
     def trigger(event, data)
       Pusher.trigger_async(channel, event, data)
-      Rails.logger.info "Pusher_3: #{channel}, #{data}"
+      # Rails.logger.info "Pusher_3: #{channel}, #{data}"
     end
 
     def daemon_statuses

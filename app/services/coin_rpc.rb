@@ -108,12 +108,13 @@ class CoinRPC
 
     def getblockchaininfo
       @lastBlock = eth_getBlockByNumber("latest", true)
-      Rails.logger.info @lastBlock
+      #Rails.logger.info @lastBlock
+      #Rails.logger.info "number = " + Integer(@lastBlock[:number]).to_s + ", timestamp = " + Integer(@lastBlock[:timestamp]).to_s
 
       {
-        blocks: @lastBlock[:number].to_i(10),
+        blocks: Integer(@lastBlock[:number]),
         headers: 0,
-        mediantime: @lastBlock[:timestamp].to_i(10)
+        mediantime: Integer(@lastBlock[:timestamp])
       }
     end
 

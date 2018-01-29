@@ -18,7 +18,7 @@
         table.table.table-hover.markets.all
           tbody
             - @markets.each do |market|
-              tr.market id="market-list-#{market.id}" class="quote-#{market.quote_unit}" data-market=market.id
+              tr.market id="market-list-#{market.id}" class="quote-#{market.quote_unit}" style="font-size: 12px" data-market=market.id
                 td.col-xs-4.name
                   = link_to market.name, market_path(market)
                 td.col-xs-15.price

@@ -13,8 +13,8 @@ $gutter-4x: $gutter * 4;
 $gutter-5x: $gutter * 5;
 $gutter-6x: $gutter * 6;
 
-$entry-width: 242px;
-$entry-height: 576px;
+$entry-width: 332px;
+$entry-height: 496px;
 $right-entry-height: 196px;
 
 $ticker-width: $entry-width * 2 + $gutter;
@@ -24,7 +24,7 @@ $depths-width: $entry-width * 2 + $gutter;
 $depths-height: 102px;
 
 $my-orders-width: $depths-width;
-$my-orders-height: 92px;
+$my-orders-height: 184px;
 
 $order-book-width: $depths-width;
 $order-book-height: $min-height - $navbar-height - $right-entry-height - $ticker-height - $depths-height - $my-orders-height - $gutter-6x;

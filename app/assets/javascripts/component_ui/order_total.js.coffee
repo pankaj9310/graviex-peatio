@@ -14,5 +14,13 @@
     @changeOrder @value unless @validateRange(total)
     @setInputValue @value
 
+    @fee = 0.0
+    if event.target.id == 'ask_entry'
+      @fee = gon.market.ask.fee
+    else
+      @fee = gon.market.bid.fee
+
     order.total = @value
+    order.fee = @value * @fee
     @trigger 'place_order::order::updated', order
+    console.log(event.target.id, order)

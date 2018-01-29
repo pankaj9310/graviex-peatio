@@ -58,7 +58,10 @@ COLOR = {
   candlestick: _.extend({}, COLOR_OFF.candlestick),
   close: _.extend({}, COLOR_OFF.close)
 }
-INDICATOR = {MA: false, EMA: false}
+INDICATOR = {MA: false, EMA: false, OFF: false}
+MACD_INDICATOR = {MACD: false, OFF: false}
+SIG_INDICATOR = {SIG: false, OFF: false}
+HIST_INDICATOR = {HIST: false, OFF: false}
 
 @CandlestickUI = flight.component ->
   @mask = ->
@@ -93,15 +96,29 @@ INDICATOR = {MA: false, EMA: false}
     INDICATOR[data.x] = true
 
     if chart = @$node.find('#candlestick_chart').highcharts()
-      # reset all series depend on close
       for s in chart.series
-        if s.userOptions.linkedTo == 'close'
+        if s.userOptions.innerGroup == 'main'
           s.setVisible(true, false)
 
       for indicator, visible of INDICATOR
         for s in chart.series
           if s.userOptions.algorithm? && (s.userOptions.algorithm == indicator)
             s.setVisible(visible, false)
+      chart.redraw()
+
+  @switchMACDIndicator = (event, data) ->
+    MACD_INDICATOR[key] = false for key, val of MACD_INDICATOR
+    MACD_INDICATOR[data.x] = true
+
+    if chart = @$node.find('#candlestick_chart').highcharts()
+      for s in chart.series
+        if s.userOptions.innerGroup == 'macd'
+          s.setVisible(MACD_INDICATOR['MACD'], false)
+
+#      for indicator, visible of MACD_INDICATOR
+#        for s in chart.series
+#          if s.userOptions.algorithm? && (s.userOptions.algorithm == indicator)
+#            s.setVisible(visible, false)
       chart.redraw()
 
   @default_range = (unit) ->
@@ -140,27 +157,33 @@ INDICATOR = {MA: false, EMA: false}
         marginTop: 95
         backgroundColor: 'rgba(0,0,0, 0.0)'
 
+      mapNavigation:
+        enableMouseWheelZoom: true
+
       credits:
         enabled: false
 
       tooltip:
-        crosshairs: [{
-            width: 0.5,
-            dashStyle: 'solid',
-            color: '#777'
-        }, false],
+#        crosshairs: [{
+#            width: 0.5,
+#            dashStyle: 'solid',
+#            color: '#777'
+#        }, false],
         valueDecimals: gon.market.bid.fixed
         borderWidth: 0
         backgroundColor: 'rgba(0,0,0,0)'
         borderRadius: 2
         shadow: false
         shared: true
+        split: false
         positioner: (w, h, point) ->
           chart_w = $(@chart.renderTo).width()
           chart_h = $(@chart.renderTo).height()
           grid_h  = Math.min(20, Math.ceil(chart_h/10))
-          x = Math.max(10, point.plotX-w-20)
-          y = Math.max(0, Math.floor(point.plotY/grid_h)*grid_h-20)
+          # x = Math.max(10, point.plotX-w-20)
+          # y = Math.max(0, Math.floor(point.plotY/grid_h)*grid_h-20)
+          x = 8
+          y = 8
           x: x, y: y
         useHTML: true
         formatter: ->
@@ -181,7 +204,13 @@ INDICATOR = {MA: false, EMA: false}
           tooltipTemplate
             title:  title
             indicator: INDICATOR
-            format: (v, fixed=3) -> Highcharts.numberFormat v, fixed
+            macd_indicator: MACD_INDICATOR
+            format: (v, fixed=3) -> formatter.fixPriceGroup parseFloat(v)
+            format4: (v, fixed) -> 
+              if fixed > 4 
+                formatter.round(v, 4) 
+              else
+                formatter.round(v, fixed)
             points: _.reduce chart.series, fun, {}
 
       plotOptions:
@@ -222,6 +251,9 @@ INDICATOR = {MA: false, EMA: false}
         maskFill: 'rgba(32, 32, 32, 0.6)'
         outlineColor: '#333'
         outlineWidth: 1
+        baseSeries: 'candlestick'
+        series:
+          color: '#306196'
         xAxis:
           dateTimeLabelFormats: DATETIME_LABEL_FORMAT
 
@@ -232,6 +264,20 @@ INDICATOR = {MA: false, EMA: false}
         tickColor: '#333'
         tickWidth: 2
         range: range
+        maxPadding: 1
+        crosshair:
+          snap: false
+          width: 0.5
+          dashStyle: 'solid'
+          color: '#777'
+          interpolate: true
+          label:
+            enabled: true
+            formatter: (val) ->
+              Highcharts.dateFormat('%a %d %b %H:%M:%S', val)
+            backgroundColor: '#2b3434'
+            style:
+              color: '#aaa'
         events:
           afterSetExtremes: (e) ->
             if e.trigger == 'navigator' && e.triggerOp == 'navigator-drag'
@@ -242,17 +288,31 @@ INDICATOR = {MA: false, EMA: false}
         {
           labels:
             enabled: true
-            align: 'right'
-            formatter: -> Highcharts.numberFormat @.value, gon.market.bid.fixed
+            align: 'left'
+            reserveSpace: true
+            formatter: -> formatter.fixPriceGroup @.value
             x: 2
             y: -5
             zIndex: -7
+#            format: '{value:.9f}'
           gridLineColor: '#222'
           gridLineDashStyle: 'ShortDot'
           top: "0%"
           height: "70%"
           lineColor: '#fff'
           minRange: if gon.ticker.last then parseFloat(gon.ticker.last)/25 else null
+          crosshair:
+            snap: false
+            interpolate: true
+            width: 0.5
+            dashStyle: 'solid'
+            color: '#777'
+            label:
+              enabled: true
+              formatter: (v) -> formatter.fixPriceGroup parseFloat(v)
+              backgroundColor: '#2b3434'
+              style:
+                color: '#aaa'
         }
         {
           labels:
@@ -260,6 +320,17 @@ INDICATOR = {MA: false, EMA: false}
           top: "70%"
           gridLineColor: '#000'
           height: "15%"
+          crosshair:
+            snap: false
+            width: 0.5
+            dashStyle: 'solid'
+            color: '#777'
+            label:
+              enabled: true
+              format: '{value:.4f}'
+              backgroundColor: '#2b3434'
+              style:
+                color: '#aaa'
         }
         {
           labels:
@@ -267,25 +338,15 @@ INDICATOR = {MA: false, EMA: false}
           top: "85%"
           gridLineColor: '#000'
           height: "15%"
+ #         crosshair:
+ #           snap: false
+ #           width: 0.5
+ #           dashStyle: 'solid'
+ #           color: '#777'
         }
       ]
 
       series: [
-        _.extend({
-          id: 'candlestick'
-          name: gon.i18n.chart.candlestick
-          type: "candlestick"
-          data: data['candlestick']
-          showInLegend: false
-        }, COLOR['candlestick']),
-        _.extend({
-          id: 'close'
-          type: 'spline'
-          data: data['close']
-          showInLegend: false
-          marker:
-            radius: 0
-        }, COLOR['close']),
         {
           id: 'volume'
           name: gon.i18n.chart.volume
@@ -299,12 +360,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'ma5'
           name: 'MA5',
           linkedTo: 'close',
+          innerGroup: 'main',
           showInLegend: true,
           type: 'trendline',
           algorithm: 'MA',
           periods: 5
           color: '#7c9aaa'
           visible: INDICATOR['MA']
+          zIndex: 1
           marker:
             radius: 0
         }
@@ -312,12 +375,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'ma10'
           name: 'MA10'
           linkedTo: 'close',
+          innerGroup: 'main',
           showInLegend: true,
           type: 'trendline',
           algorithm: 'MA',
           periods: 10
           color: '#be8f53'
           visible: INDICATOR['MA']
+          zIndex: 2
           marker:
             radius: 0
         }
@@ -325,12 +390,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'ema7'
           name: 'EMA7',
           linkedTo: 'close',
+          innerGroup: 'main',
           showInLegend: true,
           type: 'trendline',
           algorithm: 'EMA',
           periods: 7
           color: '#7c9aaa'
           visible: INDICATOR['EMA']
+          zIndex: 3
           marker:
             radius: 0
         }
@@ -338,12 +405,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'ema30'
           name: 'EMA30',
           linkedTo: 'close',
+          innerGroup: 'main',
           showInLegend: true,
           type: 'trendline',
           algorithm: 'EMA',
           periods: 30
           color: '#be8f53'
           visible: INDICATOR['EMA']
+          zIndex: 4
           marker:
             radius: 0
         }
@@ -351,11 +420,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'macd'
           name : 'MACD',
           linkedTo: 'close',
+          innerGroup: 'macd',
           yAxis: 2,
           showInLegend: true,
           type: 'trendline',
           algorithm: 'MACD'
           color: '#7c9aaa'
+          visible: MACD_INDICATOR['MACD']
+          zIndex: 5
           marker:
             radius: 0
         }
@@ -363,11 +435,14 @@ INDICATOR = {MA: false, EMA: false}
           id: 'sig'
           name : 'SIG',
           linkedTo: 'close',
+          innerGroup: 'macd',
           yAxis: 2,
           showInLegend: true,
           type: 'trendline',
           algorithm: 'signalLine'
           color: '#be8f53'
+          visible: MACD_INDICATOR['MACD']
+          zIndex: 6
           marker:
             radius: 0
         }
@@ -375,11 +450,30 @@ INDICATOR = {MA: false, EMA: false}
           id: 'hist'
           name: 'HIST',
           linkedTo: 'close',
+          innerGroup: 'macd',
           yAxis: 2,
           showInLegend: true,
           type: 'histogram'
+          visible: MACD_INDICATOR['MACD']
+          zIndex: 7
           color: '#990f0f'
         }
+        _.extend({
+          id: 'candlestick'
+          name: gon.i18n.chart.candlestick
+          type: "candlestick"
+          data: data['candlestick']
+          showInLegend: false
+          zIndex: 0
+        }, COLOR['candlestick']),
+        _.extend({
+          id: 'close'
+          type: 'spline'
+          data: data['close']
+          showInLegend: false
+          marker:
+            radius: 0
+        }, COLOR['close']),
       ]
 
   @formatPointArray = (point) ->
@@ -438,5 +532,6 @@ INDICATOR = {MA: false, EMA: false}
     @on document, 'market::candlestick::response', @init
     @on document, 'market::candlestick::trades', @updateByTrades
     @on document, 'switch::main_indicator_switch', @switchMainIndicator
+    @on document, 'switch::indicator_switch', @switchMACDIndicator
     @on document, 'switch::type_switch', @switchType
 

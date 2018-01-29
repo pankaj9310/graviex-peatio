@@ -14,6 +14,7 @@ window.MarketSwitchUI = flight.component ->
 
     @select('marketGroupName').text item.find('span').text()
     @select('marketsTable').attr("class", "table table-hover markets #{name}")
+    @select('marketsTable').attr("style", "font-size: 12px")
 
   @updateMarket = (select, ticker) ->
     trend = formatter.trend ticker.last_trend
@@ -43,11 +44,20 @@ window.MarketSwitchUI = flight.component ->
         window.location.href = window.formatter.market_url($(@).data('market'))
 
     @.hide_accounts = $('tr.hide')
+
     $('.view_all_accounts').on 'click', (e) =>
       $el = $(e.currentTarget)
-      if @.hide_accounts.hasClass('hide')
-        $el.text($el.data('hide-text'))
-        @.hide_accounts.removeClass('hide')
-      else
+      if @.hide_accounts.hasClass('show1')
         $el.text($el.data('show-text'))
-        @.hide_accounts.addClass('hide')
+        for acc in @.hide_accounts
+          if acc.lastChild.firstChild.textContent != '0.0000'
+            if acc.attributes['class'].value.indexOf('show1') > 0
+              acc.attributes['class'].value = acc.attributes['class'].value.substr(0, acc.attributes['class'].value.indexOf('show1') - 1)
+              acc.attributes['class'].value += " hide"
+      else if @.hide_accounts.hasClass('hide')
+        $el.text($el.data('hide-text'))
+        for acc in @.hide_accounts
+          if acc.lastChild.firstChild.textContent != '0.0000'
+            if acc.attributes['class'].value.indexOf('hide') > 0
+              acc.attributes['class'].value = acc.attributes['class'].value.substr(0, acc.attributes['class'].value.indexOf('hide') - 1)
+              acc.attributes['class'].value += " show1"

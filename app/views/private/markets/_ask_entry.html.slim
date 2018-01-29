@@ -14,6 +14,7 @@
         span.input-group-addon = t(market.ask['currency'], scope: 'market.currency')
       .input-group.total
         label.input-group-addon = t('.total')
+        span.label.label-info.hint-fee
         = f.text_field :total, class: 'form-control'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
       = render partial: 'balance', locals: {currency: t(market.ask['currency'], scope: 'market.currency')}

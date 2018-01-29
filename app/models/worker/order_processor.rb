@@ -4,6 +4,7 @@ module Worker
     def initialize
       @cancel_queue = []
       create_cancel_thread
+      #create_test_thread
     end
 
     def process(payload, metadata, delivery_info)
@@ -63,11 +64,56 @@ module Worker
       Rails.logger.debug $!.backtrace.join("\n")
     end
 
+    def create_test_order
+      member_rand = rand(10)
+      member1 = 2
+      member2 = 3
+      if member_rand >= 5
+        member1 = 3
+        member2 = 2
+      end
+      order_bid = OrderBid.new(
+        source:        'APIv2',
+        state:         ::Order::WAIT,
+        member_id:     member1,
+        ask:           'gio',
+        bid:           'btc',
+        currency:      4,
+        ord_type:      'limit',
+        price:         1+rand(100)/10.0,
+        volume:        0.01,
+        origin_volume: 0.01
+      )
+      Ordering.new(order_bid).submit
+      order_ask = OrderAsk.new(
+        source:        'APIv2',
+        state:         ::Order::WAIT,
+        member_id:     member2,
+        ask:           'gio',
+        bid:           'btc',
+        currency:      4,
+        ord_type:      'limit',
+        price:         1+rand(100)/10.0,
+        volume:        0.01,
+        origin_volume: 0.01
+      )
+      Ordering.new(order_ask).submit
+    end
+
     def create_cancel_thread
       Thread.new do
         loop do
           sleep 5
           process_cancel_jobs
+        end
+      end
+    end
+
+    def create_test_thread
+      Thread.new do
+        loop do
+          sleep 5
+          create_test_order
         end
       end
     end
