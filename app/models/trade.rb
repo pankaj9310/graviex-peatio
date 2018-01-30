@@ -56,6 +56,7 @@ class Trade < ActiveRecord::Base
       at:     created_at.to_i,
       price:  price.to_s  || ZERO,
       volume: volume.to_s || ZERO,
+      volume2: (volume * price).to_s || ZERO,
       market: currency
     }
   end
