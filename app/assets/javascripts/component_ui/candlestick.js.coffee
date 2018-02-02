@@ -38,7 +38,7 @@ RANGE_DEFAULT =
 COLOR_ON =
   candlestick:
     color: '#990f0f'
-    upColor: '#000000'
+    upColor: '#116d0d'
     lineColor: '#cc1414'
     upLineColor: '#49c043'
   close:
@@ -58,10 +58,23 @@ COLOR = {
   candlestick: _.extend({}, COLOR_OFF.candlestick),
   close: _.extend({}, COLOR_OFF.close)
 }
+
 INDICATOR = {MA: false, EMA: false, OFF: false}
 MACD_INDICATOR = {MACD: false, OFF: false}
 SIG_INDICATOR = {SIG: false, OFF: false}
 HIST_INDICATOR = {HIST: false, OFF: false}
+LEGEND_INDICATOR = {Legend: false, OFF: false}
+
+VOLUME_IDX = 0
+MA5_IDX = 1
+MA10_IDX = 2
+EMA7_IDX = 3
+EMA30_IDX = 4
+MACD_IDX = 5 
+SIG_IDX = 6 
+HIST_IDX = 7
+CANDLESTICK_IDX = 8
+CLOSE_IDX = 9
 
 @CandlestickUI = flight.component ->
   @mask = ->
@@ -78,6 +91,7 @@ HIST_INDICATOR = {HIST: false, OFF: false}
     @$node.find('#candlestick_chart').highcharts()?.destroy()
 
     @initHighStock(data)
+    @adjustChart()
     @trigger 'market::candlestick::created', data
 
   @switchType = (event, data) ->
@@ -106,6 +120,34 @@ HIST_INDICATOR = {HIST: false, OFF: false}
             s.setVisible(visible, false)
       chart.redraw()
 
+  @adjustChart = () ->
+    #console.log('adjustChart', MACD_INDICATOR['MACD'])
+    if chart = @$node.find('#candlestick_chart').highcharts()
+      if MACD_INDICATOR['MACD']
+        chart.yAxis[2].update({
+          height: "15%",
+          top: "85%"
+        })
+        chart.yAxis[1].update({
+          height: "15%"
+          top: "70%"
+        })
+        chart.yAxis[0].update({
+          height: "70%"
+        })
+      else
+        chart.yAxis[2].update({
+          height: "0%"
+        })
+        chart.yAxis[1].update({
+          height: "15%"
+          top: "85%"
+        })
+        chart.yAxis[0].update({
+          height: "85%"
+        })
+      chart.redraw()
+
   @switchMACDIndicator = (event, data) ->
     MACD_INDICATOR[key] = false for key, val of MACD_INDICATOR
     MACD_INDICATOR[data.x] = true
@@ -114,17 +156,21 @@ HIST_INDICATOR = {HIST: false, OFF: false}
       for s in chart.series
         if s.userOptions.innerGroup == 'macd'
           s.setVisible(MACD_INDICATOR['MACD'], false)
+          @adjustChart()
+      #chart.redraw()
 
-#      for indicator, visible of MACD_INDICATOR
-#        for s in chart.series
-#          if s.userOptions.algorithm? && (s.userOptions.algorithm == indicator)
-#            s.setVisible(visible, false)
-      chart.redraw()
+  @switchLegendIndicator = (event, data) ->
+    LEGEND_INDICATOR[key] = false for key, val of LEGEND_INDICATOR
+    LEGEND_INDICATOR[data.x] = true
+
+#    #console.log(event, data)
+#    if chart = @$node.find('#candlestick_chart').highcharts()
+#      chart.tooltip.enabled = LEGEND_INDICATOR['Legend']
 
   @default_range = (unit) ->
     1000 * 60 * unit * 100
 
-  @initHighStock = (data) ->
+  @initHighStock = (data, tooltipEnabled) ->
     component = @
     range = @default_range(data['minutes'])
     unit = $("[data-unit=#{data['minutes']}]").text()
@@ -164,6 +210,7 @@ HIST_INDICATOR = {HIST: false, OFF: false}
         enabled: false
 
       tooltip:
+        enabled: true
 #        crosshairs: [{
 #            width: 0.5,
 #            dashStyle: 'solid',
@@ -182,8 +229,16 @@ HIST_INDICATOR = {HIST: false, OFF: false}
           grid_h  = Math.min(20, Math.ceil(chart_h/10))
           # x = Math.max(10, point.plotX-w-20)
           # y = Math.max(0, Math.floor(point.plotY/grid_h)*grid_h-20)
-          x = 8
-          y = 8
+
+          if LEGEND_INDICATOR['Legend'] == true && window.innerWidth > 1600
+            x = 5
+          else
+            x = -800
+            this.hide()
+
+#          console.log(this)
+
+          y = 5
           x: x, y: y
         useHTML: true
         formatter: ->
@@ -206,7 +261,7 @@ HIST_INDICATOR = {HIST: false, OFF: false}
             indicator: INDICATOR
             macd_indicator: MACD_INDICATOR
             format: (v, fixed=3) -> formatter.fixPriceGroup parseFloat(v)
-            format4: (v, fixed) -> 
+            format4: (v, fixed=4) -> 
               if fixed > 4 
                 formatter.round(v, 4) 
               else
@@ -293,14 +348,15 @@ HIST_INDICATOR = {HIST: false, OFF: false}
             formatter: -> formatter.fixPriceGroup @.value
             x: 2
             y: -5
-            zIndex: -7
+#            zIndex: -7
 #            format: '{value:.9f}'
           gridLineColor: '#222'
           gridLineDashStyle: 'ShortDot'
           top: "0%"
-          height: "70%"
+          height: "85%"
           lineColor: '#fff'
           minRange: if gon.ticker.last then parseFloat(gon.ticker.last)/25 else null
+          min: 0.000000000
           crosshair:
             snap: false
             interpolate: true
@@ -316,9 +372,15 @@ HIST_INDICATOR = {HIST: false, OFF: false}
         }
         {
           labels:
-            enabled: false
-          top: "70%"
-          gridLineColor: '#000'
+            enabled: true
+            align: 'left'
+#            reserveSpace: false
+            x: -73
+            y: -5
+          top: "85%"
+          gridLineColor: '#222'
+          gridLineDashStyle: 'ShortDot'
+#          gridLineColor: '#000'
           height: "15%"
           crosshair:
             snap: false
@@ -337,12 +399,7 @@ HIST_INDICATOR = {HIST: false, OFF: false}
             enabled: false
           top: "85%"
           gridLineColor: '#000'
-          height: "15%"
- #         crosshair:
- #           snap: false
- #           width: 0.5
- #           dashStyle: 'solid'
- #           color: '#777'
+          height: "0%"
         }
       ]
 
@@ -480,34 +537,36 @@ HIST_INDICATOR = {HIST: false, OFF: false}
     x: point[0], open: point[1], high: point[2], low: point[3], close: point[4]
 
   @createPointOnSeries = (chart, i, px, point) ->
-    chart.series[i].addPoint(point, true, true)
-    #last = chart.series[i].points[chart.series[i].points.length-1]
-    #console.log "Add point on #{i}: px=#{px} lastx=#{last.x}"
+    chart.series[i].addPoint(point, false, true)
+#    chart.series[i].data.push(point)
+#    last = chart.series[i].points[chart.series[i].points.length-1]
+#    console.log "Add point on #{i}: px=#{px} lastx=#{last.x} count=#{chart.series[i].points.length-1}", point
 
   @createPoint = (chart, data, i) ->
-    @createPointOnSeries(chart, 0, data.candlestick[i][0], data.candlestick[i])
-    @createPointOnSeries(chart, 1, data.close[i][0], data.close[i])
-    @createPointOnSeries(chart, 2, data.volume[i].x, data.volume[i])
+    @createPointOnSeries(chart, CANDLESTICK_IDX, data.candlestick[i][0], data.candlestick[i])
+    @createPointOnSeries(chart, CLOSE_IDX, data.close[i][0], data.close[i])
+    @createPointOnSeries(chart, VOLUME_IDX, data.volume[i].x, data.volume[i])
     chart.redraw(true)
 
   @updatePointOnSeries = (chart, i, px, point) ->
     if chart.series[i].points
       last = chart.series[i].points[chart.series[i].points.length-1]
       if px == last.x
-        last.update(point, false)
+        last.update(point, true)
+#        console.log "Update point on #{i}: px=#{px} lastx=#{last.x}", point
       else
         console.log "Error update on series #{i}: px=#{px} lastx=#{last.x}"
 
   @updatePoint = (chart, data, i) ->
-    @updatePointOnSeries(chart, 0, data.candlestick[i][0], @formatPointArray(data.candlestick[i]))
-    @updatePointOnSeries(chart, 1, data.close[i][0], data.close[i][1])
-    @updatePointOnSeries(chart, 2, data.volume[i].x, data.volume[i])
+    @updatePointOnSeries(chart, CANDLESTICK_IDX, data.candlestick[i][0], data.candlestick[i])
+    @updatePointOnSeries(chart, CLOSE_IDX, data.close[i][0], data.close[i][1])
+    @updatePointOnSeries(chart, VOLUME_IDX, data.volume[i].x, data.volume[i])
     chart.redraw(true)
 
   @process = (chart, data) ->
     for i in [0..(data.candlestick.length-1)]
-      current = chart.series[0].points.length - 1
-      current_point = chart.series[0].points[current]
+      current = chart.series[CANDLESTICK_IDX].points.length - 1
+      current_point = chart.series[CANDLESTICK_IDX].points[current]
 
       if data.candlestick[i][0] > current_point.x
         @createPoint chart, data, i
@@ -523,15 +582,18 @@ HIST_INDICATOR = {HIST: false, OFF: false}
       @running = false
 
   @liveRange = (chart) ->
-    p1 = chart.series[0].points[ chart.series[0].points.length-1 ].x
-    p2 = chart.series[10].points[ chart.series[10].points.length-1 ].x
-    p1 == p2
+#    p1 = chart.series[CANDLESTICK_IDX].points[ chart.series[CANDLESTICK_IDX].points.length-1 ].x
+#    p2 = chart.series[10].points[ chart.series[10].points.length-1 ].x
+#    p1 == p2
+    return true
 
   @after 'initialize', ->
     @on document, 'market::candlestick::request', @request
     @on document, 'market::candlestick::response', @init
     @on document, 'market::candlestick::trades', @updateByTrades
+    @on document, 'switch::legend_indicator_switch', @switchLegendIndicator
     @on document, 'switch::main_indicator_switch', @switchMainIndicator
     @on document, 'switch::indicator_switch', @switchMACDIndicator
     @on document, 'switch::type_switch', @switchType
+
 

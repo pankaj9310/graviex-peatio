@@ -8,6 +8,8 @@
     priceAlertSel: '.hint-price-disadvantage'
     positionsLabelSel: '.hint-positions'
     feeLabelSel: '.hint-fee'
+    feeLabelInfo: '.fee-info'
+    feeLabelDiscountInfo: '.fee-discount-info'
 
     priceSel: 'input[id$=price]'
     volumeSel: 'input[id$=volume]'
@@ -69,6 +71,7 @@
     @cleanMsg()
     ef_class = 'shake shake-constant hover-stop'
     json = JSON.parse(data.responseText)
+    console.log(json)
     @select('dangerSel').append(JST["templates/hint_order_warning"]({msg: json.message})).show()
       .addClass(ef_class).wait(500).removeClass(ef_class)
     window.sfx_warning()
@@ -109,15 +112,21 @@
 
     if @select('priceSel').val() != 0.0
       @select('feeLabelSel').hide().text(formatter.fixPriceGroup(order.fee)).fadeIn()
+      @select('feeLabelInfo').hide().text(formatter.round(order.fee_actual_percent, 2) + "%").fadeIn()
     else
       @select('feeLabelSel').fadeOut().text('')
+      @select('feeLabelInfo').fadeOut().text('')
+
+    if order.gio_discount_flag == 1
+      @select('feeLabelDiscountInfo').fadeOut().text('')
+    else
+      @select('feeLabelDiscountInfo').hide().text('how to get 50% market fee discount').fadeIn()
 
     if BigNumber(available).equals(0)
       @select('positionsLabelSel').hide().text(gon.i18n.place_order["full_#{type}"]).fadeIn()
     else
       @select('positionsLabelSel').fadeOut().text('')
     node.text(available)
-    #console.log("priceorder/order_fee = " + order.fee)
 
   @priceAlertHide = (event) ->
     @select('priceAlertSel').fadeOut ->

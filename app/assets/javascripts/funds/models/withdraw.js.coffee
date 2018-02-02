@@ -21,6 +21,7 @@ class Withdraw extends PeatioModel.Model
       when 'doge' then 'doges'
       when 'ltc' then 'ltcs'
       when 'eth' then 'ethers'
+      when 'psd' then 'poseidons'
       #currency
 
 window.Withdraw = Withdraw

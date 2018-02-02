@@ -28,7 +28,8 @@ class SessionsController < ApplicationController
         save_session_key @member.id, cookies['_peatio_session']
         save_signup_history @member.id
         MemberMailer.notify_signin(@member.id).deliver if @member.activated?
-        redirect_back_or_settings_page
+        # redirect_back_or_settings_page
+        redirect_to market_path(Market.first)
       end
     else
       increase_failed_logins

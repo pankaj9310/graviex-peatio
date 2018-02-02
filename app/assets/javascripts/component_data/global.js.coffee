@@ -14,27 +14,28 @@ window.GlobalData = flight.component ->
     [bids_sum, asks_sum] = [0, 0]
 
     _.each data.asks, ([price, volume]) ->
-      if asks.length == 0 || price < _.last(asks)[0]*100
-        asks.push [parseFloat(price), asks_sum += parseFloat(volume)]
+#      if asks.length == 0 || price < _.last(asks)[0]*100
+      asks.push [parseFloat(price), asks_sum += parseFloat(volume)]
 
     _.each data.bids, ([price, volume]) ->
-      if bids.length == 0 || price > _.last(bids)[0]/100
-        bids.push [parseFloat(price), bids_sum += parseFloat(volume)]
+#      if bids.length == 0 || price > _.last(bids)[0]/100
+      bids.push [parseFloat(price), bids_sum += parseFloat(volume)]
 
-    la = _.last(asks)
-    lb = _.last(bids)
-    if la && lb
-      mid = (_.first(bids)[0] + _.first(asks)[0]) / 2
-      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (mid-lb[0])*0.8, (la[0]-mid)*0.8])
-    else if !la? && lb
-      mid = _.first(bids)[0]
-      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (mid-lb[0])*0.8])
-    else if la && !lb?
-      mid = _.first(asks)[0]
-      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (la[0]-mid)*0.8])
+#    la = _.last(asks)
+#    lb = _.last(bids)
+#    if la && lb
+#      mid = (_.first(bids)[0] + _.first(asks)[0]) / 2
+#      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (mid-lb[0])*0.8, (la[0]-mid)*0.8])
+#    else if !la? && lb
+#      mid = _.first(bids)[0]
+#      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (mid-lb[0])*0.8])
+#    else if la && !lb?
+#      mid = _.first(asks)[0]
+#      offset = Math.min.apply(Math, [Math.max(mid*0.1, 1), (la[0]-mid)*0.8])
 
     @trigger 'market::depth::response', 
-      asks: asks, bids: bids, high: mid + offset, low: mid - offset 
+      asks: asks, bids: bids
+#, high: mid + offset, low: mid - offset 
 
   @refreshTicker = (data) ->
     unless @.last_tickers

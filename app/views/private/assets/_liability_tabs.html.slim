@@ -5,6 +5,7 @@
     li: a.doge-proof href="#doge-proof" data-toggle="tab" == t('.verify-doge')
     li: a.ltc-proof href="#ltc-proof" data-toggle="tab" == t('.verify-ltc')
     li: a.eth-proof href="#eth-proof" data-toggle="tab" == t('.verify-eth')
+    li: a.psd-proof href="#psd-proof" data-toggle="tab" == t('.verify-psd')
     /li
 
   .tab-content
@@ -48,3 +49,10 @@
           = @eth_proof.sum
       = render 'liability_data', account: @eth_account, proof: @eth_proof
 
+    #psd-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.psd-assets-total')
+        span.currency
+          == t("currency.icon.psd")
+          = @psd_proof.sum
+      = render 'liability_data', account: @psd_account, proof: @psd_proof

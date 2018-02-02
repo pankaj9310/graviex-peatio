@@ -227,7 +227,7 @@ module ApplicationHelper
     if val
       content_tag(:span, 'YES', class: 'label label-success')
     else
-      content_tag(:span, 'NO', class: 'label label-danger')
+      content_tag(:span, 'NO', class: 'label label-failed')
     end
   end
 

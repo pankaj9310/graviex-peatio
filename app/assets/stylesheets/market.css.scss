@@ -469,7 +469,7 @@ chat_tabs_wrapper {
 
 #ticker {
   width: $ticker-width; height: $ticker-height;
-  bottom: $gutter_4x + $right-entry-height + $my-orders-height + $depths-height; right: $gutter;
+  bottom: $gutter_3x + $right-entry-height + $my-orders-height + $depths-height; right: $gutter;
 
   .ask, .last, .bid {
     text-align: center;
@@ -555,7 +555,7 @@ chat_tabs_wrapper {
   .dropdown-wrapper {
     position: absolute;
     height: 100px;
-    top: $market-list-height + $gutter-3x; left: $market-trades-width + $gutter;
+    top: $market-list-height + $gutter-3x + 37; left: $market-trades-width + $gutter;
     z-index: 998;
   }
 }
@@ -599,9 +599,9 @@ chat_tabs_wrapper {
 #market_list_wrapper {
   .dropdown-wrapper {
     position: absolute;
-    width: 200px;
+    width: 150px;
     height: 100px;
-    top: $gutter; left: $market-list-width + $gutter;
+    top: $gutter + 37; left: $market-list-width + $gutter;
     z-index: 998;
   }
 }
@@ -611,28 +611,34 @@ chat_tabs_wrapper {
   top: $gutter; left: $gutter;
   width: $market-list-width; height: $market-list-height;
   z-index: 999;
+  
+  .panel-default {
 
-  .panel-body-content {
-    height: $market-list-height - $panel_table_header_high;
+    width: $market-list-width;
 
-    td.price {
-      .fill { color: #333; }
-    }
+    .panel-body-content {
+      height: $market-list-height - $panel_table_header_high;
 
-    td.change {
-      min-width: 72px;
-    }
+      td.price {
+        .fill { color: #333; }
+      }
 
-    .markets {
-      tr { display: none; }
-      &.all { tr { display: block; } }
-      &.cny { tr.quote-cny { display: block; } }
-      &.btc { tr.quote-btc { display: block; } }
-      &.ltc { tr.quote-ltc { display: block; } }
-      &.doge { tr.quote-doge { display: block; } }
-      &.gio { tr.quote-gio { display: block; } }
-      &.eth { tr.quote-eth { display: block; } }
+      td.change {
+        min-width: 72px;
+      }
+
+      .markets {
+        tr { display: none; }
+        &.all { tr { display: block; } }
+        &.cny { tr.quote-cny { display: block; } }
+        &.btc { tr.quote-btc { display: block; } }
+        &.ltc { tr.quote-ltc { display: block; } }
+        &.doge { tr.quote-doge { display: block; } }
+        &.gio { tr.quote-gio { display: block; } }
+        &.eth { tr.quote-eth { display: block; } }
+        &.psd { tr.quote-psd { display: block; } }
       /*markets*/
+      }
     }
   }
 }
@@ -732,7 +738,7 @@ chat_tabs_wrapper {
 
     span.input-group-addon {
       padding: 3px 6px 0px 6px;
-      min-width: 40px;
+      min-width: 50px;
       text-align: left;
       color: #aaa;
     }
@@ -751,15 +757,31 @@ chat_tabs_wrapper {
 
   .hint-price-disadvantage, .hint-positions  {
     top: 2px;
-    left: 72px;
+    left: 2px;
     margin-left: 0px;
     position: absolute;
     z-index: 10;
   }
 
   .hint-fee  {
-    top: 14px;
+    top: 12px;
     left: 72px;
+    margin-left: 0px;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .fee-info  {
+    top: 2px;
+    left: 72px;
+    margin-left: 0px;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .fee-discount-info  {
+    top: 103px;
+    left: 80px;
     margin-left: 0px;
     position: absolute;
     z-index: 10;
@@ -767,7 +789,12 @@ chat_tabs_wrapper {
 
   .label { font-size: inherit; }
   .label.label-info { color: $brand-info; font-size: 9px; padding: 0 0 0 0  }
+  .label.label-fee { color: $brand-info; font-size: 10px; padding: 0 0 0 0  }
+  .label.label-fee-info { color: $brand-info; font-size: 10px; padding: 0 0 0 0  }
+  .label.label-fee-discount-info { color: #e6b800; font-size: 10px; padding: 0 0 0 0  }
+  .label.label-fee-discount-info:hover { text-decoration: underline; }
   .label.label-success { color: $brand-success }
+  .label.label-failed { color: $brand-danger }
   .label.label-danger { color: $brand-danger; font-size: 9px; padding: 0 0 0 0 }
 
   span.status-info, .status-success, .status-danger, .status-fee {
@@ -837,7 +864,7 @@ table {
   padding: 6px 0 6px 6px;
   font-size: 11px;
 
-  & > div { display: inline-block; width: 70px; }
+  & > div { display: inline-block; width: 100px; }
   & > div.tooltip-ma { width: 76; margin-top: 3px; }
   & > div.tooltip-ticker { margin-top: 5px; }
 

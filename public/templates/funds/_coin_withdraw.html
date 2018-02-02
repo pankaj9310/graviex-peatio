@@ -54,18 +54,16 @@
 
 <table class="table withdraw-history" ng-controller="WithdrawHistoryController as wdCtrl">
   <tr>
-    <th>{{ "funds.withdraw_history.number" | t }}</th>
     <th>{{ "funds.withdraw_history.withdraw_time" | t }}</th>
-    <th>{{ "funds.withdraw_history.withdraw_address" | t }}</th>
+    <th>{{ "funds.deposit_history.txid" | t }}</th>
     <th>{{ "funds.withdraw_history.actual_amount" | t }}</th>
     <th>{{ "funds.withdraw_history.miner_fee" | t }}</th>
     <th>{{ "funds.withdraw_history.state_and_action" | t }}</th>
   </tr>
   <tr ng-repeat="withdraw in wdCtrl.withdraws | orderBy:predicate">
-    <td>{{withdraw.id}}</td>
     <td>{{withdraw.created_at | date:'yyyy-MM-dd HH:mm'}}</td>
-    <td title="{{withdraw.fund_extra}} @ {{withdraw.fund_uid}}">
-      <a href="{{withdraw.blockchain_url}}" target='_blank'>{{withdraw.fund_uid | truncate: 20}}</a>
+    <td>
+      <a href="{{withdraw.blockchain_url}}" target='_blank'>{{withdraw.txid | truncate: 20}}</a>
     </td>
     <td>{{withdraw.amount}}</td>
     <td>{{withdraw.fee}}</td>

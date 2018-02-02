@@ -1,6 +1,6 @@
 class Member extends PeatioModel.Model
   @configure 'Member', 'sn', 'display_name', 'created_at', 'updated_at', 'state',
-    'country_code', 'phone_number', 'name', 'app_activated', 'sms_activated'
+    'country_code', 'phone_number', 'name', 'app_activated', 'sms_activated', 'has_gio_deposite_50'
 
   @initData: (records) ->
     PeatioModel.Ajax.disable ->

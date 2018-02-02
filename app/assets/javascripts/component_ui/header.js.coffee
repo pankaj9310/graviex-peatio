@@ -1,7 +1,6 @@
 @HeaderUI = flight.component ->
   @attributes
     vol: 'span.vol'
-    vol2: 'span.vol2'
     amount: 'span.amount'
     high: 'span.high'
     low: 'span.low'
@@ -9,7 +8,7 @@
     sound: 'input[name="sound-checkbox"]'
 
   @refresh = (event, ticker) ->
-    @select('vol').text("#{ticker.volume} #{gon.market.base_unit.toUpperCase()} / #{ticker.volume2} #{gon.market.quote_unit.toUpperCase()}") 
+    @select('vol').text("#{formatter.round(ticker.volume, 1)} #{gon.market.base_unit.toUpperCase()} / #{formatter.round(ticker.volume2, 4)} #{gon.market.quote_unit.toUpperCase()}") 
     @select('high').text(ticker.high)
     @select('low').text(ticker.low)
 

@@ -207,7 +207,7 @@ class ApplicationController < ActionController::Base
           currency: account.currency,
           balance: account.balance,
           locked: account.locked,
-          # gio_discount: account.gio_discount
+          gio_discount: account.gio_discount
         } if account.currency_obj.try(:visible)
         memo
       end

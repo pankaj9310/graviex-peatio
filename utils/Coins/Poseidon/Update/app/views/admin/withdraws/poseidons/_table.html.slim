@@ -1,0 +1,11 @@
+- unless @one_poseidons.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {poseidons: @one_poseidons}
+- unless @all_poseidons.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {poseidons: @all_poseidons}
+
+- if @all_poseidons.empty? and @one_poseidons.empty?
+  h3.text-info.text-center = t('.empty')

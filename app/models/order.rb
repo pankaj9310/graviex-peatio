@@ -62,6 +62,13 @@ class Order < ActiveRecord::Base
     member.trigger('order', json)
   end
 
+  def check_fee
+    if volume * price * fee < 0.000000001
+       Rails.logger.debug "check fee " + ( volume * price * fee - 0.000000001).to_s + " volume " + volume.to_s + " price " + price.to_s + " fee " + fee.to_s
+       raise "Fee is too small"
+    end
+  end
+
   def strike(trade)
     raise "Cannot strike on cancelled or done order. id: #{id}, state: #{state}" unless state == Order::WAIT
 

@@ -1,0 +1,27 @@
+= content_for :frame do
+  .container
+    ul.nav.nav-justified.assets-nav
+      li.active data-scroll-nav='0'
+        a = t('.liability-proof')
+      li        data-scroll-nav='1' style='display:none'
+        a = t('.btc-assets')
+      li        data-scroll-nav='2' style='display:none'
+        a = t('.gio-assets')
+      li        data-scroll-nav='3' style='display:none'
+        a = t('.doge-assets')
+      li        data-scroll-nav='4' style='display:none'
+        a = t('.ltc-assets')
+      li        data-scroll-nav='5' style='display:none'
+        a = t('.eth-assets')
+      /li5
+
+    - if current_user
+      div data-scroll-index=0 = render 'liability_proof'
+
+/    div data-scroll-index=1 = render 'btc_assets'
+/    div data-scroll-index=2 = render 'gio_assets'
+/    div data-scroll-index=3 = render 'doge_assets'
+/    div data-scroll-index=4 = render 'ltc_assets'
+/    div data-scroll-index=5 = render 'eth_assets'
+
+

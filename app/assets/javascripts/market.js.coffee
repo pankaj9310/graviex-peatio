@@ -59,7 +59,7 @@ $ ->
   MemberData.attachTo(document, {pusher: window.pusher}) if gon.accounts
 
   CandlestickUI.attachTo('#candlestick')
-  SwitchUI.attachTo('#range_switch, #indicator_switch, #main_indicator_switch, #type_switch')
+  SwitchUI.attachTo('#range_switch, #indicator_switch, #main_indicator_switch, #type_switch, #legend_indicator_switch')
 
   $('.panel-body-content').niceScroll
     autohidemode: true

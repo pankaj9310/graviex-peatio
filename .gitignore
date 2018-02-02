@@ -56,4 +56,4 @@ tags
 *.csr
 enable_ssl.txt
 run_slanger.sh
-
+/utils/add_coin_config.json

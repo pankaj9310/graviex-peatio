@@ -170,7 +170,10 @@ class Update:
 			curr_f.write("  symbol: \"" + cfg_json["symbol"] + "\"" + "\n")
 			curr_f.write("  coin: " + cfg_json["coin"] + "\n")
 			curr_f.write("  quick_withdraw_max: 0" + "\n")
+                        curr_f.write("  withdraw_limit: " + cfg_json["withdraw_limit"] + "\n")
+			curr_f.write("  withdraw_day_limit: " + cfg_json["withdraw_day_limit"] + "\n")
 			curr_f.write("  rpc: " + cfg_json["rpc"] + "\n")
+			curr_f.write("  proto: " + cfg_json["proto"] + "\n")
 			curr_f.write("  blockchain: " + cfg_json["blockchain"] + "\n")
 			curr_f.write("  address_url: " + cfg_json["address_url"] + "\n")
 			curr_f.write("  assets:" + "\n")
@@ -204,13 +207,13 @@ class Update:
 			mark_f.write("  name: " + cfg_json["markets_name"] + "\n")
 			mark_f.write("  base_unit: " + cfg_json["markets_base_unit"] + "\n")
 			mark_f.write("  quote_unit: " + cfg_json["markets_quote_unit"] + "\n")
-			mark_f.write("  price_group_fixed: 0" + "\n")
+			mark_f.write("  #price_group_fixed: 0" + "\n")
 			mark_f.write("  bid: {fee: " + cfg_json["markets_bit_fee"] + ", currency: " 
 				+ cfg_json["markets_quote_unit"] + ", fixed: " + cfg_json["markets_bit_fixed"] + "}\n")
 			mark_f.write("  ask: {fee: " + cfg_json["markets_ask_fee"] + ", currency: " 
 				+ cfg_json["markets_base_unit"] + ", fixed: " + cfg_json["markets_ask_fixed"] + "}\n")
 			mark_f.write("  sort_order: 1" + "\n")
-			mark_f.write("  visible: false" + "\n")
+			mark_f.write("  #visible: true" + "\n")
 		with open(coin_update_path + "/app/controllers/admin/deposits/" + cfg_json["key"] + "s_controller.rb", "w+") as adm_dep_ctrl_f:
 			adm_dep_ctrl_f.write("module Admin\n")
 			adm_dep_ctrl_f.write("  module Deposits\n")
@@ -300,6 +303,7 @@ class Update:
 			app_mod_with_f.write("end\n")
 		with open(coin_update_path + "/app/views/admin/deposits/" + cfg_json["key"] + "s/index.html.slim", "w+") as app_v_adm_dep_f:
 			app_v_adm_dep_f.write("= table_for(@" + cfg_json["key"] + "s, class: 'table table-condensed table-hover') do |t|\n")
+			app_v_adm_dep_f.write("  - t.column :txid do |x|\n")
 			app_v_adm_dep_f.write("    a href='#{x.blockchain_url}' target='_blank'\n")
 			app_v_adm_dep_f.write("      code.text-info = x.txid.truncate(36)\n")
 			app_v_adm_dep_f.write("  - t.column :created_at\n")
@@ -316,7 +320,7 @@ class Update:
 			app_v_adm_dep_f.write("      span = ' / '\n")
 			app_v_adm_dep_f.write("      = link_to t('.accept'), url_for([:admin, x]), method: 'PATCH', confirm: t('.accept_confirm')\n\n")
 			app_v_adm_dep_f.write(".pull-right = paginate @" + cfg_json["key"] + "s\n")
-		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s/index.html.slim", "w+") as app_v_adm_with_f:
+		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s//_table.html.slim", "w+") as app_v_adm_with_f:
 			app_v_adm_with_f.write("= table_for(" + cfg_json["key"] + "s, class: 'table table-condensed table-hover', model: Withdraws::" + cfg_json["name"] + ") do |t|\n")
 			app_v_adm_with_f.write("  - t.column :id, class: 'col-xs-2'\n")
 			app_v_adm_with_f.write("  - t.column :created_at, class: 'col-xs-3'\n")
@@ -330,7 +334,7 @@ class Update:
 			app_v_adm_with_f.write("  - t.column :state_and_action, class: 'col-xs-3' do |x|\n")
 			app_v_adm_with_f.write("    span = \"#{x.aasm_state_text} / \"\n")
 			app_v_adm_with_f.write("    = link_to t(\"actions.view\"), url_for([:admin, x]), target: '_blank'")
-		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s/_table.html.slim", "w+") as app_v_adm_with_f:
+		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s/index.html.slim"", "w+") as app_v_adm_with_f:
 			app_v_adm_with_f.write("- unless @one_" + cfg_json["key"] + "s.empty?\n")
 			app_v_adm_with_f.write("  .panel.panel-primary\n")
 			app_v_adm_with_f.write("    .panel-heading: span = t('.one')\n")
@@ -405,7 +409,7 @@ class Update:
 		liab_f_data = None
 		with open(coin_update_path + "/app/views/private/assets/_liability_tabs.html.slim", "r") as f:
 			liab_f_data = f.read();
-		liab_f_data_new = liab_f_data.replace("/li", "li:        a." + cfg_json["code"] + "-proof href=\"#" + cfg_json["code"] + "-proof\" data-toggle=\"tab\" == t('.verify-" + cfg_json["code"] + "')\n    /li")
+		liab_f_data_new = liab_f_data.replace("/li", "li: a." + cfg_json["code"] + "-proof href=\"#" + cfg_json["code"] + "-proof\" data-toggle=\"tab\" == t('.verify-" + cfg_json["code"] + "')\n    /li")
 		liab_f_data_new = liab_f_data_new + "    #" + cfg_json["code"] + "-proof.tab-pane:        .trade-wrapper\n"
 		liab_f_data_new = liab_f_data_new + "      .assets\n"
 		liab_f_data_new = liab_f_data_new + "        span.title = t('." + cfg_json["code"] + "-assets-total')\n"
@@ -420,11 +424,11 @@ class Update:
 			file_data = f.read();
 		pos = file_data.find("/li")
 		if pos == -1:
-			raise Exception("Not found #li /app/views/private/assets/index.html.slim")
+			raise Exception("Not found /li /app/views/private/assets/index.html.slim")
 		data_id = int(file_data[pos + 3 : file_data.find(" ", pos)])
 		data_id = data_id + 1
 		tag_str = "/li" + str(data_id-1)
-		file_data_new = file_data.replace(tag_str, "      li        data-scroll-nav='" + str(data_id) + "'\n        a = t('." + cfg_json["code"] + "-assets')\n" + "/li" + str(data_id) + "\n")
+		file_data_new = file_data.replace(tag_str, "li        data-scroll-nav='" + str(data_id) + "'\n        a = t('." + cfg_json["code"] + "-assets')\n" + "/li" + str(data_id) + "\n")
 		file_data_new = file_data_new.replace("/div", "    div data-scroll-index=" + str(data_id) + " = render '" + cfg_json["code"] + "_assets'\n/div")
 		with open(coin_update_path + "/app/views/private/assets/index.html.slim", "w") as f:
 			f.write(file_data_new)
@@ -495,7 +499,7 @@ class Update:
 		file_data = None
 		with open(coin_update_path + "/config/locales/server.en.yml", "r") as f:
 			file_data = f.read();
-		file_data_new = file_data.replace("#models", "withdraws/" + cfg_json["code"] + ": Withdraw\n      #models")
+		file_data_new = file_data.replace("#models", "withdraws/" + cfg_json["key"] + ": Withdraw\n      #models")
 		file_data_new = file_data_new.replace("#dposits", "deposits/" + cfg_json["key"] + ":\n        created_at: Created At\n        txid: Transaction ID\n        amount: Amount\n        confirmations: Confirmation\n        aasm_state_text: State\n      #dposits")
 		file_data_new = file_data_new.replace("#withdraws1", "withdraws/" + cfg_json["key"] + ":\n        id: ID\n        member_name: Account\n        currency_obj_key_text: Currency\n        state_and_actions: State/Action\n        fund_extra_text: Withdraw Label\n        fund_extrat: Withdraw Label\n        fund_source: Bank\n        fund_uid: Account\n        created_at: Created At\n        sum: Amount\n        amount: Amount\n        remark: Remark\n        fee: Fee\n      #withdraws1")
 		file_data_new = file_data_new.replace("#address", cfg_json["key"] + "_ismine: Used Address\n              " + cfg_json["key"] + "_invalid: Invalid Address\n              #address")
@@ -503,7 +507,7 @@ class Update:
 		file_data_new = file_data_new.replace("#market1", cfg_json["code"] + ": " + cfg_json["code_name"] + "\n      #market1")
 		file_data_new = file_data_new.replace("#currency", cfg_json["key"] + ":\n      key: " + cfg_json["code_name"] + "\n      code: " + cfg_json["code_name"] + "\n      name: " + cfg_json["name"] + "\n      format: '0,0.0000'\n    #currency")
 		file_data_new = file_data_new.replace("#deposit_channel", cfg_json["key"] + ":\n      key: Block Chain\n      title: " + cfg_json["name"] + " Deposits\n      intro: Deposit " + cfg_json["key"] + " from your own wallet address to GRAVIEX account\n      latency: 1 confirmation\n      transfer: Manual\n      go: Deposit\n    #deposit_channel")
-		file_data_new = file_data_new.replace("#private_deposits", cfg_json["key"] + ":\n        gen_address:\n          require_transaction: it can't generate new address if it hasn't been used.\n      #private_deposits")
+		file_data_new = file_data_new.replace("#private_deposits", cfg_json["key"] + "s:\n        gen_address:\n          require_transaction: it can't generate new address if it hasn't been used.\n      #private_deposits")
 		file_data_new = file_data_new.replace("#withdraws_msgs", cfg_json["key"] + "s:\n        destroy:\n          notice: Withdraw been canceled, frozen balance has returned to your account\n        update:\n          notice: Withdraw request is submit successful, we will process it as soon\n            as possible\n          alert_two_factor: Two-Factor Authentication error\n        new:\n          submit: Submit\n          allin: All-In\n          fund_source_label: Label\n          manage_fund_source: Manage Fund Source\n        create:\n          notice: Withdrawal request successfully submitted. Use the info below to\n            complete the bank transfer.\n      #withdraws_msgs")
 		file_data_new = file_data_new.replace("#assets", cfg_json["code"] + "-assets: " + cfg_json["code_name"] + " Assets\n        #assets")
 		file_data_new = file_data_new.replace("#liab_veriffy", "verify-" + cfg_json["code"] + ": Verify My " + cfg_json["code_name"] + " Assets\n        #liab_veriffy")
@@ -521,7 +525,7 @@ class Update:
 		file_data_new = file_data_new.replace("#deposit_coin", "deposits/" + cfg_json["key"] + ":\n    aasm_state:\n      submitted: Submitted\n      accepted: Accepted\n      checked: Checked\n      warning: Warning\n  #deposit_coin")
 		file_data_new = file_data_new.replace("#easy_table", cfg_json["key"] + ":\n      amount: Amount\n      txid: TxId\n      created_at: Created At\n      confirmations: Confirmations\n      member_name: Member\n      state_and_actions: State/Actions\n      currency_obj_key_text: Currency\n    #easy_table")
 		file_data_new = file_data_new.replace("#enum_currence", cfg_json["code"] + ": " + cfg_json["code_name"] + "\n      #enum_currence")
-		file_data_new = file_data_new.replace("#fund_source", cfg_json["code"] + ": " + cfg_json["name"] + "\n        #fund_source")
+		file_data_new = file_data_new.replace("#fund_source", cfg_json["key"] + ": " + cfg_json["name"] + "\n        #fund_source")
 		file_data_new = file_data_new.replace("#withdraw_channel", cfg_json["key"] + ":\n      key: Blockchain\n      title: " + cfg_json["name"] + " Blockchain\n      intro: Withdraw " + cfg_json["name"] + " to your own " + cfg_json["name"] + " wallet\n      latency: 10 minutes\n      transfer: Manual\n      go: Withdraw\n    #withdraw_channel")
 		file_data_new = file_data_new.replace("#withdraws_coin", "withdraws/" + cfg_json["key"] + ":\n    aasm_state:\n      submitting: Submitting\n      submitted: Submitted\n      rejected: Rejected\n      accepted: Accepted\n      suspect: Suspect\n      processing: processing\n      done: Done\n      almost_done: Almost Done\n      canceled: Cancelled\n      failed: Failed\n  #withdraws_coin")
 		with open(coin_update_path + "/config/locales/server.en.yml", "w") as f:
@@ -564,13 +568,13 @@ class Update:
 		file_data = None
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "r") as f:
 			file_data = f.read();
-		file_data_new = file_data.replace("#currency", "when '" + cfg_json["code"] + "' then '" + cfg_json["code"] + "s'\n      #currency")
+		file_data_new = file_data.replace("#currency", "when '" + cfg_json["key"] + "' then '" + cfg_json["code"] + "s'\n      #currency")
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "w") as f:
 			f.write(file_data_new)
 		file_data = None
 		with open(coin_update_path + "/app/assets/stylesheets/market.css.scss", "r") as f:
 			file_data = f.read();
-		file_data_new = file_data.replace("/*markets*/", "&." + cfg_json["code"] + " { tr.quote-btc { display: block; } }\n      /*markets*/")
+		file_data_new = file_data.replace("/*markets*/", "&." + cfg_json["code"] + " { tr.quote-" + cfg_json["code"] + " { display: block; } }\n      /*markets*/")
 		with open(coin_update_path + "/app/assets/stylesheets/market.css.scss", "w") as f:
 			f.write(file_data_new)
 		return id;
@@ -579,7 +583,7 @@ class Db:
 	def CreateQuery(self, cfg_json, folder, currency_id):
 		coin_update_path = "./Coins/" + cfg_json["name"] + "/" + folder
 		with open(coin_update_path + "/update_accounts.sql", "w+") as f:
-			f.write("insert into accounts(member_id, currency)\n	select member_id, " + str(currency_id) + " from members")
+			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, o from members")
 
 if __name__ == '__main__':
 	print "start adding coin"

@@ -18,7 +18,7 @@ BORDER_WIDTH = 1
 
     @$node.resize ->
       navbar_h       = $('.navbar').height() + BORDER_WIDTH
-      markets_h      = $('#market_list').height() + BORDER_WIDTH
+      markets_h      = $('#market_list').height() + 2*BORDER_WIDTH
       entry_h        = $('#ask_entry').height() + 2*BORDER_WIDTH
       depths_h       = $('#depths_wrapper').height() + 2*BORDER_WIDTH
       my_orders_h    = $('#my_orders').height() + 2*BORDER_WIDTH
@@ -35,7 +35,7 @@ BORDER_WIDTH = 1
       $('#order_book').height(order_h)
       $('#order_book .panel-body-content').height(order_h - panel_table_header_high - 2*PANEL_PADDING)
 
-      trades_h = window_h - navbar_h - markets_h - gutter_3x - BORDER_WIDTH
+      trades_h = window_h - navbar_h - markets_h - gutter_2x - 2*BORDER_WIDTH
       $('#market_trades').height(trades_h)
       $('#market_trades .panel').height(trades_h - 2*BORDER_WIDTH)
       $('#market_trades .panel-body-content').height(trades_h - 2*BORDER_WIDTH - panel_table_header_high - 2*PANEL_PADDING)

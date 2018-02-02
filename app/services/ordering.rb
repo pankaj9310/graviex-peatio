@@ -33,6 +33,7 @@ class Ordering
   def do_submit(order)
     order.fix_number_precision # number must be fixed before computing locked
     order.locked = order.origin_locked = order.compute_locked
+    order.check_fee # check fee
     order.save!
 
     account = order.hold_account

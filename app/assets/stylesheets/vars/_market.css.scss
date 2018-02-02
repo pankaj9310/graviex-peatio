@@ -2,8 +2,8 @@
 -------------------------------------------------------------- */
 
 $gutter: 2px;
-$min-width: 1180px;
-$min-height: 620px;
+$min-width: 1400px;
+$min-height: 800px;
 
 $navbar-height: $navbar-height + 1px;
 $panel_table_header_high: 37px;
@@ -15,25 +15,25 @@ $gutter-6x: $gutter * 6;
 
 $entry-width: 332px;
 $entry-height: 496px;
-$right-entry-height: 196px;
+$right-entry-height: 206px;
 
-$ticker-width: $entry-width * 2 + $gutter;
-$ticker-height: 55px;
+$ticker-width: ($entry-width) * 2 + $gutter;
+$ticker-height: 56px;
 
-$depths-width: $entry-width * 2 + $gutter;
-$depths-height: 102px;
+$depths-width: ($entry-width) * 2 + $gutter;
+$depths-height: 152px;
 
 $my-orders-width: $depths-width;
 $my-orders-height: 184px;
 
 $order-book-width: $depths-width;
-$order-book-height: $min-height - $navbar-height - $right-entry-height - $ticker-height - $depths-height - $my-orders-height - $gutter-6x;
+$order-book-height: $min-height - $navbar-height - $right-entry-height - $ticker-height - $depths-height - $my-orders-height - $gutter-5x;
 
 $market-list-width: 300px;
 $market-list-height: $entry-height;
 
 $market-trades-width: $market-list-width;
-$market-trades-height: $min-height - $navbar-height - $market-list-height - $gutter-3x;
+$market-trades-height: $min-height - $navbar-height - $market-list-height - $gutter-4x;
 
 $candlestick-width: $min-width - $order-book-width - $market-list-width - $gutter-4x - 20;
 $candlestick-height: $min-height - $navbar-height - $gutter-2x;
