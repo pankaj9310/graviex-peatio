@@ -39,3 +39,11 @@
   inuse: true
   type: WithdrawChannelEth
 
+- id: 1200
+  key: poseidon
+  currency: psd
+  fixed: 8
+  max: 1000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelNxt

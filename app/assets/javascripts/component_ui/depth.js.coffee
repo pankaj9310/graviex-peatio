@@ -9,10 +9,8 @@
     chart.series[1].setData data.asks, false
 #    chart.xAxis[0].setExtremes(data.low, data.high)
     chart.redraw()
-    console.log("refresh...")
 
   @initChart = (data) ->
-    console.log('init chart...')
     @select('chart').highcharts
       chart:
         margin: 0
@@ -32,9 +30,6 @@
       rangeSelector:
         enabled: false
 
-#      xAxis:
-#        labels:
-#          enabled: false
       xAxis: [{
         type: 'logarithmic'
         width: '50%'
@@ -84,7 +79,6 @@
 
       series : [{
         name : gon.i18n.bid
-#        type : 'area'
         fillColor: 'rgba(77, 215, 16, 0.5)'
         lineColor: 'rgb(77, 215, 16)'
         color: 'transparent'
@@ -93,7 +87,6 @@
           duration: 1000
       },{
         name: gon.i18n.ask
- #       type: 'area'
         animation:
           duration: 1000
         fillColor: 'rgba(208, 0, 23, 0.3)'
@@ -101,15 +94,6 @@
         color: 'transparent'
         xAxis: 1
       }]
-
-#    chart_container = @select('highcharts-container')
-#    chart_container.setAttribute('style', 'height: 150px')
-
-#    chart_root = @select('highcharts-root')
-#    chart_root.setAttribute('height', '150')
-#    chart_root.setAttribute('viewBox', '0 0 664 50')
-
-#    console.log(chart_container, chart_root)
 
   @after 'initialize', ->
     @initChart()

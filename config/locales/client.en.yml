@@ -46,6 +46,7 @@ en:
         doge: DOGE
         ltc: LTC
         eth: ETH
+        psd: PSD
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -82,6 +83,9 @@ en:
 
       deposit_eth:
         title: ETH Deposit
+
+      deposit_psd:
+        title: PSD Deposit
 
       #deposit
 
@@ -146,6 +150,9 @@ en:
       withdraw_eth:
         title: ETH Withdraw
 
+      withdraw_psd:
+        title: PSD Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -206,6 +213,7 @@ en:
         doge: DOGE Market
         ltc: LTC Market
         eth: ETH Market
+        psd: PSD Market
         #market
 
 

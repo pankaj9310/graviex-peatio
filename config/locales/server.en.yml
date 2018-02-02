@@ -25,6 +25,7 @@ en:
       withdraws/doge: Withdraw
       withdraws/ltc: Withdraw
       withdraws/ether: Withdraw
+      withdraws/poseidon: Withdraw
       #models
     attributes:
       api_token:
@@ -203,6 +204,12 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
+      deposits/poseidon:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
       #dposits
       withdraws/satoshi:
         id: ID
@@ -274,6 +281,20 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/poseidon:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -330,6 +351,8 @@ en:
               ltc_invalid: Invalid Address
               ether_ismine: Used Address
               ether_invalid: Invalid Address
+              poseidon_ismine: Used Address
+              poseidon_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -364,6 +387,12 @@ en:
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
         withdraws/ether:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/poseidon:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -419,6 +448,7 @@ en:
       ltc: LTC
       gio: GIO
       eth: ETH
+      psd: PSD
       #market1
   currency:
     satoshi:
@@ -465,6 +495,11 @@ en:
       key: PTS
       code: PTS
       name: Protoshare
+      format: '0,0.0000'
+    poseidon:
+      key: PSD
+      code: PSD
+      name: Poseidon
       format: '0,0.0000'
     #currency
   datagrid:
@@ -640,6 +675,13 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    poseidon:
+      key: Block Chain
+      title: Poseidon Deposits
+      intro: Deposit poseidon from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -665,6 +707,9 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       ethers:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      poseidons:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -849,6 +894,21 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      poseidons:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -924,6 +984,7 @@ en:
         doge-assets: DOGE Assets
         ltc-assets: LTC Assets
         eth-assets: ETH Assets
+        psd-assets: PSD Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -931,12 +992,14 @@ en:
         verify-doge: Verify My DOGE Assets
         verify-ltc: Verify My LTC Assets
         verify-eth: Verify My ETH Assets
+        verify-psd: Verify My PSD Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
         doge-assets-total: 'Total DOGE assets of exchange: '
         ltc-assets-total: 'Total LTC assets of exchange: '
         eth-assets-total: 'Total ETH assets of exchange: '
+        psd-assets-total: 'Total PSD assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -979,6 +1042,11 @@ en:
         intro: All of exchange's ETH assets are listed here.
         total: Total ETH Assets
         address: Address
+      psd_assets:
+        title: PSD Assets
+        intro: All of exchange's PSD assets are listed here.
+        total: Total PSD Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -998,6 +1066,7 @@ en:
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
         eth_format: '0.00000000'
+        psd_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -1031,6 +1100,12 @@ en:
             withdraw: Withdraw
             fix: Fix
           eth:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          psd:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -1084,6 +1159,7 @@ en:
         doge_html: "<i class='fa fa-check'></i><span>DOGE Markets</span>"
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
         eth_html: "<i class='fa fa-check'></i><span>ETH Markets</span>"
+        psd_html: "<i class='fa fa-check'></i><span>PSD Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -1280,6 +1356,7 @@ en:
         doge_format: '0.00000000'
         ltc_format: '0.00000000'
         eth_format: '0.00000000'
+        psd_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -1399,6 +1476,9 @@ en:
         ether:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        poseidon:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -1437,6 +1517,8 @@ en:
         doge:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         ether:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        poseidon:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -1516,6 +1598,13 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        poseidon:
+          fee: Fee
+          sum: Amount
+          fund_uid: Poseidon Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -1562,7 +1651,13 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-      #admin_deposits
+      poseidons:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        #admin_deposits
     tickets:
       view: View
       close: Close Ticket
@@ -1696,6 +1791,18 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      poseidons:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -1722,6 +1829,12 @@ en:
       checked: Checked
       warning: Warning
   deposits/ether:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/poseidon:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1825,6 +1938,14 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    poseidon:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -1861,6 +1982,7 @@ en:
       doge: DOGE
       ltc: LTC
       eth: ETH
+      psd: PSD
       #enum_currence
     order:
       state:
@@ -1892,6 +2014,7 @@ en:
         gravio: Graviocoin
         doge: Dogecoin
         ltc: Litecoin
+        poseidon: Poseidon
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -2390,6 +2513,13 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    poseidon:
+      key: Blockchain
+      title: Poseidon Blockchain
+      intro: Withdraw Poseidon to your own Poseidon wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -2454,6 +2584,18 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/ether:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/poseidon:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
