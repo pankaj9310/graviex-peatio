@@ -47,6 +47,23 @@ en:
         ltc: LTC
         eth: ETH
         psd: PSD
+        phc: PHC
+        xgc: XGC
+        dev: DEV
+        pbs: PBS
+        din: DIN
+        adv: ADV
+        dv7: DV7
+        jew: JEW
+        argo: ARGO
+        esco: ESCO
+        neet: NEET
+        xylo: XYLO
+        steep: STEEP
+        bitg: BITG
+        crft: CRFT
+        env: ENV
+        sng: SNG
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -86,6 +103,57 @@ en:
 
       deposit_psd:
         title: PSD Deposit
+
+      deposit_phc:
+        title: PHC Deposit
+
+      deposit_xgc:
+        title: XGC Deposit
+
+      deposit_dev:
+        title: DEV Deposit
+
+      deposit_pbs:
+        title: PBS Deposit
+
+      deposit_din:
+        title: DIN Deposit
+
+      deposit_adv:
+        title: ADV Deposit
+
+      deposit_dv7:
+        title: DV7 Deposit
+
+      deposit_jew:
+        title: JEW Deposit
+
+      deposit_argo:
+        title: ARGO Deposit
+
+      deposit_esco:
+        title: ESCO Deposit
+
+      deposit_neet:
+        title: NEET Deposit
+
+      deposit_xylo:
+        title: XYLO Deposit
+
+      deposit_steep:
+        title: STEEP Deposit
+
+      deposit_bitg:
+        title: BITG Deposit
+
+      deposit_crft:
+        title: CRFT Deposit
+
+      deposit_env:
+        title: ENV Deposit
+
+      deposit_sng:
+        title: SNG Deposit
 
       #deposit
 
@@ -153,10 +221,85 @@ en:
       withdraw_psd:
         title: PSD Withdraw
 
+      withdraw_phc:
+        title: PHC Withdraw
+
+      withdraw_xgc:
+        title: XGC Withdraw
+
+      withdraw_dev:
+        title: DEV Withdraw
+
+      withdraw_pbs:
+        title: PBS Withdraw
+
+      withdraw_din:
+        title: DIN Withdraw
+
+      withdraw_adv:
+        title: ADV Withdraw
+
+      withdraw_dv7:
+        title: DV7 Withdraw
+
+      withdraw_jew:
+        title: JEW Withdraw
+
+      withdraw_argo:
+        title: ARGO Withdraw
+
+      withdraw_esco:
+        title: ESCO Withdraw
+
+      withdraw_neet:
+        title: NEET Withdraw
+
+      withdraw_xylo:
+        title: XYLO Withdraw
+
+      withdraw_steep:
+        title: STEEP Withdraw
+
+      withdraw_bitg:
+        title: BITG Withdraw
+
+      withdraw_crft:
+        title: CRFT Withdraw
+
+      withdraw_env:
+        title: ENV Withdraw
+
+      withdraw_sng:
+        title: SNG Withdraw
+
       #withdraw
 
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
+        withdraw_limit_btc: Withdraw day limit is 2 for an unverified account.
+        withdraw_limit_gio: Withdraw day limit is 5 000 000 for an unverified account.
+        withdraw_limit_doge: Withdraw day limit is 1 000 000 for an unverified account.
+        withdraw_limit_ltc: Withdraw day limit is 1 000 for an unverified account.
+        withdraw_limit_eth: Withdraw day limit is 10 for an unverified account.
+        withdraw_limit_psd: Withdraw day limit is 200 000 for an unverified account.
+        withdraw_limit_phc: Withdraw day limit is 100 000 for an unverified account.
+        withdraw_limit_xgc: Withdraw day limit is 10 000 for an unverified account.
+        withdraw_limit_dev: Withdraw day limit is 50 000 for an unverified account.
+        withdraw_limit_pbs: Withdraw day limit is 5 000 for an unverified account.
+        withdraw_limit_din: Withdraw day limit is 5 000 for an unverified account.
+        withdraw_limit_adv: Withdraw day limit is 5 000 000 for an unverified account.
+        withdraw_limit_dv7: Withdraw day limit is 5 000 000 for an unverified account.
+        withdraw_limit_jew: Withdraw day limit is 5 000 for an unverified account.
+        withdraw_limit_argo: Withdraw day limit is 5 000 for an unverified account.
+        withdraw_limit_esco: Withdraw day limit is 5 000 for an unverified account.
+        withdraw_limit_neet: Withdraw day limit is 5 000 000 for an unverified account.
+        withdraw_limit_xylo: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_steep: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_bitg: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_crft: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_env: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_sng: Withdraw day limit is 5000 for an unverified account.
+        #limit
         label: Label
         balance: Balance
         amount: Amount
@@ -193,7 +336,7 @@ en:
         failed: Failed
 
     auth:
-      please_active_two_factor: Please set mobile number or google authenticator first.
+      please_active_two_factor: Please set google authenticator first.
       submit: Submit
       otp_placeholder: 6-digit password
       google_app: Google Authenticator
@@ -214,6 +357,23 @@ en:
         ltc: LTC Market
         eth: ETH Market
         psd: PSD Market
+        phc: PHC Market
+        xgc: XGC Market
+        dev: DEV Market
+        pbs: PBS Market
+        din: DIN Market
+        adv: ADV Market
+        dv7: DV7 Market
+        jew: JEW Market
+        argo: ARGO Market
+        esco: ESCO Market
+        neet: NEET Market
+        xylo: XYLO Market
+        steep: STEEP Market
+        bitg: BITG Market
+        crft: CRFT Market
+        env: ENV Market
+        sng: SNG Market
         #market
 
 

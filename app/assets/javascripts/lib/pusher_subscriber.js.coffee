@@ -77,6 +77,7 @@ class WithdrawHandler extends EventHandler
 
   update: (id, attributes) =>
     Withdraw.findBy("id", id).updateAttributes(attributes)
+    #console.log id, attributes
 
   destroy: (id) =>
     Withdraw.destroy(id)

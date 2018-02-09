@@ -13,6 +13,11 @@
       <p class="currency-balance"><span class="currency-sign"></span>{{account.balance | round_down }}</p>
       <span class="currency-balance-locked"><i class="fa fa-lock"></i> {{account.locked}}</span>
       <span class="currency-info">{{account.blocks + ' / ' + account.blocktime}}</span>
+      <span class="">
+        <a class="fa fa-home currency-info-ext" style="padding: 0 8px 0 0" href="{{account.coin_home}}" target="_blank"></a>
+        <a class="fa fa-comments currency-info-ext" style="padding: 0 8px 0 0" href="{{account.coin_btt}}" target="_blank"></a>
+        <a class="fa fa-sitemap currency-info-ext" style="padding: 0 8px 0 0" href="{{account.coin_be}}" target="_blank"></a>
+      </span>
     </td>
     <td class="currency-actions">
       <p class="currency-deposit"><a href="#" ng-click="accountsCtrl.deposit(account); $event.preventDefault()" >{{ 'funds.deposit' | t }}</a></p>

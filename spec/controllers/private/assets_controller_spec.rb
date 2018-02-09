@@ -23,6 +23,24 @@ describe Private::AssetsController do
       it { expect(assigns(:gio_account)).to be_nil }
       it { expect(assigns(:doge_account)).to be_nil }
       it { expect(assigns(:ltc_account)).to be_nil }
+      it { expect(assigns(:psd_account)).to be_nil }
+      it { expect(assigns(:phc_account)).to be_nil }
+      it { expect(assigns(:xgc_account)).to be_nil }
+      it { expect(assigns(:dev_account)).to be_nil }
+      it { expect(assigns(:pbs_account)).to be_nil }
+      it { expect(assigns(:din_account)).to be_nil }
+      it { expect(assigns(:adv_account)).to be_nil }
+      it { expect(assigns(:dv7_account)).to be_nil }
+      it { expect(assigns(:jew_account)).to be_nil }
+      it { expect(assigns(:argo_account)).to be_nil }
+      it { expect(assigns(:esco_account)).to be_nil }
+      it { expect(assigns(:neet_account)).to be_nil }
+      it { expect(assigns(:xylo_account)).to be_nil }
+      it { expect(assigns(:steep_account)).to be_nil }
+      it { expect(assigns(:bitg_account)).to be_nil }
+      it { expect(assigns(:crft_account)).to be_nil }
+      it { expect(assigns(:env_account)).to be_nil }
+      it { expect(assigns(:sng_account)).to be_nil }
       #it
 
     end

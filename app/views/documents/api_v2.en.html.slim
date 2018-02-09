@@ -9,7 +9,7 @@
     h3 Public/Private API
 
   .panel-body
-    p Peatio API v2 includes both public API and private API.
+    p GRAVIEX API v2 includes both public API and private API.
 
   table.table
     thead
@@ -22,7 +22,7 @@
         td Authentication required
       tr
         td Unlimited
-        td 6000 requests/keypair/5minutes, you can contact Peatio if you need more.
+        td 6000 requests/keypair/5minutes, you can contact GRAVIEX if you need more.
       tr
         td Ready to use
         td You need to request for access/secret key at first
@@ -74,13 +74,13 @@
     h3 Response Format
 
   .panel-body
-    p Corresponding HTTP status code will be used in API response. Peatio will also return a JSON structure including error details on failed request, for example:
+    p Corresponding HTTP status code will be used in API response. GRAVIEX will also return a JSON structure including error details on failed request, for example:
     pre: code
       | {"error":{"code":1001,"message":"market does not have a valid value"}}
-    p All errors follow the message format above, only differentiates in code and message. Code is a Peatio defined error code, indicates the error's category, message is human-readable details.
+    p All errors follow the message format above, only differentiates in code and message. Code is a GRAVIEX defined error code, indicates the error's category, message is human-readable details.
 
   .panel-body
-    p Peatio returns HTTP 200 response on successful request, with requested data in JSON format.
+    p GRAVIEX returns HTTP 200 response on successful request, with requested data in JSON format.
     table.table.result
       thead
         tr
@@ -101,7 +101,7 @@
         tr
           td Member
           td: pre: code
-            | {"sn":"PEA5TFFOGQHTIO","name":"foo","email":"foo@peatio.dev","activated":true,"accounts":[{"currency":"cny","balance":"100243840.0","locked":"0.0"},{"currency":"btc","balance":"99999708.26","locked":"210.8"}]}
+            | {"sn":"PEA5TFFOGQHTIO","name":"foo","email":"foo@mail.dev","activated":true,"accounts":[{"currency":"cny","balance":"100243840.0","locked":"0.0"},{"currency":"btc","balance":"99999708.26","locked":"210.8"}]}
           td
             p sn: Unique identifier of user
             p name: User name
@@ -179,16 +179,6 @@
         tr
           td POST /api/v2/orders/clear
           td Cancel all your orders is an asynchronous operation. A success response only means your request has been accepted. The orders in response may or may not have been cancelled yet.
-
-.panel.panel-default
-  .panel-heading
-    h3 Libraries/Tools
-
-  .panel-body
-    ul
-      li: h4
-        a href='http://github.com/peatio/peatio-client-ruby'
-          | peatio-client-ruby (ruby)
 
 .panel.panel-default
   .panel-heading

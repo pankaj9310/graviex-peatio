@@ -21,7 +21,7 @@ module Worker
         return unless withdraw.almost_done?
 
         if withdraw.currency == 'eth'
-          balance = open('http://192.168.0.203:8080/cgi-bin/total.cgi').read.rstrip.to_f
+          balance = open('http://192.168.0.204:8080/cgi-bin/total.cgi').read.rstrip.to_f
           raise Account::BalanceError, 'Insufficient coins' if balance < withdraw.sum
 
           fee = [withdraw.fee.to_f || withdraw.channel.try(:fee) || 0.0005, 0.1].min
@@ -46,6 +46,7 @@ module Worker
           withdraw.succeed
           withdraw.save!
         end
+
       end
     end
 

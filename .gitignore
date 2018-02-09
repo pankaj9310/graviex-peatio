@@ -39,6 +39,7 @@ tags
 **/*.swp
 **/*.swo
 **/*.1
+**/*.2
 **/*.*_
 
 # Ignore RubyMine files

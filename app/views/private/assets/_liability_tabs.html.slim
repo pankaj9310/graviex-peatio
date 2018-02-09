@@ -6,6 +6,23 @@
     li: a.ltc-proof href="#ltc-proof" data-toggle="tab" == t('.verify-ltc')
     li: a.eth-proof href="#eth-proof" data-toggle="tab" == t('.verify-eth')
     li: a.psd-proof href="#psd-proof" data-toggle="tab" == t('.verify-psd')
+    li: a.phc-proof href="#phc-proof" data-toggle="tab" == t('.verify-phc')
+    li: a.xgc-proof href="#xgc-proof" data-toggle="tab" == t('.verify-xgc')
+    li: a.dev-proof href="#dev-proof" data-toggle="tab" == t('.verify-dev')
+    li: a.pbs-proof href="#pbs-proof" data-toggle="tab" == t('.verify-pbs')
+    li: a.din-proof href="#din-proof" data-toggle="tab" == t('.verify-din')
+    li: a.adv-proof href="#adv-proof" data-toggle="tab" == t('.verify-adv')
+    li: a.dv7-proof href="#dv7-proof" data-toggle="tab" == t('.verify-dv7')
+    li: a.jew-proof href="#jew-proof" data-toggle="tab" == t('.verify-jew')
+    li: a.argo-proof href="#argo-proof" data-toggle="tab" == t('.verify-argo')
+    li: a.esco-proof href="#esco-proof" data-toggle="tab" == t('.verify-esco')
+    li: a.neet-proof href="#neet-proof" data-toggle="tab" == t('.verify-neet')
+    li: a.xylo-proof href="#xylo-proof" data-toggle="tab" == t('.verify-xylo')
+    li: a.steep-proof href="#steep-proof" data-toggle="tab" == t('.verify-steep')
+    li: a.bitg-proof href="#bitg-proof" data-toggle="tab" == t('.verify-bitg')
+    li: a.crft-proof href="#crft-proof" data-toggle="tab" == t('.verify-crft')
+    li: a.env-proof href="#env-proof" data-toggle="tab" == t('.verify-env')
+    li: a.sng-proof href="#sng-proof" data-toggle="tab" == t('.verify-sng')
     /li
 
   .tab-content
@@ -56,3 +73,123 @@
           == t("currency.icon.psd")
           = @psd_proof.sum
       = render 'liability_data', account: @psd_account, proof: @psd_proof
+
+    #phc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.phc-assets-total')
+        span.currency
+          == t("currency.icon.phc")
+          = @phc_proof.sum
+      = render 'liability_data', account: @phc_account, proof: @phc_proof
+    #xgc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xgc-assets-total')
+        span.currency
+          == t("currency.icon.xgc")
+          = @xgc_proof.sum
+      = render 'liability_data', account: @xgc_account, proof: @xgc_proof
+    #dev-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.dev-assets-total')
+        span.currency
+          == t("currency.icon.dev")
+          = @dev_proof.sum
+      = render 'liability_data', account: @dev_account, proof: @dev_proof
+    #pbs-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pbs-assets-total')
+        span.currency
+          == t("currency.icon.pbs")
+          = @pbs_proof.sum
+      = render 'liability_data', account: @pbs_account, proof: @pbs_proof
+    #din-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.din-assets-total')
+        span.currency
+          == t("currency.icon.din")
+          = @din_proof.sum
+      = render 'liability_data', account: @din_account, proof: @din_proof
+    #adv-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.adv-assets-total')
+        span.currency
+          == t("currency.icon.adv")
+          = @adv_proof.sum
+      = render 'liability_data', account: @adv_account, proof: @adv_proof
+    #dv7-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.dv7-assets-total')
+        span.currency
+          == t("currency.icon.dv7")
+          = @dv7_proof.sum
+      = render 'liability_data', account: @dv7_account, proof: @dv7_proof
+    #jew-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.jew-assets-total')
+        span.currency
+          == t("currency.icon.jew")
+          = @jew_proof.sum
+      = render 'liability_data', account: @jew_account, proof: @jew_proof
+    #argo-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.argo-assets-total')
+        span.currency
+          == t("currency.icon.argo")
+          = @argo_proof.sum
+      = render 'liability_data', account: @argo_account, proof: @argo_proof
+    #esco-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.esco-assets-total')
+        span.currency
+          == t("currency.icon.esco")
+          = @esco_proof.sum
+      = render 'liability_data', account: @esco_account, proof: @esco_proof
+    #neet-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.neet-assets-total')
+        span.currency
+          == t("currency.icon.neet")
+          = @neet_proof.sum
+      = render 'liability_data', account: @neet_account, proof: @neet_proof
+    #xylo-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xylo-assets-total')
+        span.currency
+          == t("currency.icon.xylo")
+          = @xylo_proof.sum
+      = render 'liability_data', account: @xylo_account, proof: @xylo_proof
+    #steep-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.steep-assets-total')
+        span.currency
+          == t("currency.icon.steep")
+          = @steep_proof.sum
+      = render 'liability_data', account: @steep_account, proof: @steep_proof
+    #bitg-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.bitg-assets-total')
+        span.currency
+          == t("currency.icon.bitg")
+          = @bitg_proof.sum
+      = render 'liability_data', account: @bitg_account, proof: @bitg_proof
+    #crft-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.crft-assets-total')
+        span.currency
+          == t("currency.icon.crft")
+          = @crft_proof.sum
+      = render 'liability_data', account: @crft_account, proof: @crft_proof
+    #env-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.env-assets-total')
+        span.currency
+          == t("currency.icon.env")
+          = @env_proof.sum
+      = render 'liability_data', account: @env_account, proof: @env_proof
+    #sng-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.sng-assets-total')
+        span.currency
+          == t("currency.icon.sng")
+          = @sng_proof.sum
+      = render 'liability_data', account: @sng_account, proof: @sng_proof

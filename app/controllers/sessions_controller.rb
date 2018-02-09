@@ -28,8 +28,12 @@ class SessionsController < ApplicationController
         save_session_key @member.id, cookies['_peatio_session']
         save_signup_history @member.id
         MemberMailer.notify_signin(@member.id).deliver if @member.activated?
-        # redirect_back_or_settings_page
-        redirect_to market_path(Market.first)
+
+        if not current_user.two_factors.activated?
+          redirect_to settings_path, alert: t('two_factors.auth.please_active_two_factor')
+        else
+          redirect_to market_path(Market.first)
+        end
       end
     else
       increase_failed_logins

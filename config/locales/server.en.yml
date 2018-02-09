@@ -26,6 +26,23 @@ en:
       withdraws/ltc: Withdraw
       withdraws/ether: Withdraw
       withdraws/poseidon: Withdraw
+      withdraws/profithunter: Withdraw
+      withdraws/xgoldcoin: Withdraw
+      withdraws/deviant: Withdraw
+      withdraws/phoboscoin: Withdraw
+      withdraws/dinero: Withdraw
+      withdraws/advance: Withdraw
+      withdraws/dv7coin: Withdraw
+      withdraws/shekel: Withdraw
+      withdraws/argo: Withdraw
+      withdraws/escrow: Withdraw
+      withdraws/neetcoin: Withdraw
+      withdraws/xylo: Withdraw
+      withdraws/steepcoin: Withdraw
+      withdraws/bitcoingreen: Withdraw
+      withdraws/craftr: Withdraw
+      withdraws/enviromint: Withdraw
+      withdraws/snowgem: Withdraw
       #models
     attributes:
       api_token:
@@ -210,6 +227,108 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
+      deposits/profithunter:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xgoldcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/deviant:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/phoboscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/dinero:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/advance:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/dv7coin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/shekel:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/argo:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/escrow:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/neetcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xylo:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/steepcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bitcoingreen:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/craftr:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/enviromint:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/snowgem:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
       #dposits
       withdraws/satoshi:
         id: ID
@@ -295,6 +414,244 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/profithunter:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xgoldcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/deviant:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/phoboscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/dinero:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/advance:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/dv7coin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/shekel:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/argo:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/escrow:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/neetcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xylo:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/steepcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bitcoingreen:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/craftr:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/enviromint:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/snowgem:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -353,6 +710,40 @@ en:
               ether_invalid: Invalid Address
               poseidon_ismine: Used Address
               poseidon_invalid: Invalid Address
+              profithunter_ismine: Used Address
+              profithunter_invalid: Invalid Address
+              xgoldcoin_ismine: Used Address
+              xgoldcoin_invalid: Invalid Address
+              deviant_ismine: Used Address
+              deviant_invalid: Invalid Address
+              phoboscoin_ismine: Used Address
+              phoboscoin_invalid: Invalid Address
+              dinero_ismine: Used Address
+              dinero_invalid: Invalid Address
+              advance_ismine: Used Address
+              advance_invalid: Invalid Address
+              dv7coin_ismine: Used Address
+              dv7coin_invalid: Invalid Address
+              shekel_ismine: Used Address
+              shekel_invalid: Invalid Address
+              argo_ismine: Used Address
+              argo_invalid: Invalid Address
+              escrow_ismine: Used Address
+              escrow_invalid: Invalid Address
+              neetcoin_ismine: Used Address
+              neetcoin_invalid: Invalid Address
+              xylo_ismine: Used Address
+              xylo_invalid: Invalid Address
+              steepcoin_ismine: Used Address
+              steepcoin_invalid: Invalid Address
+              bitcoingreen_ismine: Used Address
+              bitcoingreen_invalid: Invalid Address
+              craftr_ismine: Used Address
+              craftr_invalid: Invalid Address
+              enviromint_ismine: Used Address
+              enviromint_invalid: Invalid Address
+              snowgem_ismine: Used Address
+              snowgem_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -393,6 +784,108 @@ en:
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
         withdraws/poseidon:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/profithunter:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xgoldcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/deviant:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/phoboscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/dinero:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/advance:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/dv7coin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/shekel:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/argo:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/escrow:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/neetcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xylo:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/steepcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bitcoingreen:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/craftr:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/enviromint:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/snowgem:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -449,6 +942,23 @@ en:
       gio: GIO
       eth: ETH
       psd: PSD
+      phc: PHC
+      xgc: XGC
+      dev: DEV
+      pbs: PBS
+      din: DIN
+      adv: ADV
+      dv7: DV7
+      jew: JEW
+      argo: ARGO
+      esco: ESCO
+      neet: NEET
+      xylo: XYLO
+      steep: STEEP
+      bitg: BITG
+      crft: CRFT
+      env: ENV
+      sng: SNG
       #market1
   currency:
     satoshi:
@@ -500,6 +1010,91 @@ en:
       key: PSD
       code: PSD
       name: Poseidon
+      format: '0,0.0000'
+    profithunter:
+      key: PHC
+      code: PHC
+      name: Profithunters
+      format: '0,0.0000'
+    xgoldcoin:
+      key: XGC
+      code: XGC
+      name: Xgoldcoin
+      format: '0,0.0000'
+    deviant:
+      key: DEV
+      code: DEV
+      name: Deviant
+      format: '0,0.0000'
+    phoboscoin:
+      key: PBS
+      code: PBS
+      name: Phoboscoin
+      format: '0,0.0000'
+    dinero:
+      key: DIN
+      code: DIN
+      name: Dinero
+      format: '0,0.0000'
+    advance:
+      key: ADV
+      code: ADV
+      name: Advance
+      format: '0,0.0000'
+    dv7coin:
+      key: DV7
+      code: DV7
+      name: Dv7coin
+      format: '0,0.0000'
+    shekel:
+      key: JEW
+      code: JEW
+      name: Shekel
+      format: '0,0.0000'
+    argo:
+      key: ARGO
+      code: ARGO
+      name: Argo
+      format: '0,0.0000'
+    escrow:
+      key: ESCO
+      code: ESCO
+      name: Escrow
+      format: '0,0.0000'
+    neetcoin:
+      key: NEET
+      code: NEET
+      name: Neetcoin
+      format: '0,0.0000'
+    xylo:
+      key: XYLO
+      code: XYLO
+      name: Xylo
+      format: '0,0.0000'
+    steepcoin:
+      key: STEEP
+      code: STEEP
+      name: Steepcoin
+      format: '0,0.0000'
+    bitcoingreen:
+      key: BITG
+      code: BITG
+      name: Bitcoingreen
+      format: '0,0.0000'
+    craftr:
+      key: CRFT
+      code: CRFT
+      name: Craftr
+      format: '0,0.0000'
+    enviromint:
+      key: ENV
+      code: ENV
+      name: Enviromint
+      format: '0,0.0000'
+    snowgem:
+      key: SNG
+      code: SNG
+      name: Snowgem
       format: '0,0.0000'
     #currency
   datagrid:
@@ -682,6 +1277,125 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    profithunter:
+      key: Block Chain
+      title: Profithunters Deposits
+      intro: Deposit profithunter from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xgoldcoin:
+      key: Block Chain
+      title: Xgoldcoin Deposits
+      intro: Deposit xgoldcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    deviant:
+      key: Block Chain
+      title: Deviant Deposits
+      intro: Deposit deviant from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    phoboscoin:
+      key: Block Chain
+      title: Phoboscoin Deposits
+      intro: Deposit phoboscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    dinero:
+      key: Block Chain
+      title: Dinero Deposits
+      intro: Deposit dinero from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    advance:
+      key: Block Chain
+      title: Advance Deposits
+      intro: Deposit advance from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    dv7coin:
+      key: Block Chain
+      title: Dv7coin Deposits
+      intro: Deposit dv7coin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    shekel:
+      key: Block Chain
+      title: Shekel Deposits
+      intro: Deposit shekel from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    argo:
+      key: Block Chain
+      title: Argo Deposits
+      intro: Deposit argo from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    escrow:
+      key: Block Chain
+      title: Escrow Deposits
+      intro: Deposit escrow from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    neetcoin:
+      key: Block Chain
+      title: Neetcoin Deposits
+      intro: Deposit neetcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xylo:
+      key: Block Chain
+      title: Xylo Deposits
+      intro: Deposit xylo from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    steepcoin:
+      key: Block Chain
+      title: Steepcoin Deposits
+      intro: Deposit steepcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bitcoingreen:
+      key: Block Chain
+      title: Bitcoingreen Deposits
+      intro: Deposit bitcoingreen from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    craftr:
+      key: Block Chain
+      title: Craftr Deposits
+      intro: Deposit craftr from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    enviromint:
+      key: Block Chain
+      title: Enviromint Deposits
+      intro: Deposit enviromint from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    snowgem:
+      key: Block Chain
+      title: Snowgem Deposits
+      intro: Deposit snowgem from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -710,6 +1424,57 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       poseidons:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      profithunters:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xgoldcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      deviants:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      phoboscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      dineros:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      advances:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      dv7coins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      shekels:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      argos:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      escrows:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      neetcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xylos:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      steepcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bitcoingreens:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      craftrs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      enviromints:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      snowgems:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -909,6 +1674,261 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      profithunters:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xgoldcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      deviants:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      phoboscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      dineros:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      advances:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      dv7coins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      shekels:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      argos:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      escrows:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      neetcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xylos:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      steepcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bitcoingreens:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      craftrs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      enviromints:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      snowgems:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -985,6 +2005,23 @@ en:
         ltc-assets: LTC Assets
         eth-assets: ETH Assets
         psd-assets: PSD Assets
+        phc-assets: PHC Assets
+        xgc-assets: XGC Assets
+        dev-assets: DEV Assets
+        pbs-assets: PBS Assets
+        din-assets: DIN Assets
+        adv-assets: ADV Assets
+        dv7-assets: DV7 Assets
+        jew-assets: JEW Assets
+        argo-assets: ARGO Assets
+        esco-assets: ESCO Assets
+        neet-assets: NEET Assets
+        xylo-assets: XYLO Assets
+        steep-assets: STEEP Assets
+        bitg-assets: BITG Assets
+        crft-assets: CRFT Assets
+        env-assets: ENV Assets
+        sng-assets: SNG Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -993,6 +2030,23 @@ en:
         verify-ltc: Verify My LTC Assets
         verify-eth: Verify My ETH Assets
         verify-psd: Verify My PSD Assets
+        verify-phc: Verify My PHC Assets
+        verify-xgc: Verify My XGC Assets
+        verify-dev: Verify My DEV Assets
+        verify-pbs: Verify My PBS Assets
+        verify-din: Verify My DIN Assets
+        verify-adv: Verify My ADV Assets
+        verify-dv7: Verify My DV7 Assets
+        verify-jew: Verify My JEW Assets
+        verify-argo: Verify My ARGO Assets
+        verify-esco: Verify My ESCO Assets
+        verify-neet: Verify My NEET Assets
+        verify-xylo: Verify My XYLO Assets
+        verify-steep: Verify My STEEP Assets
+        verify-bitg: Verify My BITG Assets
+        verify-crft: Verify My CRFT Assets
+        verify-env: Verify My ENV Assets
+        verify-sng: Verify My SNG Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -1000,6 +2054,23 @@ en:
         ltc-assets-total: 'Total LTC assets of exchange: '
         eth-assets-total: 'Total ETH assets of exchange: '
         psd-assets-total: 'Total PSD assets of exchange: '
+        phc-assets-total: 'Total PHC assets of exchange: '
+        xgc-assets-total: 'Total XGC assets of exchange: '
+        dev-assets-total: 'Total DEV assets of exchange: '
+        pbs-assets-total: 'Total PBS assets of exchange: '
+        din-assets-total: 'Total DIN assets of exchange: '
+        adv-assets-total: 'Total ADV assets of exchange: '
+        dv7-assets-total: 'Total DV7 assets of exchange: '
+        jew-assets-total: 'Total JEW assets of exchange: '
+        argo-assets-total: 'Total ARGO assets of exchange: '
+        esco-assets-total: 'Total ESCO assets of exchange: '
+        neet-assets-total: 'Total NEET assets of exchange: '
+        xylo-assets-total: 'Total XYLO assets of exchange: '
+        steep-assets-total: 'Total STEEP assets of exchange: '
+        bitg-assets-total: 'Total BITG assets of exchange: '
+        crft-assets-total: 'Total CRFT assets of exchange: '
+        env-assets-total: 'Total ENV assets of exchange: '
+        sng-assets-total: 'Total SNG assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -1047,6 +2118,91 @@ en:
         intro: All of exchange's PSD assets are listed here.
         total: Total PSD Assets
         address: Address
+      phc_assets:
+        title: PHC Assets
+        intro: All of exchange's PHC assets are listed here.
+        total: Total PHC Assets
+        address: Address
+      xgc_assets:
+        title: XGC Assets
+        intro: All of exchange's XGC assets are listed here.
+        total: Total XGC Assets
+        address: Address
+      dev_assets:
+        title: DEV Assets
+        intro: All of exchange's DEV assets are listed here.
+        total: Total DEV Assets
+        address: Address
+      pbs_assets:
+        title: PBS Assets
+        intro: All of exchange's PBS assets are listed here.
+        total: Total PBS Assets
+        address: Address
+      din_assets:
+        title: DIN Assets
+        intro: All of exchange's DIN assets are listed here.
+        total: Total DIN Assets
+        address: Address
+      adv_assets:
+        title: ADV Assets
+        intro: All of exchange's ADV assets are listed here.
+        total: Total ADV Assets
+        address: Address
+      dv7_assets:
+        title: DV7 Assets
+        intro: All of exchange's DV7 assets are listed here.
+        total: Total DV7 Assets
+        address: Address
+      jew_assets:
+        title: JEW Assets
+        intro: All of exchange's JEW assets are listed here.
+        total: Total JEW Assets
+        address: Address
+      argo_assets:
+        title: ARGO Assets
+        intro: All of exchange's ARGO assets are listed here.
+        total: Total ARGO Assets
+        address: Address
+      esco_assets:
+        title: ESCO Assets
+        intro: All of exchange's ESCO assets are listed here.
+        total: Total ESCO Assets
+        address: Address
+      neet_assets:
+        title: NEET Assets
+        intro: All of exchange's NEET assets are listed here.
+        total: Total NEET Assets
+        address: Address
+      xylo_assets:
+        title: XYLO Assets
+        intro: All of exchange's XYLO assets are listed here.
+        total: Total XYLO Assets
+        address: Address
+      steep_assets:
+        title: STEEP Assets
+        intro: All of exchange's STEEP assets are listed here.
+        total: Total STEEP Assets
+        address: Address
+      bitg_assets:
+        title: BITG Assets
+        intro: All of exchange's BITG assets are listed here.
+        total: Total BITG Assets
+        address: Address
+      crft_assets:
+        title: CRFT Assets
+        intro: All of exchange's CRFT assets are listed here.
+        total: Total CRFT Assets
+        address: Address
+      env_assets:
+        title: ENV Assets
+        intro: All of exchange's ENV assets are listed here.
+        total: Total ENV Assets
+        address: Address
+      sng_assets:
+        title: SNG Assets
+        intro: All of exchange's SNG assets are listed here.
+        total: Total SNG Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -1067,6 +2223,23 @@ en:
         ltc_format: '0.00000000'
         eth_format: '0.00000000'
         psd_format: '0.00000000'
+        phc_format: '0.00000000'
+        xgc_format: '0.00000000'
+        dev_format: '0.00000000'
+        pbs_format: '0.00000000'
+        din_format: '0.00000000'
+        adv_format: '0.00000000'
+        dv7_format: '0.00000000'
+        jew_format: '0.00000000'
+        argo_format: '0.00000000'
+        esco_format: '0.00000000'
+        neet_format: '0.00000000'
+        xylo_format: '0.00000000'
+        steep_format: '0.00000000'
+        bitg_format: '0.00000000'
+        crft_format: '0.00000000'
+        env_format: '0.00000000'
+        sng_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -1106,6 +2279,108 @@ en:
             withdraw: Withdraw
             fix: Fix
           psd:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          phc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xgc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          dev:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pbs:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          din:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          adv:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          dv7:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          jew:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          argo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          esco:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          neet:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xylo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          steep:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bitg:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          crft:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          env:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          sng:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -1160,6 +2435,23 @@ en:
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
         eth_html: "<i class='fa fa-check'></i><span>ETH Markets</span>"
         psd_html: "<i class='fa fa-check'></i><span>PSD Markets</span>"
+        phc_html: "<i class='fa fa-check'></i><span>PHC Markets</span>"
+        xgc_html: "<i class='fa fa-check'></i><span>XGC Markets</span>"
+        dev_html: "<i class='fa fa-check'></i><span>DEV Markets</span>"
+        pbs_html: "<i class='fa fa-check'></i><span>PBS Markets</span>"
+        din_html: "<i class='fa fa-check'></i><span>DIN Markets</span>"
+        adv_html: "<i class='fa fa-check'></i><span>ADV Markets</span>"
+        dv7_html: "<i class='fa fa-check'></i><span>DV7 Markets</span>"
+        jew_html: "<i class='fa fa-check'></i><span>JEW Markets</span>"
+        argo_html: "<i class='fa fa-check'></i><span>ARGO Markets</span>"
+        esco_html: "<i class='fa fa-check'></i><span>ESCO Markets</span>"
+        neet_html: "<i class='fa fa-check'></i><span>NEET Markets</span>"
+        xylo_html: "<i class='fa fa-check'></i><span>XYLO Markets</span>"
+        steep_html: "<i class='fa fa-check'></i><span>STEEP Markets</span>"
+        bitg_html: "<i class='fa fa-check'></i><span>BITG Markets</span>"
+        crft_html: "<i class='fa fa-check'></i><span>CRFT Markets</span>"
+        env_html: "<i class='fa fa-check'></i><span>ENV Markets</span>"
+        sng_html: "<i class='fa fa-check'></i><span>SNG Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -1357,6 +2649,23 @@ en:
         ltc_format: '0.00000000'
         eth_format: '0.00000000'
         psd_format: '0.00000000'
+        phc_format: '0.00000000'
+        xgc_format: '0.00000000'
+        dev_format: '0.00000000'
+        pbs_format: '0.00000000'
+        din_format: '0.00000000'
+        adv_format: '0.00000000'
+        dv7_format: '0.00000000'
+        jew_format: '0.00000000'
+        argo_format: '0.00000000'
+        esco_format: '0.00000000'
+        neet_format: '0.00000000'
+        xylo_format: '0.00000000'
+        steep_format: '0.00000000'
+        bitg_format: '0.00000000'
+        crft_format: '0.00000000'
+        env_format: '0.00000000'
+        sng_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -1479,6 +2788,57 @@ en:
         poseidon:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        profithunter:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xgoldcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        deviant:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        phoboscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        dinero:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        advance:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        dv7coin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        shekel:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        argo:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        escrow:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        neetcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xylo:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        steepcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bitcoingreen:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        craftr:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        enviromint:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        snowgem:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -1519,6 +2879,40 @@ en:
         ether:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         poseidon:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        profithunter:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xgoldcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        deviant:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        phoboscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        dinero:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        advance:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        dv7coin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        shekel:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        argo:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        escrow:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        neetcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xylo:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        steepcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bitcoingreen:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        craftr:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        enviromint:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        snowgem:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -1605,6 +2999,125 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        profithunter:
+          fee: Fee
+          sum: Amount
+          fund_uid: Profithunters Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xgoldcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xgoldcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        deviant:
+          fee: Fee
+          sum: Amount
+          fund_uid: Deviant Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        phoboscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Phoboscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        dinero:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dinero Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        advance:
+          fee: Fee
+          sum: Amount
+          fund_uid: Advance Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        dv7coin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dv7coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        shekel:
+          fee: Fee
+          sum: Amount
+          fund_uid: Shekel Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        argo:
+          fee: Fee
+          sum: Amount
+          fund_uid: Argo Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        escrow:
+          fee: Fee
+          sum: Amount
+          fund_uid: Escrow Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        neetcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Neetcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xylo:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xylo Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        steepcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Steepcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bitcoingreen:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bitcoingreen Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        craftr:
+          fee: Fee
+          sum: Amount
+          fund_uid: Craftr Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        enviromint:
+          fee: Fee
+          sum: Amount
+          fund_uid: Enviromint Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        snowgem:
+          fee: Fee
+          sum: Amount
+          fund_uid: Snowgem Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -1652,6 +3165,108 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       poseidons:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      profithunters:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xgoldcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        deviants:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        phoboscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        dineros:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        advances:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        dv7coins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        shekels:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        argos:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        escrows:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        neetcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        xylos:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        steepcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        bitcoingreens:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        craftrs:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        enviromints:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+        snowgems:
         update:
           notice: The deposit was successful.
         index:
@@ -1803,6 +3418,210 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      profithunters:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xgoldcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      deviants:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      phoboscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      dineros:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      advances:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      dv7coins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      shekels:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      argos:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      escrows:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      neetcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xylos:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      steepcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bitcoingreens:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      craftrs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      enviromints:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      snowgems:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -1835,6 +3654,108 @@ en:
       checked: Checked
       warning: Warning
   deposits/poseidon:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/profithunter:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xgoldcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/deviant:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/phoboscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/dinero:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/advance:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/dv7coin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/shekel:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/argo:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/escrow:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/neetcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xylo:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/steepcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bitcoingreen:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/craftr:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/enviromint:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/snowgem:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1946,6 +3867,142 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    profithunter:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xgoldcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    deviant:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    phoboscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    dinero:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    advance:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    dv7coin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    shekel:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    argo:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    escrow:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    neetcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xylo:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    steepcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bitcoingreen:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    craftr:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    enviromint:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    snowgem:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -1983,6 +4040,23 @@ en:
       ltc: LTC
       eth: ETH
       psd: PSD
+      phc: PHC
+      xgc: XGC
+      dev: DEV
+      pbs: PBS
+      din: DIN
+      adv: ADV
+      dv7: DV7
+      jew: JEW
+      argo: ARGO
+      esco: ESCO
+      neet: NEET
+      xylo: XYLO
+      steep: STEEP
+      bitg: BITG
+      crft: CRFT
+      env: ENV
+      sng: SNG
       #enum_currence
     order:
       state:
@@ -2015,6 +4089,23 @@ en:
         doge: Dogecoin
         ltc: Litecoin
         poseidon: Poseidon
+        profithunter: Profithunters
+        xgoldcoin: Xgoldcoin
+        deviant: Deviant
+        phoboscoin: Phoboscoin
+        dinero: Dinero
+        advance: Advance
+        dv7coin: Dv7coin
+        shekel: Shekel
+        argo: Argo
+        escrow: Escrow
+        neetcoin: Neetcoin
+        xylo: Xylo
+        steepcoin: Steepcoin
+        bitcoingreen: Bitcoingreen
+        craftr: Craftr
+        enviromint: Enviromint
+        snowgem: Snowgem
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -2163,7 +4254,7 @@ en:
     signup: Sign Up
     login_via_weibo: Login via Weibo
     funds: Funds
-    getstart: Get Start
+    getstart: Get Started
     assets: Solvency
     history: History
     order_history: Order History
@@ -2408,7 +4499,7 @@ en:
     update:
       alert: Two factor verification code error, please re-enter.
     auth:
-      please_active_two_factor: Please set mobile number or google authenticator first.
+      please_active_two_factor: Please set google authenticator first.
       submit: Submit
       otp_placeholder: 6-digit password
       google_app: Google Authenticator
@@ -2520,6 +4611,125 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    profithunter:
+      key: Blockchain
+      title: Profithunters Blockchain
+      intro: Withdraw Profithunters to your own Profithunters wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xgoldcoin:
+      key: Blockchain
+      title: Xgoldcoin Blockchain
+      intro: Withdraw Xgoldcoin to your own Xgoldcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    deviant:
+      key: Blockchain
+      title: Deviant Blockchain
+      intro: Withdraw Deviant to your own Deviant wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    phoboscoin:
+      key: Blockchain
+      title: Phoboscoin Blockchain
+      intro: Withdraw Phoboscoin to your own Phoboscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    dinero:
+      key: Blockchain
+      title: Dinero Blockchain
+      intro: Withdraw Dinero to your own Dinero wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    advance:
+      key: Blockchain
+      title: Advance Blockchain
+      intro: Withdraw Advance to your own Advance wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    dv7coin:
+      key: Blockchain
+      title: Dv7coin Blockchain
+      intro: Withdraw Dv7coin to your own Dv7coin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    shekel:
+      key: Blockchain
+      title: Shekel Blockchain
+      intro: Withdraw Shekel to your own Shekel wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    argo:
+      key: Blockchain
+      title: Argo Blockchain
+      intro: Withdraw Argo to your own Argo wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    escrow:
+      key: Blockchain
+      title: Escrow Blockchain
+      intro: Withdraw Escrow to your own Escrow wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    neetcoin:
+      key: Blockchain
+      title: Neetcoin Blockchain
+      intro: Withdraw Neetcoin to your own Neetcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xylo:
+      key: Blockchain
+      title: Xylo Blockchain
+      intro: Withdraw Xylo to your own Xylo wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    steepcoin:
+      key: Blockchain
+      title: Steepcoin Blockchain
+      intro: Withdraw Steepcoin to your own Steepcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bitcoingreen:
+      key: Blockchain
+      title: Bitcoingreen Blockchain
+      intro: Withdraw Bitcoingreen to your own Bitcoingreen wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    craftr:
+      key: Blockchain
+      title: Craftr Blockchain
+      intro: Withdraw Craftr to your own Craftr wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    enviromint:
+      key: Blockchain
+      title: Enviromint Blockchain
+      intro: Withdraw Enviromint to your own Enviromint wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    snowgem:
+      key: Blockchain
+      title: Snowgem Blockchain
+      intro: Withdraw Snowgem to your own Snowgem wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -2596,6 +4806,210 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/poseidon:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/profithunter:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xgoldcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/deviant:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/phoboscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/dinero:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/advance:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/dv7coin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/shekel:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/argo:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/escrow:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/neetcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xylo:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/steepcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bitcoingreen:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/craftr:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/enviromint:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/snowgem:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

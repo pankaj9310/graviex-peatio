@@ -11,6 +11,10 @@
 @import 'vars/basic';
 @import 'vars/custom';
 
+.label-failed {
+    background-color: #f44235;
+}
+
 .dl-horizontal dt {
   width: 120px;
 }

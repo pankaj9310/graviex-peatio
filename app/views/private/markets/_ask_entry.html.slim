@@ -1,22 +1,22 @@
 #ask_entry.panel.panel-default.entry-left
   .panel-body
-    = form_for [market, order], :remote => true do |f|
+    = form_for [market, order], :remote => true, :html => { :autocomplete => 'off' } do |f|
       = f.hidden_field :ord_type
       .input-group.price
         label.input-group-addon = t('.price')
         span.label.label-danger.hint-price-disadvantage
-        = f.text_field :price, class: 'form-control'
+        = f.text_field :price, class: 'form-control', automplete: 'false'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
       .input-group.amount
         label.input-group-addon = t('.amount')
         span.label.label-info.hint-positions
-        = f.text_field :origin_volume, class: 'form-control'
+        = f.text_field :origin_volume, class: 'form-control', automplete: 'false'
         span.input-group-addon = t(market.ask['currency'], scope: 'market.currency')
       .input-group.total
         label.input-group-addon = t('.total')
         span.label.label-fee-info.fee-info
         span.label.label-fee.hint-fee
-        = f.text_field :total, class: 'form-control'
+        = f.text_field :total, class: 'form-control', automplete: 'false'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
       = render partial: 'balance', locals: {currency: t(market.ask['currency'], scope: 'market.currency')}
 

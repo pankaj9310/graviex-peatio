@@ -147,9 +147,21 @@ class Account < ActiveRecord::Base
     return unless member
 
     json = Jbuilder.encode do |json|
-      json.(self, :balance, :locked, :currency, :is_online, :blocks, :headers, :blocktime, :gio_discount)
+      json.(self, :balance, :locked, :currency, :is_online, :blocks, :headers, :blocktime, :gio_discount, :coin_home, :coin_btt, :coin_be)
     end
     member.trigger('account', json)
+  end
+
+  def coin_home
+    currency_obj.home
+  end
+
+  def coin_btt
+    currency_obj.btt
+  end
+
+  def coin_be
+    currency_obj.be
   end
 
   def is_online
@@ -197,7 +209,10 @@ class Account < ActiveRecord::Base
       "blocks" => currency_obj.blocks,
       "headers" => currency_obj.headers,
       "blocktime" => currency_obj.blocktime,
-      "gio_discount" => member.has_gio_deposite_50
+      "gio_discount" => member.has_gio_deposite_50,
+      "coin_home" => currency_obj.home,
+      "coin_btt" => currency_obj.btt,
+      "coin_be" => currency_obj.be
     })
   end
 

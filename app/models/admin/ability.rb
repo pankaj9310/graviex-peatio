@@ -23,6 +23,23 @@ module Admin
       can :manage, ::Deposits::Ltc
       can :manage, ::Deposits::Ether
       can :manage, ::Deposits::Poseidon
+      can :manage, ::Deposits::Profithunter
+      can :manage, ::Deposits::Xgoldcoin
+      can :manage, ::Deposits::Deviant
+      can :manage, ::Deposits::Phoboscoin
+      can :manage, ::Deposits::Dinero
+      can :manage, ::Deposits::Advance
+      can :manage, ::Deposits::Dv7coin
+      can :manage, ::Deposits::Shekel
+      can :manage, ::Deposits::Argo
+      can :manage, ::Deposits::Escrow
+      can :manage, ::Deposits::Neetcoin
+      can :manage, ::Deposits::Xylo
+      can :manage, ::Deposits::Steepcoin
+      can :manage, ::Deposits::Bitcoingreen
+      can :manage, ::Deposits::Craftr
+      can :manage, ::Deposits::Enviromint
+      can :manage, ::Deposits::Snowgem
       #deposit
 
       can :menu, Withdraw
@@ -33,6 +50,23 @@ module Admin
       can :manage, ::Withdraws::Ltc
       can :manage, ::Withdraws::Ether
       can :manage, ::Withdraws::Poseidon
+      can :manage, ::Withdraws::Profithunter
+      can :manage, ::Withdraws::Xgoldcoin
+      can :manage, ::Withdraws::Deviant
+      can :manage, ::Withdraws::Phoboscoin
+      can :manage, ::Withdraws::Dinero
+      can :manage, ::Withdraws::Advance
+      can :manage, ::Withdraws::Dv7coin
+      can :manage, ::Withdraws::Shekel
+      can :manage, ::Withdraws::Argo
+      can :manage, ::Withdraws::Escrow
+      can :manage, ::Withdraws::Neetcoin
+      can :manage, ::Withdraws::Xylo
+      can :manage, ::Withdraws::Steepcoin
+      can :manage, ::Withdraws::Bitcoingreen
+      can :manage, ::Withdraws::Craftr
+      can :manage, ::Withdraws::Enviromint
+      can :manage, ::Withdraws::Snowgem
       #withdraw
 
     end

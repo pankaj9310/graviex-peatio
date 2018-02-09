@@ -1,6 +1,6 @@
 #bid_entry.panel.panel-default.entry-right
   .panel-body
-    = form_for [market, order], :remote => true do |f|
+    = form_for [market, order], :remote => true, :html => { :autocomplete => 'off' } do |f|
       = f.hidden_field :ord_type
       .input-group.price
         label.input-group-addon = t('.price')
@@ -18,7 +18,7 @@
         span.label.label-fee.hint-fee
         = f.text_field :total, class: 'form-control'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
-      a[class='label label-fee-discount-info fee-discount-info' href='https://gravio.net' target='_blank']
+      a[class='label label-fee-discount-info fee-discount-info' href='https://www.gravio.net/blog/graviex-fees-bonuses' target='_blank']
       = render partial: 'balance', locals: {currency: t(market.bid['currency'], scope: 'market.currency')}
 
       button.btn.btn-danger.btn-block.text-up type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))

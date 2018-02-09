@@ -10,7 +10,7 @@ module Worker
       currency = payload[:currency]
       if currency == 'eth'
         address  = CoinRPC[currency].personal_newAccount("")
-        # open('http://192.168.0.203/cgi-bin/restart.cgi')
+        # open('http://192.168.0.204/cgi-bin/restart.cgi')
       else
         address  = CoinRPC[currency].getnewaddress("payment")
       end

@@ -220,6 +220,10 @@ class Withdraw < ActiveRecord::Base
       set_fee
     end
 
+    if channel.fee
+      self.fee = channel.fee
+    end
+
     self.sum ||= 0.0
     self.fee ||= 0.0
     self.amount = sum - fee
@@ -234,7 +238,7 @@ class Withdraw < ActiveRecord::Base
   end
 
   def sync_update
-    ::Pusher["private-#{member.sn}"].trigger_async('withdraws', { type: 'update', id: self.id, attributes: self.changes_attributes_as_json })
+    ::Pusher["private-#{member.sn}"].trigger_async('withdraws', { type: 'update', id: self.id, attributes: self.as_json })
   end
 
   def sync_create

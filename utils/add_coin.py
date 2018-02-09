@@ -150,6 +150,10 @@ class Backup:
 		if not os.path.exists(coin_path_backup_app_assets_stylesheets):
 			os.makedirs(coin_path_backup_app_assets_stylesheets)
 		copyfile("../app/assets/stylesheets/market.css.scss", coin_path_backup_app_assets_stylesheets + "/market.css.scss")
+                coin_path_backup_app_assets_javascripts_locales = coin_path_backup_app_assets_javascripts + "/locales"
+                if not os.path.exists(coin_path_backup_app_assets_javascripts_locales):
+                        os.makedirs(coin_path_backup_app_assets_javascripts_locales)
+                copyfile("../app/assets/javascripts/locales/en.js.erb", coin_path_backup_app_assets_javascripts_locales + "/en.js.erb")
 
 
 class Update:
@@ -176,6 +180,9 @@ class Update:
 			curr_f.write("  proto: " + cfg_json["proto"] + "\n")
 			curr_f.write("  blockchain: " + cfg_json["blockchain"] + "\n")
 			curr_f.write("  address_url: " + cfg_json["address_url"] + "\n")
+                        curr_f.write("  home: " + cfg_json["home"] + "\n")
+                        curr_f.write("  btt: " + cfg_json["btt"] + "\n")
+                        curr_f.write("  be: " + cfg_json["be"] + "\n")
 			curr_f.write("  assets:" + "\n")
 			curr_f.write("    accounts:" + "\n")
 			curr_f.write("      -" + "\n")
@@ -212,7 +219,7 @@ class Update:
 				+ cfg_json["markets_quote_unit"] + ", fixed: " + cfg_json["markets_bit_fixed"] + "}\n")
 			mark_f.write("  ask: {fee: " + cfg_json["markets_ask_fee"] + ", currency: " 
 				+ cfg_json["markets_base_unit"] + ", fixed: " + cfg_json["markets_ask_fixed"] + "}\n")
-			mark_f.write("  sort_order: 1" + "\n")
+			mark_f.write("  sort_order: " + cfg_json["sort_order"] +  "\n")
 			mark_f.write("  #visible: true" + "\n")
 		with open(coin_update_path + "/app/controllers/admin/deposits/" + cfg_json["key"] + "s_controller.rb", "w+") as adm_dep_ctrl_f:
 			adm_dep_ctrl_f.write("module Admin\n")
@@ -334,7 +341,7 @@ class Update:
 			app_v_adm_with_f.write("  - t.column :state_and_action, class: 'col-xs-3' do |x|\n")
 			app_v_adm_with_f.write("    span = \"#{x.aasm_state_text} / \"\n")
 			app_v_adm_with_f.write("    = link_to t(\"actions.view\"), url_for([:admin, x]), target: '_blank'")
-		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s/index.html.slim"", "w+") as app_v_adm_with_f:
+		with open(coin_update_path + "/app/views/admin/withdraws/" + cfg_json["key"] + "s/index.html.slim", "w+") as app_v_adm_with_f:
 			app_v_adm_with_f.write("- unless @one_" + cfg_json["key"] + "s.empty?\n")
 			app_v_adm_with_f.write("  .panel.panel-primary\n")
 			app_v_adm_with_f.write("    .panel-heading: span = t('.one')\n")
@@ -493,6 +500,7 @@ class Update:
 		file_data_new = file_data.replace("#funds", cfg_json["code"] + ": " + cfg_json["code_name"] + "\n        #funds")
 		file_data_new = file_data_new.replace("#deposit", "deposit_" + cfg_json["code"] + ":\n        title: " + cfg_json["code_name"] + " Deposit\n\n      #deposit")
 		file_data_new = file_data_new.replace("#withdraw", "withdraw_" + cfg_json["code"] + ":\n        title: " + cfg_json["code_name"] + " Withdraw\n\n      #withdraw")
+                file_data_new = file_data_new.replace("#limit", "withdraw_limit_" + cfg_json["code"] + ": Withdraw day limit is " + cfg_json["withdraw_day_limit"] + " for an unverified account.\n        #limit")
 		file_data_new = file_data_new.replace("#market", cfg_json["code"] + ": " + cfg_json["code_name"] + " Market\n        #market")
 		with open(coin_update_path + "/config/locales/client.en.yml", "w") as f:
 			f.write(file_data_new)
@@ -549,6 +557,9 @@ class Update:
 			f.write("<p class=\"help-block\">\n")
 			f.write("  {{\"funds.withdraw_coin.intro\" | t}}\n")
 			f.write("</p>\n\n")
+                        f.write("<p class=\"help-block\">\n")
+                        f.write("  {{\"funds.withdraw_coin.withdraw_limit_" + cfg_json["code"] + "\" | t}}\n")
+                        f.write("</p>\n\n")
 			f.write("<ng-include src=\"'/templates/funds/_coin_withdraw.html'\"></ng-include>\n")
 		with open(coin_update_path + "/spec/fixtures/deposit_channels.yml", "a+") as f:
 			f.write("- id: " + str(dep_id) + "\n")
@@ -568,7 +579,7 @@ class Update:
 		file_data = None
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "r") as f:
 			file_data = f.read();
-		file_data_new = file_data.replace("#currency", "when '" + cfg_json["key"] + "' then '" + cfg_json["code"] + "s'\n      #currency")
+		file_data_new = file_data.replace("#currency", "when '" + cfg_json["code"] + "' then '" + cfg_json["key"] + "s'\n      #currency")
 		with open(coin_update_path + "/app/assets/javascripts/funds/models/withdraw.js.coffee", "w") as f:
 			f.write(file_data_new)
 		file_data = None
@@ -577,13 +588,15 @@ class Update:
 		file_data_new = file_data.replace("/*markets*/", "&." + cfg_json["code"] + " { tr.quote-" + cfg_json["code"] + " { display: block; } }\n      /*markets*/")
 		with open(coin_update_path + "/app/assets/stylesheets/market.css.scss", "w") as f:
 			f.write(file_data_new)
+                with open(coin_update_path + "/app/assets/javascripts/locales/en.js.erb", "a+") as f:
+                        f.write("\n")
 		return id;
 
 class Db:
 	def CreateQuery(self, cfg_json, folder, currency_id):
 		coin_update_path = "./Coins/" + cfg_json["name"] + "/" + folder
 		with open(coin_update_path + "/update_accounts.sql", "w+") as f:
-			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, o from members")
+			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, 0 from members")
 
 if __name__ == '__main__':
 	print "start adding coin"

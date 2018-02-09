@@ -22,6 +22,23 @@ class Withdraw extends PeatioModel.Model
       when 'ltc' then 'ltcs'
       when 'eth' then 'ethers'
       when 'psd' then 'poseidons'
+      when 'phc' then 'profithunters'
+      when 'xgc' then 'xgoldcoins'
+      when 'dev' then 'deviants'
+      when 'pbs' then 'phoboscoins'
+      when 'din' then 'dineros'
+      when 'adv' then 'advances'
+      when 'dv7' then 'dv7coins'
+      when 'jew' then 'shekels'
+      when 'argo' then 'argos'
+      when 'esco' then 'escrows'
+      when 'neet' then 'neetcoins'
+      when 'xylo' then 'xylos'
+      when 'steep' then 'steepcoins'
+      when 'bitg' then 'bitcoingreens'
+      when 'crft' then 'craftrs'
+      when 'env' then 'enviromints'
+      when 'sng' then 'snowgems'
       #currency
 
 window.Withdraw = Withdraw

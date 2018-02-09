@@ -22,7 +22,7 @@
       <label class="optional control-label">{{"funds.withdraw_coin.balance" | t}}</label>
     </div>
     <div class="col-sm-12">
-      <p class="form-control-static"><span class="currency-balance" id="withdraw_balance">{{balance}}</span></p>
+      <p class="form-control-static"><span class="currency-balance" id="withdraw_balance" ng-bind="balance"></span></p>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
         <div class="input-group-btn"><button ng-click="withdrawsCtrl.withdrawAll()" class="btn btn-success" id="withdraw_all_btn" type="button">{{"funds.withdraw_coin.withdraw_all" | t}}</button></div>
       </div>
     </div>
-    <span class="col-sm-6 help-block"><a target="_balance" href="/documents/price">{{"funds.withdraw_coin.fee_explain" | t}}</a></span>
+    <span class="col-sm-6 help-block"><a target="_blank" href="https://www.gravio.net/blog/graviex-fees-bonuses">{{"funds.withdraw_coin.fee_explain" | t}}</a></span>
   </div>
 
   <ng-include src="'/templates/funds/_two_factor_auth.html'"></ng-include>
@@ -63,7 +63,7 @@
   <tr ng-repeat="withdraw in wdCtrl.withdraws | orderBy:predicate">
     <td>{{withdraw.created_at | date:'yyyy-MM-dd HH:mm'}}</td>
     <td>
-      <a href="{{withdraw.blockchain_url}}" target='_blank'>{{withdraw.txid | truncate: 20}}</a>
+      <a href="{{withdraw.blockchain_url}}" target='_blank'>{{(withdraw.txid != null ? withdraw.txid : '...') | truncate: 20}}</a>
     </td>
     <td>{{withdraw.amount}}</td>
     <td>{{withdraw.fee}}</td>

@@ -6,6 +6,9 @@ class Currency < ActiveYamlBase
 
   field :visible, default: true
 
+  @last_blocks = 0
+  @local_time = 0
+
   self.singleton_class.send :alias_method, :all_with_invisible, :all
   def self.all
     all_with_invisible.select &:visible
@@ -99,9 +102,28 @@ class Currency < ActiveYamlBase
 
     if @local_status
       Rails.logger.info @local_status
+
+      if !@last_blocks
+        @last_blocks = 0
+      end
+
+      if !@local_time
+        @local_time = 0
+      end 
+
+      if @local_status[:mediantime] > 0
+        @local_time = @local_status[:mediantime]
+      end
+
+      if @local_status[:mediantime] == 0 && @local_status[:blocks] > @last_blocks
+        @last_blocks = @local_status[:blocks]
+        @local_time = Time.now.to_i
+      end
+
+      #Rails.logger.info @local_time
       Rails.cache.write(blocks_count_cache_key, @local_status[:blocks]) if coin?
       Rails.cache.write(headers_count_cache_key, @local_status[:headers]) if coin?
-      Rails.cache.write(blocktime_cache_key, Time.at(@local_status[:mediantime]).to_datetime.strftime("%Y-%m-%d %H:%M:%S")) if coin?
+      Rails.cache.write(blocktime_cache_key, Time.at(@local_time).to_datetime.strftime("%Y-%m-%d %H:%M:%S")) if coin?
     end
   end
 

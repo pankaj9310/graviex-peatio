@@ -9,11 +9,20 @@ window.MarketSwitchUI = flight.component ->
     item = $(event.target).closest('a')
     name = item.data('name')
 
+#    window.markets_filter = name
+#    console.log 'switchMarketGroup', window.markets_filter
+
     @select('marketGroupItem').removeClass('active')
     item.addClass('active')
 
     @select('marketGroupName').text item.find('span').text()
     @select('marketsTable').attr("class", "table table-hover markets #{name}")
+    @select('marketsTable').attr("style", "font-size: 12px")
+
+  @setMarketGroup = (market_filter) ->
+    console.log 'setMarketGroup', market_filter
+
+    @select('marketsTable').attr("class", "table table-hover markets #{market_filter}")
     @select('marketsTable').attr("style", "font-size: 12px")
 
   @updateMarket = (select, ticker) ->
@@ -38,6 +47,9 @@ window.MarketSwitchUI = flight.component ->
   @after 'initialize', ->
     @on document, 'market::tickers', @refresh
     @on @select('marketGroupItem'), 'click', @switchMarketGroup
+
+#    if window.markets_filter
+#      @setMarketGroup window.markets_filter
 
     @select('table').on 'click', 'tr', (e) ->
       unless e.target.nodeName == 'I'

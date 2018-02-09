@@ -47,6 +47,11 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
   @createWithdraw = (currency) ->
     withdraw_channel = WithdrawChannel.findBy('currency', currency)
     account = withdraw_channel.account()
+
+    for fs in $scope.fund_sources()
+      if fs.id == _selectedFundSourceId
+        _selectedFundSourceUId = fs.uid
+
     data = { withdraw: { member_id: current_user.id, currency: currency, sum: @withdraw.sum, fund_source_id: _selectedFundSourceId, fund_uid: _selectedFundSourceUId } }
 
     if current_user.app_activated or current_user.sms_activated
@@ -101,4 +106,8 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
       $.publish "two_factor_init"
     , 100)
 
+  do @event = ->
+    Account.bind "create update destroy", ->
+      $scope.balance = $scope.account.balance
+      $scope.$digest()
 ]
