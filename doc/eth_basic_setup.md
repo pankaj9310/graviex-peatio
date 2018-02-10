@@ -1,5 +1,7 @@
 # How to setup eth server for peatio
 
+Sources: https://github.com/muhammednagy/peatio/tree/master/eth
+
 ### What do you need?
 - An instance with 4G of ram
 - at least 100 G of hard disk
