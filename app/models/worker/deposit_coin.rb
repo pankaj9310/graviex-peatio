@@ -60,7 +60,8 @@ module Worker
     end
 
     def deposit!(channel, txid, txout, raw, detail)
-      return if detail[:account] != "payment" || detail[:category] != "receive"
+      #return if detail[:account] != "payment" || detail[:category] != "receive"
+      return if detail[:category] != "receive"
 
       ActiveRecord::Base.transaction do
         unless PaymentAddress.where(currency: channel.currency_obj.id, address: detail[:address]).first
@@ -76,7 +77,7 @@ module Worker
         address: detail[:address],
         amount: detail[:amount].to_s.to_d,
         confirmations: raw[:confirmations],
-        receive_at: Time.at(raw[:timereceived]).to_datetime,
+        receive_at: Time.at(raw[:time]).to_datetime,
         currency: channel.currency
 
         deposit = channel.kls.create! \

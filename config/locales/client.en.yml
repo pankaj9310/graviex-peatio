@@ -64,6 +64,11 @@ en:
         crft: CRFT
         env: ENV
         sng: SNG
+        nyc: NYC
+        zoc: ZOC
+        btcz: BTCZ
+        ytn: YTN
+        yic: YIC
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -154,6 +159,21 @@ en:
 
       deposit_sng:
         title: SNG Deposit
+
+      deposit_nyc:
+        title: NYC Deposit
+
+      deposit_zoc:
+        title: ZOC Deposit
+
+      deposit_btcz:
+        title: BTCZ Deposit
+
+      deposit_ytn:
+        title: YTN Deposit
+
+      deposit_yic:
+        title: YIC Deposit
 
       #deposit
 
@@ -272,6 +292,21 @@ en:
       withdraw_sng:
         title: SNG Withdraw
 
+      withdraw_nyc:
+        title: NYC Withdraw
+
+      withdraw_zoc:
+        title: ZOC Withdraw
+
+      withdraw_btcz:
+        title: BTCZ Withdraw
+
+      withdraw_ytn:
+        title: YTN Withdraw
+
+      withdraw_yic:
+        title: YIC Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -299,6 +334,11 @@ en:
         withdraw_limit_crft: Withdraw day limit is 5000 for an unverified account.
         withdraw_limit_env: Withdraw day limit is 500000 for an unverified account.
         withdraw_limit_sng: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_nyc: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_zoc: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_btcz: Withdraw day limit is 50000000 for an unverified account.
+        withdraw_limit_ytn: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_yic: Withdraw day limit is 5000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -374,6 +414,11 @@ en:
         crft: CRFT Market
         env: ENV Market
         sng: SNG Market
+        nyc: NYC Market
+        zoc: ZOC Market
+        btcz: BTCZ Market
+        ytn: YTN Market
+        yic: YIC Market
         #market
 
 

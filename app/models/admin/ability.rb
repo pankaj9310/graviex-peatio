@@ -40,6 +40,11 @@ module Admin
       can :manage, ::Deposits::Craftr
       can :manage, ::Deposits::Enviromint
       can :manage, ::Deposits::Snowgem
+      can :manage, ::Deposits::Newyorkcoin
+      can :manage, ::Deposits::Zeroonecoin
+      can :manage, ::Deposits::Bitcoinz
+      can :manage, ::Deposits::Yenten
+      can :manage, ::Deposits::Yicoin
       #deposit
 
       can :menu, Withdraw
@@ -67,6 +72,11 @@ module Admin
       can :manage, ::Withdraws::Craftr
       can :manage, ::Withdraws::Enviromint
       can :manage, ::Withdraws::Snowgem
+      can :manage, ::Withdraws::Newyorkcoin
+      can :manage, ::Withdraws::Zeroonecoin
+      can :manage, ::Withdraws::Bitcoinz
+      can :manage, ::Withdraws::Yenten
+      can :manage, ::Withdraws::Yicoin
       #withdraw
 
     end

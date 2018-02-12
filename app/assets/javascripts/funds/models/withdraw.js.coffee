@@ -39,6 +39,11 @@ class Withdraw extends PeatioModel.Model
       when 'crft' then 'craftrs'
       when 'env' then 'enviromints'
       when 'sng' then 'snowgems'
+      when 'nyc' then 'newyorkcoins'
+      when 'zoc' then 'zeroonecoins'
+      when 'btcz' then 'bitcoinzs'
+      when 'ytn' then 'yentens'
+      when 'yic' then 'yicoins'
       #currency
 
 window.Withdraw = Withdraw

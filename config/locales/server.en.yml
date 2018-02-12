@@ -43,6 +43,11 @@ en:
       withdraws/craftr: Withdraw
       withdraws/enviromint: Withdraw
       withdraws/snowgem: Withdraw
+      withdraws/newyorkcoin: Withdraw
+      withdraws/zeroonecoin: Withdraw
+      withdraws/bitcoinz: Withdraw
+      withdraws/yenten: Withdraw
+      withdraws/yicoin: Withdraw
       #models
     attributes:
       api_token:
@@ -324,6 +329,36 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/snowgem:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/newyorkcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zeroonecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bitcoinz:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/yenten:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/yicoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -652,6 +687,76 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/newyorkcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/zeroonecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bitcoinz:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/yenten:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/yicoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -744,6 +849,16 @@ en:
               enviromint_invalid: Invalid Address
               snowgem_ismine: Used Address
               snowgem_invalid: Invalid Address
+              newyorkcoin_ismine: Used Address
+              newyorkcoin_invalid: Invalid Address
+              zeroonecoin_ismine: Used Address
+              zeroonecoin_invalid: Invalid Address
+              bitcoinz_ismine: Used Address
+              bitcoinz_invalid: Invalid Address
+              yenten_ismine: Used Address
+              yenten_invalid: Invalid Address
+              yicoin_ismine: Used Address
+              yicoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -891,6 +1006,36 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/newyorkcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/zeroonecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bitcoinz:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/yenten:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/yicoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -959,6 +1104,11 @@ en:
       crft: CRFT
       env: ENV
       sng: SNG
+      nyc: NYC
+      zoc: ZOC
+      btcz: BTCZ
+      ytn: YTN
+      yic: YIC
       #market1
   currency:
     satoshi:
@@ -1095,6 +1245,31 @@ en:
       key: SNG
       code: SNG
       name: Snowgem
+      format: '0,0.0000'
+    newyorkcoin:
+      key: NYC
+      code: NYC
+      name: Newyorkcoin
+      format: '0,0.0000'
+    zeroonecoin:
+      key: ZOC
+      code: ZOC
+      name: Zeroonecoin
+      format: '0,0.0000'
+    bitcoinz:
+      key: BTCZ
+      code: BTCZ
+      name: Bitcoinz
+      format: '0,0.0000'
+    yenten:
+      key: YTN
+      code: YTN
+      name: Yenten
+      format: '0,0.0000'
+    yicoin:
+      key: YIC
+      code: YIC
+      name: Yicoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -1396,6 +1571,41 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    newyorkcoin:
+      key: Block Chain
+      title: Newyorkcoin Deposits
+      intro: Deposit newyorkcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    zeroonecoin:
+      key: Block Chain
+      title: Zeroonecoin Deposits
+      intro: Deposit zeroonecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bitcoinz:
+      key: Block Chain
+      title: Bitcoinz Deposits
+      intro: Deposit bitcoinz from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    yenten:
+      key: Block Chain
+      title: Yenten Deposits
+      intro: Deposit yenten from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    yicoin:
+      key: Block Chain
+      title: Yicoin Deposits
+      intro: Deposit yicoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -1475,6 +1685,21 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       snowgems:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      newyorkcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zeroonecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bitcoinzs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      yentens:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      yicoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -1929,6 +2154,81 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      newyorkcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      zeroonecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bitcoinzs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      yentens:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      yicoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -2022,6 +2322,11 @@ en:
         crft-assets: CRFT Assets
         env-assets: ENV Assets
         sng-assets: SNG Assets
+        nyc-assets: NYC Assets
+        zoc-assets: ZOC Assets
+        btcz-assets: BTCZ Assets
+        ytn-assets: YTN Assets
+        yic-assets: YIC Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -2047,6 +2352,11 @@ en:
         verify-crft: Verify My CRFT Assets
         verify-env: Verify My ENV Assets
         verify-sng: Verify My SNG Assets
+        verify-nyc: Verify My NYC Assets
+        verify-zoc: Verify My ZOC Assets
+        verify-btcz: Verify My BTCZ Assets
+        verify-ytn: Verify My YTN Assets
+        verify-yic: Verify My YIC Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -2071,6 +2381,11 @@ en:
         crft-assets-total: 'Total CRFT assets of exchange: '
         env-assets-total: 'Total ENV assets of exchange: '
         sng-assets-total: 'Total SNG assets of exchange: '
+        nyc-assets-total: 'Total NYC assets of exchange: '
+        zoc-assets-total: 'Total ZOC assets of exchange: '
+        btcz-assets-total: 'Total BTCZ assets of exchange: '
+        ytn-assets-total: 'Total YTN assets of exchange: '
+        yic-assets-total: 'Total YIC assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -2203,6 +2518,31 @@ en:
         intro: All of exchange's SNG assets are listed here.
         total: Total SNG Assets
         address: Address
+      nyc_assets:
+        title: NYC Assets
+        intro: All of exchange's NYC assets are listed here.
+        total: Total NYC Assets
+        address: Address
+      zoc_assets:
+        title: ZOC Assets
+        intro: All of exchange's ZOC assets are listed here.
+        total: Total ZOC Assets
+        address: Address
+      btcz_assets:
+        title: BTCZ Assets
+        intro: All of exchange's BTCZ assets are listed here.
+        total: Total BTCZ Assets
+        address: Address
+      ytn_assets:
+        title: YTN Assets
+        intro: All of exchange's YTN assets are listed here.
+        total: Total YTN Assets
+        address: Address
+      yic_assets:
+        title: YIC Assets
+        intro: All of exchange's YIC assets are listed here.
+        total: Total YIC Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -2240,6 +2580,11 @@ en:
         crft_format: '0.00000000'
         env_format: '0.00000000'
         sng_format: '0.00000000'
+        nyc_format: '0.00000000'
+        zoc_format: '0.00000000'
+        btcz_format: '0.00000000'
+        ytn_format: '0.00000000'
+        yic_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -2386,6 +2731,36 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          nyc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zoc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          btcz:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ytn:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          yic:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -2452,6 +2827,11 @@ en:
         crft_html: "<i class='fa fa-check'></i><span>CRFT Markets</span>"
         env_html: "<i class='fa fa-check'></i><span>ENV Markets</span>"
         sng_html: "<i class='fa fa-check'></i><span>SNG Markets</span>"
+        nyc_html: "<i class='fa fa-check'></i><span>NYC Markets</span>"
+        zoc_html: "<i class='fa fa-check'></i><span>ZOC Markets</span>"
+        btcz_html: "<i class='fa fa-check'></i><span>BTCZ Markets</span>"
+        ytn_html: "<i class='fa fa-check'></i><span>YTN Markets</span>"
+        yic_html: "<i class='fa fa-check'></i><span>YIC Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -2666,6 +3046,11 @@ en:
         crft_format: '0.00000000'
         env_format: '0.00000000'
         sng_format: '0.00000000'
+        nyc_format: '0.00000000'
+        zoc_format: '0.00000000'
+        btcz_format: '0.00000000'
+        ytn_format: '0.00000000'
+        yic_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -2839,6 +3224,21 @@ en:
         snowgem:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        newyorkcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        zeroonecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bitcoinz:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        yenten:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        yicoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -2913,6 +3313,16 @@ en:
         enviromint:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         snowgem:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        newyorkcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zeroonecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bitcoinz:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        yenten:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        yicoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -3118,6 +3528,41 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        newyorkcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Newyorkcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        zeroonecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zeroonecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bitcoinz:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bitcoinz Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        yenten:
+          fee: Fee
+          sum: Amount
+          fund_uid: Yenten Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        yicoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Yicoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -3182,97 +3627,127 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        deviants:
+      deviants:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        phoboscoins:
+      phoboscoins:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        dineros:
+      dineros:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        advances:
+      advances:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        dv7coins:
+      dv7coins:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        shekels:
+      shekels:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        argos:
+      argos:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        escrows:
+      escrows:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        neetcoins:
+      neetcoins:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        xylos:
+      xylos:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        steepcoins:
+      steepcoins:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        bitcoingreens:
+      bitcoingreens:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        craftrs:
+      craftrs:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        enviromints:
+      enviromints:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        snowgems:
+      snowgems:
         update:
           notice: The deposit was successful.
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-        #admin_deposits
+      newyorkcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zeroonecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bitcoinzs:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      yentens:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      yicoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      #admin_deposits
     tickets:
       view: View
       close: Close Ticket
@@ -3622,6 +4097,66 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      newyorkcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      zeroonecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bitcoinzs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      yentens:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      yicoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -3756,6 +4291,36 @@ en:
       checked: Checked
       warning: Warning
   deposits/snowgem:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/newyorkcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zeroonecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bitcoinz:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/yenten:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/yicoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -4003,6 +4568,46 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    newyorkcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    zeroonecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bitcoinz:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    yenten:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    yicoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -4057,6 +4662,11 @@ en:
       crft: CRFT
       env: ENV
       sng: SNG
+      nyc: NYC
+      zoc: ZOC
+      btcz: BTCZ
+      ytn: YTN
+      yic: YIC
       #enum_currence
     order:
       state:
@@ -4106,6 +4716,11 @@ en:
         craftr: Craftr
         enviromint: Enviromint
         snowgem: Snowgem
+        newyorkcoin: Newyorkcoin
+        zeroonecoin: Zeroonecoin
+        bitcoinz: Bitcoinz
+        yenten: Yenten
+        yicoin: Yicoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -4730,6 +5345,41 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    newyorkcoin:
+      key: Blockchain
+      title: Newyorkcoin Blockchain
+      intro: Withdraw Newyorkcoin to your own Newyorkcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    zeroonecoin:
+      key: Blockchain
+      title: Zeroonecoin Blockchain
+      intro: Withdraw Zeroonecoin to your own Zeroonecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bitcoinz:
+      key: Blockchain
+      title: Bitcoinz Blockchain
+      intro: Withdraw Bitcoinz to your own Bitcoinz wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    yenten:
+      key: Blockchain
+      title: Yenten Blockchain
+      intro: Withdraw Yenten to your own Yenten wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    yicoin:
+      key: Blockchain
+      title: Yicoin Blockchain
+      intro: Withdraw Yicoin to your own Yicoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -5010,6 +5660,66 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/snowgem:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/newyorkcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zeroonecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bitcoinz:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/yenten:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/yicoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

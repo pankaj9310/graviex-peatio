@@ -98,8 +98,8 @@
     type = @panelType()
     currency = gon.market[type].currency
     balance = gon.accounts[currency]?.balance || 0
-    locked = gon.accounts[currency]?.locked || 0
-    balance = balance - locked
+#    locked = gon.accounts[currency]?.locked || 0
+#    balance = balance - locked
 
     @select('currentBalanceSel').data('balance', balance)
     @select('currentBalanceSel').text(formatter.fix(type, balance))
