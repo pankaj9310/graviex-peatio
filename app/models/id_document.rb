@@ -11,13 +11,15 @@ class IdDocument < ActiveRecord::Base
 
   belongs_to :member
 
-  validates_presence_of :name, :id_document_type, :id_document_number, :id_bill_type, allow_nil: true
+  validates_presence_of :name, :id_document_type, :id_document_number, :id_document_file, :id_bill_file,  allow_nil: true
   validates_uniqueness_of :member
 
   enumerize :id_document_type, in: {id_card: 0, passport: 1, driver_license: 2}
-  enumerize :id_bill_type,     in: {bank_statement: 0, tax_bill: 1}
+  enumerize :id_bill_type,     in: {bank_statement: 0, tax_bill: 1, selfie_id: 2}
 
   alias_attribute :full_name, :name
+
+  before_update :verify_bill_type
 
   aasm do
     state :unverified, initial: true
@@ -35,5 +37,10 @@ class IdDocument < ActiveRecord::Base
     event :reject do
       transitions from: [:verifying, :verified],  to: :unverified
     end
+  end
+
+  def verify_bill_type
+    self.id_bill_type = "selfie_id"
+    Rails.logger.info self.to_json
   end
 end

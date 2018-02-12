@@ -20,7 +20,8 @@ table#setting_list.table
       h4
         span = t('.verification.title')
         i.fa.fa-bolt.text-warning
-      p.text-ignore = t('.verification.description')
+      span.text-ignore = t('.verification.description')
+      a[href='https://www.gravio.net/blog/graviex-user-accounts-types' target='_blank'] = t('.verification.more')
     td.col-xs-7.vertical-center
       - if current_user.id_document_verified?
         a href="#" class="btn btn-success btn-block disabled" role="button"
