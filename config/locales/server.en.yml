@@ -2777,11 +2777,13 @@ en:
         city: City
         country: Country
         zipcode: Zipcode
-        id_document_type: Document Type
-        id_document_number: Document Number
-        id_document_file: Document Photo
-        id_bill_type: Proof Of Residence
-        id_bill_file: Proof Of Residence Photo
+        id_document_type: Identity Document Type
+        id_document_number: Identity Document Number
+        id_document_file: Identity Document Photo
+        id_bill_type: Identity Proof Type
+        id_bill_file: Selfie with your Identity Document
+        warning: This information will be used for the Two-Factor Authentication recovery procedure. 
+          Please, take it seriously, because if we do not able to verify your identity in the future - then we can not help you in case of loss of Google's Authenticator token.
       update:
         notice: Your account verification has been submitted.
     markets:
@@ -2950,9 +2952,8 @@ en:
         safety_instruction: In order to protect your bitcoins and personal information, we strongly suggest that you use Two-Factor Authentication.
         reset_password: Rest your Password
         reauthenticate: Authentication
-        activated: An  email has been sent to your mailbox, please check it for verification
-          as soon as possible. If you do not received it , please click "send it again"
-          button
+        activated: E-mail with verification link has been sent to your mailbox, please check as soon as possible. 
+          If you do not received it, please click "Send it again" button.
         auth-activated: Please confirm your email address first.
         auth-verified: Please verify your account first.
         email:
@@ -2981,8 +2982,8 @@ en:
           disable: Disable
         verification:
           title: Verify Account
-          description: Help keep the bad guys out of your account by using both your
-            password and your phone
+          description: "Verify your account and take more. Details you can find "
+          more: "here."
           go: Submit
           verified: Verified
         asset_passwords:
@@ -3076,9 +3077,10 @@ en:
       tickets:
         panel: Tickets
       id_documents:
-        panel: Real-name Authentication
+        panel: Account Verification
+        info: Why this so impotant?
         new:
-          title: Submit real-name authentication information
+          title: Submit account verification information
           intro: In line with the national laws , identity verification is required.
             please verify your account to proceed.
     panels:
@@ -3119,8 +3121,8 @@ en:
       panel: Create Account
       new:
         title: Create My Account
-        intro: This will be your only ID on GRAVIEX which is necessary for your exchange
-          , deposit and withdrawal . please fill it out carefully.
+        intro: This will be your only ID on GRAVIEX which is necessary for your exchange, deposit and withdrawal. Please fill it out carefully.
+          Also, to start working with GRAVIEX exchange wallets (Funds page) you NEED to setup Two-Factor Authentication.
       edit:
         panel: My Account
         title: Reset Password
@@ -3264,7 +3266,7 @@ en:
       withdraw:
         bank:
           member_name: "<span class='text-danger'>Withdraw bank account name must
-            match your name used for real-name authentication</span>"
+            match your name used for account verification</span>"
           sum: "<a target='_balance' href='#'>Fee structure</a>"
           fund_extra: If your bank is no longer in the list, please contact customer
             service
@@ -4732,6 +4734,7 @@ en:
       id_bill_type:
         bank_statement: Bank Statement
         tax_bill: Tax Bill
+        selfie_id: Selfie with ID Document
   views:
     pagination:
       first: "&laquo; First"
@@ -4983,7 +4986,8 @@ en:
         create: Submit
   activations:
     new:
-      notice: An email has been sent to your mailbox, please check it for verification as soon as possible. If you do not received it , please click "send it again" button.
+      activated: E-mail with verification link has been sent to your mailbox, please check as soon as possible.
+        If you do not received it, please click "Send it again" button.
       verified: Your email adress has been verified successfully.
       login_required: login required!
       tip: Activation link was sent to %{email}
@@ -5114,7 +5118,8 @@ en:
     update:
       alert: Two factor verification code error, please re-enter.
     auth:
-      please_active_two_factor: Please set google authenticator first.
+      please_active_two_factor: Please, setup Two-Factor Authentication. You need to use Google Authenticator for that. 
+        Without Two-FA enabled you cannot use Funds page (deposits and withdraws within your exchange wallets).
       submit: Submit
       otp_placeholder: 6-digit password
       google_app: Google Authenticator

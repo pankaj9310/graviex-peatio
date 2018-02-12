@@ -93,8 +93,6 @@
         @trigger 'place_order::input::total', {total: @getBalance()}
 
   @refreshBalance = (event, data) ->
-#    console.log event, data
-
     type = @panelType()
     currency = gon.market[type].currency
     balance = gon.accounts[currency]?.balance || 0

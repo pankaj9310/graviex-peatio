@@ -14,7 +14,11 @@ class ActivationsController < ApplicationController
     @token.confirm!
 
     if current_user
-      redirect_to settings_path, notice: t('.notice')
+      if not current_user.two_factors.activated?
+        redirect_to settings_path,  notice: t('.notice'), alert: t('two_factors.auth.please_active_two_factor')
+      else
+        redirect_to settings_path, notice: t('.notice')
+      end
     else
       redirect_to signin_path, notice: t('.notice')
     end
