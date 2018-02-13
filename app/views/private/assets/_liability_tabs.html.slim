@@ -23,6 +23,11 @@
     li: a.crft-proof href="#crft-proof" data-toggle="tab" == t('.verify-crft')
     li: a.env-proof href="#env-proof" data-toggle="tab" == t('.verify-env')
     li: a.sng-proof href="#sng-proof" data-toggle="tab" == t('.verify-sng')
+    li: a.nyc-proof href="#nyc-proof" data-toggle="tab" == t('.verify-nyc')
+    li: a.zoc-proof href="#zoc-proof" data-toggle="tab" == t('.verify-zoc')
+    li: a.btcz-proof href="#btcz-proof" data-toggle="tab" == t('.verify-btcz')
+    li: a.ytn-proof href="#ytn-proof" data-toggle="tab" == t('.verify-ytn')
+    li: a.yic-proof href="#yic-proof" data-toggle="tab" == t('.verify-yic')
     /li
 
   .tab-content
@@ -193,3 +198,38 @@
           == t("currency.icon.sng")
           = @sng_proof.sum
       = render 'liability_data', account: @sng_account, proof: @sng_proof
+    #nyc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.nyc-assets-total')
+        span.currency
+          == t("currency.icon.nyc")
+          = @nyc_proof.sum
+      = render 'liability_data', account: @nyc_account, proof: @nyc_proof
+    #zoc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.zoc-assets-total')
+        span.currency
+          == t("currency.icon.zoc")
+          = @zoc_proof.sum
+      = render 'liability_data', account: @zoc_account, proof: @zoc_proof
+    #btcz-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.btcz-assets-total')
+        span.currency
+          == t("currency.icon.btcz")
+          = @btcz_proof.sum
+      = render 'liability_data', account: @btcz_account, proof: @btcz_proof
+    #ytn-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.ytn-assets-total')
+        span.currency
+          == t("currency.icon.ytn")
+          = @ytn_proof.sum
+      = render 'liability_data', account: @ytn_account, proof: @ytn_proof
+    #yic-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.yic-assets-total')
+        span.currency
+          == t("currency.icon.yic")
+          = @yic_proof.sum
+      = render 'liability_data', account: @yic_account, proof: @yic_proof

@@ -115,3 +115,28 @@
   currency: sng
   min_confirm: 5
   max_confirm: 6
+- id: 4800
+  key: newyorkcoin
+  currency: nyc
+  min_confirm: 5
+  max_confirm: 6
+- id: 5000
+  key: zeroonecoin
+  currency: zoc
+  min_confirm: 5
+  max_confirm: 6
+- id: 5200
+  key: bitcoinz
+  currency: btcz
+  min_confirm: 5
+  max_confirm: 6
+- id: 5400
+  key: yenten
+  currency: ytn
+  min_confirm: 5
+  max_confirm: 6
+- id: 5600
+  key: yicoin
+  currency: yic
+  min_confirm: 5
+  max_confirm: 6

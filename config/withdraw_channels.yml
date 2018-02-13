@@ -183,3 +183,43 @@
   fee: 0.002
   inuse: true
   type: WithdrawChannelSng
+- id: 4800
+  key: newyorkcoin
+  currency: nyc
+  fixed: 8
+  max: 5000000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelNyc
+- id: 5000
+  key: zeroonecoin
+  currency: zoc
+  fixed: 8
+  max: 5000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelZoc
+- id: 5200
+  key: bitcoinz
+  currency: btcz
+  fixed: 8
+  max: 50000000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelBtcz
+- id: 5400
+  key: yenten
+  currency: ytn
+  fixed: 8
+  max: 5000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelYtn
+- id: 5600
+  key: yicoin
+  currency: yic
+  fixed: 8
+  max: 5000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelYic

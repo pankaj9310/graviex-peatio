@@ -26,6 +26,11 @@ module Private
       @crft_proof   = Proof.current :crft
       @env_proof   = Proof.current :env
       @sng_proof   = Proof.current :sng
+      @nyc_proof   = Proof.current :nyc
+      @zoc_proof   = Proof.current :zoc
+      @btcz_proof   = Proof.current :btcz
+      @ytn_proof   = Proof.current :ytn
+      @yic_proof   = Proof.current :yic
       #proof
 
       if current_user
@@ -52,6 +57,11 @@ module Private
         @crft_account = current_user.accounts.with_currency(:crft).first
         @env_account = current_user.accounts.with_currency(:env).first
         @sng_account = current_user.accounts.with_currency(:sng).first
+        @nyc_account = current_user.accounts.with_currency(:nyc).first
+        @zoc_account = current_user.accounts.with_currency(:zoc).first
+        @btcz_account = current_user.accounts.with_currency(:btcz).first
+        @ytn_account = current_user.accounts.with_currency(:ytn).first
+        @yic_account = current_user.accounts.with_currency(:yic).first
         #account
       end
     end

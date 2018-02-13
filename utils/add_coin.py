@@ -220,12 +220,12 @@ class Update:
 			mark_f.write("  ask: {fee: " + cfg_json["markets_ask_fee"] + ", currency: " 
 				+ cfg_json["markets_base_unit"] + ", fixed: " + cfg_json["markets_ask_fixed"] + "}\n")
 			mark_f.write("  sort_order: " + cfg_json["sort_order"] +  "\n")
-			mark_f.write("  #visible: true" + "\n")
+			mark_f.write("  visible: false" + "\n")
 		with open(coin_update_path + "/app/controllers/admin/deposits/" + cfg_json["key"] + "s_controller.rb", "w+") as adm_dep_ctrl_f:
 			adm_dep_ctrl_f.write("module Admin\n")
 			adm_dep_ctrl_f.write("  module Deposits\n")
 			adm_dep_ctrl_f.write("    class " + cfg_json["name"] + "sController < ::Admin::Deposits::BaseController\n")
-			adm_dep_ctrl_f.write("      load_and_authorize_resource :class => '::Deposits::" + cfg_json["name"] + "'\n\n")
+			adm_dep_ctrl_f.write("      load_and_authorize_resource :class => \'::Deposits::" + cfg_json["name"] + "\'\n\n")
 			adm_dep_ctrl_f.write("      def index\n")
 			adm_dep_ctrl_f.write("        start_at = DateTime.now.ago(60 * 60 * 24 * 365)\n")
 			adm_dep_ctrl_f.write("        @" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.includes(:member).\n")
@@ -243,7 +243,7 @@ class Update:
 			adm_with_ctrl_f.write("module Admin\n")
 			adm_with_ctrl_f.write("  module Withdraws\n")
 			adm_with_ctrl_f.write("    class " + cfg_json["name"] + "sController < ::Admin::Withdraws::BaseController\n")
-			adm_with_ctrl_f.write("      load_and_authorize_resource :class => '::Withdraws::" + cfg_json["name"] + "'\n\n")
+			adm_with_ctrl_f.write("      load_and_authorize_resource :class => \'::Withdraws::" + cfg_json["name"] + "\'\n\n")
 			adm_with_ctrl_f.write("      def index\n")
 			adm_with_ctrl_f.write("        start_at = DateTime.now.ago(60 * 60 * 24)\n")
 			adm_with_ctrl_f.write("        @one_" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.with_aasm_state(:accepted).order(\"id DESC\")\n")
@@ -528,7 +528,7 @@ class Update:
 		file_data_new = file_data_new.replace("#withdraw_amount", cfg_json["key"] + ":\n          sum: Minimum amount 0.001\n          fund_extra: Enter a label for this address (optional)\n        #withdraw_amount")
 		file_data_new = file_data_new.replace("#withdraw_sum", cfg_json["key"] + ":\n          sum: \"<a target='_balance' href='#'>Fee structure</a>\"\n        #withdraw_sum")
 		file_data_new = file_data_new.replace("#withdraw_labels", cfg_json["key"] + ":\n          fee: Fee\n          sum: Amount\n          fund_uid: " + cfg_json["name"] + " Address\n          fund_extra: Label\n          account_balance: Account Balance\n          member_name: Account\n        #withdraw_labels")
-		file_data_new = file_data_new.replace("#admin_deposits", cfg_json["key"] + "s:\n        update:\n          notice: The deposit was successful.\n        index:\n          accept: Accept\n          accept_confirm: Confirm deposit?\n        #admin_deposits")
+		file_data_new = file_data_new.replace("#admin_deposits", cfg_json["key"] + "s:\n        update:\n          notice: The deposit was successful.\n        index:\n          accept: Accept\n          accept_confirm: Confirm deposit?\n      #admin_deposits")
 		file_data_new = file_data_new.replace("#admin_widraws", cfg_json["key"] + "s:\n        index:\n          one: Pending withdrawals\n          all: Last 24 hours\n          empty: No data\n        show:\n          process: Accepted\n          succeed: Withdraw\n          reject: Reject\n          succeed_confirm: Process withdrawal?\n          reject_confirm: Reject withdrawal?\n          withdraw: Withdrawals\n      #admin_widraws")
 		file_data_new = file_data_new.replace("#deposit_coin", "deposits/" + cfg_json["key"] + ":\n    aasm_state:\n      submitted: Submitted\n      accepted: Accepted\n      checked: Checked\n      warning: Warning\n  #deposit_coin")
 		file_data_new = file_data_new.replace("#easy_table", cfg_json["key"] + ":\n      amount: Amount\n      txid: TxId\n      created_at: Created At\n      confirmations: Confirmations\n      member_name: Member\n      state_and_actions: State/Actions\n      currency_obj_key_text: Currency\n    #easy_table")
@@ -595,8 +595,10 @@ class Update:
 class Db:
 	def CreateQuery(self, cfg_json, folder, currency_id):
 		coin_update_path = "./Coins/" + cfg_json["name"] + "/" + folder
-		with open(coin_update_path + "/update_accounts.sql", "w+") as f:
-			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, 0 from members")
+		with open(coin_update_path + "/admin_update_accounts.sql", "w+") as f:
+			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, 0 from members where id=2 or id=3")
+                with open(coin_update_path + "/update_accounts.sql", "w+") as f:
+                        f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n  select id, " + str(currency_id) + ", 0, 0 from members where id>3")
 
 if __name__ == '__main__':
 	print "start adding coin"
