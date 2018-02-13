@@ -4,6 +4,8 @@ window.MarketSwitchUI = flight.component ->
     marketGroupName: '.panel-body-head thead span.name'
     marketGroupItem: '.dropdown-wrapper .dropdown-menu li a'
     marketsTable: '.table.markets'
+    marketsFilter: 'input'
+    marketsList: 'tr.market'
 
   @switchMarketGroup = (event, item) ->
     item = $(event.target).closest('a')
@@ -41,12 +43,41 @@ window.MarketSwitchUI = flight.component ->
     table = @select('table')
     for ticker in data.tickers
       @updateMarket table.find("tr#market-list-#{ticker.market}"), ticker.data
-
     table.find("tr#market-list-#{gon.market.id}").addClass 'highlight'
+
+  @filterMarkets = (filter) ->
+    local_markets = @select('marketsList')
+    for market in local_markets
+      market_class = market.attributes['class'].value
+      console.log market.attributes['data-market'].value, filter
+      if market.attributes['data-market'].value.indexOf(filter.toLowerCase()) >= 0 || !filter.length
+        if market_class.indexOf('hide') >= 0
+          market.attributes['class'].value = market_class.substr(0, market_class.indexOf('hide') - 1)
+        if market_class.indexOf('visible') == -1
+          market.attributes['class'].value += " visible"
+      else
+        if market_class.indexOf('visible') >= 0
+          market.attributes['class'].value = market_class.substr(0, market_class.indexOf('visible') - 1)
+        if market_class.indexOf('hide') == -1
+          market.attributes['class'].value += " hide"
+
+  @filterEditing = (e) ->
+    char = e.key
+    filter = e.currentTarget.value
+    if char.length == 1
+     filter += char
+    else if char == 'Backspace'
+      filter = filter.substring(0, filter.length-1)
+    else if char != 'Enter'
+      e.currentTarget.value = ''
+      filter = ''
+
+    @filterMarkets filter
 
   @after 'initialize', ->
     @on document, 'market::tickers', @refresh
     @on @select('marketGroupItem'), 'click', @switchMarketGroup
+    @on @select('marketsFilter'), 'keydown', @filterEditing
 
 #    if window.markets_filter
 #      @setMarketGroup window.markets_filter

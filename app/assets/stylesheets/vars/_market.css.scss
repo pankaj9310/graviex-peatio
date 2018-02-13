@@ -6,7 +6,10 @@ $min-width: 1400px;
 $min-height: 800px;
 
 $navbar-height: $navbar-height + 1px;
-$panel_table_header_high: 37px;
+
+$search_header_height: 42px;
+$panel_table_header_high: 37px + $search_header_height;
+
 $gutter-2x: $gutter * 2;
 $gutter-3x: $gutter * 3;
 $gutter-4x: $gutter * 4;
@@ -14,7 +17,7 @@ $gutter-5x: $gutter * 5;
 $gutter-6x: $gutter * 6;
 
 $entry-width: 332px;
-$entry-height: 496px;
+$entry-height: 626px;
 $right-entry-height: 206px;
 
 $ticker-width: ($entry-width) * 2 + $gutter;
