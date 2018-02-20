@@ -1617,6 +1617,13 @@ en:
       checked: Checked
       warning: Warning
   private:
+    two_factor_signin:
+      edit:
+        disabled: Two-Factor Authentication for sign-in is disabled now. You will no longer be asked to enter Two-FA for sign-in.
+        enabled: Two-Factor Authentication for sign-in is enabled now.
+      show:
+        disabled: Two-Factor Authentication for sign-in is disabled now. You will no longer be asked to enter Two-FA for sign-in.
+        enabled: Two-Factor Authentication for sign-in is enabled now.
     deposits:
       satoshis:
         gen_address:
@@ -2980,6 +2987,11 @@ en:
             to your account.
           enable: Enable
           disable: Disable
+        two_factor_signin:
+          title: Sign-in with Two-Factor Authentication
+          description: Signing in with Two-Factor Authentication - is the safest way to keep your account out of the bad guys.
+          enable: Enable
+          disable: Disable
         verification:
           title: Verify Account
           description: "Verify your account and take more. Details you can find "
@@ -3123,6 +3135,7 @@ en:
         title: Create My Account
         intro: This will be your only ID on GRAVIEX which is necessary for your exchange, deposit and withdrawal. Please fill it out carefully.
           Also, to start working with GRAVIEX exchange wallets (Funds page) you NEED to setup Two-Factor Authentication.
+        invalid_captcha: Invalid captcha
       edit:
         panel: My Account
         title: Reset Password
@@ -4745,7 +4758,7 @@ en:
 
   mailer:
     dear_user: Dear user,
-    signature: Thanks,<br/>The GRAVIEX Team
+    signature: Thanks,<br/>GRAVIEX Team
     please_contact: If it's not you, please <a href='mailto:%{contact_mail}'>contact us</a> ASAP.
     footer: This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:%{contact_mail}">contact us</a>.
   comment_mailer:
@@ -4781,6 +4794,12 @@ en:
     phone_number_verified:
       subject: "[GRAVIEX] Your phone number verified"
       verified: 'Your phone number verified: %{phone_number}'
+    auth_rejected:
+      subject: "[GRAVIEX] Account verification - REJECTED"
+      auth_rejected: You do not had passed verification procedure. Please, make correct photo of your ID Document and recognizable selfie with ID Document and fill the appropriate fields in Account Verification form.
+    auth_approved:
+      subject: "[GRAVIEX] Your account is Verified!"
+      auth_approved: Account verification procedure completed successfully.
   system_mailer:
     daily_stats:
       member_stats: Member Stats
@@ -4944,7 +4963,7 @@ en:
   'no': 'No'
   simple_captcha:
     label: Refresh page to get new captcha.
-    placeholder: type characters in image
+    placeholder: Type characters in the image
   helpers:
     action:
       view: View
@@ -5075,11 +5094,12 @@ en:
       session_expired: Session expired. Try again.
     create:
       error: You account has been disabled, contact admin if you have any problem.
+      invalid_captcha: Incorrect captcha
     failure:
       account_locked: Too many failed login attempts. To ensure the safety of your
         account, we have locked your account. To unlock, reset your password by clicking
         on "Forgot Password".
-      error: Wrong customer ID or password,please try again.
+      error: Wrong customer ID or password, please try again.
   shared:
     admin:
       member:
