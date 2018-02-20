@@ -51,7 +51,7 @@ module Worker
         confirmations: tx.confirmations
 
         deposit.submit!
-        deposit.accept! 
+        #deposit.accept! 
       end
     rescue
       Rails.logger.error "Failed to deposit: #{$!}"

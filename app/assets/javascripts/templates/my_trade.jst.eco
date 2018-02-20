@@ -4,10 +4,10 @@
   <td colspan=2 class="time text-left col-xs-8" style="font-size: 12px"><div>
     <%- formatter.fulltime @at %>
   </div></td>
-  <td class='price text-right col-xs-6 <%= trend %>' style='font-size: 12px'><div>
+  <td class='price text-right col-xs-6 <%= trend %>' style='font-size: 12px; font-weight: bold'><div>
     <%- formatter.mask_fixed_price @price %>
   </div></td>
-  <td class='volume text-right col-xs-6' style='font-size: 12px'><div>
+  <td class='volume text-right col-xs-6' style='font-size: 12px; font-weight: bold'><div>
     <%- formatter.mask_fixed_volume @volume %>
   </div></td>
 </tr>

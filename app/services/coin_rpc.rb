@@ -7,8 +7,9 @@ class CoinRPC
   class JSONRPCError < RuntimeError; end
   class ConnectionRefusedError < StandardError; end
 
-  def initialize(uri)
-    @uri = URI.parse(uri)
+  def initialize(coin)
+    @uri = URI.parse(coin.rpc)
+    @rest = coin.rest
   end
 
   def self.[](currency)
@@ -28,7 +29,7 @@ class CoinRPC
       end
 
       # Rails.logger.info "Making class " + name + "(" + currency.to_s + ")\n"
-      "::CoinRPC::#{name}".constantize.new(c.rpc)
+      "::CoinRPC::#{name}".constantize.new(c)
     end
   end
 
@@ -202,8 +203,10 @@ class CoinRPC
 
     def safe_getbalance
       begin
-        (open('http://192.168.0.194:8080/cgi-bin/total.cgi').read.rstrip.to_f)
-      rescue
+        #Rails.logger.info @rest + " -> " + "#{@rest}/cgi-bin/total.cgi"
+        (open("#{@rest}/cgi-bin/total.cgi").read.rstrip.to_f)
+      rescue => ex
+        Rails.logger.info  "[error]: " + ex.message + "\n" + ex.backtrace.join("\n") + "\n"
         'N/A'
       end
     end

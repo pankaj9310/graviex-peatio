@@ -31,6 +31,18 @@ module Private
       @btcz_proof   = Proof.current :btcz
       @ytn_proof   = Proof.current :ytn
       @yic_proof   = Proof.current :yic
+      @tlp_proof   = Proof.current :tlp
+      @pwc_proof   = Proof.current :pwc
+      @shnd_proof   = Proof.current :shnd
+      @lmn_proof   = Proof.current :lmn
+      @kec_proof   = Proof.current :kec
+      @abs_proof   = Proof.current :abs
+      @suppo_proof   = Proof.current :suppo
+      @linda_proof   = Proof.current :linda
+      @hight_proof   = Proof.current :hight
+      @bls_proof   = Proof.current :bls
+      @tokc_proof   = Proof.current :tokc
+      @elp_proof   = Proof.current :elp
       #proof
 
       if current_user
@@ -62,6 +74,18 @@ module Private
         @btcz_account = current_user.accounts.with_currency(:btcz).first
         @ytn_account = current_user.accounts.with_currency(:ytn).first
         @yic_account = current_user.accounts.with_currency(:yic).first
+        @tlp_account = current_user.accounts.with_currency(:tlp).first
+        @pwc_account = current_user.accounts.with_currency(:pwc).first
+        @shnd_account = current_user.accounts.with_currency(:shnd).first
+        @lmn_account = current_user.accounts.with_currency(:lmn).first
+        @kec_account = current_user.accounts.with_currency(:kec).first
+        @abs_account = current_user.accounts.with_currency(:abs).first
+        @suppo_account = current_user.accounts.with_currency(:suppo).first
+        @linda_account = current_user.accounts.with_currency(:linda).first
+        @hight_account = current_user.accounts.with_currency(:hight).first
+        @bls_account = current_user.accounts.with_currency(:bls).first
+        @tokc_account = current_user.accounts.with_currency(:tokc).first
+        @elp_account = current_user.accounts.with_currency(:elp).first
         #account
       end
     end

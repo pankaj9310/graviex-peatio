@@ -36,7 +36,7 @@ class Deposit < ActiveRecord::Base
     state :cancelled
     state :submitted
     state :rejected
-    state :accepted, after_commit: [:do, :send_mail, :send_sms]
+    state :accepted, after_commit: [:do, :aggregate_funds, :send_mail, :send_sms]
     state :checked
     state :warning
 
@@ -106,6 +106,26 @@ class Deposit < ActiveRecord::Base
 
   def send_mail
     DepositMailer.accepted(self.id).deliver if self.accepted?
+  end
+
+  def aggregate_funds
+    if channel.currency_obj.code == "eth"
+      # collect all deposits on the single account
+      payment_tx = PaymentTransaction::Normal.where(txid: txid).first
+      # unlock account
+      CoinRPC["eth"].personal_unlockAccount(payment_tx.address, "", "0x30")
+      # get nonce
+      local_nonce = CoinRPC["eth"].parity_nextNonce(payment_tx.address).to_i(16)
+
+      # calc amount
+      gas_limit = channel.currency_obj.gas_limit
+      gas_price = channel.currency_obj.gas_price
+      local_amount = (amount * 1e18).to_i - (gas_price * gas_limit)
+
+      Rails.logger.info "ETH parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
+      agg_txid = CoinRPC["eth"].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
+      Rails.logger.info "ETH aggregate: tx=" + agg_txid
+    end
   end
 
   def send_sms

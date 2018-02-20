@@ -118,8 +118,8 @@
 - id: 4800
   key: newyorkcoin
   currency: nyc
-  min_confirm: 5
-  max_confirm: 6
+  min_confirm: 2
+  max_confirm: 3
 - id: 5000
   key: zeroonecoin
   currency: zoc
@@ -138,5 +138,65 @@
 - id: 5600
   key: yicoin
   currency: yic
+  min_confirm: 5
+  max_confirm: 6
+- id: 5800
+  key: tulipcoin
+  currency: tlp
+  min_confirm: 5
+  max_confirm: 6
+- id: 6000
+  key: pawcoin
+  currency: pwc
+  min_confirm: 5
+  max_confirm: 6
+- id: 6200
+  key: stronghand
+  currency: shnd
+  min_confirm: 5
+  max_confirm: 6
+- id: 6400
+  key: lemanum
+  currency: lmn
+  min_confirm: 5
+  max_confirm: 6
+- id: 6600
+  key: keyco
+  currency: kec
+  min_confirm: 5
+  max_confirm: 6
+- id: 6800
+  key: absolute
+  currency: abs
+  min_confirm: 5
+  max_confirm: 6
+- id: 7000
+  key: suppocoin
+  currency: suppo
+  min_confirm: 5
+  max_confirm: 6
+- id: 7200
+  key: linda
+  currency: linda
+  min_confirm: 5
+  max_confirm: 6
+- id: 7400
+  key: highcoin
+  currency: hight
+  min_confirm: 5
+  max_confirm: 6
+- id: 7600
+  key: blisscoin
+  currency: bls
+  min_confirm: 5
+  max_confirm: 6
+- id: 7800
+  key: tokyo
+  currency: tokc
+  min_confirm: 5
+  max_confirm: 6
+- id: 8000
+  key: elleriumcoin
+  currency: elp
   min_confirm: 5
   max_confirm: 6

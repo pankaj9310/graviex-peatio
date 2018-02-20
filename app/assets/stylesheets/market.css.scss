@@ -495,6 +495,7 @@ chat_tabs_wrapper {
 
   table.asks, table.bids {
     font-size: 12px;
+    font-weight: bold;
 
     td.price {
        .fill { color: #333; }
@@ -659,6 +660,18 @@ chat_tabs_wrapper {
       &.btcz { tr.quote-btcz { display: block; } }
       &.ytn { tr.quote-ytn { display: block; } }
       &.yic { tr.quote-yic { display: block; } }
+      &.tlp { tr.quote-tlp { display: block; } }
+      &.pwc { tr.quote-pwc { display: block; } }
+      &.shnd { tr.quote-shnd { display: block; } }
+      &.lmn { tr.quote-lmn { display: block; } }
+      &.kec { tr.quote-kec { display: block; } }
+      &.abs { tr.quote-abs { display: block; } }
+      &.suppo { tr.quote-suppo { display: block; } }
+      &.linda { tr.quote-linda { display: block; } }
+      &.hight { tr.quote-hight { display: block; } }
+      &.bls { tr.quote-bls { display: block; } }
+      &.tokc { tr.quote-tokc { display: block; } }
+      &.elp { tr.quote-elp { display: block; } }
       /*markets*/
       }
     }

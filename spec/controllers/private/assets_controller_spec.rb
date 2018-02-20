@@ -46,6 +46,18 @@ describe Private::AssetsController do
       it { expect(assigns(:btcz_account)).to be_nil }
       it { expect(assigns(:ytn_account)).to be_nil }
       it { expect(assigns(:yic_account)).to be_nil }
+      it { expect(assigns(:tlp_account)).to be_nil }
+      it { expect(assigns(:pwc_account)).to be_nil }
+      it { expect(assigns(:shnd_account)).to be_nil }
+      it { expect(assigns(:lmn_account)).to be_nil }
+      it { expect(assigns(:kec_account)).to be_nil }
+      it { expect(assigns(:abs_account)).to be_nil }
+      it { expect(assigns(:suppo_account)).to be_nil }
+      it { expect(assigns(:linda_account)).to be_nil }
+      it { expect(assigns(:hight_account)).to be_nil }
+      it { expect(assigns(:bls_account)).to be_nil }
+      it { expect(assigns(:tokc_account)).to be_nil }
+      it { expect(assigns(:elp_account)).to be_nil }
       #it
 
     end

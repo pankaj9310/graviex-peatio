@@ -45,6 +45,18 @@ module Admin
       can :manage, ::Deposits::Bitcoinz
       can :manage, ::Deposits::Yenten
       can :manage, ::Deposits::Yicoin
+      can :manage, ::Deposits::Tulipcoin
+      can :manage, ::Deposits::Pawcoin
+      can :manage, ::Deposits::Stronghand
+      can :manage, ::Deposits::Lemanum
+      can :manage, ::Deposits::Keyco
+      can :manage, ::Deposits::Absolute
+      can :manage, ::Deposits::Suppocoin
+      can :manage, ::Deposits::Linda
+      can :manage, ::Deposits::Highcoin
+      can :manage, ::Deposits::Blisscoin
+      can :manage, ::Deposits::Tokyo
+      can :manage, ::Deposits::Elleriumcoin
       #deposit
 
       can :menu, Withdraw
@@ -77,6 +89,18 @@ module Admin
       can :manage, ::Withdraws::Bitcoinz
       can :manage, ::Withdraws::Yenten
       can :manage, ::Withdraws::Yicoin
+      can :manage, ::Withdraws::Tulipcoin
+      can :manage, ::Withdraws::Pawcoin
+      can :manage, ::Withdraws::Stronghand
+      can :manage, ::Withdraws::Lemanum
+      can :manage, ::Withdraws::Keyco
+      can :manage, ::Withdraws::Absolute
+      can :manage, ::Withdraws::Suppocoin
+      can :manage, ::Withdraws::Linda
+      can :manage, ::Withdraws::Highcoin
+      can :manage, ::Withdraws::Blisscoin
+      can :manage, ::Withdraws::Tokyo
+      can :manage, ::Withdraws::Elleriumcoin
       #withdraw
 
     end

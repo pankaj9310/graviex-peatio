@@ -7,6 +7,6 @@
   #my_orders.panel.panel-default
     .panel-body.panel-body-content
       .empty-row = t('.no_open_orders')
-      table.table.table-hover
+      table[class='table table-hover' style='font-size: 13px; font-weight: normal']
         tbody
     = render partial: 'mask'

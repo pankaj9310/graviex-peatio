@@ -48,6 +48,18 @@ en:
       withdraws/bitcoinz: Withdraw
       withdraws/yenten: Withdraw
       withdraws/yicoin: Withdraw
+      withdraws/tulipcoin: Withdraw
+      withdraws/pawcoin: Withdraw
+      withdraws/stronghand: Withdraw
+      withdraws/lemanum: Withdraw
+      withdraws/keyco: Withdraw
+      withdraws/absolute: Withdraw
+      withdraws/suppocoin: Withdraw
+      withdraws/linda: Withdraw
+      withdraws/highcoin: Withdraw
+      withdraws/blisscoin: Withdraw
+      withdraws/tokyo: Withdraw
+      withdraws/elleriumcoin: Withdraw
       #models
     attributes:
       api_token:
@@ -359,6 +371,78 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/yicoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/tulipcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/pawcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/stronghand:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/lemanum:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/keyco:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/absolute:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/suppocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/linda:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/highcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/blisscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/tokyo:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/elleriumcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -757,6 +841,174 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/tulipcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/pawcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/stronghand:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/lemanum:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/keyco:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/absolute:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/suppocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/linda:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/highcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/blisscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/tokyo:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/elleriumcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -859,6 +1111,30 @@ en:
               yenten_invalid: Invalid Address
               yicoin_ismine: Used Address
               yicoin_invalid: Invalid Address
+              tulipcoin_ismine: Used Address
+              tulipcoin_invalid: Invalid Address
+              pawcoin_ismine: Used Address
+              pawcoin_invalid: Invalid Address
+              stronghand_ismine: Used Address
+              stronghand_invalid: Invalid Address
+              lemanum_ismine: Used Address
+              lemanum_invalid: Invalid Address
+              keyco_ismine: Used Address
+              keyco_invalid: Invalid Address
+              absolute_ismine: Used Address
+              absolute_invalid: Invalid Address
+              suppocoin_ismine: Used Address
+              suppocoin_invalid: Invalid Address
+              linda_ismine: Used Address
+              linda_invalid: Invalid Address
+              highcoin_ismine: Used Address
+              highcoin_invalid: Invalid Address
+              blisscoin_ismine: Used Address
+              blisscoin_invalid: Invalid Address
+              tokyo_ismine: Used Address
+              tokyo_invalid: Invalid Address
+              elleriumcoin_ismine: Used Address
+              elleriumcoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -1036,6 +1312,78 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/tulipcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/pawcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/stronghand:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/lemanum:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/keyco:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/absolute:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/suppocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/linda:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/highcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/blisscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/tokyo:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/elleriumcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -1109,6 +1457,18 @@ en:
       btcz: BTCZ
       ytn: YTN
       yic: YIC
+      tlp: TLP
+      pwc: PWC
+      shnd: SHND
+      lmn: LMN
+      kec: KEC
+      abs: ABS
+      suppo: SUPPO
+      linda: LINDA
+      hight: HIGHT
+      bls: BLS
+      tokc: TOKC
+      elp: ELP
       #market1
   currency:
     satoshi:
@@ -1270,6 +1630,66 @@ en:
       key: YIC
       code: YIC
       name: Yicoin
+      format: '0,0.0000'
+    tulipcoin:
+      key: TLP
+      code: TLP
+      name: Tulipcoin
+      format: '0,0.0000'
+    pawcoin:
+      key: PWC
+      code: PWC
+      name: Pawcoin
+      format: '0,0.0000'
+    stronghand:
+      key: SHND
+      code: SHND
+      name: Stronghand
+      format: '0,0.0000'
+    lemanum:
+      key: LMN
+      code: LMN
+      name: Lemanum
+      format: '0,0.0000'
+    keyco:
+      key: KEC
+      code: KEC
+      name: Keyco
+      format: '0,0.0000'
+    absolute:
+      key: ABS
+      code: ABS
+      name: Absolute
+      format: '0,0.0000'
+    suppocoin:
+      key: SUPPO
+      code: SUPPO
+      name: Suppocoin
+      format: '0,0.0000'
+    linda:
+      key: LINDA
+      code: LINDA
+      name: Linda
+      format: '0,0.0000'
+    highcoin:
+      key: HIGHT
+      code: HIGHT
+      name: Highcoin
+      format: '0,0.0000'
+    blisscoin:
+      key: BLS
+      code: BLS
+      name: Blisscoin
+      format: '0,0.0000'
+    tokyo:
+      key: TOKC
+      code: TOKC
+      name: Tokyo
+      format: '0,0.0000'
+    elleriumcoin:
+      key: ELP
+      code: ELP
+      name: Elleriumcoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -1606,6 +2026,90 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    tulipcoin:
+      key: Block Chain
+      title: Tulipcoin Deposits
+      intro: Deposit tulipcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    pawcoin:
+      key: Block Chain
+      title: Pawcoin Deposits
+      intro: Deposit pawcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    stronghand:
+      key: Block Chain
+      title: Stronghand Deposits
+      intro: Deposit stronghand from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    lemanum:
+      key: Block Chain
+      title: Lemanum Deposits
+      intro: Deposit lemanum from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    keyco:
+      key: Block Chain
+      title: Keyco Deposits
+      intro: Deposit keyco from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    absolute:
+      key: Block Chain
+      title: Absolute Deposits
+      intro: Deposit absolute from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    suppocoin:
+      key: Block Chain
+      title: Suppocoin Deposits
+      intro: Deposit suppocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    linda:
+      key: Block Chain
+      title: Linda Deposits
+      intro: Deposit linda from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    highcoin:
+      key: Block Chain
+      title: Highcoin Deposits
+      intro: Deposit highcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    blisscoin:
+      key: Block Chain
+      title: Blisscoin Deposits
+      intro: Deposit blisscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    tokyo:
+      key: Block Chain
+      title: Tokyo Deposits
+      intro: Deposit tokyo from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    elleriumcoin:
+      key: Block Chain
+      title: Elleriumcoin Deposits
+      intro: Deposit elleriumcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -1700,6 +2204,42 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       yicoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      tulipcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      pawcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      stronghands:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      lemanums:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      keycos:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      absolutes:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      suppocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      lindas:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      highcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      blisscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      tokyos:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      elleriumcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -2229,6 +2769,186 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      tulipcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      pawcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      stronghands:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      lemanums:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      keycos:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      absolutes:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      suppocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      lindas:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      highcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      blisscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      tokyos:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      elleriumcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -2327,6 +3047,18 @@ en:
         btcz-assets: BTCZ Assets
         ytn-assets: YTN Assets
         yic-assets: YIC Assets
+        tlp-assets: TLP Assets
+        pwc-assets: PWC Assets
+        shnd-assets: SHND Assets
+        lmn-assets: LMN Assets
+        kec-assets: KEC Assets
+        abs-assets: ABS Assets
+        suppo-assets: SUPPO Assets
+        linda-assets: LINDA Assets
+        hight-assets: HIGHT Assets
+        bls-assets: BLS Assets
+        tokc-assets: TOKC Assets
+        elp-assets: ELP Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -2357,6 +3089,18 @@ en:
         verify-btcz: Verify My BTCZ Assets
         verify-ytn: Verify My YTN Assets
         verify-yic: Verify My YIC Assets
+        verify-tlp: Verify My TLP Assets
+        verify-pwc: Verify My PWC Assets
+        verify-shnd: Verify My SHND Assets
+        verify-lmn: Verify My LMN Assets
+        verify-kec: Verify My KEC Assets
+        verify-abs: Verify My ABS Assets
+        verify-suppo: Verify My SUPPO Assets
+        verify-linda: Verify My LINDA Assets
+        verify-hight: Verify My HIGHT Assets
+        verify-bls: Verify My BLS Assets
+        verify-tokc: Verify My TOKC Assets
+        verify-elp: Verify My ELP Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -2386,6 +3130,18 @@ en:
         btcz-assets-total: 'Total BTCZ assets of exchange: '
         ytn-assets-total: 'Total YTN assets of exchange: '
         yic-assets-total: 'Total YIC assets of exchange: '
+        tlp-assets-total: 'Total TLP assets of exchange: '
+        pwc-assets-total: 'Total PWC assets of exchange: '
+        shnd-assets-total: 'Total SHND assets of exchange: '
+        lmn-assets-total: 'Total LMN assets of exchange: '
+        kec-assets-total: 'Total KEC assets of exchange: '
+        abs-assets-total: 'Total ABS assets of exchange: '
+        suppo-assets-total: 'Total SUPPO assets of exchange: '
+        linda-assets-total: 'Total LINDA assets of exchange: '
+        hight-assets-total: 'Total HIGHT assets of exchange: '
+        bls-assets-total: 'Total BLS assets of exchange: '
+        tokc-assets-total: 'Total TOKC assets of exchange: '
+        elp-assets-total: 'Total ELP assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -2543,6 +3299,66 @@ en:
         intro: All of exchange's YIC assets are listed here.
         total: Total YIC Assets
         address: Address
+      tlp_assets:
+        title: TLP Assets
+        intro: All of exchange's TLP assets are listed here.
+        total: Total TLP Assets
+        address: Address
+      pwc_assets:
+        title: PWC Assets
+        intro: All of exchange's PWC assets are listed here.
+        total: Total PWC Assets
+        address: Address
+      shnd_assets:
+        title: SHND Assets
+        intro: All of exchange's SHND assets are listed here.
+        total: Total SHND Assets
+        address: Address
+      lmn_assets:
+        title: LMN Assets
+        intro: All of exchange's LMN assets are listed here.
+        total: Total LMN Assets
+        address: Address
+      kec_assets:
+        title: KEC Assets
+        intro: All of exchange's KEC assets are listed here.
+        total: Total KEC Assets
+        address: Address
+      abs_assets:
+        title: ABS Assets
+        intro: All of exchange's ABS assets are listed here.
+        total: Total ABS Assets
+        address: Address
+      suppo_assets:
+        title: SUPPO Assets
+        intro: All of exchange's SUPPO assets are listed here.
+        total: Total SUPPO Assets
+        address: Address
+      linda_assets:
+        title: LINDA Assets
+        intro: All of exchange's LINDA assets are listed here.
+        total: Total LINDA Assets
+        address: Address
+      hight_assets:
+        title: HIGHT Assets
+        intro: All of exchange's HIGHT assets are listed here.
+        total: Total HIGHT Assets
+        address: Address
+      bls_assets:
+        title: BLS Assets
+        intro: All of exchange's BLS assets are listed here.
+        total: Total BLS Assets
+        address: Address
+      tokc_assets:
+        title: TOKC Assets
+        intro: All of exchange's TOKC assets are listed here.
+        total: Total TOKC Assets
+        address: Address
+      elp_assets:
+        title: ELP Assets
+        intro: All of exchange's ELP assets are listed here.
+        total: Total ELP Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -2585,6 +3401,18 @@ en:
         btcz_format: '0.00000000'
         ytn_format: '0.00000000'
         yic_format: '0.00000000'
+        tlp_format: '0.00000000'
+        pwc_format: '0.00000000'
+        shnd_format: '0.00000000'
+        lmn_format: '0.00000000'
+        kec_format: '0.00000000'
+        abs_format: '0.00000000'
+        suppo_format: '0.00000000'
+        linda_format: '0.00000000'
+        hight_format: '0.00000000'
+        bls_format: '0.00000000'
+        tokc_format: '0.00000000'
+        elp_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -2761,6 +3589,78 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          tlp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pwc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          shnd:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          lmn:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          kec:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          abs:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          suppo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          linda:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          hight:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bls:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          tokc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          elp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -2834,6 +3734,18 @@ en:
         btcz_html: "<i class='fa fa-check'></i><span>BTCZ Markets</span>"
         ytn_html: "<i class='fa fa-check'></i><span>YTN Markets</span>"
         yic_html: "<i class='fa fa-check'></i><span>YIC Markets</span>"
+        tlp_html: "<i class='fa fa-check'></i><span>TLP Markets</span>"
+        pwc_html: "<i class='fa fa-check'></i><span>PWC Markets</span>"
+        shnd_html: "<i class='fa fa-check'></i><span>SHND Markets</span>"
+        lmn_html: "<i class='fa fa-check'></i><span>LMN Markets</span>"
+        kec_html: "<i class='fa fa-check'></i><span>KEC Markets</span>"
+        abs_html: "<i class='fa fa-check'></i><span>ABS Markets</span>"
+        suppo_html: "<i class='fa fa-check'></i><span>SUPPO Markets</span>"
+        linda_html: "<i class='fa fa-check'></i><span>LINDA Markets</span>"
+        hight_html: "<i class='fa fa-check'></i><span>HIGHT Markets</span>"
+        bls_html: "<i class='fa fa-check'></i><span>BLS Markets</span>"
+        tokc_html: "<i class='fa fa-check'></i><span>TOKC Markets</span>"
+        elp_html: "<i class='fa fa-check'></i><span>ELP Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -3052,6 +3964,18 @@ en:
         btcz_format: '0.00000000'
         ytn_format: '0.00000000'
         yic_format: '0.00000000'
+        tlp_format: '0.00000000'
+        pwc_format: '0.00000000'
+        shnd_format: '0.00000000'
+        lmn_format: '0.00000000'
+        kec_format: '0.00000000'
+        abs_format: '0.00000000'
+        suppo_format: '0.00000000'
+        linda_format: '0.00000000'
+        hight_format: '0.00000000'
+        bls_format: '0.00000000'
+        tokc_format: '0.00000000'
+        elp_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -3241,6 +4165,42 @@ en:
         yicoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        tulipcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        pawcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        stronghand:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        lemanum:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        keyco:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        absolute:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        suppocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        linda:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        highcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        blisscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        tokyo:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        elleriumcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -3325,6 +4285,30 @@ en:
         yenten:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         yicoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        tulipcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        pawcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        stronghand:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        lemanum:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        keyco:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        absolute:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        suppocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        linda:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        highcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        blisscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        tokyo:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        elleriumcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -3565,6 +4549,90 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        tulipcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Tulipcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        pawcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Pawcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        stronghand:
+          fee: Fee
+          sum: Amount
+          fund_uid: Stronghand Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        lemanum:
+          fee: Fee
+          sum: Amount
+          fund_uid: Lemanum Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        keyco:
+          fee: Fee
+          sum: Amount
+          fund_uid: Keyco Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        absolute:
+          fee: Fee
+          sum: Amount
+          fund_uid: Absolute Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        suppocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Suppocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        linda:
+          fee: Fee
+          sum: Amount
+          fund_uid: Linda Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        highcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Highcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        blisscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Blisscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        tokyo:
+          fee: Fee
+          sum: Amount
+          fund_uid: Tokyo Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        elleriumcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Elleriumcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -3744,6 +4812,78 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       yicoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      tulipcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      pawcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      stronghands:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      lemanums:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      keycos:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      absolutes:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      suppocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      lindas:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      highcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      blisscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      tokyos:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      elleriumcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -4159,6 +5299,150 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      tulipcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      pawcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      stronghands:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      lemanums:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      keycos:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      absolutes:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      suppocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      lindas:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      highcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      blisscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      tokyos:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      elleriumcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -4323,6 +5607,78 @@ en:
       checked: Checked
       warning: Warning
   deposits/yicoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/tulipcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/pawcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/stronghand:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/lemanum:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/keyco:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/absolute:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/suppocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/linda:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/highcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/blisscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/tokyo:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/elleriumcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -4610,6 +5966,102 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    tulipcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    pawcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    stronghand:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    lemanum:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    keyco:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    absolute:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    suppocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    linda:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    highcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    blisscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    tokyo:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    elleriumcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -4669,6 +6121,18 @@ en:
       btcz: BTCZ
       ytn: YTN
       yic: YIC
+      tlp: TLP
+      pwc: PWC
+      shnd: SHND
+      lmn: LMN
+      kec: KEC
+      abs: ABS
+      suppo: SUPPO
+      linda: LINDA
+      hight: HIGHT
+      bls: BLS
+      tokc: TOKC
+      elp: ELP
       #enum_currence
     order:
       state:
@@ -4723,6 +6187,18 @@ en:
         bitcoinz: Bitcoinz
         yenten: Yenten
         yicoin: Yicoin
+        tulipcoin: Tulipcoin
+        pawcoin: Pawcoin
+        stronghand: Stronghand
+        lemanum: Lemanum
+        keyco: Keyco
+        absolute: Absolute
+        suppocoin: Suppocoin
+        linda: Linda
+        highcoin: Highcoin
+        blisscoin: Blisscoin
+        tokyo: Tokyo
+        elleriumcoin: Elleriumcoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -5385,6 +6861,90 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    tulipcoin:
+      key: Blockchain
+      title: Tulipcoin Blockchain
+      intro: Withdraw Tulipcoin to your own Tulipcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    pawcoin:
+      key: Blockchain
+      title: Pawcoin Blockchain
+      intro: Withdraw Pawcoin to your own Pawcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    stronghand:
+      key: Blockchain
+      title: Stronghand Blockchain
+      intro: Withdraw Stronghand to your own Stronghand wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    lemanum:
+      key: Blockchain
+      title: Lemanum Blockchain
+      intro: Withdraw Lemanum to your own Lemanum wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    keyco:
+      key: Blockchain
+      title: Keyco Blockchain
+      intro: Withdraw Keyco to your own Keyco wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    absolute:
+      key: Blockchain
+      title: Absolute Blockchain
+      intro: Withdraw Absolute to your own Absolute wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    suppocoin:
+      key: Blockchain
+      title: Suppocoin Blockchain
+      intro: Withdraw Suppocoin to your own Suppocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    linda:
+      key: Blockchain
+      title: Linda Blockchain
+      intro: Withdraw Linda to your own Linda wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    highcoin:
+      key: Blockchain
+      title: Highcoin Blockchain
+      intro: Withdraw Highcoin to your own Highcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    blisscoin:
+      key: Blockchain
+      title: Blisscoin Blockchain
+      intro: Withdraw Blisscoin to your own Blisscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    tokyo:
+      key: Blockchain
+      title: Tokyo Blockchain
+      intro: Withdraw Tokyo to your own Tokyo wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    elleriumcoin:
+      key: Blockchain
+      title: Elleriumcoin Blockchain
+      intro: Withdraw Elleriumcoin to your own Elleriumcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -5725,6 +7285,150 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/yicoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/tulipcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/pawcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/stronghand:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/lemanum:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/keyco:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/absolute:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/suppocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/linda:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/highcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/blisscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/tokyo:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/elleriumcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
