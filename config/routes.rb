@@ -49,6 +49,8 @@ Peatio::Application.routes.draw do
   scope module: :private do
     resource  :id_document, only: [:edit, :update]
 
+    resources :two_factor_signin, only: [:show, :update, :edit, :destroy]
+
     resources :settings, only: [:index]
     resources :api_tokens do
       member do
