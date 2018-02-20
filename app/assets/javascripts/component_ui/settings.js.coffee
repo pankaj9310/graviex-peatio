@@ -28,6 +28,8 @@
       gio_discount_mark_node.attr('class', '_empty')
       gio_discount_mark_node.attr('style', '_empty')
 
+    #console.log gon.current_user
+
   @after 'initialize', ->
     @accounts = gon.accounts
 

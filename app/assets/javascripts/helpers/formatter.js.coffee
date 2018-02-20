@@ -67,10 +67,25 @@ class Formatter
   ticker_fill: ['', '0', '00', '000', '0000', '00000', '000000', '0000000', '00000000', '000000000']
   ticker_price: (price, fillTo=9) ->
     [left, right] = price.split('.')
-    if fill = @ticker_fill[fillTo-right.length]
-      "#{left}.<g>#{right}</g><span class='fill'>#{fill}</span>"
+
+    fill_length = 8
+    right_length = right.length
+
+    if right_length > fill_length
+      right_length = fill_length
+
+    result = ""
+    if fill = @ticker_fill[fill_length-right_length]
+      result = "#{left}.<g>#{right}</g><span class='fill'>#{fill}</span>"
     else
-      "#{left}.<g>#{right.slice(0,fillTo)}</g>"
+      result = "#{left}.<g>#{right.slice(0,fill_length)}</g>"
+
+    if fillTo-right.length == 0
+      result += "<span class='satoshi'>#{right[fillTo-1]}</span>"
+    else
+      result += "<span class='satoshi-hide'>0</span>"
+
+    return result
 
   price_change: (p1, p2) ->
     percent = if p1

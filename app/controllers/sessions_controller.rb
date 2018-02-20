@@ -13,7 +13,21 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if !require_captcha? || simple_captcha_valid?
+
+    is_exists = Member.is_exists(auth_hash)  
+    if !is_exists # signup process
+      if !simple_captcha_valid?
+        redirect_to signup_path, alert: t('.invalid_captcha')
+        return
+      end
+    end
+
+    is_valid = true
+    if require_captcha? && is_exists
+      is_valid = simple_captcha_valid?
+    end
+ 
+    if is_valid
       @member = Member.from_auth(auth_hash)
     end
 
@@ -32,12 +46,21 @@ class SessionsController < ApplicationController
         if not current_user.two_factors.activated?
           redirect_to settings_path, alert: t('two_factors.auth.please_active_two_factor')
         else
-          redirect_to market_path(Market.first)
+          if current_user.two_factors.require_signin? && two_factor_locked?(expired_at: ENV['SESSION_EXPIRE'].to_i.minutes)
+            session[:return_to] = market_path(Market.first)
+            redirect_to two_factors_path
+          else
+            redirect_to market_path(Market.first)
+          end
         end
       end
     else
       increase_failed_logins
-      redirect_to signin_path, alert: t('.error')
+      if !is_valid
+        redirect_to signin_path, alert: t('.invalid_captcha')
+      else
+        redirect_to signin_path, alert: t('.error')
+      end
     end
   end
 
