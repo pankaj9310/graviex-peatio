@@ -34,6 +34,7 @@ class Ordering
     order.fix_number_precision # number must be fixed before computing locked
     order.locked = order.origin_locked = order.compute_locked
     order.check_fee # check fee
+    order.check_total # check min total
     order.save!
 
     account = order.hold_account

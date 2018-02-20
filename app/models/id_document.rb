@@ -24,7 +24,8 @@ class IdDocument < ActiveRecord::Base
   aasm do
     state :unverified, initial: true
     state :verifying
-    state :verified
+    state :verified,    after_commit: [:send_mail_approved]
+    state :unverified,  after_commit: [:send_mail_rejected]
 
     event :submit do
       transitions from: :unverified, to: :verifying
@@ -35,12 +36,21 @@ class IdDocument < ActiveRecord::Base
     end
 
     event :reject do
-      transitions from: [:verifying, :verified],  to: :unverified
+      transitions from: [:verifying, :verified, :unverified],  to: :unverified
     end
   end
 
   def verify_bill_type
     self.id_bill_type = "selfie_id"
-    Rails.logger.info self.to_json
+    #Rails.logger.info self.to_json
   end
+
+  def send_mail_rejected
+    MemberMailer.auth_rejected(member.id).deliver
+  end
+
+  def send_mail_approved
+    MemberMailer.auth_approved(member.id).deliver
+  end
+
 end

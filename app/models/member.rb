@@ -35,10 +35,15 @@ class Member < ActiveRecord::Base
   after_create  :touch_accounts
   after_update :resend_activation
   after_update :sync_update
+#  attr :state
 
   class << self
     def from_auth(auth_hash)
       locate_auth(auth_hash) || locate_email(auth_hash) || create_from_auth(auth_hash)
+    end
+
+    def is_exists(auth_hash)
+      locate_auth(auth_hash) || locate_email(auth_hash)
     end
 
     def current
@@ -104,6 +109,15 @@ class Member < ActiveRecord::Base
         return true
       end
     end
+    return false
+  end
+
+  def has_fee_free
+    if self.state == 1
+      #Rails.logger.info "HAS fee for " + self.email
+      return true
+    end
+    #Rails.logger.info "NO fee for " + self.email
     return false
   end
 
@@ -226,7 +240,9 @@ class Member < ActiveRecord::Base
       "app_activated" => self.app_two_factor.activated?,
       "sms_activated" => self.sms_two_factor.activated?,
       "memo" => self.id,
-      "has_gio_deposite_50" => self.has_gio_deposite_50
+      "has_gio_deposite_50" => self.has_gio_deposite_50,
+      "state" => self.state,
+      "two_fa_require_signin" => self.app_two_factor.require_signin?
     })
   end
 

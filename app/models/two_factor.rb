@@ -13,6 +13,7 @@ class TwoFactor < ActiveRecord::Base
   validates_uniqueness_of :type, scope: :member_id
 
   scope :activated, -> { where(activated: true) }
+  scope :require_signin, -> { where(require_signin: 1) }
 
   class << self
     def by_type(type)
@@ -24,6 +25,10 @@ class TwoFactor < ActiveRecord::Base
 
     def activated?
       activated.any?
+    end
+
+    def require_signin?
+      require_signin.any?
     end
   end
 
@@ -43,6 +48,14 @@ class TwoFactor < ActiveRecord::Base
 
   def active!
     update activated: true, last_verify_at: Time.now
+  end
+
+  def set_require_signin
+    update require_signin: 1
+  end
+
+  def reset_require_signin
+    update require_signin: 0
   end
 
   def deactive!

@@ -41,6 +41,9 @@ class Order < ActiveRecord::Base
   end
 
   def fee
+   if member.has_fee_free
+     return 0
+   end
    if member.has_gio_deposite_50
      @local_fee = config[kind.to_sym]["fee"] / 2.0
      return (@local_fee*100000000.0).round / 100000000.0
@@ -62,9 +65,19 @@ class Order < ActiveRecord::Base
     member.trigger('order', json)
   end
 
+  def check_total
+    if member.has_fee_free && volume * price * config[kind.to_sym]["fee"] < 0.000000001
+       Rails.logger.info "check total " + (volume * price * config[kind.to_sym]["fee"] - 0.000000001).to_s + " volume " + volume.to_s + " price " + price.to_s + " fee " + fee.to_s
+       raise "Volume is too small"
+    end
+  end
+
   def check_fee
+    if member.has_fee_free
+      return
+    end
     if volume * price * fee < 0.000000001
-       Rails.logger.debug "check fee " + ( volume * price * fee - 0.000000001).to_s + " volume " + volume.to_s + " price " + price.to_s + " fee " + fee.to_s
+       Rails.logger.info "check fee " + (volume * price * fee - 0.000000001).to_s + " volume " + volume.to_s + " price " + price.to_s + " fee " + fee.to_s
        raise "Fee is too small"
     end
   end

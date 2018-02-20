@@ -9,13 +9,13 @@
 }
 .simple_captcha .simple_captcha_image img{
   margin: 0px !important;
-  padding: 0px !important;
+  padding: 5px 0 0 0 !important;
   width: 110px !important;
 }
 .simple_captcha .simple_captcha_label { font-size: 12px;}
-.simple_captcha .simple_captcha_field input{
+.simple_captcha .simple_captcha_field .form-control input{
   width: 150px !important;
   font-size: 16px;
   border: none;
-  background-color: #efefef;
+  background-color: #efefef; 
 }

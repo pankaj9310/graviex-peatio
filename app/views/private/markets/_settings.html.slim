@@ -6,6 +6,10 @@ li#settings.dropdown
       i#gio_discount_mark class='fa fa-star' style='color: #e6b800'
     - else
       i#gio_discount_mark class='_empty' style='_empty'
+    - if current_user.state == 1
+      i#fee_free_member_mark class='fa fa-trophy' style='color: #e6b800'
+    - else
+      i#fee_free_member_mark class='_empty' style='_empty'
   ul.dropdown-menu
     li: a
       input type="checkbox" name="sound-checkbox" data-size='mini' data-on-color='success'

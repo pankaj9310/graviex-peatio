@@ -42,6 +42,18 @@ table#setting_list.table
       - else
         = link_to t('.two_factor_auth.enable'), verify_google_auth_path, class: 'btn btn-default btn-block'
   tr
+    td.col-xs-2.text-center.vertical-center: i.fa.fa-sign-in.fa-2x
+    td.col-xs-15
+      h4
+        span = t('.two_factor_signin.title')
+        i.fa.fa-bolt.text-warning
+      p.text-ignore = t('.two_factor_signin.description')
+    td.col-xs-7.vertical-center
+      - if current_user.app_two_factor.require_signin?
+        = link_to t('.two_factor_signin.disable'), edit_two_factor_signin_path(current_user), class: 'btn btn-default btn-block'
+      - else
+        = link_to t('.two_factor_signin.enable'), two_factor_signin_path(current_user), class: 'btn btn-default btn-block'
+  tr
     td.col-xs-2.text-center.vertical-center: i.fa.fa-key.fa-2x
     td.col-xs-15
       h4 = t('.passwords.title')
