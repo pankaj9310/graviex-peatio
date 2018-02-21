@@ -355,8 +355,39 @@ CLOSE_IDX = 9
           top: "0%"
           height: "85%"
           lineColor: '#fff'
-          minRange: if gon.ticker.last then parseFloat(gon.ticker.last)/25 else null
-          min: 0.000000000
+#          minRange: if gon.ticker.last then parseFloat(gon.ticker.last)/25 else null
+          min: null
+#          softMin: 0.000000000
+#          startOnTick: false
+          tickPositioner: ->
+            maxDeviation = this.dataMax - this.dataMin
+            dataMin = this.dataMin
+            dataMax = this.dataMax
+            ticks = 10.0
+            threshold = 0.000000010
+            if maxDeviation <= threshold
+              maxDeviation = threshold
+              
+              if dataMin - maxDeviation / 2.0 < 0.000000000
+                dataMin = 0.000000000 
+              else
+                if dataMin + threshold > dataMax
+                  dataMin -= (((dataMin + threshold) - dataMax) / 2.0)
+
+            step = maxDeviation / ticks
+            tickArray = []
+ 
+            #console.log "diff=#{maxDeviation}, step=#{step}, minRange=#{this.minTange}"
+
+            prevTick = 0.000000000
+            currentTick = dataMin
+            for i in [0..ticks]
+              if currentTick - prevTick >= 0.000000001 
+                #console.log "tick(#{i})=#{currentTick}"
+                tickArray.push(currentTick)
+                prevTick = currentTick
+              currentTick += step
+            return tickArray
           crosshair:
             snap: false
             interpolate: true
