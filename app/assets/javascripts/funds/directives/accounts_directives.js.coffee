@@ -1,3 +1,6 @@
+#= require bootstrap
+#= require bootstrap-switch.min
+
 app.directive 'accounts', ->
   return {
     restrict: 'E'
@@ -9,11 +12,36 @@ app.directive 'accounts', ->
       if window.location.hash == ""
         @state.transitionTo("deposits.currency", {currency: Account.first().currency})
 
-      $scope.accounts = Account.all()
+      @initial_state = false
+
+      $scope.accounts = Account.select (item) ->
+        return (parseFloat(item.balance) + parseFloat(item.locked) > 0.0000000001)
+      
+      if $scope.accounts.length == 0
+        $scope.accounts = Account.all()
+        @initial_state = true
+
+      $('input[name="showall-checkbox"]').bootstrapSwitch
+        labelText: 'Empty'
+        state: @initial_state
+        handleWidth: 70
+        labelWidth: 70
+        onSwitchChange: (event, state) ->
+          if state
+            $scope.accounts = Account.all()
+          else
+            $scope.accounts = Account.select (item) ->
+              return (parseFloat(item.balance) + parseFloat(item.locked) > 0.0000000001)
+          @selectedCurrency = window.location.hash.split('/')[2] || $scope.accounts[0].currency
+          $scope.currency = @selectedCurrency
+          ctrl.state.transitionTo("deposits.currency", {currency: @selectedCurrency})
+          ctrl.selectedCurrency = @selectedCurrency
+          ctrl.currentAction = "deposits"
+          $scope.$apply()
 
       # Might have a better way
       # #/deposits/cny
-      @selectedCurrency = window.location.hash.split('/')[2] || Account.first().currency
+      @selectedCurrency = window.location.hash.split('/')[2] || $scope.accounts[0].currency
       @currentAction = window.location.hash.split('/')[1] || 'deposits'
       $scope.currency = @selectedCurrency
 

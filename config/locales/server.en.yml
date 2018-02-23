@@ -2561,6 +2561,7 @@ en:
       partial_tree:
         success: 'Success! Verification data generated at: %{timestamp}'
     funds:
+      show_all: Show all
       show:
         account_history: Account History
         cny_format: '0.00'
