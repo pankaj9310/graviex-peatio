@@ -90,7 +90,9 @@ def append_point(market, period, ts)
 
   if period == 1
     # 24*60 = 1440
-    if point = @r.lindex(key(market, period), -1441)
+    #if point = @r.lindex(key(market, period), -1441)
+    tnow = DateTime.now
+    if point = @r.lindex(key(market, period), -(tnow.hour*60+tnow.minute+2))
       Rails.cache.write "peatio:#{market}:ticker:open", JSON.parse(point)[4]
     end
   end
@@ -123,13 +125,17 @@ def fill(market, period = 1)
 end
 
 while($running) do
-  Market.all.each do |market|
-    ts = next_ts(market.id, 1)
-    next unless ts
+  begin
+    Market.all.each do |market|
+      ts = next_ts(market.id, 1)
+      next unless ts
 
-    [1, 5, 15, 30, 60, 120, 240, 360, 720, 1440, 4320, 10080].each do |period|
-      fill(market.id, period)
+      [1, 5, 15, 30, 60, 120, 240, 360, 720, 1440, 4320, 10080].each do |period|
+        fill(market.id, period)
+      end
     end
+  rescue => ex
+    Rails.logger.error "[error]: " + ex.message + "\n" + ex.backtrace.join("\n") + "\n"
   end
 
   sleep 15

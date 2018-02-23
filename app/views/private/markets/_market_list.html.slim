@@ -23,7 +23,7 @@
               tr.market id="market-list-#{market.id}" class="quote-#{market.quote_unit}" style="font-size: 12px" data-market=market.id
                 td.col-xs-4.name
                   = link_to market.name, market_path(market)
-                td.col-xs-15.price
+                td[class='col-xs-15 price' style='font-weight: bold']
                   = Global[market.id].ticker[:last]
                 td.col-xs-5.change
                   | +0.00%

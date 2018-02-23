@@ -44,6 +44,18 @@ class Withdraw extends PeatioModel.Model
       when 'btcz' then 'bitcoinzs'
       when 'ytn' then 'yentens'
       when 'yic' then 'yicoins'
+      when 'tlp' then 'tulipcoins'
+      when 'pwc' then 'pawcoins'
+      when 'shnd' then 'stronghands'
+      when 'lmn' then 'lemanums'
+      when 'kec' then 'keycos'
+      when 'abs' then 'absolutes'
+      when 'suppo' then 'suppocoins'
+      when 'linda' then 'lindas'
+      when 'hight' then 'highcoins'
+      when 'bls' then 'blisscoins'
+      when 'tokc' then 'tokyos'
+      when 'elp' then 'elleriumcoins'
       #currency
 
 window.Withdraw = Withdraw

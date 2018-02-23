@@ -32,6 +32,35 @@
       .panel-footer
         span Tips: Locked + Balance = Sum | Hot-Wallet + Cold-Wallet = Sum
 .row
+  .col-xs-24
+    .panel.panel-primary
+      .panel-heading Turnover stats
+      .panel-body
+        table.table.table-condensed
+          thead: tr
+            th Date
+            th.text-right BTC
+            th.text-right LTC
+            th.text-right DOGE
+            th.text-right ETH
+
+          tbody
+            - @turnover.each do |t|
+              tr
+                 td: b = t[:date]
+                 td.text-right = t[:btc]
+                 td.text-right = t[:ltc]
+                 td.text-right = t[:doge]
+                 td.text-right = t[:eth]
+
+            /tr
+              /td = @turnover[:date]
+              /td.text-right = @turnover[:btc]
+              /td.text-right = @turnover[:ltc]
+              /td.text-right = @turnover[:doge]
+              /td.text-right = @turnover[:eth]
+
+.row
   .col-xs-12: .panel.panel-primary
     .panel-heading Daemon Statuses
     .panel-body

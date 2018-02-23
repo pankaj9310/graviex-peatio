@@ -69,6 +69,18 @@ en:
         btcz: BTCZ
         ytn: YTN
         yic: YIC
+        tlp: TLP
+        pwc: PWC
+        shnd: SHND
+        lmn: LMN
+        kec: KEC
+        abs: ABS
+        suppo: SUPPO
+        linda: LINDA
+        hight: HIGHT
+        bls: BLS
+        tokc: TOKC
+        elp: ELP
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -174,6 +186,42 @@ en:
 
       deposit_yic:
         title: YIC Deposit
+
+      deposit_tlp:
+        title: TLP Deposit
+
+      deposit_pwc:
+        title: PWC Deposit
+
+      deposit_shnd:
+        title: SHND Deposit
+
+      deposit_lmn:
+        title: LMN Deposit
+
+      deposit_kec:
+        title: KEC Deposit
+
+      deposit_abs:
+        title: ABS Deposit
+
+      deposit_suppo:
+        title: SUPPO Deposit
+
+      deposit_linda:
+        title: LINDA Deposit
+
+      deposit_hight:
+        title: HIGHT Deposit
+
+      deposit_bls:
+        title: BLS Deposit
+
+      deposit_tokc:
+        title: TOKC Deposit
+
+      deposit_elp:
+        title: ELP Deposit
 
       #deposit
 
@@ -307,6 +355,42 @@ en:
       withdraw_yic:
         title: YIC Withdraw
 
+      withdraw_tlp:
+        title: TLP Withdraw
+
+      withdraw_pwc:
+        title: PWC Withdraw
+
+      withdraw_shnd:
+        title: SHND Withdraw
+
+      withdraw_lmn:
+        title: LMN Withdraw
+
+      withdraw_kec:
+        title: KEC Withdraw
+
+      withdraw_abs:
+        title: ABS Withdraw
+
+      withdraw_suppo:
+        title: SUPPO Withdraw
+
+      withdraw_linda:
+        title: LINDA Withdraw
+
+      withdraw_hight:
+        title: HIGHT Withdraw
+
+      withdraw_bls:
+        title: BLS Withdraw
+
+      withdraw_tokc:
+        title: TOKC Withdraw
+
+      withdraw_elp:
+        title: ELP Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -339,6 +423,18 @@ en:
         withdraw_limit_btcz: Withdraw day limit is 50000000 for an unverified account.
         withdraw_limit_ytn: Withdraw day limit is 5000 for an unverified account.
         withdraw_limit_yic: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_tlp: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_pwc: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_shnd: Withdraw day limit is 5000000000 for an unverified account.
+        withdraw_limit_lmn: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_kec: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_abs: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_suppo: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_linda: Withdraw day limit is 50000000 for an unverified account.
+        withdraw_limit_hight: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_bls: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_tokc: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_elp: Withdraw day limit is 5000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -419,6 +515,18 @@ en:
         btcz: BTCZ Market
         ytn: YTN Market
         yic: YIC Market
+        tlp: TLP Market
+        pwc: PWC Market
+        shnd: SHND Market
+        lmn: LMN Market
+        kec: KEC Market
+        abs: ABS Market
+        suppo: SUPPO Market
+        linda: LINDA Market
+        hight: HIGHT Market
+        bls: BLS Market
+        tokc: TOKC Market
+        elp: ELP Market
         #market
 
 

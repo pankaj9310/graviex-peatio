@@ -6,16 +6,16 @@ br
 ul.list-group
   li.list-group-item
     .row.row-middle
-      .col-xs-12
+      .col-xs
         .row.row-middle
-          .col-xs-12
+          .col-xs
             h4 = "#{@ticket.title}"
           .col-xs-6
         .row
-          .col-xs-12
+          .col-xs
             p.text-ignore = @ticket.content
         .row
-          .col-xs-12
+          .col-xs
             span = "#{I18n.t("private.tickets.from")}: #{@ticket.author.email}"
           .col-xs-5
             i.fa.fa-clock-o.text-info
@@ -25,12 +25,12 @@ ul.list-group
     br
     li.list-group-item
       .row.row-middle
-        .col-xs-12
+        .col-xs
           .row
-            .col-xs-12
+            .col-xs
               p.text-ignore = c.content
           .row
-            .col-xs-12
+            .col-xs
               span = "#{I18n.t("private.tickets.from")}: #{c.author.email}"
             .col-xs-5
               i.fa.fa-clock-o.text-info
