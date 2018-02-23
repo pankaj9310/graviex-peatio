@@ -60,6 +60,13 @@ en:
       withdraws/blisscoin: Withdraw
       withdraws/tokyo: Withdraw
       withdraws/elleriumcoin: Withdraw
+      withdraws/zexcoin: Withdraw
+      withdraws/rulitecoin: Withdraw
+      withdraws/luckybit: Withdraw
+      withdraws/instacashcoin: Withdraw
+      withdraws/mambocoin: Withdraw
+      withdraws/phantomxcoin: Withdraw
+      withdraws/mixcoin: Withdraw
       #models
     attributes:
       api_token:
@@ -443,6 +450,48 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/elleriumcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zexcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/rulitecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/luckybit:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/instacashcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/mambocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/phantomxcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/mixcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -1009,6 +1058,104 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/zexcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/rulitecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/luckybit:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/instacashcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/mambocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/phantomxcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/mixcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -1135,6 +1282,20 @@ en:
               tokyo_invalid: Invalid Address
               elleriumcoin_ismine: Used Address
               elleriumcoin_invalid: Invalid Address
+              zexcoin_ismine: Used Address
+              zexcoin_invalid: Invalid Address
+              rulitecoin_ismine: Used Address
+              rulitecoin_invalid: Invalid Address
+              luckybit_ismine: Used Address
+              luckybit_invalid: Invalid Address
+              instacashcoin_ismine: Used Address
+              instacashcoin_invalid: Invalid Address
+              mambocoin_ismine: Used Address
+              mambocoin_invalid: Invalid Address
+              phantomxcoin_ismine: Used Address
+              phantomxcoin_invalid: Invalid Address
+              mixcoin_ismine: Used Address
+              mixcoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -1384,6 +1545,48 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/zexcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/rulitecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/luckybit:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/instacashcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/mambocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/phantomxcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/mixcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -1469,6 +1672,13 @@ en:
       bls: BLS
       tokc: TOKC
       elp: ELP
+      zex: ZEX
+      rlc: RLC
+      lucky: LUCKY
+      ich: ICH
+      mmb: MMB
+      pnx: PNX
+      mix: MIX
       #market1
   currency:
     satoshi:
@@ -1690,6 +1900,41 @@ en:
       key: ELP
       code: ELP
       name: Elleriumcoin
+      format: '0,0.0000'
+    zexcoin:
+      key: ZEX
+      code: ZEX
+      name: Zexcoin
+      format: '0,0.0000'
+    rulitecoin:
+      key: RLC
+      code: RLC
+      name: Rulitecoin
+      format: '0,0.0000'
+    luckybit:
+      key: LUCKY
+      code: LUCKY
+      name: Luckybit
+      format: '0,0.0000'
+    instacashcoin:
+      key: ICH
+      code: ICH
+      name: Instacashcoin
+      format: '0,0.0000'
+    mambocoin:
+      key: MMB
+      code: MMB
+      name: Mambocoin
+      format: '0,0.0000'
+    phantomxcoin:
+      key: PNX
+      code: PNX
+      name: Phantomxcoin
+      format: '0,0.0000'
+    mixcoin:
+      key: MIX
+      code: MIX
+      name: Mixcoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -2110,6 +2355,55 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    zexcoin:
+      key: Block Chain
+      title: Zexcoin Deposits
+      intro: Deposit zexcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    rulitecoin:
+      key: Block Chain
+      title: Rulitecoin Deposits
+      intro: Deposit rulitecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    luckybit:
+      key: Block Chain
+      title: Luckybit Deposits
+      intro: Deposit luckybit from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    instacashcoin:
+      key: Block Chain
+      title: Instacashcoin Deposits
+      intro: Deposit instacashcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    mambocoin:
+      key: Block Chain
+      title: Mambocoin Deposits
+      intro: Deposit mambocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    phantomxcoin:
+      key: Block Chain
+      title: Phantomxcoin Deposits
+      intro: Deposit phantomxcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    mixcoin:
+      key: Block Chain
+      title: Mixcoin Deposits
+      intro: Deposit mixcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -2247,6 +2541,27 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       elleriumcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zexcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      rulitecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      luckybits:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      instacashcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      mambocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      phantomxcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      mixcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -2956,6 +3271,111 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      zexcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      rulitecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      luckybits:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      instacashcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      mambocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      phantomxcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      mixcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -3066,6 +3486,13 @@ en:
         bls-assets: BLS Assets
         tokc-assets: TOKC Assets
         elp-assets: ELP Assets
+        zex-assets: ZEX Assets
+        rlc-assets: RLC Assets
+        lucky-assets: LUCKY Assets
+        ich-assets: ICH Assets
+        mmb-assets: MMB Assets
+        pnx-assets: PNX Assets
+        mix-assets: MIX Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -3108,6 +3535,13 @@ en:
         verify-bls: Verify My BLS Assets
         verify-tokc: Verify My TOKC Assets
         verify-elp: Verify My ELP Assets
+        verify-zex: Verify My ZEX Assets
+        verify-rlc: Verify My RLC Assets
+        verify-lucky: Verify My LUCKY Assets
+        verify-ich: Verify My ICH Assets
+        verify-mmb: Verify My MMB Assets
+        verify-pnx: Verify My PNX Assets
+        verify-mix: Verify My MIX Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -3149,6 +3583,13 @@ en:
         bls-assets-total: 'Total BLS assets of exchange: '
         tokc-assets-total: 'Total TOKC assets of exchange: '
         elp-assets-total: 'Total ELP assets of exchange: '
+        zex-assets-total: 'Total ZEX assets of exchange: '
+        rlc-assets-total: 'Total RLC assets of exchange: '
+        lucky-assets-total: 'Total LUCKY assets of exchange: '
+        ich-assets-total: 'Total ICH assets of exchange: '
+        mmb-assets-total: 'Total MMB assets of exchange: '
+        pnx-assets-total: 'Total PNX assets of exchange: '
+        mix-assets-total: 'Total MIX assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -3366,6 +3807,41 @@ en:
         intro: All of exchange's ELP assets are listed here.
         total: Total ELP Assets
         address: Address
+      zex_assets:
+        title: ZEX Assets
+        intro: All of exchange's ZEX assets are listed here.
+        total: Total ZEX Assets
+        address: Address
+      rlc_assets:
+        title: RLC Assets
+        intro: All of exchange's RLC assets are listed here.
+        total: Total RLC Assets
+        address: Address
+      lucky_assets:
+        title: LUCKY Assets
+        intro: All of exchange's LUCKY assets are listed here.
+        total: Total LUCKY Assets
+        address: Address
+      ich_assets:
+        title: ICH Assets
+        intro: All of exchange's ICH assets are listed here.
+        total: Total ICH Assets
+        address: Address
+      mmb_assets:
+        title: MMB Assets
+        intro: All of exchange's MMB assets are listed here.
+        total: Total MMB Assets
+        address: Address
+      pnx_assets:
+        title: PNX Assets
+        intro: All of exchange's PNX assets are listed here.
+        total: Total PNX Assets
+        address: Address
+      mix_assets:
+        title: MIX Assets
+        intro: All of exchange's MIX assets are listed here.
+        total: Total MIX Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -3420,6 +3896,13 @@ en:
         bls_format: '0.00000000'
         tokc_format: '0.00000000'
         elp_format: '0.00000000'
+        zex_format: '0.00000000'
+        rlc_format: '0.00000000'
+        lucky_format: '0.00000000'
+        ich_format: '0.00000000'
+        mmb_format: '0.00000000'
+        pnx_format: '0.00000000'
+        mix_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -3668,6 +4151,48 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          zex:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          rlc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          lucky:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ich:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          mmb:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pnx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          mix:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -3753,6 +4278,13 @@ en:
         bls_html: "<i class='fa fa-check'></i><span>BLS Markets</span>"
         tokc_html: "<i class='fa fa-check'></i><span>TOKC Markets</span>"
         elp_html: "<i class='fa fa-check'></i><span>ELP Markets</span>"
+        zex_html: "<i class='fa fa-check'></i><span>ZEX Markets</span>"
+        rlc_html: "<i class='fa fa-check'></i><span>RLC Markets</span>"
+        lucky_html: "<i class='fa fa-check'></i><span>LUCKY Markets</span>"
+        ich_html: "<i class='fa fa-check'></i><span>ICH Markets</span>"
+        mmb_html: "<i class='fa fa-check'></i><span>MMB Markets</span>"
+        pnx_html: "<i class='fa fa-check'></i><span>PNX Markets</span>"
+        mix_html: "<i class='fa fa-check'></i><span>MIX Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -3988,6 +4520,13 @@ en:
         bls_format: '0.00000000'
         tokc_format: '0.00000000'
         elp_format: '0.00000000'
+        zex_format: '0.00000000'
+        rlc_format: '0.00000000'
+        lucky_format: '0.00000000'
+        ich_format: '0.00000000'
+        mmb_format: '0.00000000'
+        pnx_format: '0.00000000'
+        mix_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -4214,6 +4753,27 @@ en:
         elleriumcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        zexcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        rulitecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        luckybit:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        instacashcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        mambocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        phantomxcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        mixcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -4322,6 +4882,20 @@ en:
         tokyo:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         elleriumcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zexcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        rulitecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        luckybit:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        instacashcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        mambocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        phantomxcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        mixcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -4646,6 +5220,55 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        zexcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zexcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        rulitecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Rulitecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        luckybit:
+          fee: Fee
+          sum: Amount
+          fund_uid: Luckybit Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        instacashcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Instacashcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        mambocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Mambocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        phantomxcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Phantomxcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        mixcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Mixcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -4897,6 +5520,48 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       elleriumcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zexcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      rulitecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      luckybits:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      instacashcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      mambocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      phantomxcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      mixcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -5456,6 +6121,90 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      zexcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      rulitecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      luckybits:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      instacashcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      mambocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      phantomxcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      mixcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -5692,6 +6441,48 @@ en:
       checked: Checked
       warning: Warning
   deposits/elleriumcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zexcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/rulitecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/luckybit:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/instacashcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/mambocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/phantomxcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/mixcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -6075,6 +6866,62 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    zexcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    rulitecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    luckybit:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    instacashcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    mambocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    phantomxcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    mixcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -6146,6 +6993,13 @@ en:
       bls: BLS
       tokc: TOKC
       elp: ELP
+      zex: ZEX
+      rlc: RLC
+      lucky: LUCKY
+      ich: ICH
+      mmb: MMB
+      pnx: PNX
+      mix: MIX
       #enum_currence
     order:
       state:
@@ -6212,6 +7066,13 @@ en:
         blisscoin: Blisscoin
         tokyo: Tokyo
         elleriumcoin: Elleriumcoin
+        zexcoin: Zexcoin
+        rulitecoin: Rulitecoin
+        luckybit: Luckybit
+        instacashcoin: Instacashcoin
+        mambocoin: Mambocoin
+        phantomxcoin: Phantomxcoin
+        mixcoin: Mixcoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -6320,6 +7181,8 @@ en:
   'false': false
   view_on_github: View on Github
   slogan: GRAVIEX Exchange - is a part of GRAVIO Ecosystem
+  promo: Low fees, fast withdraws & high security
+  tip: Order price step = 0.1sat (0.00000000'1)
   tags:
     vip: VIP
     hero: Hero Member
@@ -6965,6 +7828,55 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    zexcoin:
+      key: Blockchain
+      title: Zexcoin Blockchain
+      intro: Withdraw Zexcoin to your own Zexcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    rulitecoin:
+      key: Blockchain
+      title: Rulitecoin Blockchain
+      intro: Withdraw Rulitecoin to your own Rulitecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    luckybit:
+      key: Blockchain
+      title: Luckybit Blockchain
+      intro: Withdraw Luckybit to your own Luckybit wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    instacashcoin:
+      key: Blockchain
+      title: Instacashcoin Blockchain
+      intro: Withdraw Instacashcoin to your own Instacashcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    mambocoin:
+      key: Blockchain
+      title: Mambocoin Blockchain
+      intro: Withdraw Mambocoin to your own Mambocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    phantomxcoin:
+      key: Blockchain
+      title: Phantomxcoin Blockchain
+      intro: Withdraw Phantomxcoin to your own Phantomxcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    mixcoin:
+      key: Blockchain
+      title: Mixcoin Blockchain
+      intro: Withdraw Mixcoin to your own Mixcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -7449,6 +8361,90 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/elleriumcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zexcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/rulitecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/luckybit:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/instacashcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/mambocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/phantomxcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/mixcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

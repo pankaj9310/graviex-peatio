@@ -58,6 +58,13 @@ describe Private::AssetsController do
       it { expect(assigns(:bls_account)).to be_nil }
       it { expect(assigns(:tokc_account)).to be_nil }
       it { expect(assigns(:elp_account)).to be_nil }
+      it { expect(assigns(:zex_account)).to be_nil }
+      it { expect(assigns(:rlc_account)).to be_nil }
+      it { expect(assigns(:lucky_account)).to be_nil }
+      it { expect(assigns(:ich_account)).to be_nil }
+      it { expect(assigns(:mmb_account)).to be_nil }
+      it { expect(assigns(:pnx_account)).to be_nil }
+      it { expect(assigns(:mix_account)).to be_nil }
       #it
 
     end

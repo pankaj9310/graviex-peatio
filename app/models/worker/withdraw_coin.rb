@@ -22,21 +22,21 @@ module Worker
 
         return unless withdraw.almost_done?
 
-        if withdraw.currency == 'eth'
+        if withdraw.currency == 'eth' || withdraw.currency == 'mix'
           balance = open("#{withdraw.channel.currency_obj.rest}/cgi-bin/total.cgi").read.rstrip.to_f
           raise Account::BalanceError, 'Insufficient coins' if balance < withdraw.sum
 
           fee = [withdraw.fee.to_f || withdraw.channel.try(:fee) || 0.0005, 0.1].min
           CoinRPC[withdraw.currency].personal_unlockAccount(withdraw.channel.currency_obj.base_account, "", "0x30")
           # get nonce
-          local_nonce = CoinRPC["eth"].parity_nextNonce(withdraw.channel.currency_obj.base_account).to_i(16)
+          local_nonce = CoinRPC[withdraw.currency].parity_nextNonce(withdraw.channel.currency_obj.base_account).to_i(16)
 
           # calc amount
           gas_limit = withdraw.channel.currency_obj.gas_limit
           gas_price = withdraw.channel.currency_obj.gas_price
           #local_amount = (withdraw.amount * 1e18).to_i - (gas_price * gas_limit)
 
-          txid = CoinRPC["eth"].eth_sendTransaction(from: withdraw.channel.currency_obj.base_account, to: withdraw.fund_uid, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + ((withdraw.amount * 1e18).to_i.to_s(16)))
+          txid = CoinRPC[withdraw.currency].eth_sendTransaction(from: withdraw.channel.currency_obj.base_account, to: withdraw.fund_uid, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + ((withdraw.amount * 1e18).to_i.to_s(16)))
         else
           balance = CoinRPC[withdraw.currency].getbalance.to_d
           raise Account::BalanceError, 'Insufficient coins' if balance < withdraw.sum

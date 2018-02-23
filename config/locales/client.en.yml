@@ -81,6 +81,13 @@ en:
         bls: BLS
         tokc: TOKC
         elp: ELP
+        zex: ZEX
+        rlc: RLC
+        lucky: LUCKY
+        ich: ICH
+        mmb: MMB
+        pnx: PNX
+        mix: MIX
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -222,6 +229,27 @@ en:
 
       deposit_elp:
         title: ELP Deposit
+
+      deposit_zex:
+        title: ZEX Deposit
+
+      deposit_rlc:
+        title: RLC Deposit
+
+      deposit_lucky:
+        title: LUCKY Deposit
+
+      deposit_ich:
+        title: ICH Deposit
+
+      deposit_mmb:
+        title: MMB Deposit
+
+      deposit_pnx:
+        title: PNX Deposit
+
+      deposit_mix:
+        title: MIX Deposit
 
       #deposit
 
@@ -391,6 +419,27 @@ en:
       withdraw_elp:
         title: ELP Withdraw
 
+      withdraw_zex:
+        title: ZEX Withdraw
+
+      withdraw_rlc:
+        title: RLC Withdraw
+
+      withdraw_lucky:
+        title: LUCKY Withdraw
+
+      withdraw_ich:
+        title: ICH Withdraw
+
+      withdraw_mmb:
+        title: MMB Withdraw
+
+      withdraw_pnx:
+        title: PNX Withdraw
+
+      withdraw_mix:
+        title: MIX Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -435,6 +484,13 @@ en:
         withdraw_limit_bls: Withdraw day limit is 5000 for an unverified account.
         withdraw_limit_tokc: Withdraw day limit is 50000 for an unverified account.
         withdraw_limit_elp: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_zex: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_rlc: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_lucky: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_ich: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_mmb: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_pnx: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_mix: Withdraw day limit is 50000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -527,6 +583,13 @@ en:
         bls: BLS Market
         tokc: TOKC Market
         elp: ELP Market
+        zex: ZEX Market
+        rlc: RLC Market
+        lucky: LUCKY Market
+        ich: ICH Market
+        mmb: MMB Market
+        pnx: PNX Market
+        mix: MIX Market
         #market
 
 
