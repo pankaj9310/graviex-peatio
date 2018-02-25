@@ -56,6 +56,13 @@ class Withdraw extends PeatioModel.Model
       when 'bls' then 'blisscoins'
       when 'tokc' then 'tokyos'
       when 'elp' then 'elleriumcoins'
+      when 'zex' then 'zexcoins'
+      when 'rlc' then 'rulitecoins'
+      when 'lucky' then 'luckybits'
+      when 'ich' then 'instacashcoins'
+      when 'mmb' then 'mambocoins'
+      when 'pnx' then 'phantomxcoins'
+      when 'mix' then 'mixcoins'
       #currency
 
 window.Withdraw = Withdraw

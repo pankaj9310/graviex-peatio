@@ -71,7 +71,11 @@ module Worker
 
     def load_orders(market)
       ::Order.active.with_currency(market.id).order('id asc').each do |order|
-        submit build_order(order.to_matching_attributes)
+        begin
+          submit build_order(order.to_matching_attributes)
+        rescue => ex
+          #Rails.logger.info "[error]: " + ex.message + "\n" + ex.backtrace.join("\n")
+        end
       end
     end
 

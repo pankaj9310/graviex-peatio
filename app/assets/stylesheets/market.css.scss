@@ -678,6 +678,13 @@ chat_tabs_wrapper {
       &.bls { tr.quote-bls { display: block; } }
       &.tokc { tr.quote-tokc { display: block; } }
       &.elp { tr.quote-elp { display: block; } }
+      &.zex { tr.quote-zex { display: block; } }
+      &.rlc { tr.quote-rlc { display: block; } }
+      &.lucky { tr.quote-lucky { display: block; } }
+      &.ich { tr.quote-ich { display: block; } }
+      &.mmb { tr.quote-mmb { display: block; } }
+      &.pnx { tr.quote-pnx { display: block; } }
+      &.mix { tr.quote-mix { display: block; } }
       /*markets*/
       }
     }
@@ -779,7 +786,7 @@ chat_tabs_wrapper {
 
     span.input-group-addon {
       padding: 3px 6px 0px 6px;
-      min-width: 50px;
+      min-width: 60px;
       text-align: left;
       color: #aaa;
     }

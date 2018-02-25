@@ -5,6 +5,8 @@ header.text-center
     section
       - Rails.configuration.i18n.available_locales.each do |locale|
         h3 = t(:slogan)
+        h3 = t(:promo)
+        h3 = t(:tip)
     #getstart.row
       - unless current_user
         .col-xs-6.col-xs-offset-9.text-center

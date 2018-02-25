@@ -40,6 +40,13 @@
     li: a.bls-proof href="#bls-proof" data-toggle="tab" == t('.verify-bls')
     li: a.tokc-proof href="#tokc-proof" data-toggle="tab" == t('.verify-tokc')
     li: a.elp-proof href="#elp-proof" data-toggle="tab" == t('.verify-elp')
+    li: a.zex-proof href="#zex-proof" data-toggle="tab" == t('.verify-zex')
+    li: a.rlc-proof href="#rlc-proof" data-toggle="tab" == t('.verify-rlc')
+    li: a.lucky-proof href="#lucky-proof" data-toggle="tab" == t('.verify-lucky')
+    li: a.ich-proof href="#ich-proof" data-toggle="tab" == t('.verify-ich')
+    li: a.mmb-proof href="#mmb-proof" data-toggle="tab" == t('.verify-mmb')
+    li: a.pnx-proof href="#pnx-proof" data-toggle="tab" == t('.verify-pnx')
+    li: a.mix-proof href="#mix-proof" data-toggle="tab" == t('.verify-mix')
     /li
 
   .tab-content
@@ -329,3 +336,52 @@
           == t("currency.icon.elp")
           = @elp_proof.sum
       = render 'liability_data', account: @elp_account, proof: @elp_proof
+    #zex-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.zex-assets-total')
+        span.currency
+          == t("currency.icon.zex")
+          = @zex_proof.sum
+      = render 'liability_data', account: @zex_account, proof: @zex_proof
+    #rlc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.rlc-assets-total')
+        span.currency
+          == t("currency.icon.rlc")
+          = @rlc_proof.sum
+      = render 'liability_data', account: @rlc_account, proof: @rlc_proof
+    #lucky-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.lucky-assets-total')
+        span.currency
+          == t("currency.icon.lucky")
+          = @lucky_proof.sum
+      = render 'liability_data', account: @lucky_account, proof: @lucky_proof
+    #ich-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.ich-assets-total')
+        span.currency
+          == t("currency.icon.ich")
+          = @ich_proof.sum
+      = render 'liability_data', account: @ich_account, proof: @ich_proof
+    #mmb-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.mmb-assets-total')
+        span.currency
+          == t("currency.icon.mmb")
+          = @mmb_proof.sum
+      = render 'liability_data', account: @mmb_account, proof: @mmb_proof
+    #pnx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pnx-assets-total')
+        span.currency
+          == t("currency.icon.pnx")
+          = @pnx_proof.sum
+      = render 'liability_data', account: @pnx_account, proof: @pnx_proof
+    #mix-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.mix-assets-total')
+        span.currency
+          == t("currency.icon.mix")
+          = @mix_proof.sum
+      = render 'liability_data', account: @mix_account, proof: @mix_proof

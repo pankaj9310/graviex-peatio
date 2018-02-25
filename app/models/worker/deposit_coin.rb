@@ -10,8 +10,8 @@ module Worker
       txid = payload[:txid]
 
       channel = DepositChannel.find_by_key(channel_key)
-      if channel.currency_obj.code == 'eth'
-        raw  = get_raw_eth txid
+      if channel.currency_obj.code == 'eth' || channel.currency_obj.code == 'mix'
+        raw  = get_raw_eth channel, txid
         raw.symbolize_keys!
         deposit_eth!(channel, txid, 1, raw)
       else
@@ -30,7 +30,7 @@ module Worker
           return
         end
         return if PaymentTransaction::Normal.where(txid: txid, txout: txout).first
-        confirmations = CoinRPC["eth"].eth_blockNumber.to_i(16) - raw[:blockNumber].to_i(16)
+        confirmations = CoinRPC[channel.currency_obj.code].eth_blockNumber.to_i(16) - raw[:blockNumber].to_i(16)
         tx = PaymentTransaction::Normal.create! \
         txid: txid,
         txout: txout,
@@ -102,8 +102,8 @@ module Worker
       channel.currency_obj.api.gettransaction(txid)
     end
 
-    def get_raw_eth(txid)
-      CoinRPC["eth"].eth_getTransactionByHash(txid)
+    def get_raw_eth(channel, txid)
+      CoinRPC[channel.currency_obj.code].eth_getTransactionByHash(txid)
     end
   end
 end

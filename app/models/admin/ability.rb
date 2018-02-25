@@ -57,6 +57,13 @@ module Admin
       can :manage, ::Deposits::Blisscoin
       can :manage, ::Deposits::Tokyo
       can :manage, ::Deposits::Elleriumcoin
+      can :manage, ::Deposits::Zexcoin
+      can :manage, ::Deposits::Rulitecoin
+      can :manage, ::Deposits::Luckybit
+      can :manage, ::Deposits::Instacashcoin
+      can :manage, ::Deposits::Mambocoin
+      can :manage, ::Deposits::Phantomxcoin
+      can :manage, ::Deposits::Mixcoin
       #deposit
 
       can :menu, Withdraw
@@ -101,6 +108,13 @@ module Admin
       can :manage, ::Withdraws::Blisscoin
       can :manage, ::Withdraws::Tokyo
       can :manage, ::Withdraws::Elleriumcoin
+      can :manage, ::Withdraws::Zexcoin
+      can :manage, ::Withdraws::Rulitecoin
+      can :manage, ::Withdraws::Luckybit
+      can :manage, ::Withdraws::Instacashcoin
+      can :manage, ::Withdraws::Mambocoin
+      can :manage, ::Withdraws::Phantomxcoin
+      can :manage, ::Withdraws::Mixcoin
       #withdraw
 
     end

@@ -109,22 +109,22 @@ class Deposit < ActiveRecord::Base
   end
 
   def aggregate_funds
-    if channel.currency_obj.code == "eth"
+    if channel.currency_obj.code == "eth" || channel.currency_obj.code == "mix"
       # collect all deposits on the single account
       payment_tx = PaymentTransaction::Normal.where(txid: txid).first
       # unlock account
-      CoinRPC["eth"].personal_unlockAccount(payment_tx.address, "", "0x30")
+      CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", "0x30")
       # get nonce
-      local_nonce = CoinRPC["eth"].parity_nextNonce(payment_tx.address).to_i(16)
+      local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
 
       # calc amount
       gas_limit = channel.currency_obj.gas_limit
       gas_price = channel.currency_obj.gas_price
-      local_amount = (amount * 1e18).to_i - (gas_price * gas_limit)
+      local_amount = ((amount - 0.000000000000001) * 1e18).to_i - (gas_price * gas_limit)
 
-      Rails.logger.info "ETH parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
-      agg_txid = CoinRPC["eth"].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
-      Rails.logger.info "ETH aggregate: tx=" + agg_txid
+      Rails.logger.info channel.currency_obj.code + " parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
+      agg_txid = CoinRPC[channel.currency_obj.code].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
+      Rails.logger.info channel.currency_obj.code + " aggregate: tx=" + agg_txid
     end
   end
 

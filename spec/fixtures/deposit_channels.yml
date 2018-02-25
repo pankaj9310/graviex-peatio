@@ -196,3 +196,38 @@
   currency: elp
   min_confirm: 5
   max_confirm: 6
+- id: 8200
+  key: zexcoin
+  currency: zex
+  min_confirm: 5
+  max_confirm: 6
+- id: 8400
+  key: rulitecoin
+  currency: rlc
+  min_confirm: 5
+  max_confirm: 6
+- id: 8600
+  key: luckybit
+  currency: lucky
+  min_confirm: 5
+  max_confirm: 6
+- id: 8800
+  key: instacashcoin
+  currency: ich
+  min_confirm: 5
+  max_confirm: 6
+- id: 9000
+  key: mambocoin
+  currency: mmb
+  min_confirm: 5
+  max_confirm: 6
+- id: 9200
+  key: phantomxcoin
+  currency: pnx
+  min_confirm: 5
+  max_confirm: 6
+- id: 9400
+  key: mixcoin
+  currency: mix
+  min_confirm: 5
+  max_confirm: 6

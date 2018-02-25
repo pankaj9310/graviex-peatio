@@ -43,6 +43,13 @@ module Private
       @bls_proof   = Proof.current :bls
       @tokc_proof   = Proof.current :tokc
       @elp_proof   = Proof.current :elp
+      @zex_proof   = Proof.current :zex
+      @rlc_proof   = Proof.current :rlc
+      @lucky_proof   = Proof.current :lucky
+      @ich_proof   = Proof.current :ich
+      @mmb_proof   = Proof.current :mmb
+      @pnx_proof   = Proof.current :pnx
+      @mix_proof   = Proof.current :mix
       #proof
 
       if current_user
@@ -86,6 +93,13 @@ module Private
         @bls_account = current_user.accounts.with_currency(:bls).first
         @tokc_account = current_user.accounts.with_currency(:tokc).first
         @elp_account = current_user.accounts.with_currency(:elp).first
+        @zex_account = current_user.accounts.with_currency(:zex).first
+        @rlc_account = current_user.accounts.with_currency(:rlc).first
+        @lucky_account = current_user.accounts.with_currency(:lucky).first
+        @ich_account = current_user.accounts.with_currency(:ich).first
+        @mmb_account = current_user.accounts.with_currency(:mmb).first
+        @pnx_account = current_user.accounts.with_currency(:pnx).first
+        @mix_account = current_user.accounts.with_currency(:mix).first
         #account
       end
     end
