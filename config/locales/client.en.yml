@@ -88,6 +88,10 @@ en:
         mmb: MMB
         pnx: PNX
         mix: MIX
+        kreds: KREDS
+        bkt: BKT
+        snx: SNX
+        giro: GIRO
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -250,6 +254,18 @@ en:
 
       deposit_mix:
         title: MIX Deposit
+
+      deposit_kreds:
+        title: KREDS Deposit
+
+      deposit_bkt:
+        title: BKT Deposit
+
+      deposit_snx:
+        title: SNX Deposit
+
+      deposit_giro:
+        title: GIRO Deposit
 
       #deposit
 
@@ -440,6 +456,18 @@ en:
       withdraw_mix:
         title: MIX Withdraw
 
+      withdraw_kreds:
+        title: KREDS Withdraw
+
+      withdraw_bkt:
+        title: BKT Withdraw
+
+      withdraw_snx:
+        title: SNX Withdraw
+
+      withdraw_giro:
+        title: GIRO Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -491,6 +519,10 @@ en:
         withdraw_limit_mmb: Withdraw day limit is 500000 for an unverified account.
         withdraw_limit_pnx: Withdraw day limit is 50000 for an unverified account.
         withdraw_limit_mix: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_kreds: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_bkt: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_snx: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_giro: Withdraw day limit is 5000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -590,6 +622,10 @@ en:
         mmb: MMB Market
         pnx: PNX Market
         mix: MIX Market
+        kreds: KREDS Market
+        bkt: BKT Market
+        snx: SNX Market
+        giro: GIRO Market
         #market
 
 
