@@ -47,7 +47,7 @@ window.MarketSwitchUI = flight.component ->
     curren_market.attributes['id'].value = "market-list-" + ticker.base_unit + ticker.quote_unit
 
     if @markets_name_filter.length
-      if curren_market.attributes['data-market'].value.indexOf(@markets_name_filter.toLowerCase()) > 0
+      if curren_market.attributes['data-market'].value.indexOf(@markets_name_filter.toLowerCase()) >= 0
         curren_market.attributes['class'].value += " visible"
       else
         curren_market.attributes['class'].value += " hide"
@@ -266,6 +266,8 @@ window.MarketSwitchUI = flight.component ->
     @current_column = gon.markets_column
     @current_unit = gon.markets_unit
     @markets_name_filter = ''
+
+    @resetSort('name')
 
     @setMarketGroup @markets_filter
     @sortColumn @current_column, gon.markets_column_order
