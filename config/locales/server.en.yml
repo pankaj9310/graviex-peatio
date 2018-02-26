@@ -67,6 +67,14 @@ en:
       withdraws/mambocoin: Withdraw
       withdraws/phantomxcoin: Withdraw
       withdraws/mixcoin: Withdraw
+      withdraws/kredscoin: Withdraw
+      withdraws/bankittcoin: Withdraw
+      withdraws/snxcoin: Withdraw
+      withdraws/girocoin: Withdraw
+      withdraws/onexcoin: Withdraw
+      withdraws/pushicoin: Withdraw
+      withdraws/virtuscoin: Withdraw
+      withdraws/zacacoin: Withdraw
       #models
     attributes:
       api_token:
@@ -492,6 +500,54 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/mixcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/kredscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bankittcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/snxcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/girocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/onexcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/pushicoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/virtuscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zacacoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -1156,6 +1212,118 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/kredscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bankittcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/snxcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/girocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/onexcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/pushicoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/virtuscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/zacacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -1296,6 +1464,22 @@ en:
               phantomxcoin_invalid: Invalid Address
               mixcoin_ismine: Used Address
               mixcoin_invalid: Invalid Address
+              kredscoin_ismine: Used Address
+              kredscoin_invalid: Invalid Address
+              bankittcoin_ismine: Used Address
+              bankittcoin_invalid: Invalid Address
+              snxcoin_ismine: Used Address
+              snxcoin_invalid: Invalid Address
+              girocoin_ismine: Used Address
+              girocoin_invalid: Invalid Address
+              onexcoin_ismine: Used Address
+              onexcoin_invalid: Invalid Address
+              pushicoin_ismine: Used Address
+              pushicoin_invalid: Invalid Address
+              virtuscoin_ismine: Used Address
+              virtuscoin_invalid: Invalid Address
+              zacacoin_ismine: Used Address
+              zacacoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -1587,6 +1771,54 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/kredscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bankittcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/snxcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/girocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/onexcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/pushicoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/virtuscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/zacacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -1679,6 +1911,14 @@ en:
       mmb: MMB
       pnx: PNX
       mix: MIX
+      kreds: KREDS
+      bkt: BKT
+      snx: SNX
+      giro: GIRO
+      onex: ONEX
+      pushi: PUSHI
+      vrt: VRT
+      zaca: ZACA
       #market1
   currency:
     satoshi:
@@ -1935,6 +2175,46 @@ en:
       key: MIX
       code: MIX
       name: Mixcoin
+      format: '0,0.0000'
+    kredscoin:
+      key: KREDS
+      code: KREDS
+      name: Kredscoin
+      format: '0,0.0000'
+    bankittcoin:
+      key: BKT
+      code: BKT
+      name: Bankittcoin
+      format: '0,0.0000'
+    snxcoin:
+      key: SNX
+      code: SNX
+      name: Snxcoin
+      format: '0,0.0000'
+    girocoin:
+      key: GIRO
+      code: GIRO
+      name: Girocoin
+      format: '0,0.0000'
+    onexcoin:
+      key: ONEX
+      code: ONEX
+      name: Onexcoin
+      format: '0,0.0000'
+    pushicoin:
+      key: PUSHI
+      code: PUSHI
+      name: Pushicoin
+      format: '0,0.0000'
+    virtuscoin:
+      key: VRT
+      code: VRT
+      name: Virtuscoin
+      format: '0,0.0000'
+    zacacoin:
+      key: ZACA
+      code: ZACA
+      name: Zacacoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -2404,6 +2684,62 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    kredscoin:
+      key: Block Chain
+      title: Kredscoin Deposits
+      intro: Deposit kredscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bankittcoin:
+      key: Block Chain
+      title: Bankittcoin Deposits
+      intro: Deposit bankittcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    snxcoin:
+      key: Block Chain
+      title: Snxcoin Deposits
+      intro: Deposit snxcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    girocoin:
+      key: Block Chain
+      title: Girocoin Deposits
+      intro: Deposit girocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    onexcoin:
+      key: Block Chain
+      title: Onexcoin Deposits
+      intro: Deposit onexcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    pushicoin:
+      key: Block Chain
+      title: Pushicoin Deposits
+      intro: Deposit pushicoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    virtuscoin:
+      key: Block Chain
+      title: Virtuscoin Deposits
+      intro: Deposit virtuscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    zacacoin:
+      key: Block Chain
+      title: Zacacoin Deposits
+      intro: Deposit zacacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -2562,6 +2898,30 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       mixcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      kredscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bankittcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      snxcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      girocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      onexcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      pushicoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      virtuscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zacacoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -3376,6 +3736,126 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      kredscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bankittcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      snxcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      girocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      onexcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      pushicoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      virtuscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      zacacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -3493,6 +3973,14 @@ en:
         mmb-assets: MMB Assets
         pnx-assets: PNX Assets
         mix-assets: MIX Assets
+        kreds-assets: KREDS Assets
+        bkt-assets: BKT Assets
+        snx-assets: SNX Assets
+        giro-assets: GIRO Assets
+        onex-assets: ONEX Assets
+        pushi-assets: PUSHI Assets
+        vrt-assets: VRT Assets
+        zaca-assets: ZACA Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -3542,6 +4030,14 @@ en:
         verify-mmb: Verify My MMB Assets
         verify-pnx: Verify My PNX Assets
         verify-mix: Verify My MIX Assets
+        verify-kreds: Verify My KREDS Assets
+        verify-bkt: Verify My BKT Assets
+        verify-snx: Verify My SNX Assets
+        verify-giro: Verify My GIRO Assets
+        verify-onex: Verify My ONEX Assets
+        verify-pushi: Verify My PUSHI Assets
+        verify-vrt: Verify My VRT Assets
+        verify-zaca: Verify My ZACA Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -3590,6 +4086,14 @@ en:
         mmb-assets-total: 'Total MMB assets of exchange: '
         pnx-assets-total: 'Total PNX assets of exchange: '
         mix-assets-total: 'Total MIX assets of exchange: '
+        kreds-assets-total: 'Total KREDS assets of exchange: '
+        bkt-assets-total: 'Total BKT assets of exchange: '
+        snx-assets-total: 'Total SNX assets of exchange: '
+        giro-assets-total: 'Total GIRO assets of exchange: '
+        onex-assets-total: 'Total ONEX assets of exchange: '
+        pushi-assets-total: 'Total PUSHI assets of exchange: '
+        vrt-assets-total: 'Total VRT assets of exchange: '
+        zaca-assets-total: 'Total ZACA assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -3842,6 +4346,46 @@ en:
         intro: All of exchange's MIX assets are listed here.
         total: Total MIX Assets
         address: Address
+      kreds_assets:
+        title: KREDS Assets
+        intro: All of exchange's KREDS assets are listed here.
+        total: Total KREDS Assets
+        address: Address
+      bkt_assets:
+        title: BKT Assets
+        intro: All of exchange's BKT assets are listed here.
+        total: Total BKT Assets
+        address: Address
+      snx_assets:
+        title: SNX Assets
+        intro: All of exchange's SNX assets are listed here.
+        total: Total SNX Assets
+        address: Address
+      giro_assets:
+        title: GIRO Assets
+        intro: All of exchange's GIRO assets are listed here.
+        total: Total GIRO Assets
+        address: Address
+      onex_assets:
+        title: ONEX Assets
+        intro: All of exchange's ONEX assets are listed here.
+        total: Total ONEX Assets
+        address: Address
+      pushi_assets:
+        title: PUSHI Assets
+        intro: All of exchange's PUSHI assets are listed here.
+        total: Total PUSHI Assets
+        address: Address
+      vrt_assets:
+        title: VRT Assets
+        intro: All of exchange's VRT assets are listed here.
+        total: Total VRT Assets
+        address: Address
+      zaca_assets:
+        title: ZACA Assets
+        intro: All of exchange's ZACA assets are listed here.
+        total: Total ZACA Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -3904,6 +4448,14 @@ en:
         mmb_format: '0.00000000'
         pnx_format: '0.00000000'
         mix_format: '0.00000000'
+        kreds_format: '0.00000000'
+        bkt_format: '0.00000000'
+        snx_format: '0.00000000'
+        giro_format: '0.00000000'
+        onex_format: '0.00000000'
+        pushi_format: '0.00000000'
+        vrt_format: '0.00000000'
+        zaca_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -4194,6 +4746,54 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          kreds:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bkt:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          snx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          giro:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          onex:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pushi:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          vrt:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zaca:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -4286,6 +4886,14 @@ en:
         mmb_html: "<i class='fa fa-check'></i><span>MMB Markets</span>"
         pnx_html: "<i class='fa fa-check'></i><span>PNX Markets</span>"
         mix_html: "<i class='fa fa-check'></i><span>MIX Markets</span>"
+        kreds_html: "<i class='fa fa-check'></i><span>KREDS Markets</span>"
+        bkt_html: "<i class='fa fa-check'></i><span>BKT Markets</span>"
+        snx_html: "<i class='fa fa-check'></i><span>SNX Markets</span>"
+        giro_html: "<i class='fa fa-check'></i><span>GIRO Markets</span>"
+        onex_html: "<i class='fa fa-check'></i><span>ONEX Markets</span>"
+        pushi_html: "<i class='fa fa-check'></i><span>PUSHI Markets</span>"
+        vrt_html: "<i class='fa fa-check'></i><span>VRT Markets</span>"
+        zaca_html: "<i class='fa fa-check'></i><span>ZACA Markets</span>"
         #market_list
         price: Price
         change: "24h %"
@@ -4528,6 +5136,14 @@ en:
         mmb_format: '0.00000000'
         pnx_format: '0.00000000'
         mix_format: '0.00000000'
+        kreds_format: '0.00000000'
+        bkt_format: '0.00000000'
+        snx_format: '0.00000000'
+        giro_format: '0.00000000'
+        onex_format: '0.00000000'
+        pushi_format: '0.00000000'
+        vrt_format: '0.00000000'
+        zaca_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -4775,6 +5391,30 @@ en:
         mixcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        kredscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bankittcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        snxcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        girocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        onexcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        pushicoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        virtuscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        zacacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -4897,6 +5537,22 @@ en:
         phantomxcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         mixcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        kredscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bankittcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        snxcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        girocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        onexcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        pushicoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        virtuscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zacacoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -5270,6 +5926,62 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        kredscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Kredscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bankittcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bankittcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        snxcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Snxcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        girocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Girocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        onexcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Onexcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        pushicoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Pushicoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        virtuscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Virtuscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        zacacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zacacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -5563,6 +6275,54 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       mixcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      kredscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bankittcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      snxcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      girocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      onexcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      pushicoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      virtuscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zacacoins:
         update:
           notice: The deposit was successful.
         index:
@@ -6206,6 +6966,102 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      kredscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bankittcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      snxcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      girocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      onexcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      pushicoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      virtuscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      zacacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -6484,6 +7340,54 @@ en:
       checked: Checked
       warning: Warning
   deposits/mixcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/kredscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bankittcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/snxcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/girocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/onexcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/pushicoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/virtuscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zacacoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -6923,6 +7827,70 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    kredscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bankittcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    snxcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    girocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    onexcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    pushicoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    virtuscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    zacacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -7001,6 +7969,14 @@ en:
       mmb: MMB
       pnx: PNX
       mix: MIX
+      kreds: KREDS
+      bkt: BKT
+      snx: SNX
+      giro: GIRO
+      onex: ONEX
+      pushi: PUSHI
+      vrt: VRT
+      zaca: ZACA
       #enum_currence
     order:
       state:
@@ -7074,6 +8050,14 @@ en:
         mambocoin: Mambocoin
         phantomxcoin: Phantomxcoin
         mixcoin: Mixcoin
+        kredscoin: Kredscoin
+        bankittcoin: Bankittcoin
+        snxcoin: Snxcoin
+        girocoin: Girocoin
+        onexcoin: Onexcoin
+        pushicoin: Pushicoin
+        virtuscoin: Virtuscoin
+        zacacoin: Zacacoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -7878,6 +8862,62 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    kredscoin:
+      key: Blockchain
+      title: Kredscoin Blockchain
+      intro: Withdraw Kredscoin to your own Kredscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bankittcoin:
+      key: Blockchain
+      title: Bankittcoin Blockchain
+      intro: Withdraw Bankittcoin to your own Bankittcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    snxcoin:
+      key: Blockchain
+      title: Snxcoin Blockchain
+      intro: Withdraw Snxcoin to your own Snxcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    girocoin:
+      key: Blockchain
+      title: Girocoin Blockchain
+      intro: Withdraw Girocoin to your own Girocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    onexcoin:
+      key: Blockchain
+      title: Onexcoin Blockchain
+      intro: Withdraw Onexcoin to your own Onexcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    pushicoin:
+      key: Blockchain
+      title: Pushicoin Blockchain
+      intro: Withdraw Pushicoin to your own Pushicoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    virtuscoin:
+      key: Blockchain
+      title: Virtuscoin Blockchain
+      intro: Withdraw Virtuscoin to your own Virtuscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    zacacoin:
+      key: Blockchain
+      title: Zacacoin Blockchain
+      intro: Withdraw Zacacoin to your own Zacacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -8446,6 +9486,102 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/mixcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/kredscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bankittcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/snxcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/girocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/onexcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/pushicoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/virtuscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zacacoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
