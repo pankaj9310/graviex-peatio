@@ -50,7 +50,7 @@ gem "jquery-rails"
 gem "angularjs-rails"
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'bootstrap-wysihtml5-rails'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.5.0.0'
 gem 'bourbon'
 gem 'momentjs-rails'
 gem 'eco'
