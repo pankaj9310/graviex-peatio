@@ -1,15 +1,17 @@
 window.MarketSwitchUI = flight.component ->
   @attributes
     table: 'tbody'
-    marketGroupName: '.panel-body-head thead span.name'
+    marketGroupName: '.panel-body-head thead a.name'
     marketGroupItem: '.dropdown-wrapper .dropdown-menu li a'
     marketGroups: '.dropdown-wrapper .dropdown-menu'
     marketsTable: '.table.markets'
     marketsFilter: 'input'
     marketsList: 'tr.market'
     switchUnit: 'a.switch_unit'
+    sortName: 'a.sort_name'
     sortUnit: 'a.sort_change'
     sortPrice: 'a.sort_price'
+    sortNameDirection: 'span.name_sort_direction'
     sortUnitDirection: 'span.change_sort_direction'
     sortPriceDirection: 'span.price_sort_direction'
 
@@ -44,6 +46,12 @@ window.MarketSwitchUI = flight.component ->
     curren_market.attributes['data-market'].value = ticker.base_unit + ticker.quote_unit
     curren_market.attributes['id'].value = "market-list-" + ticker.base_unit + ticker.quote_unit
 
+    if @markets_name_filter.length
+      if curren_market.attributes['data-market'].value.indexOf(@markets_name_filter.toLowerCase()) > 0
+        curren_market.attributes['class'].value += " visible"
+      else
+        curren_market.attributes['class'].value += " hide"
+
     select.find('td.name')
       .html("<span class=''>#{ticker.name}</span>")
 
@@ -76,6 +84,7 @@ window.MarketSwitchUI = flight.component ->
     @select('table').find("tr#market-list-#{gon.market.id}").addClass 'highlight'
 
   @filterMarkets = (filter) ->
+    @markets_name_filter = filter
     local_markets = @select('marketsList')
     for market in local_markets
       market_class = market.attributes['class'].value
@@ -137,6 +146,8 @@ window.MarketSwitchUI = flight.component ->
       column = @select('sortUnit')
     else if column_name == 'last'
       column = @select('sortPrice')
+    else if column_name == 'name'
+      column = @select('sortName')
     return column
 
   @getColumnDirection = (column_name) ->
@@ -145,6 +156,8 @@ window.MarketSwitchUI = flight.component ->
       direction = @select('sortUnitDirection')[0]
     else if column_name == 'last'
       direction = @select('sortPriceDirection')[0]
+    else if column_name == 'name'
+      direction = @select('sortNameDirection')[0]
     return direction
 
   @columnOrder = (column_name) ->
@@ -175,7 +188,7 @@ window.MarketSwitchUI = flight.component ->
         @updateColumnTransation(column[0], 'asc', 'unsorted')
         @updateColumnTransation(direction, 'fa-sort-asc', 'fa-unsorted')
 
-  @sortColumn = (column_name) ->
+  @sortColumn = (column_name, column_order) ->
     if column_name == 'none'
       return
 
@@ -187,20 +200,25 @@ window.MarketSwitchUI = flight.component ->
 
     prev_column_sort = 'unsorted' 
     current_column_sort = 'unsorted'
-
-    if column.hasClass('unsorted')
-      @updateColumnTransation(column[0], 'unsorted', 'desc')
-      current_column_sort = 'desc'
-    else 
-      if column.hasClass('desc') 
-        @updateColumnTransation(column[0], 'desc', 'asc')
-        current_column_sort = 'asc'
-        prev_column_sort = 'desc'
-      else
-        if column.hasClass('asc')
-          @updateColumnTransation(column[0], 'asc', 'desc')
-          current_column_sort = 'desc'
-          prev_column_sort = 'asc'
+ 
+    if column_order != 'none'
+      @resetSort(column_name)
+      @updateColumnTransation(column[0], 'unsorted', column_order)
+      current_column_sort = column_order
+    else
+      if column.hasClass('unsorted')
+        @updateColumnTransation(column[0], 'unsorted', 'desc')
+        current_column_sort = 'desc'
+      else 
+        if column.hasClass('desc') 
+          @updateColumnTransation(column[0], 'desc', 'asc')
+          current_column_sort = 'asc'
+          prev_column_sort = 'desc'
+        else
+          if column.hasClass('asc')
+            @updateColumnTransation(column[0], 'asc', 'desc')
+            current_column_sort = 'desc'
+            prev_column_sort = 'asc'
 
     if prev_column_sort == 'unsorted' && current_column_sort == 'desc'
        @updateColumnTransation(direction, 'fa-unsorted', 'fa-sort-desc')
@@ -216,10 +234,13 @@ window.MarketSwitchUI = flight.component ->
     @trigger 'market::tickers::sort', { unit: @current_column, order: current_column_sort }
 
   @sortUnit = (e) ->
-    @sortColumn(@current_unit)
+    @sortColumn(@current_unit, 'none')
 
   @sortPrice = (e) ->
-    @sortColumn('last')
+    @sortColumn('last', 'none')
+
+  @sortName = (e) ->
+    @sortColumn('name', 'none')
 
   @updateColumnTransation = (selected, from, to) ->
     if selected.attributes['class'].value.indexOf(from) > 0
@@ -228,7 +249,6 @@ window.MarketSwitchUI = flight.component ->
 
   @switchMarket = (e) ->
     parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit
-#    console.log $(e.target).closest('tr').data('market')
     unless e.target.nodeName == 'I'
       window.location.href = window.formatter.market_url($(e.target).closest('tr').data('market')+parameters)
 
@@ -239,21 +259,17 @@ window.MarketSwitchUI = flight.component ->
     @on @select('switchUnit'), 'click', @switchUnit
     @on @select('sortUnit'), 'click', @sortUnit
     @on @select('sortPrice'), 'click', @sortPrice
+    @on @select('sortName'), 'click', @sortName
     @on @select('table'), 'click', @switchMarket
 
     @markets_filter = gon.markets_filter
     @current_column = gon.markets_column
     @current_unit = gon.markets_unit
+    @markets_name_filter = ''
 
     @setMarketGroup @markets_filter
-    @sortColumn @current_column
+    @sortColumn @current_column, gon.markets_column_order
     @setUnit @current_unit
-
-#    @select('table').on 'click', 'tr', (e) ->
-#      parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit
-#      console.log parameters
-#      unless e.target.nodeName == 'I'
-#        window.location.href = window.formatter.market_url($(@).data('market'))
 
     @.hide_accounts = $('tr.hide')
 

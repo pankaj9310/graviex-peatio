@@ -11,7 +11,8 @@
         table.table
           thead: tr
             th.col-xs-10
-              span.name = t('.all')
+              span[class = 'name_sort_direction fa fa-sort-asc' style='padding: 0 3px 0 0']
+              a.sort_name.hover.asc style='text-decoration: none' href='#' = t('.all')
             th.col-xs-6.text-left.price
               span[class = 'price_sort_direction fa fa-unsorted' style='padding: 0 3px 0 0']
               a.sort_price.hover.unsorted style='text-decoration: none' href='#' = t('.price')
@@ -31,6 +32,6 @@
                 td.col-xs-4.name
                   = link_to market.name, market_path(market)
                 td[class='col-xs-15 price' style='font-weight: bold']
-                  = Global[market.id].ticker[:last]
-                td.col-xs-5.change
+                  = 0.0
+                td[class='col-xs-5 change']
                   | +0.00%

@@ -36,9 +36,10 @@ window.GlobalData = flight.component ->
       last_sell = parseFloat(@last_tickers[market].sell)
       last_last = parseFloat(@last_tickers[market].last)
 
-      p1 = parseFloat(ticker.open)
-      p2 = parseFloat(ticker.last)
-      ticker.volumeRel = parseFloat(formatter.price_change(p1, p2))
+      open = parseFloat(ticker.open)
+      ticker.volumeRelFloat = parseFloat(formatter.price_change(open, last))
+      ticker.lastFloat = last
+      ticker.volumeAbsFloat = parseFloat(ticker.volume2)
 
       if buy != last_buy
         data[market]['buy_trend'] = ticker['buy_trend'] = (buy > last_buy)
@@ -61,6 +62,7 @@ window.GlobalData = flight.component ->
       market: market, data: ticker, unit: @sort_unit, order: @sort_order
 
     tickers_sorted = tickers.sort(@sorter)
+#    console.log tickers_sorted
     @trigger 'market::tickers', {tickers: tickers_sorted, raw: data}
     @last_tickers = data
     
@@ -87,8 +89,14 @@ window.GlobalData = flight.component ->
 
   @sortTickers = (event, data) ->
     @sort_unit = data.unit
+
     if @sort_unit == 'volume'
-      @sort_unit = 'volumeRel'
+      @sort_unit = 'volumeRelFloat'
+    else if @sort_unit == 'last'
+      @sort_unit = 'lastFloat'
+    else if @sort_unit == 'volume2'
+      @sort_unit = 'volumeAbsFloat'
+
     @sort_order = data.order
 
     if @last_tickers
