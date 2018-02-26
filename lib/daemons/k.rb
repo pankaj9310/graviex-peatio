@@ -90,9 +90,9 @@ def append_point(market, period, ts)
 
   if period == 1
     # 24*60 = 1440
-    #if point = @r.lindex(key(market, period), -1441)
-    tnow = DateTime.now
-    if point = @r.lindex(key(market, period), -(tnow.hour*60+tnow.minute+2))
+    #tnow = DateTime.now
+    #if point = @r.lindex(key(market, period), -(tnow.hour*60+tnow.minute+2))
+    if point = @r.lindex(key(market, period), -1441)
       Rails.cache.write "peatio:#{market}:ticker:open", JSON.parse(point)[4]
     end
   end
