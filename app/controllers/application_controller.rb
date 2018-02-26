@@ -113,11 +113,25 @@ class ApplicationController < ActionController::Base
   end
 
   def set_gon
+    #Rails.logger.info "[INIT]: " + params.to_json
     gon.env = Rails.env
     gon.local = I18n.locale
     gon.market = current_market.attributes
     gon.ticker = current_market.ticker
     gon.markets = Market.to_hash
+    gon.markets_filter = 'all'
+    gon.markets_column = 'none'
+    gon.markets_column_order = 'unsorted'
+    gon.markets_unit = 'volume'
+    
+    if params[:controller] == 'private/markets'
+      if params[:markets] != nil 
+        gon.markets_filter = params[:markets]
+        gon.markets_column = params[:column]
+        gon.markets_column_order = params[:order]
+        gon.markets_unit = params[:unit]
+      end
+    end
 
     gon.pusher = {
       key:       ENV['PUSHER_KEY'],

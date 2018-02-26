@@ -377,17 +377,18 @@ CLOSE_IDX = 9
             step = maxDeviation / ticks
             tickArray = []
  
-            #console.log "diff=#{maxDeviation}, step=#{step}, minRange=#{this.minTange}"
+            #console.log "diff=#{maxDeviation}, step=#{step}, minRange=#{this.minRange}"
 
             prevTick = 0.000000000
             currentTick = dataMin
             for i in [0..ticks]
-              if currentTick - prevTick >= 0.000000001 
+              if currentTick - prevTick >= 0.0000000005
                 #console.log "tick(#{i})=#{currentTick}"
                 tickArray.push(currentTick)
                 prevTick = currentTick
               currentTick += step
             return tickArray
+
           crosshair:
             snap: false
             interpolate: true

@@ -3,16 +3,21 @@ window.MarketSwitchUI = flight.component ->
     table: 'tbody'
     marketGroupName: '.panel-body-head thead span.name'
     marketGroupItem: '.dropdown-wrapper .dropdown-menu li a'
+    marketGroups: '.dropdown-wrapper .dropdown-menu'
     marketsTable: '.table.markets'
     marketsFilter: 'input'
     marketsList: 'tr.market'
+    switchUnit: 'a.switch_unit'
+    sortUnit: 'a.sort_change'
+    sortPrice: 'a.sort_price'
+    sortUnitDirection: 'span.change_sort_direction'
+    sortPriceDirection: 'span.price_sort_direction'
 
   @switchMarketGroup = (event, item) ->
     item = $(event.target).closest('a')
     name = item.data('name')
 
-#    window.markets_filter = name
-#    console.log 'switchMarketGroup', window.markets_filter
+    @markets_filter = name
 
     @select('marketGroupItem').removeClass('active')
     item.addClass('active')
@@ -22,13 +27,25 @@ window.MarketSwitchUI = flight.component ->
     @select('marketsTable').attr("style", "font-size: 12px")
 
   @setMarketGroup = (market_filter) ->
-    console.log 'setMarketGroup', market_filter
+    @select('marketGroupItem').removeClass('active')
+    
+    marketGroup = @select('marketGroups').find("a[data-name='" + market_filter + "']")
+    marketGroup.addClass('active')
 
+    @select('marketGroupName').text marketGroup.find('span').text()
     @select('marketsTable').attr("class", "table table-hover markets #{market_filter}")
     @select('marketsTable').attr("style", "font-size: 12px")
 
   @updateMarket = (select, ticker) ->
     trend = formatter.trend ticker.last_trend
+
+    curren_market = select[0]
+    curren_market.attributes['class'].value = "market quote-" + ticker.quote_unit
+    curren_market.attributes['data-market'].value = ticker.base_unit + ticker.quote_unit
+    curren_market.attributes['id'].value = "market-list-" + ticker.base_unit + ticker.quote_unit
+
+    select.find('td.name')
+      .html("<span class=''>#{ticker.name}</span>")
 
     select.find('td.price')
       .attr('title', ticker.last)
@@ -37,19 +54,31 @@ window.MarketSwitchUI = flight.component ->
     p1 = parseFloat(ticker.open)
     p2 = parseFloat(ticker.last)
     trend = formatter.trend(p1 <= p2)
-    select.find('td.change').html("<span class='#{trend}'>#{formatter.price_change(p1, p2)}%</span>")
+
+    if @current_unit == 'volume' 
+      select.find('td.change').html("<span class='#{trend}'>#{formatter.price_change(p1, p2)}%</span>")
+    else
+      select.find('td.change').html("<span class='#{trend}'>#{formatter.round(ticker.volume2, 4)}</span>")
 
   @refresh = (event, data) ->
     table = @select('table')
+    records = @select('table').find("tr.market")
+
+    recordsFound = []
+
+    local_index = 0
     for ticker in data.tickers
-      @updateMarket table.find("tr#market-list-#{ticker.market}"), ticker.data
-    table.find("tr#market-list-#{gon.market.id}").addClass 'highlight'
+      recordsFound.push(table.find("tr#"+records[local_index++].attributes['id'].value))
+
+    local_index = 0
+    for ticker in data.tickers
+      @updateMarket recordsFound[local_index++], ticker.data
+    @select('table').find("tr#market-list-#{gon.market.id}").addClass 'highlight'
 
   @filterMarkets = (filter) ->
     local_markets = @select('marketsList')
     for market in local_markets
       market_class = market.attributes['class'].value
-      console.log market.attributes['data-market'].value, filter
       if market.attributes['data-market'].value.indexOf(filter.toLowerCase()) >= 0 || !filter.length
         if market_class.indexOf('hide') >= 0
           market.attributes['class'].value = market_class.substr(0, market_class.indexOf('hide') - 1)
@@ -74,17 +103,157 @@ window.MarketSwitchUI = flight.component ->
 
     @filterMarkets filter
 
+  @setUnit = (unit_name) ->
+    @.unit = @select('switchUnit')
+    @.selected = @.unit[0]
+    if @.unit.hasClass('fa-percent') && unit_name == 'volume2'
+      @updateColumnTransation(@.selected, 'fa-percent', 'fa-btc')
+    else if @.unit.hasClass('fa-btc') && unit_name == 'volume'
+      @updateColumnTransation(@.selected, 'fa-btc', 'fa-percent')
+
+  @switchUnit = (e) ->
+    @.unit = @select('switchUnit')
+    @.selected = @.unit[0]
+    if @.unit.hasClass('fa-percent')
+      @updateColumnTransation(@.selected, 'fa-percent', 'fa-btc')
+      @current_column = 'volume2'
+    else
+      @updateColumnTransation(@.selected, 'fa-btc', 'fa-percent')
+      @current_column = 'volume'
+
+    current_column_sort = 'unsorted'
+    column = @select('sortUnit')
+    if column.hasClass('desc')
+      current_column_sort = 'desc'
+    else
+      if column.hasClass('asc')
+        current_column_sort = 'asc'
+
+    @current_unit = @current_column
+    @trigger 'market::tickers::sort', { unit: @current_column, order: current_column_sort }
+
+  @getColumn = (column_name) ->
+    if column_name == 'volume' || column_name == 'volume2'
+      column = @select('sortUnit')
+    else if column_name == 'last'
+      column = @select('sortPrice')
+    return column
+
+  @getColumnDirection = (column_name) ->
+    direction = null
+    if column_name == 'volume' || column_name == 'volume2'
+      direction = @select('sortUnitDirection')[0]
+    else if column_name == 'last'
+      direction = @select('sortPriceDirection')[0]
+    return direction
+
+  @columnOrder = (column_name) ->
+    column = @getColumn(column_name)
+
+    if column_name == 'none'
+      return 'unsorted'
+
+    if column.hasClass('desc')
+      return 'desc'
+    else
+      if column.hasClass('asc')
+        return 'asc'
+    return 'unsorted'
+
+  @resetSort = (column_name) ->
+    direction = @getColumnDirection(column_name)
+    column = @getColumn(column_name)
+
+    if column_name == 'none'
+      return
+
+    if column.hasClass('desc')
+      @updateColumnTransation(column[0], 'desc', 'unsorted')
+      @updateColumnTransation(direction, 'fa-sort-desc', 'fa-unsorted')
+    else
+      if column.hasClass('asc')
+        @updateColumnTransation(column[0], 'asc', 'unsorted')
+        @updateColumnTransation(direction, 'fa-sort-asc', 'fa-unsorted')
+
+  @sortColumn = (column_name) ->
+    if column_name == 'none'
+      return
+
+    if column_name != @current_column
+      @resetSort(@current_column)
+
+    direction = @getColumnDirection(column_name)
+    column = @getColumn(column_name)
+
+    prev_column_sort = 'unsorted' 
+    current_column_sort = 'unsorted'
+
+    if column.hasClass('unsorted')
+      @updateColumnTransation(column[0], 'unsorted', 'desc')
+      current_column_sort = 'desc'
+    else 
+      if column.hasClass('desc') 
+        @updateColumnTransation(column[0], 'desc', 'asc')
+        current_column_sort = 'asc'
+        prev_column_sort = 'desc'
+      else
+        if column.hasClass('asc')
+          @updateColumnTransation(column[0], 'asc', 'desc')
+          current_column_sort = 'desc'
+          prev_column_sort = 'asc'
+
+    if prev_column_sort == 'unsorted' && current_column_sort == 'desc'
+       @updateColumnTransation(direction, 'fa-unsorted', 'fa-sort-desc')
+    else if prev_column_sort == 'unsorted' && current_column_sort == 'asc'
+       @updateColumnTransation(direction, 'fa-unsorted', 'fa fa-sort-asc')
+    else if prev_column_sort == 'desc' && current_column_sort == 'asc'
+       @updateColumnTransation(direction, 'fa-sort-desc', 'fa-sort-asc')
+    else if prev_column_sort == 'asc' && current_column_sort == 'desc'
+       @updateColumnTransation(direction, 'fa-sort-asc', 'fa-sort-desc')
+
+    @current_column = column_name
+#    console.log @current_column, current_column_sort
+    @trigger 'market::tickers::sort', { unit: @current_column, order: current_column_sort }
+
+  @sortUnit = (e) ->
+    @sortColumn(@current_unit)
+
+  @sortPrice = (e) ->
+    @sortColumn('last')
+
+  @updateColumnTransation = (selected, from, to) ->
+    if selected.attributes['class'].value.indexOf(from) > 0
+      selected.attributes['class'].value = selected.attributes['class'].value.substr(0, selected.attributes['class'].value.indexOf(from) - 1)
+      selected.attributes['class'].value += " " + to
+
+  @switchMarket = (e) ->
+    parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit
+#    console.log $(e.target).closest('tr').data('market')
+    unless e.target.nodeName == 'I'
+      window.location.href = window.formatter.market_url($(e.target).closest('tr').data('market')+parameters)
+
   @after 'initialize', ->
     @on document, 'market::tickers', @refresh
     @on @select('marketGroupItem'), 'click', @switchMarketGroup
     @on @select('marketsFilter'), 'keydown', @filterEditing
+    @on @select('switchUnit'), 'click', @switchUnit
+    @on @select('sortUnit'), 'click', @sortUnit
+    @on @select('sortPrice'), 'click', @sortPrice
+    @on @select('table'), 'click', @switchMarket
 
-#    if window.markets_filter
-#      @setMarketGroup window.markets_filter
+    @markets_filter = gon.markets_filter
+    @current_column = gon.markets_column
+    @current_unit = gon.markets_unit
 
-    @select('table').on 'click', 'tr', (e) ->
-      unless e.target.nodeName == 'I'
-        window.location.href = window.formatter.market_url($(@).data('market'))
+    @setMarketGroup @markets_filter
+    @sortColumn @current_column
+    @setUnit @current_unit
+
+#    @select('table').on 'click', 'tr', (e) ->
+#      parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit
+#      console.log parameters
+#      unless e.target.nodeName == 'I'
+#        window.location.href = window.formatter.market_url($(@).data('market'))
 
     @.hide_accounts = $('tr.hide')
 
