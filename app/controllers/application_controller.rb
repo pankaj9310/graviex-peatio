@@ -120,8 +120,8 @@ class ApplicationController < ActionController::Base
     gon.ticker = current_market.ticker
     gon.markets = Market.to_hash
     gon.markets_filter = 'all'
-    gon.markets_column = 'none'
-    gon.markets_column_order = 'unsorted'
+    gon.markets_column = 'name'
+    gon.markets_column_order = 'asc'
     gon.markets_unit = 'volume'
     
     if params[:controller] == 'private/markets'
