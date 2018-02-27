@@ -125,21 +125,32 @@ window.MarketSwitchUI = flight.component ->
     @.selected = @.unit[0]
     if @.unit.hasClass('fa-percent')
       @updateColumnTransation(@.selected, 'fa-percent', 'fa-btc')
-      @current_column = 'volume2'
     else
       @updateColumnTransation(@.selected, 'fa-btc', 'fa-percent')
-      @current_column = 'volume'
 
-    current_column_sort = 'unsorted'
-    column = @select('sortUnit')
-    if column.hasClass('desc')
-      current_column_sort = 'desc'
+    current_column = @getCurrentUnit()
+    if @current_column == 'volume2' || @current_column == 'volume'
+      current_column_sort = 'unsorted'
+      column = @select('sortUnit')
+      if column.hasClass('desc')
+        current_column_sort = 'desc'
+      else
+        if column.hasClass('asc')
+          current_column_sort = 'asc'
     else
-      if column.hasClass('asc')
-        current_column_sort = 'asc'
+      current_column_sort = @columnOrder(@current_column)
+      current_column = @current_column
 
-    @current_unit = @current_column
-    @trigger 'market::tickers::sort', { unit: @current_column, order: current_column_sort }
+    @trigger 'market::tickers::sort', { unit: current_column, order: current_column_sort }
+
+  @getCurrentUnit = () ->
+    unit = @select('switchUnit')
+    selected = unit[0]
+    if unit.hasClass('fa-percent')
+      @current_unit = 'volume' 
+    else
+      @current_unit = 'volume2'
+    return @current_unit
 
   @getColumn = (column_name) ->
     if column_name == 'volume' || column_name == 'volume2'
@@ -234,7 +245,7 @@ window.MarketSwitchUI = flight.component ->
     @trigger 'market::tickers::sort', { unit: @current_column, order: current_column_sort }
 
   @sortUnit = (e) ->
-    @sortColumn(@current_unit, 'none')
+    @sortColumn(@getCurrentUnit(), 'none')
 
   @sortPrice = (e) ->
     @sortColumn('last', 'none')
