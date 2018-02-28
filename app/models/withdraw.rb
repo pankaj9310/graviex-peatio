@@ -105,7 +105,7 @@ class Withdraw < ActiveRecord::Base
     end
 
     event :reject do
-      transitions from: [:submitted, :accepted, :processing], to: :rejected
+      transitions from: [:submitted, :accepted, :processing, :almost_done], to: :rejected
       after :unlock_funds
     end
 
