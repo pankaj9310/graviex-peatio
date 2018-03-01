@@ -7449,6 +7449,7 @@ en:
         inactive: Inactive
         deactive: Deactive
         are_you_sure: Are you sure deactive two factor authentication?
+        verification_info: Verification info
       account:
         account_info: Account Info
         payment_address: Deposit Address
