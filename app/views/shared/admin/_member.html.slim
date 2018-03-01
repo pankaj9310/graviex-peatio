@@ -20,7 +20,13 @@
       hr.split
 
       = item_for t('.verification_info') do
-        = link_to t('actions.view'), admin_id_document_path(member)
+        = link_to t('actions.view'), admin_id_document_path(member.id_document.id)
+
+      = item_for member, :verified do
+        - if member.id_document.is_verified?
+          span[class='btn btn-success btn-xs'] = t('.Yes')
+        - else
+          span[class='btn btn-danger btn-xs'] = t('.No')
 
       hr.split
 
