@@ -75,6 +75,12 @@ en:
       withdraws/pushicoin: Withdraw
       withdraws/virtuscoin: Withdraw
       withdraws/zacacoin: Withdraw
+      withdraws/xhimeracoin: Withdraw
+      withdraws/xarucoin: Withdraw
+      withdraws/rupayacoin: Withdraw
+      withdraws/ferrumcoin: Withdraw
+      withdraws/peoplecoin: Withdraw
+      withdraws/muncoin: Withdraw
       #models
     attributes:
       api_token:
@@ -548,6 +554,42 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/zacacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xhimeracoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xarucoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/rupayacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/ferrumcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/peoplecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/muncoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -1324,6 +1366,90 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/xhimeracoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xarucoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/rupayacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/ferrumcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/peoplecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/muncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -1480,6 +1606,18 @@ en:
               virtuscoin_invalid: Invalid Address
               zacacoin_ismine: Used Address
               zacacoin_invalid: Invalid Address
+              xhimeracoin_ismine: Used Address
+              xhimeracoin_invalid: Invalid Address
+              xarucoin_ismine: Used Address
+              xarucoin_invalid: Invalid Address
+              rupayacoin_ismine: Used Address
+              rupayacoin_invalid: Invalid Address
+              ferrumcoin_ismine: Used Address
+              ferrumcoin_invalid: Invalid Address
+              peoplecoin_ismine: Used Address
+              peoplecoin_invalid: Invalid Address
+              muncoin_ismine: Used Address
+              muncoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -1819,6 +1957,42 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/xhimeracoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xarucoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/rupayacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/ferrumcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/peoplecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/muncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -1919,6 +2093,12 @@ en:
       pushi: PUSHI
       vrt: VRT
       zaca: ZACA
+      xhm: XHM
+      xar: XAR
+      rupx: RUPX
+      frm: FRM
+      men: MEN
+      mun: MUN
       #market1
   currency:
     satoshi:
@@ -2215,6 +2395,36 @@ en:
       key: ZACA
       code: ZACA
       name: Zacacoin
+      format: '0,0.0000'
+    xhimeracoin:
+      key: XHM
+      code: XHM
+      name: Xhimeracoin
+      format: '0,0.0000'
+    xarucoin:
+      key: XAR
+      code: XAR
+      name: Xarucoin
+      format: '0,0.0000'
+    rupayacoin:
+      key: RUPX
+      code: RUPX
+      name: Rupayacoin
+      format: '0,0.0000'
+    ferrumcoin:
+      key: FRM
+      code: FRM
+      name: Ferrumcoin
+      format: '0,0.0000'
+    peoplecoin:
+      key: MEN
+      code: MEN
+      name: Peoplecoin
+      format: '0,0.0000'
+    muncoin:
+      key: MUN
+      code: MUN
+      name: Muncoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -2740,6 +2950,48 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    xhimeracoin:
+      key: Block Chain
+      title: Xhimeracoin Deposits
+      intro: Deposit xhimeracoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xarucoin:
+      key: Block Chain
+      title: Xarucoin Deposits
+      intro: Deposit xarucoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    rupayacoin:
+      key: Block Chain
+      title: Rupayacoin Deposits
+      intro: Deposit rupayacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    ferrumcoin:
+      key: Block Chain
+      title: Ferrumcoin Deposits
+      intro: Deposit ferrumcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    peoplecoin:
+      key: Block Chain
+      title: Peoplecoin Deposits
+      intro: Deposit peoplecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    muncoin:
+      key: Block Chain
+      title: Muncoin Deposits
+      intro: Deposit muncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -2922,6 +3174,24 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       zacacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xhimeracoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xarucoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      rupayacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      ferrumcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      peoplecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      muncoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -3856,6 +4126,96 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      xhimeracoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xarucoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      rupayacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      ferrumcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      peoplecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      muncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -3981,6 +4341,12 @@ en:
         pushi-assets: PUSHI Assets
         vrt-assets: VRT Assets
         zaca-assets: ZACA Assets
+        xhm-assets: XHM Assets
+        xar-assets: XAR Assets
+        rupx-assets: RUPX Assets
+        frm-assets: FRM Assets
+        men-assets: MEN Assets
+        mun-assets: MUN Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -4038,6 +4404,12 @@ en:
         verify-pushi: Verify My PUSHI Assets
         verify-vrt: Verify My VRT Assets
         verify-zaca: Verify My ZACA Assets
+        verify-xhm: Verify My XHM Assets
+        verify-xar: Verify My XAR Assets
+        verify-rupx: Verify My RUPX Assets
+        verify-frm: Verify My FRM Assets
+        verify-men: Verify My MEN Assets
+        verify-mun: Verify My MUN Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -4094,6 +4466,12 @@ en:
         pushi-assets-total: 'Total PUSHI assets of exchange: '
         vrt-assets-total: 'Total VRT assets of exchange: '
         zaca-assets-total: 'Total ZACA assets of exchange: '
+        xhm-assets-total: 'Total XHM assets of exchange: '
+        xar-assets-total: 'Total XAR assets of exchange: '
+        rupx-assets-total: 'Total RUPX assets of exchange: '
+        frm-assets-total: 'Total FRM assets of exchange: '
+        men-assets-total: 'Total MEN assets of exchange: '
+        mun-assets-total: 'Total MUN assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -4386,6 +4764,36 @@ en:
         intro: All of exchange's ZACA assets are listed here.
         total: Total ZACA Assets
         address: Address
+      xhm_assets:
+        title: XHM Assets
+        intro: All of exchange's XHM assets are listed here.
+        total: Total XHM Assets
+        address: Address
+      xar_assets:
+        title: XAR Assets
+        intro: All of exchange's XAR assets are listed here.
+        total: Total XAR Assets
+        address: Address
+      rupx_assets:
+        title: RUPX Assets
+        intro: All of exchange's RUPX assets are listed here.
+        total: Total RUPX Assets
+        address: Address
+      frm_assets:
+        title: FRM Assets
+        intro: All of exchange's FRM assets are listed here.
+        total: Total FRM Assets
+        address: Address
+      men_assets:
+        title: MEN Assets
+        intro: All of exchange's MEN assets are listed here.
+        total: Total MEN Assets
+        address: Address
+      mun_assets:
+        title: MUN Assets
+        intro: All of exchange's MUN assets are listed here.
+        total: Total MUN Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -4456,6 +4864,12 @@ en:
         pushi_format: '0.00000000'
         vrt_format: '0.00000000'
         zaca_format: '0.00000000'
+        xhm_format: '0.00000000'
+        xar_format: '0.00000000'
+        rupx_format: '0.00000000'
+        frm_format: '0.00000000'
+        men_format: '0.00000000'
+        mun_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -4794,6 +5208,42 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          xhm:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xar:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          rupx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          frm:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          men:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          mun:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -4894,6 +5344,12 @@ en:
         pushi_html: "<i class='fa fa-check'></i><span>PUSHI Markets</span>"
         vrt_html: "<i class='fa fa-check'></i><span>VRT Markets</span>"
         zaca_html: "<i class='fa fa-check'></i><span>ZACA Markets</span>"
+        xhm_html: "<i class='fa fa-check'></i><span>XHM Markets</span>"
+        xar_html: "<i class='fa fa-check'></i><span>XAR Markets</span>"
+        rupx_html: "<i class='fa fa-check'></i><span>RUPX Markets</span>"
+        frm_html: "<i class='fa fa-check'></i><span>FRM Markets</span>"
+        men_html: "<i class='fa fa-check'></i><span>MEN Markets</span>"
+        mun_html: "<i class='fa fa-check'></i><span>MUN Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -5144,6 +5600,12 @@ en:
         pushi_format: '0.00000000'
         vrt_format: '0.00000000'
         zaca_format: '0.00000000'
+        xhm_format: '0.00000000'
+        xar_format: '0.00000000'
+        rupx_format: '0.00000000'
+        frm_format: '0.00000000'
+        men_format: '0.00000000'
+        mun_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -5415,6 +5877,24 @@ en:
         zacacoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        xhimeracoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xarucoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        rupayacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        ferrumcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        peoplecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        muncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -5553,6 +6033,18 @@ en:
         virtuscoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         zacacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xhimeracoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xarucoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        rupayacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        ferrumcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        peoplecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        muncoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -5982,6 +6474,48 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        xhimeracoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xhimeracoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xarucoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xarucoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        rupayacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Rupayacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        ferrumcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Ferrumcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        peoplecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Peoplecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        muncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Muncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -6323,6 +6857,42 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       zacacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xhimeracoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xarucoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      rupayacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      ferrumcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      peoplecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      muncoins:
         update:
           notice: The deposit was successful.
         index:
@@ -7062,6 +7632,78 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      xhimeracoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xarucoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      rupayacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      ferrumcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      peoplecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      muncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -7388,6 +8030,42 @@ en:
       checked: Checked
       warning: Warning
   deposits/zacacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xhimeracoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xarucoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/rupayacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/ferrumcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/peoplecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/muncoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -7891,6 +8569,54 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    xhimeracoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xarucoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    rupayacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    ferrumcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    peoplecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    muncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -7977,6 +8703,12 @@ en:
       pushi: PUSHI
       vrt: VRT
       zaca: ZACA
+      xhm: XHM
+      xar: XAR
+      rupx: RUPX
+      frm: FRM
+      men: MEN
+      mun: MUN
       #enum_currence
     order:
       state:
@@ -8058,6 +8790,12 @@ en:
         pushicoin: Pushicoin
         virtuscoin: Virtuscoin
         zacacoin: Zacacoin
+        xhimeracoin: Xhimeracoin
+        xarucoin: Xarucoin
+        rupayacoin: Rupayacoin
+        ferrumcoin: Ferrumcoin
+        peoplecoin: Peoplecoin
+        muncoin: Muncoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -8918,6 +9656,48 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    xhimeracoin:
+      key: Blockchain
+      title: Xhimeracoin Blockchain
+      intro: Withdraw Xhimeracoin to your own Xhimeracoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xarucoin:
+      key: Blockchain
+      title: Xarucoin Blockchain
+      intro: Withdraw Xarucoin to your own Xarucoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    rupayacoin:
+      key: Blockchain
+      title: Rupayacoin Blockchain
+      intro: Withdraw Rupayacoin to your own Rupayacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    ferrumcoin:
+      key: Blockchain
+      title: Ferrumcoin Blockchain
+      intro: Withdraw Ferrumcoin to your own Ferrumcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    peoplecoin:
+      key: Blockchain
+      title: Peoplecoin Blockchain
+      intro: Withdraw Peoplecoin to your own Peoplecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    muncoin:
+      key: Blockchain
+      title: Muncoin Blockchain
+      intro: Withdraw Muncoin to your own Muncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -9582,6 +10362,78 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/zacacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xhimeracoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xarucoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/rupayacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/ferrumcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/peoplecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/muncoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
