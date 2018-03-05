@@ -21,6 +21,8 @@ class IdDocument < ActiveRecord::Base
 
   before_update :verify_bill_type
 
+  paginates_per 15
+
   aasm do
     state :unverified, initial: true
     state :verifying

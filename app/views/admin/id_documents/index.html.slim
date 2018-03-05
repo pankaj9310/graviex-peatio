@@ -14,6 +14,8 @@
     - t.column :updated_at, t('.request_at'), class: 'col-xs-4'
     - t.column :verified, class: 'col-xs-1' do |x|
       = yesno(x.verified?)
+    - t.column  :aasm_state, t('.state'), class: 'col-xs-4' do |x|
+      = t(".#{x.aasm_state}")
     - t.column '', class: 'col-xs-1' do |x|
       = link_to t('actions.view'), admin_id_document_path(x)
 
