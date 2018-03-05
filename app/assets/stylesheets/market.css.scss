@@ -1,3 +1,4 @@
+
 @import "bourbon";
 
 @import 'vars/bootstrap';
@@ -852,6 +853,21 @@ chat_tabs_wrapper {
     position: absolute;
     i.fa { margin-left: 4px; }
   }
+
+
+  input[type=checkbox].css-checkbox 
+  { 
+    position: absolute;  
+    overflow: hidden;  
+    clip: rect(0 0 0 0);  
+    height:0px;  width:0px;  margin:-1px;  padding:0; border:0; 
+    visibility: hidden;
+  } 
+
+  input[type=checkbox].css-checkbox + label.css-label 
+  { padding-left:15px; height:13px;  display:inline-block; line-height:13px; background-repeat:no-repeat; background-position: 0 0; font-size:13px; vertical-align:middle; cursor:pointer; } 
+
+  input[type=checkbox].css-checkbox:checked  + label.css-label { background-position: 0 -13px; }  .css-label{ background-image:url(https://graviex.net/lite-x-red-13-3.png); }
 
   .row-tips {
     margin-top: 18px;

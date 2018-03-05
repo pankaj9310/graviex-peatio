@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
     is_exists = Member.is_exists(auth_hash)  
     if !is_exists # signup process
       if !simple_captcha_valid?
+        Identity.delete(Identity.where(email: auth_hash['info']['email']).first.id)
         redirect_to signup_path, alert: t('.invalid_captcha')
         return
       end

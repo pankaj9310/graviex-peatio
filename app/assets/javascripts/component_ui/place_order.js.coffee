@@ -14,6 +14,8 @@
     priceSel: 'input[id$=price]'
     volumeSel: 'input[id$=volume]'
     totalSel: 'input[id$=total]'
+    bidSel: "input[id='calculate_bid']"
+    askSel: "input[id='calculate_ask']"
 
     currentBalanceSel: 'span.current-balance'
     submitButton: ':submit'
@@ -86,31 +88,76 @@
   @allIn = (event)->
     switch @panelType()
       when 'ask'
-#        @trigger 'place_order::input::price', {price: @getLastPrice()}
         @trigger 'place_order::input::volume', {volume: @getBalance()}
       when 'bid'
-#        @trigger 'place_order::input::price', {price: @getLastPrice()}
         @trigger 'place_order::input::total', {total: @getBalance()}
 
   @refreshBalance = (event, data) ->
     type = @panelType()
     currency = gon.market[type].currency
     balance = gon.accounts[currency]?.balance || 0
-#    locked = gon.accounts[currency]?.locked || 0
-#    balance = balance - locked
+
+#    console.log "refreshBalance: ", balance, event, data
 
     @select('currentBalanceSel').data('balance', balance)
     @select('currentBalanceSel').text(formatter.fix(type, balance))
 
+    @trigger 'place_order::balance::change::#{type}', balance: BigNumber(balance)
     @trigger 'place_order::balance::change', balance: BigNumber(balance)
     @trigger "place_order::max::#{@usedInput}", max: BigNumber(balance)
 
+  @roundValueToText = (v, precision) ->
+    v.round(precision, BigNumber.ROUND_DOWN).toF(precision)
+
+  @updateOrder = (event, data) ->
+#    console.log "updateOrder: ", event, data
+    
+    @select('priceSel').val BigNumber(data.price).round(gon.market.bid.fixed, BigNumber.ROUND_DOWN).toF(gon.market.bid.fixed)
+    @select('volumeSel').val BigNumber(data.volume).round(gon.market.ask.fixed, BigNumber.ROUND_DOWN).toF(gon.market.ask.fixed)
+    @select('totalSel').val BigNumber(data.total).round(gon.market.bid.fixed, BigNumber.ROUND_DOWN).toF(gon.market.bid.fixed)
+
+    @updateAvailable(event, data)
+
   @updateAvailable = (event, order) ->
+#    console.log "updateAvailable: ", event, order
+
+    @current_order = order
+
     type = @panelType()
     node = @select('currentBalanceSel')
 
     order[@usedInput] = 0 unless order[@usedInput]
     available = formatter.fix type, @getBalance().minus(order[@usedInput])
+
+    fee = 0.0
+    fee_actual_percent = 0.0
+
+    if type == 'ask'
+      fee = gon.market.ask.fee
+    else
+      fee = gon.market.bid.fee
+
+    gio_discount_flag = -1
+
+    gio_account = gon.accounts['gio']
+    if gio_account.hasOwnProperty('gio_discount')
+      if gio_account.gio_discount == true
+        gio_discount_flag = 1
+      if gio_account.gio_discount == false
+        gio_discount_flag = 0
+
+    fee_actual_percent = fee
+    if gio_discount_flag == 1
+      fee_actual_percent = fee / 2.0
+
+    if order.hasOwnProperty('total')
+      order.fee = order.total * fee
+    else
+      order.fee = order[@usedInput] * fee
+
+    order.fee_percent = fee * 100.0
+    order.fee_actual_percent = fee_actual_percent * 100.0
+    order.gio_discount_flag = gio_discount_flag
 
     if @select('priceSel').val() != 0.0 && @select('priceSel').val() != ''
       @select('feeLabelSel').hide().text(formatter.fixPriceGroup(order.fee)).fadeIn()
@@ -124,10 +171,11 @@
     else
       @select('feeLabelDiscountInfo').hide().text('how to get 50% market fee discount').fadeIn()
 
-    if BigNumber(available).equals(0)
+    if BigNumber(available).lessThan(0.000000001)
       @select('positionsLabelSel').hide().text(gon.i18n.place_order["full_#{type}"]).fadeIn()
     else
       @select('positionsLabelSel').fadeOut().text('')
+
     node.text(available)
 
   @priceAlertHide = (event) ->
@@ -140,7 +188,23 @@
 
   @clear = (e) ->
     @resetForm(e)
+    @select('feeLabelSel').fadeOut().text('')
+    @select('feeLabelInfo').fadeOut().text('')
     @trigger 'place_order::focus::price'
+
+  @calculatorClick = (e) ->
+#    console.log @panelType(), e
+
+    if e.currentTarget.checked
+      @disableSubmit()
+      @refreshBalance(null, null)
+      @trigger "place_order::max::#{@usedInput}", max: BigNumber("1000000000000.0")
+      @trigger "place_order::balance::change::#{@panelType()}", balance: BigNumber("1000000000000.0")
+      @clear(e)
+    else
+      @enableSubmit()
+      @refreshBalance(null, null)
+      @clear(e)
 
   @after 'initialize', ->
     type = @panelType()
@@ -149,6 +213,8 @@
       @usedInput = 'volume'
     else
       @usedInput = 'total'
+
+    @current_order = null
 
     PlaceOrderData.attachTo @$node
     OrderPriceUI.attachTo   @select('priceSel'),  form: @$node, type: type
@@ -159,6 +225,7 @@
     @on 'place_order::price_alert::show', @priceAlertShow
     @on 'place_order::order::updated', @updateAvailable
     @on 'place_order::clear', @clear
+    @on 'place_order::order::total', @updateOrder
 
     @on document, 'account::update', @refreshBalance
 
@@ -167,3 +234,11 @@
     @on @select('formSel'), 'ajax:error', @handleError
 
     @on @select('currentBalanceSel'), 'click', @allIn
+
+    if @panelType() == 'bid'
+      @on @select('bidSel'), 'click', @calculatorClick
+    else
+      @on @select('askSel'), 'click', @calculatorClick
+
+
+

@@ -45,6 +45,7 @@
     @$node.val @text
 
   @changeOrder = (v) ->
+#    console.log "changeOrder: ", "v = " + v, @attr.variables
     @trigger 'place_order::input', variables: @attr.variables, value: v
 
   @process = (event) ->
@@ -59,12 +60,15 @@
     if @max && v.greaterThan(@max)
       @value = @max
       @changeOrder @max
+#      console.log "validateRange1: ", "return false", "@value = " + @value, "v = " + v
       false
     else if v.lessThan(0)
       @value = null
+#      console.log "validateRange2: ", "return false", "@value = " + @value, "v = " + v
       false
     else
       @value = v
+#      console.log "validateRange3: ", "return true", "@value = " + @value, "v = " + v
       true
 
   @onInput = (e, data) ->
