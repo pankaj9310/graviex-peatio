@@ -27,7 +27,22 @@ class Ticket < ActiveRecord::Base
   end
 
   def title_for_display(n = 60)
+    "[" + id.to_s + "] " + (title.blank? ? content.truncate(n) : title.truncate(n))
+  end
+
+  def title_for_display_user(n = 60)
     title.blank? ? content.truncate(n) : title.truncate(n)
+  end
+
+  def reply_by_admin?
+    last_comment = Comment.where('ticket_id = ?', self.id).order("id desc").limit(1).first
+    Rails.logger.info last_comment.to_json
+
+    if last_comment != nil and Member.where(email: Member.admins).pluck(:id).include? last_comment.author_id
+      return true
+    end
+
+    return false
   end
 
   private

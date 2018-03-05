@@ -1,8 +1,6 @@
 .row
   .col-xs-12
     = render partial: 'shared/admin/member', locals: {member: @member}
-  .col-xs-12
-    = render partial: 'shared/admin/member_accounts', locals: {member: @member}
 
 .row
   .col-xs-24
@@ -33,3 +31,9 @@
           - t.column :fee, class: 'col-xs-2' do |x|
             code.text-info = x.fee
         = paginate @account_versions, test: 'asdf'
+
+.row
+  .col-xs-12
+    = render partial: 'shared/admin/member_accounts', locals: {member: @member}
+
+
