@@ -18,7 +18,7 @@
         span.label.label-fee.hint-fee
         = f.text_field :total, class: 'form-control', automplete: 'false'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
-      = render partial: 'balance', locals: {currency: t(market.ask['currency'], scope: 'market.currency')}
+      = render partial: 'balance', locals: {currency: t(market.ask['currency'], scope: 'market.currency'), entry_type: 'ask'}
 
       button.btn.btn-danger.btn-block.text-down type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
   = render partial: 'mask'

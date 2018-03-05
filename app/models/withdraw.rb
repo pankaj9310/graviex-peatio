@@ -128,6 +128,14 @@ class Withdraw < ActiveRecord::Base
     end
   end
 
+  def fund_extra
+    self.txid
+  end
+
+  def remark
+    self.explanation
+  end
+
   def cancelable?
     submitting? or submitted? or accepted?
   end

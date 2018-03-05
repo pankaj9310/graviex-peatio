@@ -19,7 +19,7 @@
         = f.text_field :total, class: 'form-control'
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
       a[class='label label-fee-discount-info fee-discount-info' href='https://www.gravio.net/blog/graviex-fees-bonuses' target='_blank']
-      = render partial: 'balance', locals: {currency: t(market.bid['currency'], scope: 'market.currency')}
+      = render partial: 'balance', locals: {currency: t(market.bid['currency'], scope: 'market.currency'), entry_type: 'bid'}
 
       button.btn.btn-danger.btn-block.text-up type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
   = render partial: 'mask'
