@@ -144,8 +144,12 @@
     @on document, 'place_order::balance::change::bid', @onBidBalanceChange
     @on document, 'place_order::balance::change::ask', @onAskBalanceChange
 
-    @balance_ask = gon.accounts[gon.market.ask.currency]?.balance || 0
-    @balance_bid = gon.accounts[gon.market.bid.currency]?.balance || 0
+    if gon.accounts != undefined && gon.market.ask != undefined && gon.market.bid != undefined
+      @balance_ask = gon.accounts[gon.market.ask.currency]?.balance || 0
+      @balance_bid = gon.accounts[gon.market.bid.currency]?.balance || 0
+    else
+      @balance_ask = 0
+      @balance_bid = 0
 
     @on @select('fade_toggle_depth'), 'click', =>
       @trigger 'market::depth::fade_toggle'
