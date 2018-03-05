@@ -9,6 +9,7 @@
       output: 'total'
 
   @onOutput = (event, order) ->
+#    console.log "onOutput(OrderVolumeUI): ", event, order
     return if order.price.equals(0)
     volume = order.total.div order.price
 
