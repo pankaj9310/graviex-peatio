@@ -139,12 +139,13 @@
 
     gio_discount_flag = -1
 
-    gio_account = gon.accounts['gio']
-    if gio_account.hasOwnProperty('gio_discount')
-      if gio_account.gio_discount == true
-        gio_discount_flag = 1
-      if gio_account.gio_discount == false
-        gio_discount_flag = 0
+    if gon.accounts != undefined
+      gio_account = gon.accounts['gio']
+      if gio_account.hasOwnProperty('gio_discount')
+        if gio_account.gio_discount == true
+          gio_discount_flag = 1
+        if gio_account.gio_discount == false
+          gio_discount_flag = 0
 
     fee_actual_percent = fee
     if gio_discount_flag == 1

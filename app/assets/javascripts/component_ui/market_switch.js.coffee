@@ -272,7 +272,7 @@ window.MarketSwitchUI = flight.component ->
     @on @select('sortPrice'), 'click', @sortPrice
     @on @select('sortName'), 'click', @sortName
     @on @select('table'), 'click', @switchMarket
-
+   
     @markets_filter = gon.markets_filter
     @current_column = gon.markets_column
     @current_unit = gon.markets_unit
