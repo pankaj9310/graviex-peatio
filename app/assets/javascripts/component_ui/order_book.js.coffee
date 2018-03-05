@@ -102,13 +102,15 @@
 
       part = BigNumber(num[0]).times BigNumber(num[1])
       subtotal = memo.plus(part)
+#      console.log "Check = " + (subtotal).toF(9)
+
       if subtotal.greaterThan balance
         diff = subtotal.minus(balance).dividedBy(BigNumber(num[1]))        
         volume = volume.minus(diff)
-        subtotal = memo.plus(diff.times(BigNumber(num[1])))
+        subtotal = memo.plus(BigNumber(num[0]).minus(diff).times(BigNumber(num[1])))
         done = true
       
-#      console.log (subtotal).toF(9)
+#      console.log "Return = " + (subtotal).toF(9)
       return subtotal
 
     total = _.reduce(orders, total_fun, BigNumber(0))

@@ -97,14 +97,14 @@
     currency = gon.market[type].currency
     balance = gon.accounts[currency]?.balance || 0
 
-#    console.log "refreshBalance: ", balance, event, data
+#    console.log "refreshBalance: ", type, balance, event, data
 
     @select('currentBalanceSel').data('balance', balance)
     @select('currentBalanceSel').text(formatter.fix(type, balance))
 
-    @trigger 'place_order::balance::change::#{type}', balance: BigNumber(balance)
-    @trigger 'place_order::balance::change', balance: BigNumber(balance)
+    @trigger "place_order::balance::change", balance: BigNumber(balance)
     @trigger "place_order::max::#{@usedInput}", max: BigNumber(balance)
+    @trigger "place_order::balance::change::#{type}", balance: BigNumber(balance)
 
   @roundValueToText = (v, precision) ->
     v.round(precision, BigNumber.ROUND_DOWN).toF(precision)
