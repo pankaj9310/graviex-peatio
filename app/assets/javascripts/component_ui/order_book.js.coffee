@@ -126,6 +126,10 @@
   @placeOrder = (target, data) ->
     @trigger target, 'place_order::order::total', data
 
+  @placeOtherOrder = (target, data) ->
+    @trigger target, 'place_order::input::price', data
+    @trigger target, 'place_order::input::volume', data
+
   @getBalance = (type) ->
     if type == 'bid'
       return @balance_bid
@@ -157,9 +161,9 @@
     $('.asks').on 'click', 'tr', (e) =>
       i = $(e.target).closest('tr').data('order')
       @placeOrder $('#bid_entry'), _.extend(@computeDeep(e, gon.asks, 'bid'), type: 'ask')
-      @placeOrder $('#ask_entry'), {price: BigNumber(gon.asks[i][0]), volume: BigNumber(gon.asks[i][1]), total: BigNumber(gon.asks[i][0]).times BigNumber(gon.asks[i][1])}
+      @placeOtherOrder $('#ask_entry'), {price: BigNumber(gon.asks[i][0]), volume: BigNumber(gon.asks[i][1]), total: BigNumber(gon.asks[i][0]).times BigNumber(gon.asks[i][1])}
 
     $('.bids').on 'click', 'tr', (e) =>
       i = $(e.target).closest('tr').data('order')
-      @placeOrder $('#ask_entry'), _.extend(@computeDeep(e, gon.bids, 'ask'), type: 'bid')
+      @placeOtherOrder $('#ask_entry'), _.extend(@computeDeep(e, gon.bids, 'ask'), type: 'bid')
       @placeOrder $('#bid_entry'), {price: BigNumber(gon.bids[i][0]), volume: BigNumber(gon.bids[i][1]), total:  BigNumber(gon.bids[i][0]).times BigNumber(gon.bids[i][1])}
