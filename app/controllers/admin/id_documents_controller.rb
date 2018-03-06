@@ -3,7 +3,7 @@ module Admin
     load_and_authorize_resource
 
     def index
-      @id_documents = @id_documents.where("name <> ''").order(:updated_at).reverse_order.page params[:page]
+      @id_documents = @id_documents.where("name <> '' and aasm_state <>'verified'").order(:updated_at).reverse_order.page params[:page]
     end
 
     def show
