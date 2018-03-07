@@ -21,7 +21,7 @@ li.dropdown.account-settings class = dropdown_class
       | &nbsp;
       span.badge = current_user.unread_comments.count
     - if is_admin?
-      li: a href = admin_dashboard_path
+      li: a href = 'admin'
         i.fa.fa-dashboard
         span = t('header.admin')
     li: a href = main_app.signout_path
