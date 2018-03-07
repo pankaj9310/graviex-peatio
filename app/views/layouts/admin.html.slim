@@ -10,7 +10,7 @@ html lang="en"
       .container
         ul.nav.navbar-nav.navbar-left
           li class = check_active('dashboard')
-            = link_to t('header.dashboard'), 'admin/dashboard'
+            = link_to t('header.dashboard'), '/admin/dashboard'
 
           - if can? :manage, Document
             li class = check_active(Document)
