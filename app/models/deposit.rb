@@ -120,7 +120,7 @@ class Deposit < ActiveRecord::Base
       # calc amount
       gas_limit = channel.currency_obj.gas_limit
       gas_price = channel.currency_obj.gas_price
-      local_amount = ((amount - 0.000000000000001) * 1e18).to_i - (gas_price * gas_limit)
+      local_amount = ((amount - 0.000000001) * 1e18).to_i - (gas_price * gas_limit)
 
       Rails.logger.info channel.currency_obj.code + " parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
       agg_txid = CoinRPC[channel.currency_obj.code].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
