@@ -109,22 +109,29 @@ class Deposit < ActiveRecord::Base
   end
 
   def aggregate_funds
-    if channel.currency_obj.code == "eth" || channel.currency_obj.code == "mix"
-      # collect all deposits on the single account
-      payment_tx = PaymentTransaction::Normal.where(txid: txid).first
-      # unlock account
-      CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", "0x30")
-      # get nonce
-      local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
+    # we have aggregate scheme with single address
+    # so we need to thansfer incoming funds to the internal address
+    if channel.currency_obj.base_account != nil
+      if channel.currency_obj.code == "eth" || channel.currency_obj.code == "mix"
+        # collect all deposits on the single account
+        payment_tx = PaymentTransaction::Normal.where(txid: txid).first
+        # unlock account
+        CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", "0x30")
+        # get nonce
+        local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
 
-      # calc amount
-      gas_limit = channel.currency_obj.gas_limit
-      gas_price = channel.currency_obj.gas_price
-      local_amount = ((amount - 0.000000000000001) * 1e18).to_i - (gas_price * gas_limit)
+        # calc amount
+        gas_limit = channel.currency_obj.gas_limit
+        gas_price = channel.currency_obj.gas_price
+        local_amount = ((amount - 0.000000000000001) * 1e18).to_i - (gas_price * gas_limit)
 
-      Rails.logger.info channel.currency_obj.code + " parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
-      agg_txid = CoinRPC[channel.currency_obj.code].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
-      Rails.logger.info channel.currency_obj.code + " aggregate: tx=" + agg_txid
+        Rails.logger.info channel.currency_obj.code + " parameters: to=" + channel.currency_obj.base_account + " from=" + payment_tx.address + " depo=" + amount.to_s + " payment=" + local_amount.to_s(10) + " amount=" + (amount * 1e18).to_i.to_s(10)
+        agg_txid = CoinRPC[channel.currency_obj.code].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
+        Rails.logger.info channel.currency_obj.code + " aggregate: tx=" + agg_txid
+      else
+        agg_txid = CoinRPC[channel.currency_obj.code].sendtoaddress(member.email+member.id.to_s, channel.currency_obj.base_account, amount - CoinRPC[channel.currency_obj.code].getfee(0))
+        Rails.logger.info channel.currency_obj.code + " aggregate: tx=" + agg_txid        
+      end
     end
   end
 
