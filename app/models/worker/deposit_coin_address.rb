@@ -7,12 +7,14 @@ module Worker
       payment_address = PaymentAddress.find payload[:payment_address_id]
       return if payment_address.address.present?
 
+      account = Account.where('id = ?', payment_address.account_id).first
+      member = Member.where('id = ?', account.member_id).first
+
       currency = payload[:currency]
       if currency == 'eth' || currency == 'mix'
         address  = CoinRPC[currency].personal_newAccount("")
-        # open('http://192.168.0.204/cgi-bin/restart.cgi')
       else
-        address  = CoinRPC[currency].getnewaddress("payment")
+        address  = CoinRPC[currency].getnewaddress("payment", member.email + member.id.to_s)
       end
 
       if payment_address.update address: address
