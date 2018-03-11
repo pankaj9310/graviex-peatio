@@ -5,7 +5,7 @@ module Private
     def index
       @tickets = current_user.tickets
       @tickets = params[:closed].nil? ? @tickets.open : @tickets.closed
-      redirect_to new_ticket_path if @tickets.empty?
+      #redirect_to new_ticket_path if @tickets.empty?
     end
 
     def new

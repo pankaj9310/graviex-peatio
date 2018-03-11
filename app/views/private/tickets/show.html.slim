@@ -25,7 +25,7 @@ ul.list-group
               h4 = "#{member_tittle(c.author)}"
           .row
             .col-xs-16
-              p = c.content
+              p = c.user_content
             .col-xs-8
               i.fa.fa-clock-o.text-info
               span = time_ago_in_words c.created_at

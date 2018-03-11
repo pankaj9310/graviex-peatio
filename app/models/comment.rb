@@ -7,6 +7,21 @@ class Comment < ActiveRecord::Base
 
   validates :content, presence: true
 
+  def user_content
+    self.content.sub("[pending]", "")
+  end
+
+  def admin_content
+    self.content
+  end
+
+  def is_pending
+    if self.content.include? "[pending]"
+      return true
+    end
+    return false
+  end
+
   private
 
   def send_notification

@@ -4,7 +4,7 @@
 
 ul.list-group
   - @tickets.each do |t|
-    li class = (t.reply_by_admin? == false ? ["unread", "list-group-item"] : ["list-group-item"])
+    li class = (t.reply_by_admin? == false ? ["unread", "list-group-item"] : (t.reply_by_admin_pending? ? ["pending", "list-group-item"] : ["list-group-item"]))
 
       .row.row-middle
         .col-xs-24
