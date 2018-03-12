@@ -1310,7 +1310,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
       var endOfPath, parts;
       log("base is " + base);
       if (url.indexOf("/") === 0) {
-        base = base.replace("http:", "https:");
+        base = base.replace("http:", "");
         parts = base.split("/");
         base = parts[0] + "//" + parts[2];
         return base + url;
