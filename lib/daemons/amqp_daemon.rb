@@ -24,7 +24,7 @@ logger.info "Connected to AMQP broker (prefetch: #{prefetch > 0 ? prefetch : 'de
 
 terminate = proc do
   # logger is forbidden in signal handling, just use puts here
-  puts "Terminating threads .."
+  puts "Terminating threads ..."
   ch.work_pool.kill
   puts "Stopped."
 end
@@ -79,3 +79,6 @@ end
 end
 
 ch.work_pool.join
+
+#puts "Stopping channel..."
+#ch.close
