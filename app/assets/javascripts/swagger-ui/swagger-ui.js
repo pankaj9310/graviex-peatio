@@ -1322,6 +1322,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
         if (base.indexOf("#") > -1) {
           endOfPath = Math.min(endOfPath, base.indexOf("#"));
         }
+        base = base.replace("http:", "");
         base = base.substring(0, endOfPath);
         if (base.indexOf("/", base.length - 1) !== -1) {
           return base + url;
