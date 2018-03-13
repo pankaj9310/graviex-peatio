@@ -63,7 +63,7 @@ function clippyCopiedCallback(a) {
 
 // Logging function that accounts for browsers that don't have window.console
 log = function(){
-  return;
+//  return;
   log.history = log.history || [];
   log.history.push(arguments);
   if(this.console){
@@ -1308,11 +1308,12 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
     SwaggerUi.prototype.buildUrl = function(base, url) {
       var endOfPath, parts;
-      log("base is " + base);
+      log("base is " + base + ", url is ");
       if (url.indexOf("/") === 0) {
         base = base.replace("http:", "");
         parts = base.split("/");
         base = parts[0] + "//" + parts[2];
+        log("base = " + base);
         return base + url;
       } else {
         endOfPath = base.length;
@@ -1325,8 +1326,10 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
         base = base.replace("http:", "");
         base = base.substring(0, endOfPath);
         if (base.indexOf("/", base.length - 1) !== -1) {
+          log("base = " + base);
           return base + url;
         }
+        log("base = " + base);
         return base + "/" + url;
       }
     };
