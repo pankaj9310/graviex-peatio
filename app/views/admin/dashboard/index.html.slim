@@ -21,11 +21,14 @@
                 td.text-right = c[:sum]
 
                 - if c[:coinable]
-                  td.text-right = c[:hot]
-                  - if c[:hot] == 'N/A'
-                    td.text-right = c[:hot]
+                  td.text-right = (c[:hot] == nil ? 'N/A' : c[:hot])
+                  - if c[:hot] == nil
+                    td.text-right = 'N/A'
                   - else
-                    td.text-right = c[:sum] - c[:hot]
+                    - if c[:sum] - c[:hot] > 0.0 
+                      td[class='text-right' style='color: red'] = c[:sum] - c[:hot]
+                    - else
+                      td[class='text-right'] = c[:sum] - c[:hot]
                 - else
                   td.text-right N/A
                   td.text-right N/A
