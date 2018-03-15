@@ -35,7 +35,17 @@ class Account < ActiveRecord::Base
   after_commit :trigger, :sync_update
 
   def payment_address
-    payment_addresses.last || payment_addresses.create(currency: self.currency)
+    if !self.default_address
+      if !payment_addresses.last
+        payment_addresses.create(currency: self.currency)
+        return ""
+      else
+        self.default_address = payment_addresses.last.address
+        update default_address: payment_addresses.last.address
+      end
+    end
+
+    return self.default_address
   end
 
   def self.after(*names)
@@ -202,7 +212,7 @@ class Account < ActiveRecord::Base
   def as_json(options = {})
     super(options).merge({
       # check if there is a useable address, but don't touch it to create the address now.
-      "deposit_address" => payment_addresses.empty? ? "" : payment_address.deposit_address,
+      "deposit_address" => payment_address,
       "name_text" => currency_obj.name_text,
       "default_withdraw_fund_source_id" => default_withdraw_fund_source_id,
       "is_online" => currency_obj.is_online,
