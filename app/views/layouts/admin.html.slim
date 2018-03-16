@@ -32,7 +32,7 @@ html lang="en"
               ul[class='dropdown-menu' style='height: 700px; overflow: hidden; overflow-y: scroll;']
                 - DepositChannel.all.sort.each do |c|
                   - if can? :manage, c.kls
-                    li = link_to c.title_text, [:admin, c.kls]
+                    li = link_to c.title_text + " [" + c.currency.upcase + "]", [:admin, c.kls]
 
           - if can? :menu, Withdraw
             li.dropdown class = check_active('withdraws')
@@ -42,7 +42,7 @@ html lang="en"
               ul[class='dropdown-menu' style='height: 700px; overflow: hidden; overflow-y: scroll;']
                 - WithdrawChannel.all.each do |c|
                   - if can? :manage, c.kls
-                    li = link_to c.title_text, [:admin, c.kls]
+                    li = link_to c.title_text + " [" + c.currency.upcase + "]", [:admin, c.kls]
 
           - if can? :manage, Member
             li class = check_active('members')
