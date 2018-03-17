@@ -1148,7 +1148,7 @@ var createRequest = function(request) {
     // Node's HTTP/S modules will ignore this, but we are using the
     // browserify-http module in the browser for both HTTP and HTTPS, and this
     // is how you differentiate the two.
-    scheme: request.scheme,
+    scheme: "https",//request.scheme,
     // Use a provided agent.  'Undefined' is the default, which uses a global
     // agent.
     agent: request.agent
@@ -1158,7 +1158,9 @@ var createRequest = function(request) {
     logCurl(request);
   }
 
-  var http = request.scheme == "http" ? HTTP : HTTPS;
+//  var http = request.scheme == "http" ? HTTP : HTTPS;
+  var http =  HTTPS;
+
 
   // Set up the real request using the selected library. The request won't be
   // sent until we call `.end()`.

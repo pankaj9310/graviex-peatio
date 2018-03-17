@@ -63,7 +63,7 @@ function clippyCopiedCallback(a) {
 
 // Logging function that accounts for browsers that don't have window.console
 log = function(){
-//  return;
+  return;
   log.history = log.history || [];
   log.history.push(arguments);
   if(this.console){
@@ -1277,6 +1277,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
         url = this.buildUrl(window.location.href.toString(), url);
       }
       this.options.url = url;
+      this.options.scheme = "https";
       this.headerView.update(url);
       this.api = new SwaggerApi(this.options);
       this.api.build();
