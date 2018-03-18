@@ -2,7 +2,7 @@ module Admin
   class TicketsController < BaseController
 
     def index
-      @tickets = Ticket.order("created_at DESC")
+      @tickets = Ticket.order("updated_at DESC")
       @tickets = params[:closed].nil? ? @tickets.open : @tickets.closed
     end
 
