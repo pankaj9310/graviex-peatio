@@ -9,6 +9,10 @@ module Admin
       else
         flash[:alert] = I18n.t("private.tickets.comment_fail")
       end
+
+      ticket.updated_at = comment.created_at
+      ticket.save
+
       redirect_to admin_ticket_path(ticket)
     end
 
