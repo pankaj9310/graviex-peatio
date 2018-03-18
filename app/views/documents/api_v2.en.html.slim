@@ -240,6 +240,9 @@
         tr
           td POST /api/v2/orders/clear
           td Cancel all your orders is an asynchronous operation. A success response only means your request has been accepted. The orders in response may or may not have been cancelled yet.
+        tr
+          td GET /api/v2/orders market='all'
+          td Ability to get all placed orders for all markets
 
 .panel.panel-default
   .panel-heading
