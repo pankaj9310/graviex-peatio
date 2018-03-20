@@ -44,6 +44,8 @@ class SessionsController < ApplicationController
         save_signup_history @member.id
         MemberMailer.notify_signin(@member.id).deliver if @member.activated?
 
+        current_user.check_out #reset check-out
+
         if not current_user.two_factors.activated?
           redirect_to settings_path, alert: t('two_factors.auth.please_active_two_factor')
         else
@@ -51,6 +53,7 @@ class SessionsController < ApplicationController
             session[:return_to] = market_path(Market.first)
             redirect_to two_factors_path
           else
+            current_user.check_in # re-chek-in
             redirect_to market_path(Market.first)
           end
         end

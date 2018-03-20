@@ -35,7 +35,6 @@ class Member < ActiveRecord::Base
   after_create  :touch_accounts
   after_update :resend_activation
   after_update :sync_update
-#  attr :state
 
   class << self
     def from_auth(auth_hash)
@@ -100,6 +99,24 @@ class Member < ActiveRecord::Base
       member.send_activation if auth_hash['provider'] == 'identity'
       member
     end
+  end
+
+  def member_checked_in_key
+    "graviex:member:#{id}:checked_in"
+  end
+
+  def checked_in?
+    value = Rails.cache.read(member_checked_in_key) || false
+    Rails.logger.info "[checked_in] = " + value.to_s
+    return value
+  end
+
+  def check_in
+    Rails.cache.write(member_checked_in_key, true)
+  end
+
+  def check_out
+    Rails.cache.write(member_checked_in_key, false)
   end
 
   def has_gio_deposite_50
