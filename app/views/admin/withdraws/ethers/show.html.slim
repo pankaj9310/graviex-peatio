@@ -12,7 +12,7 @@
           = item_for @ether.member, :name
           = item_for @ether, :fund_extra
           = item_for @ether, :fund_uid do
-            span = @ether.fund_uid.truncate(22)
+            span = @ether.fund_uid.truncate(40)
           = item_for @ether, :amount
           hr.split
           = item_for @ether, :remark

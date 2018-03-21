@@ -12,7 +12,7 @@
           = item_for @doge.member, :name
           = item_for @doge, :fund_extra
           = item_for @doge, :fund_uid do
-            span = @doge.fund_uid.truncate(22)
+            span = @doge.fund_uid.truncate(40)
           = item_for @doge, :amount
           hr.split
           = item_for @doge, :remark

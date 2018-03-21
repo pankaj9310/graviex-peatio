@@ -92,6 +92,52 @@ en:
         bkt: BKT
         snx: SNX
         giro: GIRO
+        onex: ONEX
+        pushi: PUSHI
+        vrt: VRT
+        zaca: ZACA
+        xhm: XHM
+        xar: XAR
+        rupx: RUPX
+        frm: FRM
+        men: MEN
+        mun: MUN
+        onemc: ONEMC
+        alp: ALP
+        zel: ZEL
+        amx: AMX
+        pew: PEW
+        fsc: FSC
+        sln: SLN
+        usx: USX
+        bsx: BSX
+        eot: EOT
+        xap: XAP
+        miac: MIAC
+        kc: KC
+        arhm: ARHM
+        olmp: OLMP
+        onz: ONZ
+        agn: AGN
+        crz: CRZ
+        enix: ENIX
+        snc: SNC
+        quaz: QUAZ
+        scriv: SCRIV
+        ethf: ETHF
+        arepa: AREPA
+        sub1x: SUB1X
+        cheese: CHEESE
+        jiyo: JIYO
+        pyro: PYRO
+        roe: ROE
+        citr: CITR
+        xen: XEN
+        edl: EDL
+        cru: CRU
+        ndc: NDC
+        zls: ZLS
+        proton: PROTON
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -266,6 +312,144 @@ en:
 
       deposit_giro:
         title: GIRO Deposit
+
+      deposit_onex:
+        title: ONEX Deposit
+
+      deposit_pushi:
+        title: PUSHI Deposit
+
+      deposit_vrt:
+        title: VRT Deposit
+
+      deposit_zaca:
+        title: ZACA Deposit
+
+      deposit_xhm:
+        title: XHM Deposit
+
+      deposit_xar:
+        title: XAR Deposit
+
+      deposit_rupx:
+        title: RUPX Deposit
+
+      deposit_frm:
+        title: FRM Deposit
+
+      deposit_men:
+        title: MEN Deposit
+
+      deposit_mun:
+        title: MUN Deposit
+
+      deposit_onemc:
+        title: ONEMC Deposit
+
+      deposit_alp:
+        title: ALP Deposit
+
+      deposit_zel:
+        title: ZEL Deposit
+
+      deposit_amx:
+        title: AMX Deposit
+
+      deposit_pew:
+        title: PEW Deposit
+
+      deposit_fsc:
+        title: FSC Deposit
+
+      deposit_sln:
+        title: SLN Deposit
+
+      deposit_usx:
+        title: USX Deposit
+
+      deposit_bsx:
+        title: BSX Deposit
+
+      deposit_eot:
+        title: EOT Deposit
+
+      deposit_xap:
+        title: XAP Deposit
+
+      deposit_miac:
+        title: MIAC Deposit
+
+      deposit_kc:
+        title: KC Deposit
+
+      deposit_arhm:
+        title: ARHM Deposit
+
+      deposit_olmp:
+        title: OLMP Deposit
+
+      deposit_onz:
+        title: ONZ Deposit
+
+      deposit_agn:
+        title: AGN Deposit
+
+      deposit_crz:
+        title: CRZ Deposit
+
+      deposit_enix:
+        title: ENIX Deposit
+
+      deposit_snc:
+        title: SNC Deposit
+
+      deposit_quaz:
+        title: QUAZ Deposit
+
+      deposit_scriv:
+        title: SCRIV Deposit
+
+      deposit_ethf:
+        title: ETHF Deposit
+
+      deposit_arepa:
+        title: AREPA Deposit
+
+      deposit_sub1x:
+        title: SUB1X Deposit
+
+      deposit_cheese:
+        title: CHEESE Deposit
+
+      deposit_jiyo:
+        title: JIYO Deposit
+
+      deposit_pyro:
+        title: PYRO Deposit
+
+      deposit_roe:
+        title: ROE Deposit
+
+      deposit_citr:
+        title: CITR Deposit
+
+      deposit_xen:
+        title: XEN Deposit
+
+      deposit_edl:
+        title: EDL Deposit
+
+      deposit_cru:
+        title: CRU Deposit
+
+      deposit_ndc:
+        title: NDC Deposit
+
+      deposit_zls:
+        title: ZLS Deposit
+
+      deposit_proton:
+        title: PROTON Deposit
 
       #deposit
 
@@ -470,6 +654,144 @@ en:
       withdraw_giro:
         title: GIRO Withdraw
 
+      withdraw_onex:
+        title: ONEX Withdraw
+
+      withdraw_pushi:
+        title: PUSHI Withdraw
+
+      withdraw_vrt:
+        title: VRT Withdraw
+
+      withdraw_zaca:
+        title: ZACA Withdraw
+
+      withdraw_xhm:
+        title: XHM Withdraw
+
+      withdraw_xar:
+        title: XAR Withdraw
+
+      withdraw_rupx:
+        title: RUPX Withdraw
+
+      withdraw_frm:
+        title: FRM Withdraw
+
+      withdraw_men:
+        title: MEN Withdraw
+
+      withdraw_mun:
+        title: MUN Withdraw
+
+      withdraw_onemc:
+        title: ONEMC Withdraw
+
+      withdraw_alp:
+        title: ALP Withdraw
+
+      withdraw_zel:
+        title: ZEL Withdraw
+
+      withdraw_amx:
+        title: AMX Withdraw
+
+      withdraw_pew:
+        title: PEW Withdraw
+
+      withdraw_fsc:
+        title: FSC Withdraw
+
+      withdraw_sln:
+        title: SLN Withdraw
+
+      withdraw_usx:
+        title: USX Withdraw
+
+      withdraw_bsx:
+        title: BSX Withdraw
+
+      withdraw_eot:
+        title: EOT Withdraw
+
+      withdraw_xap:
+        title: XAP Withdraw
+
+      withdraw_miac:
+        title: MIAC Withdraw
+
+      withdraw_kc:
+        title: KC Withdraw
+
+      withdraw_arhm:
+        title: ARHM Withdraw
+
+      withdraw_olmp:
+        title: OLMP Withdraw
+
+      withdraw_onz:
+        title: ONZ Withdraw
+
+      withdraw_agn:
+        title: AGN Withdraw
+
+      withdraw_crz:
+        title: CRZ Withdraw
+
+      withdraw_enix:
+        title: ENIX Withdraw
+
+      withdraw_snc:
+        title: SNC Withdraw
+
+      withdraw_quaz:
+        title: QUAZ Withdraw
+
+      withdraw_scriv:
+        title: SCRIV Withdraw
+
+      withdraw_ethf:
+        title: ETHF Withdraw
+
+      withdraw_arepa:
+        title: AREPA Withdraw
+
+      withdraw_sub1x:
+        title: SUB1X Withdraw
+
+      withdraw_cheese:
+        title: CHEESE Withdraw
+
+      withdraw_jiyo:
+        title: JIYO Withdraw
+
+      withdraw_pyro:
+        title: PYRO Withdraw
+
+      withdraw_roe:
+        title: ROE Withdraw
+
+      withdraw_citr:
+        title: CITR Withdraw
+
+      withdraw_xen:
+        title: XEN Withdraw
+
+      withdraw_edl:
+        title: EDL Withdraw
+
+      withdraw_cru:
+        title: CRU Withdraw
+
+      withdraw_ndc:
+        title: NDC Withdraw
+
+      withdraw_zls:
+        title: ZLS Withdraw
+
+      withdraw_proton:
+        title: PROTON Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -483,38 +805,38 @@ en:
         withdraw_limit_phc: Withdraw day limit is 100 000 for an unverified account.
         withdraw_limit_xgc: Withdraw day limit is 10 000 for an unverified account.
         withdraw_limit_dev: Withdraw day limit is 50 000 for an unverified account.
-        withdraw_limit_pbs: Withdraw day limit is 5 000 for an unverified account.
-        withdraw_limit_din: Withdraw day limit is 5 000 for an unverified account.
-        withdraw_limit_adv: Withdraw day limit is 5 000 000 for an unverified account.
-        withdraw_limit_dv7: Withdraw day limit is 5 000 000 for an unverified account.
-        withdraw_limit_jew: Withdraw day limit is 5 000 for an unverified account.
-        withdraw_limit_argo: Withdraw day limit is 5 000 for an unverified account.
-        withdraw_limit_esco: Withdraw day limit is 5 000 for an unverified account.
-        withdraw_limit_neet: Withdraw day limit is 5 000 000 for an unverified account.
-        withdraw_limit_xylo: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_pbs: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_din: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_adv: Withdraw day limit is 20 000 000 for an unverified account.
+        withdraw_limit_dv7: Withdraw day limit is 20 000 000 for an unverified account.
+        withdraw_limit_jew: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_argo: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_esco: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_neet: Withdraw day limit is 20 000 000 for an unverified account.
+        withdraw_limit_xylo: Withdraw day limit is 20 000 for an unverified account.
         withdraw_limit_steep: Withdraw day limit is 5000000 for an unverified account.
-        withdraw_limit_bitg: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_crft: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_bitg: Withdraw day limit is 20 000 for an unverified account.
+        withdraw_limit_crft: Withdraw day limit is 5000000 for an unverified account.
         withdraw_limit_env: Withdraw day limit is 500000 for an unverified account.
-        withdraw_limit_sng: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_sng: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_nyc: Withdraw day limit is 5000000 for an unverified account.
-        withdraw_limit_zoc: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_zoc: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_btcz: Withdraw day limit is 50000000 for an unverified account.
-        withdraw_limit_ytn: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_yic: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_ytn: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_yic: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_tlp: Withdraw day limit is 5000000 for an unverified account.
         withdraw_limit_pwc: Withdraw day limit is 5000000 for an unverified account.
         withdraw_limit_shnd: Withdraw day limit is 5000000000 for an unverified account.
         withdraw_limit_lmn: Withdraw day limit is 5000000 for an unverified account.
-        withdraw_limit_kec: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_abs: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_suppo: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_kec: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_abs: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_suppo: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_linda: Withdraw day limit is 50000000 for an unverified account.
         withdraw_limit_hight: Withdraw day limit is 500000 for an unverified account.
-        withdraw_limit_bls: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_bls: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_tokc: Withdraw day limit is 50000 for an unverified account.
-        withdraw_limit_elp: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_zex: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_elp: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_zex: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_rlc: Withdraw day limit is 50000 for an unverified account.
         withdraw_limit_lucky: Withdraw day limit is 5000 for an unverified account.
         withdraw_limit_ich: Withdraw day limit is 50000 for an unverified account.
@@ -522,9 +844,55 @@ en:
         withdraw_limit_pnx: Withdraw day limit is 50000 for an unverified account.
         withdraw_limit_mix: Withdraw day limit is 50000 for an unverified account.
         withdraw_limit_kreds: Withdraw day limit is 500000 for an unverified account.
-        withdraw_limit_bkt: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_snx: Withdraw day limit is 5000 for an unverified account.
-        withdraw_limit_giro: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_bkt: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_snx: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_giro: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_onex: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_pushi: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_vrt: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_zaca: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_xhm: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_xar: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_rupx: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_frm: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_men: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_mun: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_onemc: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_alp: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_zel: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_amx: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_pew: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_fsc: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_sln: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_usx: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_bsx: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_eot: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_xap: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_miac: Withdraw day limit is 500000 for an unverified account.
+        withdraw_limit_kc: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_arhm: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_olmp: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_onz: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_agn: Withdraw day limit is 10000 for an unverified account.
+        withdraw_limit_crz: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_enix: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_snc: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_quaz: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_scriv: Withdraw day limit is 2000000 for an unverified account.
+        withdraw_limit_ethf: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_arepa: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_sub1x: Withdraw day limit is 1000 for an unverified account.
+        withdraw_limit_cheese: Withdraw day limit is 5000000 for an unverified account.
+        withdraw_limit_jiyo: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_pyro: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_roe: Withdraw day limit is 50000 for an unverified account.
+        withdraw_limit_citr: Withdraw day limit is 5000 for an unverified account.
+        withdraw_limit_xen: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_edl: Withdraw day limit is 20000000 for an unverified account.
+        withdraw_limit_cru: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_ndc: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_zls: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_proton: Withdraw day limit is 20000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -628,6 +996,52 @@ en:
         bkt: BKT Market
         snx: SNX Market
         giro: GIRO Market
+        onex: ONEX Market
+        pushi: PUSHI Market
+        vrt: VRT Market
+        zaca: ZACA Market
+        xhm: XHM Market
+        xar: XAR Market
+        rupx: RUPX Market
+        frm: FRM Market
+        men: MEN Market
+        mun: MUN Market
+        onemc: ONEMC Market
+        alp: ALP Market
+        zel: ZEL Market
+        amx: AMX Market
+        pew: PEW Market
+        fsc: FSC Market
+        sln: SLN Market
+        usx: USX Market
+        bsx: BSX Market
+        eot: EOT Market
+        xap: XAP Market
+        miac: MIAC Market
+        kc: KC Market
+        arhm: ARHM Market
+        olmp: OLMP Market
+        onz: ONZ Market
+        agn: AGN Market
+        crz: CRZ Market
+        enix: ENIX Market
+        snc: SNC Market
+        quaz: QUAZ Market
+        scriv: SCRIV Market
+        ethf: ETHF Market
+        arepa: AREPA Market
+        sub1x: SUB1X Market
+        cheese: CHEESE Market
+        jiyo: JIYO Market
+        pyro: PYRO Market
+        roe: ROE Market
+        citr: CITR Market
+        xen: XEN Market
+        edl: EDL Market
+        cru: CRU Market
+        ndc: NDC Market
+        zls: ZLS Market
+        proton: PROTON Market
         #market
 
 

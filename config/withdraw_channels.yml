@@ -43,7 +43,7 @@
   key: poseidon
   currency: psd
   fixed: 8
-  max: 1000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelPoseidon
@@ -51,7 +51,7 @@
   key: profithunter
   currency: phc
   fixed: 8
-  max: 1000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelProfithunter
@@ -59,15 +59,15 @@
   key: xgoldcoin
   currency: xgc
   fixed: 8
-  max: 1000
-  fee: 0.002
+  max: 20000
+  fee: 0.005
   inuse: true
   type: WithdrawChannelXgc
 - id: 1800
   key: deviant
   currency: dev
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelDev
@@ -75,7 +75,7 @@
   key: phoboscoin
   currency: pbs
   fixed: 8
-  max: 500
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelPbs
@@ -83,7 +83,7 @@
   key: dinero
   currency: din
   fixed: 8
-  max: 500
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelDin
@@ -107,7 +107,7 @@
   key: shekel
   currency: jew
   fixed: 8
-  max: 500
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelJew
@@ -115,7 +115,7 @@
   key: argo
   currency: argo
   fixed: 8
-  max: 500
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelArgo
@@ -123,7 +123,7 @@
   key: escrow
   currency: esco
   fixed: 8
-  max: 500
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelEsco
@@ -139,7 +139,7 @@
   key: xylo
   currency: xylo
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelXylo
@@ -155,7 +155,7 @@
   key: bitcoingreen
   currency: bitg
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelBitg
@@ -163,7 +163,7 @@
   key: craftr
   currency: crft
   fixed: 8
-  max: 5000
+  max: 5000000
   fee: 0.002
   inuse: true
   type: WithdrawChannelCrft
@@ -179,7 +179,7 @@
   key: snowgem
   currency: sng
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelSng
@@ -195,7 +195,7 @@
   key: zeroonecoin
   currency: zoc
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelZoc
@@ -211,7 +211,7 @@
   key: yenten
   currency: ytn
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelYtn
@@ -219,7 +219,7 @@
   key: yicoin
   currency: yic
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelYic
@@ -259,7 +259,7 @@
   key: keyco
   currency: kec
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelKec
@@ -267,7 +267,7 @@
   key: absolute
   currency: abs
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelAbs
@@ -275,7 +275,7 @@
   key: suppocoin
   currency: suppo
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelSuppo
@@ -299,7 +299,7 @@
   key: blisscoin
   currency: bls
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelBls
@@ -315,7 +315,7 @@
   key: elleriumcoin
   currency: elp
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelElp
@@ -323,7 +323,7 @@
   key: zexcoin
   currency: zex
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelZex
@@ -339,7 +339,7 @@
   key: luckybit
   currency: lucky
   fixed: 8
-  max: 5000
+  max: 20000
   fee: 0.002
   inuse: true
   type: WithdrawChannelLucky
@@ -375,3 +375,403 @@
   fee: 0.0055
   inuse: true
   type: WithdrawChannelMix
+- id: 9600
+  key: kredscoin
+  currency: kreds
+  fixed: 8
+  max: 500000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelKreds
+- id: 9800
+  key: bankittcoin
+  currency: bkt
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelBkt
+- id: 10000
+  key: snxcoin
+  currency: snx
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelSnx
+- id: 10200
+  key: girocoin
+  currency: giro
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelGiro
+- id: 10400
+  key: onexcoin
+  currency: onex
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelOnex
+- id: 10600
+  key: pushicoin
+  currency: pushi
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelPushi
+- id: 10800
+  key: virtuscoin
+  currency: vrt
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelVrt
+- id: 11000
+  key: zacacoin
+  currency: zaca
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelZaca
+- id: 11200
+  key: xhimeracoin
+  currency: xhm
+  fixed: 8
+  max: 500000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelXhm
+- id: 11400
+  key: xarucoin
+  currency: xar
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelXar
+- id: 11600
+  key: rupayacoin
+  currency: rupx
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelRupx
+- id: 11800
+  key: ferrumcoin
+  currency: frm
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelFrm
+- id: 12000
+  key: peoplecoin
+  currency: men
+  fixed: 8
+  max: 5000000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelMen
+- id: 12200
+  key: muncoin
+  currency: mun
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelMun
+- id: 12400
+  key: millioncoin
+  currency: onemc
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelOnemc
+- id: 12600
+  key: alphacoin
+  currency: alp
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelAlp
+- id: 12800
+  key: zelcashcoin
+  currency: zel
+  fixed: 8
+  max: 500000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelZel
+- id: 13000
+  key: amerocoin
+  currency: amx
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelAmx
+- id: 13200
+  key: brofistcoin
+  currency: pew
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelPew
+- id: 13400
+  key: friendshipcoin
+  currency: fsc
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelFsc
+- id: 13600
+  key: salencoin
+  currency: sln
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelSln
+- id: 13800
+  key: unifiedsocietycoin
+  currency: usx
+  fixed: 8
+  max: 200000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelUsx
+- id: 14000
+  key: bitspacecoin
+  currency: bsx
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelBsx
+- id: 14200
+  key: eotcoin
+  currency: eot
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelEot
+- id: 14400
+  key: apolloncoin
+  currency: xap
+  fixed: 8
+  max: 500000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelXap
+- id: 14600
+  key: miacoin
+  currency: miac
+  fixed: 8
+  max: 500000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelMiac
+- id: 14800
+  key: krakencoin
+  currency: kc
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelKc
+- id: 15000
+  key: archimedcoin
+  currency: arhm
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelArhm
+- id: 15200
+  key: olympiccoin
+  currency: olmp
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelOlmp
+- id: 15400
+  key: onzcoin
+  currency: onz
+  fixed: 8
+  max: 200000
+  fee: 0.4
+  inuse: true
+  type: WithdrawChannelOnz
+- id: 15600
+  key: agenacoin
+  currency: agn
+  fixed: 8
+  max: 10000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelAgn
+- id: 15800
+  key: corezcoin
+  currency: crz
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelCrz
+- id: 16000
+  key: enixtcoin
+  currency: enix
+  fixed: 8
+  max: 200000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelEnix
+- id: 16200
+  key: stannumcoin
+  currency: snc
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelSnc
+- id: 16400
+  key: quazcoin
+  currency: quaz
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelQuaz
+- id: 16600
+  key: scrivcoin
+  currency: scriv
+  fixed: 8
+  max: 2000000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelScriv
+- id: 16800
+  key: ethfcoin
+  currency: ethf
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelEthf
+- id: 17000
+  key: arepacoin
+  currency: arepa
+  fixed: 8
+  max: 200000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelArepa
+- id: 17200
+  key: sub1xcoin
+  currency: sub1x
+  fixed: 8
+  max: 1000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelSub1x
+- id: 17400
+  key: cheesecoin
+  currency: cheese
+  fixed: 8
+  max: 5000000
+  fee: 2.0
+  inuse: true
+  type: WithdrawChannelCheese
+- id: 17600
+  key: jiyocoin
+  currency: jiyo
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelJiyo
+- id: 17800
+  key: pyrocoin
+  currency: pyro
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelPyro
+- id: 18000
+  key: rovercoin
+  currency: roe
+  fixed: 8
+  max: 50000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelRoe
+- id: 18200
+  key: citruscoin
+  currency: citr
+  fixed: 8
+  max: 5000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelCitr
+- id: 18400
+  key: xeoncoin
+  currency: xen
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelXen
+- id: 18600
+  key: edollarcoin
+  currency: edl
+  fixed: 8
+  max: 20000000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelEdl
+- id: 18800
+  key: curiumcoin
+  currency: cru
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelCru
+- id: 19000
+  key: needlecoin
+  currency: ndc
+  fixed: 8
+  max: 200000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelNdc
+- id: 19200
+  key: zaliascoin
+  currency: zls
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelZls
+- id: 19400
+  key: protoncoin
+  currency: proton
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelProton

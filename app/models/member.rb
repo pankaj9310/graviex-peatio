@@ -106,8 +106,10 @@ class Member < ActiveRecord::Base
   end
 
   def checked_in?
-    value = Rails.cache.read(member_checked_in_key) || false
-    Rails.logger.info "[checked_in] = " + value.to_s
+    value = true 
+    if two_factors.require_signin?
+      value = Rails.cache.read(member_checked_in_key) || false
+    end
     return value
   end
 

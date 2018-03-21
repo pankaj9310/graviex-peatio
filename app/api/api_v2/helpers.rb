@@ -75,7 +75,9 @@ module APIv2
           low: ticker[:low],
           high: ticker[:high],
           last: ticker[:last],
-          vol: ticker[:volume]
+          vol: ticker[:volume],
+          volbtc: ticker[:volume2],
+          change: if ticker[:open] == 0 then 0 else (ticker[:last]-ticker[:open])/ticker[:open] end
         }
       }
     end

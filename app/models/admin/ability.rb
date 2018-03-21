@@ -64,6 +64,56 @@ module Admin
       can :manage, ::Deposits::Mambocoin
       can :manage, ::Deposits::Phantomxcoin
       can :manage, ::Deposits::Mixcoin
+      can :manage, ::Deposits::Kredscoin
+      can :manage, ::Deposits::Bankittcoin
+      can :manage, ::Deposits::Snxcoin
+      can :manage, ::Deposits::Girocoin
+      can :manage, ::Deposits::Onexcoin
+      can :manage, ::Deposits::Pushicoin
+      can :manage, ::Deposits::Virtuscoin
+      can :manage, ::Deposits::Zacacoin
+      can :manage, ::Deposits::Xhimeracoin
+      can :manage, ::Deposits::Xarucoin
+      can :manage, ::Deposits::Rupayacoin
+      can :manage, ::Deposits::Ferrumcoin
+      can :manage, ::Deposits::Peoplecoin
+      can :manage, ::Deposits::Muncoin
+      can :manage, ::Deposits::Millioncoin
+      can :manage, ::Deposits::Alphacoin
+      can :manage, ::Deposits::Zelcashcoin
+      can :manage, ::Deposits::Amerocoin
+      can :manage, ::Deposits::Brofistcoin
+      can :manage, ::Deposits::Friendshipcoin
+      can :manage, ::Deposits::Salencoin
+      can :manage, ::Deposits::Unifiedsocietycoin
+      can :manage, ::Deposits::Bitspacecoin
+      can :manage, ::Deposits::Eotcoin
+      can :manage, ::Deposits::Apolloncoin
+      can :manage, ::Deposits::Miacoin
+      can :manage, ::Deposits::Krakencoin
+      can :manage, ::Deposits::Archimedcoin
+      can :manage, ::Deposits::Olympiccoin
+      can :manage, ::Deposits::Onzcoin
+      can :manage, ::Deposits::Agenacoin
+      can :manage, ::Deposits::Corezcoin
+      can :manage, ::Deposits::Enixtcoin
+      can :manage, ::Deposits::Stannumcoin
+      can :manage, ::Deposits::Quazcoin
+      can :manage, ::Deposits::Scrivcoin
+      can :manage, ::Deposits::Ethfcoin
+      can :manage, ::Deposits::Arepacoin
+      can :manage, ::Deposits::Sub1xcoin
+      can :manage, ::Deposits::Cheesecoin
+      can :manage, ::Deposits::Jiyocoin
+      can :manage, ::Deposits::Pyrocoin
+      can :manage, ::Deposits::Rovercoin
+      can :manage, ::Deposits::Citruscoin
+      can :manage, ::Deposits::Xeoncoin
+      can :manage, ::Deposits::Edollarcoin
+      can :manage, ::Deposits::Curiumcoin
+      can :manage, ::Deposits::Needlecoin
+      can :manage, ::Deposits::Zaliascoin
+      can :manage, ::Deposits::Protoncoin
       #deposit
 
       can :menu, Withdraw
@@ -115,6 +165,56 @@ module Admin
       can :manage, ::Withdraws::Mambocoin
       can :manage, ::Withdraws::Phantomxcoin
       can :manage, ::Withdraws::Mixcoin
+      can :manage, ::Withdraws::Kredscoin
+      can :manage, ::Withdraws::Bankittcoin
+      can :manage, ::Withdraws::Snxcoin
+      can :manage, ::Withdraws::Girocoin
+      can :manage, ::Withdraws::Onexcoin
+      can :manage, ::Withdraws::Pushicoin
+      can :manage, ::Withdraws::Virtuscoin
+      can :manage, ::Withdraws::Zacacoin
+      can :manage, ::Withdraws::Xhimeracoin
+      can :manage, ::Withdraws::Xarucoin
+      can :manage, ::Withdraws::Rupayacoin
+      can :manage, ::Withdraws::Ferrumcoin
+      can :manage, ::Withdraws::Peoplecoin
+      can :manage, ::Withdraws::Muncoin
+      can :manage, ::Withdraws::Millioncoin
+      can :manage, ::Withdraws::Alphacoin
+      can :manage, ::Withdraws::Zelcashcoin
+      can :manage, ::Withdraws::Amerocoin
+      can :manage, ::Withdraws::Brofistcoin
+      can :manage, ::Withdraws::Friendshipcoin
+      can :manage, ::Withdraws::Salencoin
+      can :manage, ::Withdraws::Unifiedsocietycoin
+      can :manage, ::Withdraws::Bitspacecoin
+      can :manage, ::Withdraws::Eotcoin
+      can :manage, ::Withdraws::Apolloncoin
+      can :manage, ::Withdraws::Miacoin
+      can :manage, ::Withdraws::Krakencoin
+      can :manage, ::Withdraws::Archimedcoin
+      can :manage, ::Withdraws::Olympiccoin
+      can :manage, ::Withdraws::Onzcoin
+      can :manage, ::Withdraws::Agenacoin
+      can :manage, ::Withdraws::Corezcoin
+      can :manage, ::Withdraws::Enixtcoin
+      can :manage, ::Withdraws::Stannumcoin
+      can :manage, ::Withdraws::Quazcoin
+      can :manage, ::Withdraws::Scrivcoin
+      can :manage, ::Withdraws::Ethfcoin
+      can :manage, ::Withdraws::Arepacoin
+      can :manage, ::Withdraws::Sub1xcoin
+      can :manage, ::Withdraws::Cheesecoin
+      can :manage, ::Withdraws::Jiyocoin
+      can :manage, ::Withdraws::Pyrocoin
+      can :manage, ::Withdraws::Rovercoin
+      can :manage, ::Withdraws::Citruscoin
+      can :manage, ::Withdraws::Xeoncoin
+      can :manage, ::Withdraws::Edollarcoin
+      can :manage, ::Withdraws::Curiumcoin
+      can :manage, ::Withdraws::Needlecoin
+      can :manage, ::Withdraws::Zaliascoin
+      can :manage, ::Withdraws::Protoncoin
       #withdraw
 
     end

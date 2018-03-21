@@ -59,11 +59,10 @@ window.MarketSwitchUI = flight.component ->
       .attr('title', ticker.last)
       .html("<span class='#{trend}'>#{formatter.ticker_price ticker.last}</span>")
 
-    p1 = parseFloat(ticker.open)
-    p2 = parseFloat(ticker.last)
-    trend = formatter.trend(p1 <= p2)
-
     if @current_unit == 'volume' 
+      p1 = parseFloat(ticker.open)
+      p2 = parseFloat(ticker.last)
+      trend = formatter.trend(p1 <= p2)
       select.find('td.change').html("<span class='#{trend}'>#{formatter.price_change(p1, p2)}%</span>")
     else
       select.find('td.change').html("<span class='#{trend}'>#{formatter.round(ticker.volume2, 4)}</span>")

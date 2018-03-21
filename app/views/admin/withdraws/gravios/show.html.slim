@@ -12,7 +12,7 @@
           = item_for @gravio.member, :name
           = item_for @gravio, :fund_extra
           = item_for @gravio, :fund_uid do
-            span = @gravio.fund_uid.truncate(22)
+            span = @gravio.fund_uid.truncate(40)
           = item_for @gravio, :amount
           hr.split
           = item_for @gravio, :remark

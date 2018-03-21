@@ -4,9 +4,9 @@ module Admin
       load_and_authorize_resource :class => '::Withdraws::Ether'
 
       def index
-        start_at = DateTime.now.ago(60 * 60 * 24)
-        @one_ethers = @ethers.with_aasm_state(:accepted).order("id DESC")
-        @all_ethers = @ethers.without_aasm_state(:accepted).where('created_at > ?', start_at).order("id DESC")
+        start_at = DateTime.now.ago(60 * 60 * 24 * 3)
+        @one_ethers = @ethers.with_aasm_state(:almost_done).order("id DESC")
+        @all_ethers = @ethers.without_aasm_state(:almost_done).where('created_at > ?', start_at).order("id DESC")
       end
 
       def show

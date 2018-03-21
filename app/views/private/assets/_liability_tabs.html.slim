@@ -47,6 +47,56 @@
     li: a.mmb-proof href="#mmb-proof" data-toggle="tab" == t('.verify-mmb')
     li: a.pnx-proof href="#pnx-proof" data-toggle="tab" == t('.verify-pnx')
     li: a.mix-proof href="#mix-proof" data-toggle="tab" == t('.verify-mix')
+    li: a.kreds-proof href="#kreds-proof" data-toggle="tab" == t('.verify-kreds')
+    li: a.bkt-proof href="#bkt-proof" data-toggle="tab" == t('.verify-bkt')
+    li: a.snx-proof href="#snx-proof" data-toggle="tab" == t('.verify-snx')
+    li: a.giro-proof href="#giro-proof" data-toggle="tab" == t('.verify-giro')
+    li: a.onex-proof href="#onex-proof" data-toggle="tab" == t('.verify-onex')
+    li: a.pushi-proof href="#pushi-proof" data-toggle="tab" == t('.verify-pushi')
+    li: a.vrt-proof href="#vrt-proof" data-toggle="tab" == t('.verify-vrt')
+    li: a.zaca-proof href="#zaca-proof" data-toggle="tab" == t('.verify-zaca')
+    li: a.xhm-proof href="#xhm-proof" data-toggle="tab" == t('.verify-xhm')
+    li: a.xar-proof href="#xar-proof" data-toggle="tab" == t('.verify-xar')
+    li: a.rupx-proof href="#rupx-proof" data-toggle="tab" == t('.verify-rupx')
+    li: a.frm-proof href="#frm-proof" data-toggle="tab" == t('.verify-frm')
+    li: a.men-proof href="#men-proof" data-toggle="tab" == t('.verify-men')
+    li: a.mun-proof href="#mun-proof" data-toggle="tab" == t('.verify-mun')
+    li: a.onemc-proof href="#onemc-proof" data-toggle="tab" == t('.verify-onemc')
+    li: a.alp-proof href="#alp-proof" data-toggle="tab" == t('.verify-alp')
+    li: a.zel-proof href="#zel-proof" data-toggle="tab" == t('.verify-zel')
+    li: a.amx-proof href="#amx-proof" data-toggle="tab" == t('.verify-amx')
+    li: a.pew-proof href="#pew-proof" data-toggle="tab" == t('.verify-pew')
+    li: a.fsc-proof href="#fsc-proof" data-toggle="tab" == t('.verify-fsc')
+    li: a.sln-proof href="#sln-proof" data-toggle="tab" == t('.verify-sln')
+    li: a.usx-proof href="#usx-proof" data-toggle="tab" == t('.verify-usx')
+    li: a.bsx-proof href="#bsx-proof" data-toggle="tab" == t('.verify-bsx')
+    li: a.eot-proof href="#eot-proof" data-toggle="tab" == t('.verify-eot')
+    li: a.xap-proof href="#xap-proof" data-toggle="tab" == t('.verify-xap')
+    li: a.miac-proof href="#miac-proof" data-toggle="tab" == t('.verify-miac')
+    li: a.kc-proof href="#kc-proof" data-toggle="tab" == t('.verify-kc')
+    li: a.arhm-proof href="#arhm-proof" data-toggle="tab" == t('.verify-arhm')
+    li: a.olmp-proof href="#olmp-proof" data-toggle="tab" == t('.verify-olmp')
+    li: a.onz-proof href="#onz-proof" data-toggle="tab" == t('.verify-onz')
+    li: a.agn-proof href="#agn-proof" data-toggle="tab" == t('.verify-agn')
+    li: a.crz-proof href="#crz-proof" data-toggle="tab" == t('.verify-crz')
+    li: a.enix-proof href="#enix-proof" data-toggle="tab" == t('.verify-enix')
+    li: a.snc-proof href="#snc-proof" data-toggle="tab" == t('.verify-snc')
+    li: a.quaz-proof href="#quaz-proof" data-toggle="tab" == t('.verify-quaz')
+    li: a.scriv-proof href="#scriv-proof" data-toggle="tab" == t('.verify-scriv')
+    li: a.ethf-proof href="#ethf-proof" data-toggle="tab" == t('.verify-ethf')
+    li: a.arepa-proof href="#arepa-proof" data-toggle="tab" == t('.verify-arepa')
+    li: a.sub1x-proof href="#sub1x-proof" data-toggle="tab" == t('.verify-sub1x')
+    li: a.cheese-proof href="#cheese-proof" data-toggle="tab" == t('.verify-cheese')
+    li: a.jiyo-proof href="#jiyo-proof" data-toggle="tab" == t('.verify-jiyo')
+    li: a.pyro-proof href="#pyro-proof" data-toggle="tab" == t('.verify-pyro')
+    li: a.roe-proof href="#roe-proof" data-toggle="tab" == t('.verify-roe')
+    li: a.citr-proof href="#citr-proof" data-toggle="tab" == t('.verify-citr')
+    li: a.xen-proof href="#xen-proof" data-toggle="tab" == t('.verify-xen')
+    li: a.edl-proof href="#edl-proof" data-toggle="tab" == t('.verify-edl')
+    li: a.cru-proof href="#cru-proof" data-toggle="tab" == t('.verify-cru')
+    li: a.ndc-proof href="#ndc-proof" data-toggle="tab" == t('.verify-ndc')
+    li: a.zls-proof href="#zls-proof" data-toggle="tab" == t('.verify-zls')
+    li: a.proton-proof href="#proton-proof" data-toggle="tab" == t('.verify-proton')
     /li
 
   .tab-content
@@ -385,3 +435,353 @@
           == t("currency.icon.mix")
           = @mix_proof.sum
       = render 'liability_data', account: @mix_account, proof: @mix_proof
+    #kreds-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.kreds-assets-total')
+        span.currency
+          == t("currency.icon.kreds")
+          = @kreds_proof.sum
+      = render 'liability_data', account: @kreds_account, proof: @kreds_proof
+    #bkt-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.bkt-assets-total')
+        span.currency
+          == t("currency.icon.bkt")
+          = @bkt_proof.sum
+      = render 'liability_data', account: @bkt_account, proof: @bkt_proof
+    #snx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.snx-assets-total')
+        span.currency
+          == t("currency.icon.snx")
+          = @snx_proof.sum
+      = render 'liability_data', account: @snx_account, proof: @snx_proof
+    #giro-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.giro-assets-total')
+        span.currency
+          == t("currency.icon.giro")
+          = @giro_proof.sum
+      = render 'liability_data', account: @giro_account, proof: @giro_proof
+    #onex-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.onex-assets-total')
+        span.currency
+          == t("currency.icon.onex")
+          = @onex_proof.sum
+      = render 'liability_data', account: @onex_account, proof: @onex_proof
+    #pushi-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pushi-assets-total')
+        span.currency
+          == t("currency.icon.pushi")
+          = @pushi_proof.sum
+      = render 'liability_data', account: @pushi_account, proof: @pushi_proof
+    #vrt-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.vrt-assets-total')
+        span.currency
+          == t("currency.icon.vrt")
+          = @vrt_proof.sum
+      = render 'liability_data', account: @vrt_account, proof: @vrt_proof
+    #zaca-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.zaca-assets-total')
+        span.currency
+          == t("currency.icon.zaca")
+          = @zaca_proof.sum
+      = render 'liability_data', account: @zaca_account, proof: @zaca_proof
+    #xhm-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xhm-assets-total')
+        span.currency
+          == t("currency.icon.xhm")
+          = @xhm_proof.sum
+      = render 'liability_data', account: @xhm_account, proof: @xhm_proof
+    #xar-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xar-assets-total')
+        span.currency
+          == t("currency.icon.xar")
+          = @xar_proof.sum
+      = render 'liability_data', account: @xar_account, proof: @xar_proof
+    #rupx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.rupx-assets-total')
+        span.currency
+          == t("currency.icon.rupx")
+          = @rupx_proof.sum
+      = render 'liability_data', account: @rupx_account, proof: @rupx_proof
+    #frm-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.frm-assets-total')
+        span.currency
+          == t("currency.icon.frm")
+          = @frm_proof.sum
+      = render 'liability_data', account: @frm_account, proof: @frm_proof
+    #men-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.men-assets-total')
+        span.currency
+          == t("currency.icon.men")
+          = @men_proof.sum
+      = render 'liability_data', account: @men_account, proof: @men_proof
+    #mun-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.mun-assets-total')
+        span.currency
+          == t("currency.icon.mun")
+          = @mun_proof.sum
+      = render 'liability_data', account: @mun_account, proof: @mun_proof
+    #onemc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.onemc-assets-total')
+        span.currency
+          == t("currency.icon.onemc")
+          = @onemc_proof.sum
+      = render 'liability_data', account: @onemc_account, proof: @onemc_proof
+    #alp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.alp-assets-total')
+        span.currency
+          == t("currency.icon.alp")
+          = @alp_proof.sum
+      = render 'liability_data', account: @alp_account, proof: @alp_proof
+    #zel-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.zel-assets-total')
+        span.currency
+          == t("currency.icon.zel")
+          = @zel_proof.sum
+      = render 'liability_data', account: @zel_account, proof: @zel_proof
+    #amx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.amx-assets-total')
+        span.currency
+          == t("currency.icon.amx")
+          = @amx_proof.sum
+      = render 'liability_data', account: @amx_account, proof: @amx_proof
+    #pew-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pew-assets-total')
+        span.currency
+          == t("currency.icon.pew")
+          = @pew_proof.sum
+      = render 'liability_data', account: @pew_account, proof: @pew_proof
+    #fsc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.fsc-assets-total')
+        span.currency
+          == t("currency.icon.fsc")
+          = @fsc_proof.sum
+      = render 'liability_data', account: @fsc_account, proof: @fsc_proof
+    #sln-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.sln-assets-total')
+        span.currency
+          == t("currency.icon.sln")
+          = @sln_proof.sum
+      = render 'liability_data', account: @sln_account, proof: @sln_proof
+    #usx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.usx-assets-total')
+        span.currency
+          == t("currency.icon.usx")
+          = @usx_proof.sum
+      = render 'liability_data', account: @usx_account, proof: @usx_proof
+    #bsx-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.bsx-assets-total')
+        span.currency
+          == t("currency.icon.bsx")
+          = @bsx_proof.sum
+      = render 'liability_data', account: @bsx_account, proof: @bsx_proof
+    #eot-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.eot-assets-total')
+        span.currency
+          == t("currency.icon.eot")
+          = @eot_proof.sum
+      = render 'liability_data', account: @eot_account, proof: @eot_proof
+    #xap-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xap-assets-total')
+        span.currency
+          == t("currency.icon.xap")
+          = @xap_proof.sum
+      = render 'liability_data', account: @xap_account, proof: @xap_proof
+    #miac-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.miac-assets-total')
+        span.currency
+          == t("currency.icon.miac")
+          = @miac_proof.sum
+      = render 'liability_data', account: @miac_account, proof: @miac_proof
+    #kc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.kc-assets-total')
+        span.currency
+          == t("currency.icon.kc")
+          = @kc_proof.sum
+      = render 'liability_data', account: @kc_account, proof: @kc_proof
+    #arhm-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.arhm-assets-total')
+        span.currency
+          == t("currency.icon.arhm")
+          = @arhm_proof.sum
+      = render 'liability_data', account: @arhm_account, proof: @arhm_proof
+    #olmp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.olmp-assets-total')
+        span.currency
+          == t("currency.icon.olmp")
+          = @olmp_proof.sum
+      = render 'liability_data', account: @olmp_account, proof: @olmp_proof
+    #onz-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.onz-assets-total')
+        span.currency
+          == t("currency.icon.onz")
+          = @onz_proof.sum
+      = render 'liability_data', account: @onz_account, proof: @onz_proof
+    #agn-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.agn-assets-total')
+        span.currency
+          == t("currency.icon.agn")
+          = @agn_proof.sum
+      = render 'liability_data', account: @agn_account, proof: @agn_proof
+    #crz-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.crz-assets-total')
+        span.currency
+          == t("currency.icon.crz")
+          = @crz_proof.sum
+      = render 'liability_data', account: @crz_account, proof: @crz_proof
+    #enix-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.enix-assets-total')
+        span.currency
+          == t("currency.icon.enix")
+          = @enix_proof.sum
+      = render 'liability_data', account: @enix_account, proof: @enix_proof
+    #snc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.snc-assets-total')
+        span.currency
+          == t("currency.icon.snc")
+          = @snc_proof.sum
+      = render 'liability_data', account: @snc_account, proof: @snc_proof
+    #quaz-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.quaz-assets-total')
+        span.currency
+          == t("currency.icon.quaz")
+          = @quaz_proof.sum
+      = render 'liability_data', account: @quaz_account, proof: @quaz_proof
+    #scriv-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.scriv-assets-total')
+        span.currency
+          == t("currency.icon.scriv")
+          = @scriv_proof.sum
+      = render 'liability_data', account: @scriv_account, proof: @scriv_proof
+    #ethf-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.ethf-assets-total')
+        span.currency
+          == t("currency.icon.ethf")
+          = @ethf_proof.sum
+      = render 'liability_data', account: @ethf_account, proof: @ethf_proof
+    #arepa-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.arepa-assets-total')
+        span.currency
+          == t("currency.icon.arepa")
+          = @arepa_proof.sum
+      = render 'liability_data', account: @arepa_account, proof: @arepa_proof
+    #sub1x-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.sub1x-assets-total')
+        span.currency
+          == t("currency.icon.sub1x")
+          = @sub1x_proof.sum
+      = render 'liability_data', account: @sub1x_account, proof: @sub1x_proof
+    #cheese-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.cheese-assets-total')
+        span.currency
+          == t("currency.icon.cheese")
+          = @cheese_proof.sum
+      = render 'liability_data', account: @cheese_account, proof: @cheese_proof
+    #jiyo-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.jiyo-assets-total')
+        span.currency
+          == t("currency.icon.jiyo")
+          = @jiyo_proof.sum
+      = render 'liability_data', account: @jiyo_account, proof: @jiyo_proof
+    #pyro-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pyro-assets-total')
+        span.currency
+          == t("currency.icon.pyro")
+          = @pyro_proof.sum
+      = render 'liability_data', account: @pyro_account, proof: @pyro_proof
+    #roe-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.roe-assets-total')
+        span.currency
+          == t("currency.icon.roe")
+          = @roe_proof.sum
+      = render 'liability_data', account: @roe_account, proof: @roe_proof
+    #citr-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.citr-assets-total')
+        span.currency
+          == t("currency.icon.citr")
+          = @citr_proof.sum
+      = render 'liability_data', account: @citr_account, proof: @citr_proof
+    #xen-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.xen-assets-total')
+        span.currency
+          == t("currency.icon.xen")
+          = @xen_proof.sum
+      = render 'liability_data', account: @xen_account, proof: @xen_proof
+    #edl-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.edl-assets-total')
+        span.currency
+          == t("currency.icon.edl")
+          = @edl_proof.sum
+      = render 'liability_data', account: @edl_account, proof: @edl_proof
+    #cru-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.cru-assets-total')
+        span.currency
+          == t("currency.icon.cru")
+          = @cru_proof.sum
+      = render 'liability_data', account: @cru_account, proof: @cru_proof
+    #ndc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.ndc-assets-total')
+        span.currency
+          == t("currency.icon.ndc")
+          = @ndc_proof.sum
+      = render 'liability_data', account: @ndc_account, proof: @ndc_proof
+    #zls-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.zls-assets-total')
+        span.currency
+          == t("currency.icon.zls")
+          = @zls_proof.sum
+      = render 'liability_data', account: @zls_account, proof: @zls_proof
+    #proton-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.proton-assets-total')
+        span.currency
+          == t("currency.icon.proton")
+          = @proton_proof.sum
+      = render 'liability_data', account: @proton_account, proof: @proton_proof

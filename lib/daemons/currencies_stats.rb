@@ -24,7 +24,13 @@ def aggregate(currency, datefrom, dateto)
   return amount
 end
 
+$startup = true
+
 while($running) do
+  if $startup
+    sleep 120
+    $startup = false
+  end
   begin
     date = DateTime.now
     ts = date.to_i

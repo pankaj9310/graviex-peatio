@@ -22,6 +22,7 @@ while($running) do
       end
     rescue
       puts "Error on PaymentTransaction::Normal: #{$!}"
+      puts tx.to_json
       puts $!.backtrace.join("\n")
       next
     end

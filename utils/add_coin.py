@@ -245,9 +245,9 @@ class Update:
 			adm_with_ctrl_f.write("    class " + cfg_json["name"] + "sController < ::Admin::Withdraws::BaseController\n")
 			adm_with_ctrl_f.write("      load_and_authorize_resource :class => \'::Withdraws::" + cfg_json["name"] + "\'\n\n")
 			adm_with_ctrl_f.write("      def index\n")
-			adm_with_ctrl_f.write("        start_at = DateTime.now.ago(60 * 60 * 24)\n")
-			adm_with_ctrl_f.write("        @one_" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.with_aasm_state(:accepted).order(\"id DESC\")\n")
-			adm_with_ctrl_f.write("        @all_" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.without_aasm_state(:accepted).where('created_at > ?', start_at).order(\"id DESC\")\n")
+			adm_with_ctrl_f.write("        start_at = DateTime.now.ago(60 * 60 * 24 * 3)\n")
+			adm_with_ctrl_f.write("        @one_" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.with_aasm_state(:almost_done).order(\"id DESC\")\n")
+			adm_with_ctrl_f.write("        @all_" + cfg_json["key"] + "s = @" + cfg_json["key"] + "s.without_aasm_state(:almost_done).where('created_at > ?', start_at).order(\"id DESC\")\n")
 			adm_with_ctrl_f.write("      end\n\n")
 			adm_with_ctrl_f.write("      def show\n")
 			adm_with_ctrl_f.write("      end\n\n")
@@ -335,7 +335,7 @@ class Update:
 			app_v_adm_with_f.write("  - t.column :member_name, class: 'col-xs-3' do |x|\n")
 			app_v_adm_with_f.write("    = link_to x.member_name, url_for([:admin, x.member]), target: '_blank'\n")
 			app_v_adm_with_f.write("  - t.column :fund_source, class: 'col-xs-6' do |x|\n")
-			app_v_adm_with_f.write("    span #{x.fund_extra} # #{x.fund_uid.truncate(22)}\n")
+			app_v_adm_with_f.write("    span #{x.fund_extra} # #{x.fund_uid.truncate(40)}\n")
 			app_v_adm_with_f.write("  - t.column :amount, class: 'col-xs-3' do |x|\n")
 			app_v_adm_with_f.write("    code.text-info = x.amount\n")
 			app_v_adm_with_f.write("  - t.column :state_and_action, class: 'col-xs-3' do |x|\n")
@@ -367,7 +367,7 @@ class Update:
 			app_v_adm_with_f.write("          = item_for @" + cfg_json["key"] + ".member, :name\n")
 			app_v_adm_with_f.write("          = item_for @" + cfg_json["key"] + ", :fund_extra\n")
 			app_v_adm_with_f.write("          = item_for @" + cfg_json["key"] + ", :fund_uid do\n")
-			app_v_adm_with_f.write("            span = @" + cfg_json["key"] + ".fund_uid.truncate(22)\n")
+			app_v_adm_with_f.write("            span = @" + cfg_json["key"] + ".fund_uid.truncate(40)\n")
 			app_v_adm_with_f.write("          = item_for @" + cfg_json["key"] + ", :amount\n")
 			app_v_adm_with_f.write("          hr.split\n")
 			app_v_adm_with_f.write("          = item_for @" + cfg_json["key"] + ", :remark\n")
@@ -529,7 +529,7 @@ class Update:
 		file_data_new = file_data_new.replace("#withdraw_sum", cfg_json["key"] + ":\n          sum: \"<a target='_balance' href='#'>Fee structure</a>\"\n        #withdraw_sum")
 		file_data_new = file_data_new.replace("#withdraw_labels", cfg_json["key"] + ":\n          fee: Fee\n          sum: Amount\n          fund_uid: " + cfg_json["name"] + " Address\n          fund_extra: Label\n          account_balance: Account Balance\n          member_name: Account\n        #withdraw_labels")
 		file_data_new = file_data_new.replace("#admin_deposits", cfg_json["key"] + "s:\n        update:\n          notice: The deposit was successful.\n        index:\n          accept: Accept\n          accept_confirm: Confirm deposit?\n      #admin_deposits")
-		file_data_new = file_data_new.replace("#admin_widraws", cfg_json["key"] + "s:\n        index:\n          one: Pending withdrawals\n          all: Last 24 hours\n          empty: No data\n        show:\n          process: Accepted\n          succeed: Withdraw\n          reject: Reject\n          succeed_confirm: Process withdrawal?\n          reject_confirm: Reject withdrawal?\n          withdraw: Withdrawals\n      #admin_widraws")
+		file_data_new = file_data_new.replace("#admin_widraws", cfg_json["key"] + "s:\n        index:\n          one: Pending withdrawals\n          all: Last 72 hours\n          empty: No data\n        show:\n          process: Accepted\n          succeed: Withdraw\n          reject: Reject\n          succeed_confirm: Process withdrawal?\n          reject_confirm: Reject withdrawal?\n          withdraw: Withdrawals\n      #admin_widraws")
 		file_data_new = file_data_new.replace("#deposit_coin", "deposits/" + cfg_json["key"] + ":\n    aasm_state:\n      submitted: Submitted\n      accepted: Accepted\n      checked: Checked\n      warning: Warning\n  #deposit_coin")
 		file_data_new = file_data_new.replace("#easy_table", cfg_json["key"] + ":\n      amount: Amount\n      txid: TxId\n      created_at: Created At\n      confirmations: Confirmations\n      member_name: Member\n      state_and_actions: State/Actions\n      currency_obj_key_text: Currency\n    #easy_table")
 		file_data_new = file_data_new.replace("#enum_currence", cfg_json["code"] + ": " + cfg_json["code_name"] + "\n      #enum_currence")
@@ -598,7 +598,7 @@ class Db:
 		with open(coin_update_path + "/admin_update_accounts.sql", "w+") as f:
 			f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n	select id, " + str(currency_id) + ", 0, 0 from members where id=2 or id=3")
                 with open(coin_update_path + "/update_accounts.sql", "w+") as f:
-                        f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n  select id, " + str(currency_id) + ", 0, 0 from members where id>3")
+                        f.write("use graviex_production;\ninsert into accounts(member_id, currency, balance, locked)\n  select id, " + str(currency_id) + ", 0, 0 from members where id not in (select member_id from accounts where currency=" + str(currency_id) + ")")
 
 if __name__ == '__main__':
 	print "start adding coin"

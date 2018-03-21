@@ -12,7 +12,7 @@
           = item_for @poseidon.member, :name
           = item_for @poseidon, :fund_extra
           = item_for @poseidon, :fund_uid do
-            span = @poseidon.fund_uid.truncate(22)
+            span = @poseidon.fund_uid.truncate(40)
           = item_for @poseidon, :amount
           hr.split
           = item_for @poseidon, :remark

@@ -32,11 +32,6 @@ app.directive 'accounts', ->
           else
             $scope.accounts = Account.select (item) ->
               return (parseFloat(item.balance) + parseFloat(item.locked) > 0.0000000001)
-          @selectedCurrency = window.location.hash.split('/')[2] || $scope.accounts[0].currency
-          $scope.currency = @selectedCurrency
-          ctrl.state.transitionTo("deposits.currency", {currency: @selectedCurrency})
-          ctrl.selectedCurrency = @selectedCurrency
-          ctrl.currentAction = "deposits"
           $scope.$apply()
 
       # Might have a better way

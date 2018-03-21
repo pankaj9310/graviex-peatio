@@ -30,7 +30,7 @@ signature = hmac.new(
 ).hexdigest()
 
 # 1.2 list markets
-query = 'http://134.0.111.238:8080/api/v2/markets?' + request + '&signature=' + signature
+query = 'https://graviex.net/api/v2/markets?' + request + '&signature=' + signature
 content = urllib2.urlopen(query, context=ctx).read()
 print(content)
 
@@ -52,7 +52,7 @@ signature = hmac.new(
 ).hexdigest()
 
 # 2.2 put order
-query = 'http://134.0.111.238:8080/api/v2/orders?' + request
+query = 'https://graviex.net/api/v2/orders?' + request
 result = urllib2.Request(query, urllib.urlencode({'signature' : signature})) #there is a trick - we need a POST request, thats why urlencode used
 content = urllib2.urlopen(result, context=ctx).read()
 print(content)

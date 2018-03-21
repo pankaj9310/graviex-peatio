@@ -4,9 +4,9 @@ module Admin
       load_and_authorize_resource :class => '::Withdraws::Bank'
 
       def index
-        start_at = DateTime.now.ago(60 * 60 * 24)
-        @one_banks = @banks.with_aasm_state(:accepted, :processing).order("id DESC")
-        @all_banks = @banks.without_aasm_state(:accepted, :processing).where('created_at > ?', start_at).order("id DESC")
+        start_at = DateTime.now.ago(60 * 60 * 24 * 3)
+        @one_banks = @banks.with_aasm_state(:almost_done, :processing).order("id DESC")
+        @all_banks = @banks.without_aasm_state(:almost_done, :processing).where('created_at > ?', start_at).order("id DESC")
       end
 
       def show

@@ -81,6 +81,42 @@ en:
       withdraws/ferrumcoin: Withdraw
       withdraws/peoplecoin: Withdraw
       withdraws/muncoin: Withdraw
+      withdraws/millioncoin: Withdraw
+      withdraws/alphacoin: Withdraw
+      withdraws/zelcashcoin: Withdraw
+      withdraws/amerocoin: Withdraw
+      withdraws/brofistcoin: Withdraw
+      withdraws/friendshipcoin: Withdraw
+      withdraws/salencoin: Withdraw
+      withdraws/unifiedsocietycoin: Withdraw
+      withdraws/bitspacecoin: Withdraw
+      withdraws/eotcoin: Withdraw
+      withdraws/apolloncoin: Withdraw
+      withdraws/miacoin: Withdraw
+      withdraws/krakencoin: Withdraw
+      withdraws/archimedcoin: Withdraw
+      withdraws/olympiccoin: Withdraw
+      withdraws/onzcoin: Withdraw
+      withdraws/agenacoin: Withdraw
+      withdraws/corezcoin: Withdraw
+      withdraws/enixtcoin: Withdraw
+      withdraws/stannumcoin: Withdraw
+      withdraws/quazcoin: Withdraw
+      withdraws/scrivcoin: Withdraw
+      withdraws/ethfcoin: Withdraw
+      withdraws/arepacoin: Withdraw
+      withdraws/sub1xcoin: Withdraw
+      withdraws/cheesecoin: Withdraw
+      withdraws/jiyocoin: Withdraw
+      withdraws/pyrocoin: Withdraw
+      withdraws/rovercoin: Withdraw
+      withdraws/citruscoin: Withdraw
+      withdraws/xeoncoin: Withdraw
+      withdraws/edollarcoin: Withdraw
+      withdraws/curiumcoin: Withdraw
+      withdraws/needlecoin: Withdraw
+      withdraws/zaliascoin: Withdraw
+      withdraws/protoncoin: Withdraw
       #models
     attributes:
       api_token:
@@ -590,6 +626,222 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/muncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/millioncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/alphacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zelcashcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/amerocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/brofistcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/friendshipcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/salencoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/unifiedsocietycoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bitspacecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/eotcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/apolloncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/miacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/krakencoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/archimedcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/olympiccoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/onzcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/agenacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/corezcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/enixtcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/stannumcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/quazcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/scrivcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/ethfcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/arepacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/sub1xcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/cheesecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/jiyocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/pyrocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/rovercoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/citruscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xeoncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/edollarcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/curiumcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/needlecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zaliascoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/protoncoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -1450,6 +1702,510 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/millioncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/alphacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/zelcashcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/amerocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/brofistcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/friendshipcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/salencoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/unifiedsocietycoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bitspacecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/eotcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/apolloncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/miacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/krakencoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/archimedcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/olympiccoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/onzcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/agenacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/corezcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/enixtcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/stannumcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/quazcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/scrivcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/ethfcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/arepacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/sub1xcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/cheesecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/jiyocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/pyrocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/rovercoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/citruscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xeoncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/edollarcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/curiumcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/needlecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/zaliascoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/protoncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -1618,6 +2374,78 @@ en:
               peoplecoin_invalid: Invalid Address
               muncoin_ismine: Used Address
               muncoin_invalid: Invalid Address
+              millioncoin_ismine: Used Address
+              millioncoin_invalid: Invalid Address
+              alphacoin_ismine: Used Address
+              alphacoin_invalid: Invalid Address
+              zelcashcoin_ismine: Used Address
+              zelcashcoin_invalid: Invalid Address
+              amerocoin_ismine: Used Address
+              amerocoin_invalid: Invalid Address
+              brofistcoin_ismine: Used Address
+              brofistcoin_invalid: Invalid Address
+              friendshipcoin_ismine: Used Address
+              friendshipcoin_invalid: Invalid Address
+              salencoin_ismine: Used Address
+              salencoin_invalid: Invalid Address
+              unifiedsocietycoin_ismine: Used Address
+              unifiedsocietycoin_invalid: Invalid Address
+              bitspacecoin_ismine: Used Address
+              bitspacecoin_invalid: Invalid Address
+              eotcoin_ismine: Used Address
+              eotcoin_invalid: Invalid Address
+              apolloncoin_ismine: Used Address
+              apolloncoin_invalid: Invalid Address
+              miacoin_ismine: Used Address
+              miacoin_invalid: Invalid Address
+              krakencoin_ismine: Used Address
+              krakencoin_invalid: Invalid Address
+              archimedcoin_ismine: Used Address
+              archimedcoin_invalid: Invalid Address
+              olympiccoin_ismine: Used Address
+              olympiccoin_invalid: Invalid Address
+              onzcoin_ismine: Used Address
+              onzcoin_invalid: Invalid Address
+              agenacoin_ismine: Used Address
+              agenacoin_invalid: Invalid Address
+              corezcoin_ismine: Used Address
+              corezcoin_invalid: Invalid Address
+              enixtcoin_ismine: Used Address
+              enixtcoin_invalid: Invalid Address
+              stannumcoin_ismine: Used Address
+              stannumcoin_invalid: Invalid Address
+              quazcoin_ismine: Used Address
+              quazcoin_invalid: Invalid Address
+              scrivcoin_ismine: Used Address
+              scrivcoin_invalid: Invalid Address
+              ethfcoin_ismine: Used Address
+              ethfcoin_invalid: Invalid Address
+              arepacoin_ismine: Used Address
+              arepacoin_invalid: Invalid Address
+              sub1xcoin_ismine: Used Address
+              sub1xcoin_invalid: Invalid Address
+              cheesecoin_ismine: Used Address
+              cheesecoin_invalid: Invalid Address
+              jiyocoin_ismine: Used Address
+              jiyocoin_invalid: Invalid Address
+              pyrocoin_ismine: Used Address
+              pyrocoin_invalid: Invalid Address
+              rovercoin_ismine: Used Address
+              rovercoin_invalid: Invalid Address
+              citruscoin_ismine: Used Address
+              citruscoin_invalid: Invalid Address
+              xeoncoin_ismine: Used Address
+              xeoncoin_invalid: Invalid Address
+              edollarcoin_ismine: Used Address
+              edollarcoin_invalid: Invalid Address
+              curiumcoin_ismine: Used Address
+              curiumcoin_invalid: Invalid Address
+              needlecoin_ismine: Used Address
+              needlecoin_invalid: Invalid Address
+              zaliascoin_ismine: Used Address
+              zaliascoin_invalid: Invalid Address
+              protoncoin_ismine: Used Address
+              protoncoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -1993,6 +2821,222 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/millioncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/alphacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/zelcashcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/amerocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/brofistcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/friendshipcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/salencoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/unifiedsocietycoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bitspacecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/eotcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/apolloncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/miacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/krakencoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/archimedcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/olympiccoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/onzcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/agenacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/corezcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/enixtcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/stannumcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/quazcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/scrivcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/ethfcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/arepacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/sub1xcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/cheesecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/jiyocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/pyrocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/rovercoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/citruscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xeoncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/edollarcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/curiumcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/needlecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/zaliascoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/protoncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -2099,6 +3143,42 @@ en:
       frm: FRM
       men: MEN
       mun: MUN
+      onemc: ONEMC
+      alp: ALP
+      zel: ZEL
+      amx: AMX
+      pew: PEW
+      fsc: FSC
+      sln: SLN
+      usx: USX
+      bsx: BSX
+      eot: EOT
+      xap: XAP
+      miac: MIAC
+      kc: KC
+      arhm: ARHM
+      olmp: OLMP
+      onz: ONZ
+      agn: AGN
+      crz: CRZ
+      enix: ENIX
+      snc: SNC
+      quaz: QUAZ
+      scriv: SCRIV
+      ethf: ETHF
+      arepa: AREPA
+      sub1x: SUB1X
+      cheese: CHEESE
+      jiyo: JIYO
+      pyro: PYRO
+      roe: ROE
+      citr: CITR
+      xen: XEN
+      edl: EDL
+      cru: CRU
+      ndc: NDC
+      zls: ZLS
+      proton: PROTON
       #market1
   currency:
     satoshi:
@@ -2425,6 +3505,186 @@ en:
       key: MUN
       code: MUN
       name: Muncoin
+      format: '0,0.0000'
+    millioncoin:
+      key: ONEMC
+      code: ONEMC
+      name: Millioncoin
+      format: '0,0.0000'
+    alphacoin:
+      key: ALP
+      code: ALP
+      name: Alphacoin
+      format: '0,0.0000'
+    zelcashcoin:
+      key: ZEL
+      code: ZEL
+      name: Zelcashcoin
+      format: '0,0.0000'
+    amerocoin:
+      key: AMX
+      code: AMX
+      name: Amerocoin
+      format: '0,0.0000'
+    brofistcoin:
+      key: PEW
+      code: PEW
+      name: Brofistcoin
+      format: '0,0.0000'
+    friendshipcoin:
+      key: FSC
+      code: FSC
+      name: Friendshipcoin
+      format: '0,0.0000'
+    salencoin:
+      key: SLN
+      code: SLN
+      name: Salencoin
+      format: '0,0.0000'
+    unifiedsocietycoin:
+      key: USX
+      code: USX
+      name: Unifiedsocietycoin
+      format: '0,0.0000'
+    bitspacecoin:
+      key: BSX
+      code: BSX
+      name: Bitspacecoin
+      format: '0,0.0000'
+    eotcoin:
+      key: EOT
+      code: EOT
+      name: Eotcoin
+      format: '0,0.0000'
+    apolloncoin:
+      key: XAP
+      code: XAP
+      name: Apolloncoin
+      format: '0,0.0000'
+    miacoin:
+      key: MIAC
+      code: MIAC
+      name: Miacoin
+      format: '0,0.0000'
+    krakencoin:
+      key: KC
+      code: KC
+      name: Krakencoin
+      format: '0,0.0000'
+    archimedcoin:
+      key: ARHM
+      code: ARHM
+      name: Archimedcoin
+      format: '0,0.0000'
+    olympiccoin:
+      key: OLMP
+      code: OLMP
+      name: Olympiccoin
+      format: '0,0.0000'
+    onzcoin:
+      key: ONZ
+      code: ONZ
+      name: Onzcoin
+      format: '0,0.0000'
+    agenacoin:
+      key: AGN
+      code: AGN
+      name: Agenacoin
+      format: '0,0.0000'
+    corezcoin:
+      key: CRZ
+      code: CRZ
+      name: Corezcoin
+      format: '0,0.0000'
+    enixtcoin:
+      key: ENIX
+      code: ENIX
+      name: Enixtcoin
+      format: '0,0.0000'
+    stannumcoin:
+      key: SNC
+      code: SNC
+      name: Stannumcoin
+      format: '0,0.0000'
+    quazcoin:
+      key: QUAZ
+      code: QUAZ
+      name: Quazcoin
+      format: '0,0.0000'
+    scrivcoin:
+      key: SCRIV
+      code: SCRIV
+      name: Scrivcoin
+      format: '0,0.0000'
+    ethfcoin:
+      key: ETHF
+      code: ETHF
+      name: Ethfcoin
+      format: '0,0.0000'
+    arepacoin:
+      key: AREPA
+      code: AREPA
+      name: Arepacoin
+      format: '0,0.0000'
+    sub1xcoin:
+      key: SUB1X
+      code: SUB1X
+      name: Sub1xcoin
+      format: '0,0.0000'
+    cheesecoin:
+      key: CHEESE
+      code: CHEESE
+      name: Cheesecoin
+      format: '0,0.0000'
+    jiyocoin:
+      key: JIYO
+      code: JIYO
+      name: Jiyocoin
+      format: '0,0.0000'
+    pyrocoin:
+      key: PYRO
+      code: PYRO
+      name: Pyrocoin
+      format: '0,0.0000'
+    rovercoin:
+      key: ROE
+      code: ROE
+      name: Rovercoin
+      format: '0,0.0000'
+    citruscoin:
+      key: CITR
+      code: CITR
+      name: Citruscoin
+      format: '0,0.0000'
+    xeoncoin:
+      key: XEN
+      code: XEN
+      name: Xeoncoin
+      format: '0,0.0000'
+    edollarcoin:
+      key: EDL
+      code: EDL
+      name: Edollarcoin
+      format: '0,0.0000'
+    curiumcoin:
+      key: CRU
+      code: CRU
+      name: Curiumcoin
+      format: '0,0.0000'
+    needlecoin:
+      key: NDC
+      code: NDC
+      name: Needlecoin
+      format: '0,0.0000'
+    zaliascoin:
+      key: ZLS
+      code: ZLS
+      name: Zaliascoin
+      format: '0,0.0000'
+    protoncoin:
+      key: PROTON
+      code: PROTON
+      name: Protoncoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -2992,6 +4252,258 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    millioncoin:
+      key: Block Chain
+      title: Millioncoin Deposits
+      intro: Deposit millioncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    alphacoin:
+      key: Block Chain
+      title: Alphacoin Deposits
+      intro: Deposit alphacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    zelcashcoin:
+      key: Block Chain
+      title: Zelcashcoin Deposits
+      intro: Deposit zelcashcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    amerocoin:
+      key: Block Chain
+      title: Amerocoin Deposits
+      intro: Deposit amerocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    brofistcoin:
+      key: Block Chain
+      title: Brofistcoin Deposits
+      intro: Deposit brofistcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    friendshipcoin:
+      key: Block Chain
+      title: Friendshipcoin Deposits
+      intro: Deposit friendshipcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    salencoin:
+      key: Block Chain
+      title: Salencoin Deposits
+      intro: Deposit salencoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    unifiedsocietycoin:
+      key: Block Chain
+      title: Unifiedsocietycoin Deposits
+      intro: Deposit unifiedsocietycoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bitspacecoin:
+      key: Block Chain
+      title: Bitspacecoin Deposits
+      intro: Deposit bitspacecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    eotcoin:
+      key: Block Chain
+      title: Eotcoin Deposits
+      intro: Deposit eotcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    apolloncoin:
+      key: Block Chain
+      title: Apolloncoin Deposits
+      intro: Deposit apolloncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    miacoin:
+      key: Block Chain
+      title: Miacoin Deposits
+      intro: Deposit miacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    krakencoin:
+      key: Block Chain
+      title: Krakencoin Deposits
+      intro: Deposit krakencoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    archimedcoin:
+      key: Block Chain
+      title: Archimedcoin Deposits
+      intro: Deposit archimedcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    olympiccoin:
+      key: Block Chain
+      title: Olympiccoin Deposits
+      intro: Deposit olympiccoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    onzcoin:
+      key: Block Chain
+      title: Onzcoin Deposits
+      intro: Deposit onzcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    agenacoin:
+      key: Block Chain
+      title: Agenacoin Deposits
+      intro: Deposit agenacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    corezcoin:
+      key: Block Chain
+      title: Corezcoin Deposits
+      intro: Deposit corezcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    enixtcoin:
+      key: Block Chain
+      title: Enixtcoin Deposits
+      intro: Deposit enixtcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    stannumcoin:
+      key: Block Chain
+      title: Stannumcoin Deposits
+      intro: Deposit stannumcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    quazcoin:
+      key: Block Chain
+      title: Quazcoin Deposits
+      intro: Deposit quazcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    scrivcoin:
+      key: Block Chain
+      title: Scrivcoin Deposits
+      intro: Deposit scrivcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    ethfcoin:
+      key: Block Chain
+      title: Ethfcoin Deposits
+      intro: Deposit ethfcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    arepacoin:
+      key: Block Chain
+      title: Arepacoin Deposits
+      intro: Deposit arepacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    sub1xcoin:
+      key: Block Chain
+      title: Sub1xcoin Deposits
+      intro: Deposit sub1xcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    cheesecoin:
+      key: Block Chain
+      title: Cheesecoin Deposits
+      intro: Deposit cheesecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    jiyocoin:
+      key: Block Chain
+      title: Jiyocoin Deposits
+      intro: Deposit jiyocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    pyrocoin:
+      key: Block Chain
+      title: Pyrocoin Deposits
+      intro: Deposit pyrocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    rovercoin:
+      key: Block Chain
+      title: Rovercoin Deposits
+      intro: Deposit rovercoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    citruscoin:
+      key: Block Chain
+      title: Citruscoin Deposits
+      intro: Deposit citruscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xeoncoin:
+      key: Block Chain
+      title: Xeoncoin Deposits
+      intro: Deposit xeoncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    edollarcoin:
+      key: Block Chain
+      title: Edollarcoin Deposits
+      intro: Deposit edollarcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    curiumcoin:
+      key: Block Chain
+      title: Curiumcoin Deposits
+      intro: Deposit curiumcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    needlecoin:
+      key: Block Chain
+      title: Needlecoin Deposits
+      intro: Deposit needlecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    zaliascoin:
+      key: Block Chain
+      title: Zaliascoin Deposits
+      intro: Deposit zaliascoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    protoncoin:
+      key: Block Chain
+      title: Protoncoin Deposits
+      intro: Deposit protoncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -3192,6 +4704,114 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       muncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      millioncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      alphacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zelcashcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      amerocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      brofistcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      friendshipcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      salencoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      unifiedsocietycoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bitspacecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      eotcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      apolloncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      miacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      krakencoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      archimedcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      olympiccoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      onzcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      agenacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      corezcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      enixtcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      stannumcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      quazcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      scrivcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      ethfcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      arepacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      sub1xcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      cheesecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      jiyocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      pyrocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      rovercoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      citruscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xeoncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      edollarcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      curiumcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      needlecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zaliascoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      protoncoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -4216,6 +5836,546 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      millioncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      alphacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      zelcashcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      amerocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      brofistcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      friendshipcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      salencoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      unifiedsocietycoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bitspacecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      eotcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      apolloncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      miacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      krakencoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      archimedcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      olympiccoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      onzcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      agenacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      corezcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      enixtcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      stannumcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      quazcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      scrivcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      ethfcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      arepacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      sub1xcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      cheesecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      jiyocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      pyrocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      rovercoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      citruscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xeoncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      edollarcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      curiumcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      needlecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      zaliascoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      protoncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -4347,6 +6507,42 @@ en:
         frm-assets: FRM Assets
         men-assets: MEN Assets
         mun-assets: MUN Assets
+        onemc-assets: ONEMC Assets
+        alp-assets: ALP Assets
+        zel-assets: ZEL Assets
+        amx-assets: AMX Assets
+        pew-assets: PEW Assets
+        fsc-assets: FSC Assets
+        sln-assets: SLN Assets
+        usx-assets: USX Assets
+        bsx-assets: BSX Assets
+        eot-assets: EOT Assets
+        xap-assets: XAP Assets
+        miac-assets: MIAC Assets
+        kc-assets: KC Assets
+        arhm-assets: ARHM Assets
+        olmp-assets: OLMP Assets
+        onz-assets: ONZ Assets
+        agn-assets: AGN Assets
+        crz-assets: CRZ Assets
+        enix-assets: ENIX Assets
+        snc-assets: SNC Assets
+        quaz-assets: QUAZ Assets
+        scriv-assets: SCRIV Assets
+        ethf-assets: ETHF Assets
+        arepa-assets: AREPA Assets
+        sub1x-assets: SUB1X Assets
+        cheese-assets: CHEESE Assets
+        jiyo-assets: JIYO Assets
+        pyro-assets: PYRO Assets
+        roe-assets: ROE Assets
+        citr-assets: CITR Assets
+        xen-assets: XEN Assets
+        edl-assets: EDL Assets
+        cru-assets: CRU Assets
+        ndc-assets: NDC Assets
+        zls-assets: ZLS Assets
+        proton-assets: PROTON Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -4410,6 +6606,42 @@ en:
         verify-frm: Verify My FRM Assets
         verify-men: Verify My MEN Assets
         verify-mun: Verify My MUN Assets
+        verify-onemc: Verify My ONEMC Assets
+        verify-alp: Verify My ALP Assets
+        verify-zel: Verify My ZEL Assets
+        verify-amx: Verify My AMX Assets
+        verify-pew: Verify My PEW Assets
+        verify-fsc: Verify My FSC Assets
+        verify-sln: Verify My SLN Assets
+        verify-usx: Verify My USX Assets
+        verify-bsx: Verify My BSX Assets
+        verify-eot: Verify My EOT Assets
+        verify-xap: Verify My XAP Assets
+        verify-miac: Verify My MIAC Assets
+        verify-kc: Verify My KC Assets
+        verify-arhm: Verify My ARHM Assets
+        verify-olmp: Verify My OLMP Assets
+        verify-onz: Verify My ONZ Assets
+        verify-agn: Verify My AGN Assets
+        verify-crz: Verify My CRZ Assets
+        verify-enix: Verify My ENIX Assets
+        verify-snc: Verify My SNC Assets
+        verify-quaz: Verify My QUAZ Assets
+        verify-scriv: Verify My SCRIV Assets
+        verify-ethf: Verify My ETHF Assets
+        verify-arepa: Verify My AREPA Assets
+        verify-sub1x: Verify My SUB1X Assets
+        verify-cheese: Verify My CHEESE Assets
+        verify-jiyo: Verify My JIYO Assets
+        verify-pyro: Verify My PYRO Assets
+        verify-roe: Verify My ROE Assets
+        verify-citr: Verify My CITR Assets
+        verify-xen: Verify My XEN Assets
+        verify-edl: Verify My EDL Assets
+        verify-cru: Verify My CRU Assets
+        verify-ndc: Verify My NDC Assets
+        verify-zls: Verify My ZLS Assets
+        verify-proton: Verify My PROTON Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -4472,6 +6704,42 @@ en:
         frm-assets-total: 'Total FRM assets of exchange: '
         men-assets-total: 'Total MEN assets of exchange: '
         mun-assets-total: 'Total MUN assets of exchange: '
+        onemc-assets-total: 'Total ONEMC assets of exchange: '
+        alp-assets-total: 'Total ALP assets of exchange: '
+        zel-assets-total: 'Total ZEL assets of exchange: '
+        amx-assets-total: 'Total AMX assets of exchange: '
+        pew-assets-total: 'Total PEW assets of exchange: '
+        fsc-assets-total: 'Total FSC assets of exchange: '
+        sln-assets-total: 'Total SLN assets of exchange: '
+        usx-assets-total: 'Total USX assets of exchange: '
+        bsx-assets-total: 'Total BSX assets of exchange: '
+        eot-assets-total: 'Total EOT assets of exchange: '
+        xap-assets-total: 'Total XAP assets of exchange: '
+        miac-assets-total: 'Total MIAC assets of exchange: '
+        kc-assets-total: 'Total KC assets of exchange: '
+        arhm-assets-total: 'Total ARHM assets of exchange: '
+        olmp-assets-total: 'Total OLMP assets of exchange: '
+        onz-assets-total: 'Total ONZ assets of exchange: '
+        agn-assets-total: 'Total AGN assets of exchange: '
+        crz-assets-total: 'Total CRZ assets of exchange: '
+        enix-assets-total: 'Total ENIX assets of exchange: '
+        snc-assets-total: 'Total SNC assets of exchange: '
+        quaz-assets-total: 'Total QUAZ assets of exchange: '
+        scriv-assets-total: 'Total SCRIV assets of exchange: '
+        ethf-assets-total: 'Total ETHF assets of exchange: '
+        arepa-assets-total: 'Total AREPA assets of exchange: '
+        sub1x-assets-total: 'Total SUB1X assets of exchange: '
+        cheese-assets-total: 'Total CHEESE assets of exchange: '
+        jiyo-assets-total: 'Total JIYO assets of exchange: '
+        pyro-assets-total: 'Total PYRO assets of exchange: '
+        roe-assets-total: 'Total ROE assets of exchange: '
+        citr-assets-total: 'Total CITR assets of exchange: '
+        xen-assets-total: 'Total XEN assets of exchange: '
+        edl-assets-total: 'Total EDL assets of exchange: '
+        cru-assets-total: 'Total CRU assets of exchange: '
+        ndc-assets-total: 'Total NDC assets of exchange: '
+        zls-assets-total: 'Total ZLS assets of exchange: '
+        proton-assets-total: 'Total PROTON assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -4794,6 +7062,186 @@ en:
         intro: All of exchange's MUN assets are listed here.
         total: Total MUN Assets
         address: Address
+      onemc_assets:
+        title: ONEMC Assets
+        intro: All of exchange's ONEMC assets are listed here.
+        total: Total ONEMC Assets
+        address: Address
+      alp_assets:
+        title: ALP Assets
+        intro: All of exchange's ALP assets are listed here.
+        total: Total ALP Assets
+        address: Address
+      zel_assets:
+        title: ZEL Assets
+        intro: All of exchange's ZEL assets are listed here.
+        total: Total ZEL Assets
+        address: Address
+      amx_assets:
+        title: AMX Assets
+        intro: All of exchange's AMX assets are listed here.
+        total: Total AMX Assets
+        address: Address
+      pew_assets:
+        title: PEW Assets
+        intro: All of exchange's PEW assets are listed here.
+        total: Total PEW Assets
+        address: Address
+      fsc_assets:
+        title: FSC Assets
+        intro: All of exchange's FSC assets are listed here.
+        total: Total FSC Assets
+        address: Address
+      sln_assets:
+        title: SLN Assets
+        intro: All of exchange's SLN assets are listed here.
+        total: Total SLN Assets
+        address: Address
+      usx_assets:
+        title: USX Assets
+        intro: All of exchange's USX assets are listed here.
+        total: Total USX Assets
+        address: Address
+      bsx_assets:
+        title: BSX Assets
+        intro: All of exchange's BSX assets are listed here.
+        total: Total BSX Assets
+        address: Address
+      eot_assets:
+        title: EOT Assets
+        intro: All of exchange's EOT assets are listed here.
+        total: Total EOT Assets
+        address: Address
+      xap_assets:
+        title: XAP Assets
+        intro: All of exchange's XAP assets are listed here.
+        total: Total XAP Assets
+        address: Address
+      miac_assets:
+        title: MIAC Assets
+        intro: All of exchange's MIAC assets are listed here.
+        total: Total MIAC Assets
+        address: Address
+      kc_assets:
+        title: KC Assets
+        intro: All of exchange's KC assets are listed here.
+        total: Total KC Assets
+        address: Address
+      arhm_assets:
+        title: ARHM Assets
+        intro: All of exchange's ARHM assets are listed here.
+        total: Total ARHM Assets
+        address: Address
+      olmp_assets:
+        title: OLMP Assets
+        intro: All of exchange's OLMP assets are listed here.
+        total: Total OLMP Assets
+        address: Address
+      onz_assets:
+        title: ONZ Assets
+        intro: All of exchange's ONZ assets are listed here.
+        total: Total ONZ Assets
+        address: Address
+      agn_assets:
+        title: AGN Assets
+        intro: All of exchange's AGN assets are listed here.
+        total: Total AGN Assets
+        address: Address
+      crz_assets:
+        title: CRZ Assets
+        intro: All of exchange's CRZ assets are listed here.
+        total: Total CRZ Assets
+        address: Address
+      enix_assets:
+        title: ENIX Assets
+        intro: All of exchange's ENIX assets are listed here.
+        total: Total ENIX Assets
+        address: Address
+      snc_assets:
+        title: SNC Assets
+        intro: All of exchange's SNC assets are listed here.
+        total: Total SNC Assets
+        address: Address
+      quaz_assets:
+        title: QUAZ Assets
+        intro: All of exchange's QUAZ assets are listed here.
+        total: Total QUAZ Assets
+        address: Address
+      scriv_assets:
+        title: SCRIV Assets
+        intro: All of exchange's SCRIV assets are listed here.
+        total: Total SCRIV Assets
+        address: Address
+      ethf_assets:
+        title: ETHF Assets
+        intro: All of exchange's ETHF assets are listed here.
+        total: Total ETHF Assets
+        address: Address
+      arepa_assets:
+        title: AREPA Assets
+        intro: All of exchange's AREPA assets are listed here.
+        total: Total AREPA Assets
+        address: Address
+      sub1x_assets:
+        title: SUB1X Assets
+        intro: All of exchange's SUB1X assets are listed here.
+        total: Total SUB1X Assets
+        address: Address
+      cheese_assets:
+        title: CHEESE Assets
+        intro: All of exchange's CHEESE assets are listed here.
+        total: Total CHEESE Assets
+        address: Address
+      jiyo_assets:
+        title: JIYO Assets
+        intro: All of exchange's JIYO assets are listed here.
+        total: Total JIYO Assets
+        address: Address
+      pyro_assets:
+        title: PYRO Assets
+        intro: All of exchange's PYRO assets are listed here.
+        total: Total PYRO Assets
+        address: Address
+      roe_assets:
+        title: ROE Assets
+        intro: All of exchange's ROE assets are listed here.
+        total: Total ROE Assets
+        address: Address
+      citr_assets:
+        title: CITR Assets
+        intro: All of exchange's CITR assets are listed here.
+        total: Total CITR Assets
+        address: Address
+      xen_assets:
+        title: XEN Assets
+        intro: All of exchange's XEN assets are listed here.
+        total: Total XEN Assets
+        address: Address
+      edl_assets:
+        title: EDL Assets
+        intro: All of exchange's EDL assets are listed here.
+        total: Total EDL Assets
+        address: Address
+      cru_assets:
+        title: CRU Assets
+        intro: All of exchange's CRU assets are listed here.
+        total: Total CRU Assets
+        address: Address
+      ndc_assets:
+        title: NDC Assets
+        intro: All of exchange's NDC assets are listed here.
+        total: Total NDC Assets
+        address: Address
+      zls_assets:
+        title: ZLS Assets
+        intro: All of exchange's ZLS assets are listed here.
+        total: Total ZLS Assets
+        address: Address
+      proton_assets:
+        title: PROTON Assets
+        intro: All of exchange's PROTON assets are listed here.
+        total: Total PROTON Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -4870,6 +7318,42 @@ en:
         frm_format: '0.00000000'
         men_format: '0.00000000'
         mun_format: '0.00000000'
+        onemc_format: '0.00000000'
+        alp_format: '0.00000000'
+        zel_format: '0.00000000'
+        amx_format: '0.00000000'
+        pew_format: '0.00000000'
+        fsc_format: '0.00000000'
+        sln_format: '0.00000000'
+        usx_format: '0.00000000'
+        bsx_format: '0.00000000'
+        eot_format: '0.00000000'
+        xap_format: '0.00000000'
+        miac_format: '0.00000000'
+        kc_format: '0.00000000'
+        arhm_format: '0.00000000'
+        olmp_format: '0.00000000'
+        onz_format: '0.00000000'
+        agn_format: '0.00000000'
+        crz_format: '0.00000000'
+        enix_format: '0.00000000'
+        snc_format: '0.00000000'
+        quaz_format: '0.00000000'
+        scriv_format: '0.00000000'
+        ethf_format: '0.00000000'
+        arepa_format: '0.00000000'
+        sub1x_format: '0.00000000'
+        cheese_format: '0.00000000'
+        jiyo_format: '0.00000000'
+        pyro_format: '0.00000000'
+        roe_format: '0.00000000'
+        citr_format: '0.00000000'
+        xen_format: '0.00000000'
+        edl_format: '0.00000000'
+        cru_format: '0.00000000'
+        ndc_format: '0.00000000'
+        zls_format: '0.00000000'
+        proton_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -5244,6 +7728,222 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          onemc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          alp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zel:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          amx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pew:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          fsc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          sln:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          usx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bsx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          eot:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xap:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          miac:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          kc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          arhm:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          olmp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          onz:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          agn:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          crz:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          enix:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          snc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          quaz:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          scriv:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ethf:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          arepa:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          sub1x:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          cheese:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          jiyo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pyro:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          roe:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          citr:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xen:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          edl:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          cru:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ndc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zls:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          proton:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -5350,6 +8050,42 @@ en:
         frm_html: "<i class='fa fa-check'></i><span>FRM Markets</span>"
         men_html: "<i class='fa fa-check'></i><span>MEN Markets</span>"
         mun_html: "<i class='fa fa-check'></i><span>MUN Markets</span>"
+        onemc_html: "<i class='fa fa-check'></i><span>ONEMC Markets</span>"
+        alp_html: "<i class='fa fa-check'></i><span>ALP Markets</span>"
+        zel_html: "<i class='fa fa-check'></i><span>ZEL Markets</span>"
+        amx_html: "<i class='fa fa-check'></i><span>AMX Markets</span>"
+        pew_html: "<i class='fa fa-check'></i><span>PEW Markets</span>"
+        fsc_html: "<i class='fa fa-check'></i><span>FSC Markets</span>"
+        sln_html: "<i class='fa fa-check'></i><span>SLN Markets</span>"
+        usx_html: "<i class='fa fa-check'></i><span>USX Markets</span>"
+        bsx_html: "<i class='fa fa-check'></i><span>BSX Markets</span>"
+        eot_html: "<i class='fa fa-check'></i><span>EOT Markets</span>"
+        xap_html: "<i class='fa fa-check'></i><span>XAP Markets</span>"
+        miac_html: "<i class='fa fa-check'></i><span>MIAC Markets</span>"
+        kc_html: "<i class='fa fa-check'></i><span>KC Markets</span>"
+        arhm_html: "<i class='fa fa-check'></i><span>ARHM Markets</span>"
+        olmp_html: "<i class='fa fa-check'></i><span>OLMP Markets</span>"
+        onz_html: "<i class='fa fa-check'></i><span>ONZ Markets</span>"
+        agn_html: "<i class='fa fa-check'></i><span>AGN Markets</span>"
+        crz_html: "<i class='fa fa-check'></i><span>CRZ Markets</span>"
+        enix_html: "<i class='fa fa-check'></i><span>ENIX Markets</span>"
+        snc_html: "<i class='fa fa-check'></i><span>SNC Markets</span>"
+        quaz_html: "<i class='fa fa-check'></i><span>QUAZ Markets</span>"
+        scriv_html: "<i class='fa fa-check'></i><span>SCRIV Markets</span>"
+        ethf_html: "<i class='fa fa-check'></i><span>ETHF Markets</span>"
+        arepa_html: "<i class='fa fa-check'></i><span>AREPA Markets</span>"
+        sub1x_html: "<i class='fa fa-check'></i><span>SUB1X Markets</span>"
+        cheese_html: "<i class='fa fa-check'></i><span>CHEESE Markets</span>"
+        jiyo_html: "<i class='fa fa-check'></i><span>JIYO Markets</span>"
+        pyro_html: "<i class='fa fa-check'></i><span>PYRO Markets</span>"
+        roe_html: "<i class='fa fa-check'></i><span>ROE Markets</span>"
+        citr_html: "<i class='fa fa-check'></i><span>CITR Markets</span>"
+        xen_html: "<i class='fa fa-check'></i><span>XEN Markets</span>"
+        edl_html: "<i class='fa fa-check'></i><span>EDL Markets</span>"
+        cru_html: "<i class='fa fa-check'></i><span>CRU Markets</span>"
+        ndc_html: "<i class='fa fa-check'></i><span>NDC Markets</span>"
+        zls_html: "<i class='fa fa-check'></i><span>ZLS Markets</span>"
+        proton_html: "<i class='fa fa-check'></i><span>PROTON Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -5606,6 +8342,42 @@ en:
         frm_format: '0.00000000'
         men_format: '0.00000000'
         mun_format: '0.00000000'
+        onemc_format: '0.00000000'
+        alp_format: '0.00000000'
+        zel_format: '0.00000000'
+        amx_format: '0.00000000'
+        pew_format: '0.00000000'
+        fsc_format: '0.00000000'
+        sln_format: '0.00000000'
+        usx_format: '0.00000000'
+        bsx_format: '0.00000000'
+        eot_format: '0.00000000'
+        xap_format: '0.00000000'
+        miac_format: '0.00000000'
+        kc_format: '0.00000000'
+        arhm_format: '0.00000000'
+        olmp_format: '0.00000000'
+        onz_format: '0.00000000'
+        agn_format: '0.00000000'
+        crz_format: '0.00000000'
+        enix_format: '0.00000000'
+        snc_format: '0.00000000'
+        quaz_format: '0.00000000'
+        scriv_format: '0.00000000'
+        ethf_format: '0.00000000'
+        arepa_format: '0.00000000'
+        sub1x_format: '0.00000000'
+        cheese_format: '0.00000000'
+        jiyo_format: '0.00000000'
+        pyro_format: '0.00000000'
+        roe_format: '0.00000000'
+        citr_format: '0.00000000'
+        xen_format: '0.00000000'
+        edl_format: '0.00000000'
+        cru_format: '0.00000000'
+        ndc_format: '0.00000000'
+        zls_format: '0.00000000'
+        proton_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -5895,6 +8667,114 @@ en:
         muncoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        millioncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        alphacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        zelcashcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        amerocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        brofistcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        friendshipcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        salencoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        unifiedsocietycoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bitspacecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        eotcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        apolloncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        miacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        krakencoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        archimedcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        olympiccoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        onzcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        agenacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        corezcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        enixtcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        stannumcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        quazcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        scrivcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        ethfcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        arepacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        sub1xcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        cheesecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        jiyocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        pyrocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        rovercoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        citruscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xeoncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        edollarcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        curiumcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        needlecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        zaliascoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        protoncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -6045,6 +8925,78 @@ en:
         peoplecoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         muncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        millioncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        alphacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zelcashcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        amerocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        brofistcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        friendshipcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        salencoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        unifiedsocietycoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bitspacecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        eotcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        apolloncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        miacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        krakencoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        archimedcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        olympiccoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        onzcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        agenacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        corezcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        enixtcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        stannumcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        quazcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        scrivcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        ethfcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        arepacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        sub1xcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        cheesecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        jiyocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        pyrocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        rovercoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        citruscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xeoncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        edollarcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        curiumcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        needlecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zaliascoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        protoncoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -6516,6 +9468,258 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        millioncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Millioncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        alphacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Alphacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        zelcashcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zelcashcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        amerocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Amerocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        brofistcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Brofistcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        friendshipcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Friendshipcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        salencoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Salencoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        unifiedsocietycoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Unifiedsocietycoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bitspacecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bitspacecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        eotcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Eotcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        apolloncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Apolloncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        miacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Miacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        krakencoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Krakencoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        archimedcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Archimedcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        olympiccoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Olympiccoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        onzcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Onzcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        agenacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Agenacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        corezcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Corezcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        enixtcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Enixtcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        stannumcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Stannumcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        quazcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Quazcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        scrivcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Scrivcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        ethfcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Ethfcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        arepacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Arepacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        sub1xcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Sub1xcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        cheesecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Cheesecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        jiyocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Jiyocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        pyrocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Pyrocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        rovercoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Rovercoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        citruscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Citruscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xeoncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xeoncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        edollarcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Edollarcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        curiumcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Curiumcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        needlecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Needlecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        zaliascoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zaliascoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        protoncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Protoncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -6898,6 +10102,222 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
+      millioncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      alphacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zelcashcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      amerocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      brofistcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      friendshipcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      salencoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      unifiedsocietycoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bitspacecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      eotcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      apolloncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      miacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      krakencoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      archimedcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      olympiccoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      onzcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      agenacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      corezcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      enixtcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      stannumcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      quazcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      scrivcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      ethfcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      arepacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      sub1xcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      cheesecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      jiyocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      pyrocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      rovercoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      citruscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xeoncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      edollarcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      curiumcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      needlecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zaliascoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      protoncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
       #admin_deposits
     tickets:
       view: View
@@ -6975,7 +10395,7 @@ en:
       satoshis:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -6987,7 +10407,7 @@ en:
       gravios:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -6999,7 +10419,7 @@ en:
       ltcs:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7011,7 +10431,7 @@ en:
       doges:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7023,7 +10443,7 @@ en:
       ethers:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7035,7 +10455,7 @@ en:
       poseidons:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7047,7 +10467,7 @@ en:
       profithunters:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7059,7 +10479,7 @@ en:
       xgoldcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7071,7 +10491,7 @@ en:
       deviants:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7083,7 +10503,7 @@ en:
       phoboscoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7095,7 +10515,7 @@ en:
       dineros:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7107,7 +10527,7 @@ en:
       advances:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7119,7 +10539,7 @@ en:
       dv7coins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7131,7 +10551,7 @@ en:
       shekels:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7143,7 +10563,7 @@ en:
       argos:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7155,7 +10575,7 @@ en:
       escrows:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7167,7 +10587,7 @@ en:
       neetcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7179,7 +10599,7 @@ en:
       xylos:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7191,7 +10611,7 @@ en:
       steepcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7203,7 +10623,7 @@ en:
       bitcoingreens:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7215,7 +10635,7 @@ en:
       craftrs:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7227,7 +10647,7 @@ en:
       enviromints:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7239,7 +10659,7 @@ en:
       snowgems:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7251,7 +10671,7 @@ en:
       newyorkcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7263,7 +10683,7 @@ en:
       zeroonecoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7275,7 +10695,7 @@ en:
       bitcoinzs:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7287,7 +10707,7 @@ en:
       yentens:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7299,7 +10719,7 @@ en:
       yicoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7311,7 +10731,7 @@ en:
       tulipcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7323,7 +10743,7 @@ en:
       pawcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7335,7 +10755,7 @@ en:
       stronghands:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7347,7 +10767,7 @@ en:
       lemanums:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7359,7 +10779,7 @@ en:
       keycos:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7371,7 +10791,7 @@ en:
       absolutes:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7383,7 +10803,7 @@ en:
       suppocoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7395,7 +10815,7 @@ en:
       lindas:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7407,7 +10827,7 @@ en:
       highcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7419,7 +10839,7 @@ en:
       blisscoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7431,7 +10851,7 @@ en:
       tokyos:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7443,7 +10863,7 @@ en:
       elleriumcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7455,7 +10875,7 @@ en:
       zexcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7467,7 +10887,7 @@ en:
       rulitecoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7479,7 +10899,7 @@ en:
       luckybits:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7491,7 +10911,7 @@ en:
       instacashcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7503,7 +10923,7 @@ en:
       mambocoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7515,7 +10935,7 @@ en:
       phantomxcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7527,7 +10947,7 @@ en:
       mixcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7539,7 +10959,7 @@ en:
       kredscoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7551,7 +10971,7 @@ en:
       bankittcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7563,7 +10983,7 @@ en:
       snxcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7575,7 +10995,7 @@ en:
       girocoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7587,7 +11007,7 @@ en:
       onexcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7599,7 +11019,7 @@ en:
       pushicoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7611,7 +11031,7 @@ en:
       virtuscoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7623,7 +11043,7 @@ en:
       zacacoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7635,7 +11055,7 @@ en:
       xhimeracoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7647,7 +11067,7 @@ en:
       xarucoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7659,7 +11079,7 @@ en:
       rupayacoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7671,7 +11091,7 @@ en:
       ferrumcoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7683,7 +11103,7 @@ en:
       peoplecoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -7695,7 +11115,439 @@ en:
       muncoins:
         index:
           one: Pending withdrawals
-          all: Last 24 hours
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      millioncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      alphacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      zelcashcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      amerocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      brofistcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      friendshipcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      salencoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      unifiedsocietycoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bitspacecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      eotcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      apolloncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      miacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      krakencoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      archimedcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      olympiccoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      onzcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      agenacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      corezcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      enixtcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      stannumcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      quazcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      scrivcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      ethfcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      arepacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      sub1xcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      cheesecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      jiyocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      pyrocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      rovercoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      citruscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xeoncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      edollarcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      curiumcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      needlecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      zaliascoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      protoncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
           empty: No data
         show:
           process: Accepted
@@ -8066,6 +11918,222 @@ en:
       checked: Checked
       warning: Warning
   deposits/muncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/millioncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/alphacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zelcashcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/amerocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/brofistcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/friendshipcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/salencoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/unifiedsocietycoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bitspacecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/eotcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/apolloncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/miacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/krakencoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/archimedcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/olympiccoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/onzcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/agenacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/corezcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/enixtcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/stannumcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/quazcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/scrivcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/ethfcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/arepacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/sub1xcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/cheesecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/jiyocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/pyrocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/rovercoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/citruscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xeoncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/edollarcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/curiumcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/needlecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zaliascoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/protoncoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -8617,6 +12685,294 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    millioncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    alphacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    zelcashcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    amerocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    brofistcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    friendshipcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    salencoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    unifiedsocietycoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bitspacecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    eotcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    apolloncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    miacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    krakencoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    archimedcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    olympiccoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    onzcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    agenacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    corezcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    enixtcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    stannumcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    quazcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    scrivcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    ethfcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    arepacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    sub1xcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    cheesecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    jiyocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    pyrocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    rovercoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    citruscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xeoncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    edollarcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    curiumcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    needlecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    zaliascoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    protoncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -8709,6 +13065,42 @@ en:
       frm: FRM
       men: MEN
       mun: MUN
+      onemc: ONEMC
+      alp: ALP
+      zel: ZEL
+      amx: AMX
+      pew: PEW
+      fsc: FSC
+      sln: SLN
+      usx: USX
+      bsx: BSX
+      eot: EOT
+      xap: XAP
+      miac: MIAC
+      kc: KC
+      arhm: ARHM
+      olmp: OLMP
+      onz: ONZ
+      agn: AGN
+      crz: CRZ
+      enix: ENIX
+      snc: SNC
+      quaz: QUAZ
+      scriv: SCRIV
+      ethf: ETHF
+      arepa: AREPA
+      sub1x: SUB1X
+      cheese: CHEESE
+      jiyo: JIYO
+      pyro: PYRO
+      roe: ROE
+      citr: CITR
+      xen: XEN
+      edl: EDL
+      cru: CRU
+      ndc: NDC
+      zls: ZLS
+      proton: PROTON
       #enum_currence
     order:
       state:
@@ -8796,6 +13188,42 @@ en:
         ferrumcoin: Ferrumcoin
         peoplecoin: Peoplecoin
         muncoin: Muncoin
+        millioncoin: Millioncoin
+        alphacoin: Alphacoin
+        zelcashcoin: Zelcashcoin
+        amerocoin: Amerocoin
+        brofistcoin: Brofistcoin
+        friendshipcoin: Friendshipcoin
+        salencoin: Salencoin
+        unifiedsocietycoin: Unifiedsocietycoin
+        bitspacecoin: Bitspacecoin
+        eotcoin: Eotcoin
+        apolloncoin: Apolloncoin
+        miacoin: Miacoin
+        krakencoin: Krakencoin
+        archimedcoin: Archimedcoin
+        olympiccoin: Olympiccoin
+        onzcoin: Onzcoin
+        agenacoin: Agenacoin
+        corezcoin: Corezcoin
+        enixtcoin: Enixtcoin
+        stannumcoin: Stannumcoin
+        quazcoin: Quazcoin
+        scrivcoin: Scrivcoin
+        ethfcoin: Ethfcoin
+        arepacoin: Arepacoin
+        sub1xcoin: Sub1xcoin
+        cheesecoin: Cheesecoin
+        jiyocoin: Jiyocoin
+        pyrocoin: Pyrocoin
+        rovercoin: Rovercoin
+        citruscoin: Citruscoin
+        xeoncoin: Xeoncoin
+        edollarcoin: Edollarcoin
+        curiumcoin: Curiumcoin
+        needlecoin: Needlecoin
+        zaliascoin: Zaliascoin
+        protoncoin: Protoncoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -8856,7 +13284,8 @@ en:
       verified: 'Your phone number verified: %{phone_number}'
     auth_rejected:
       subject: "[GRAVIEX] Account verification - REJECTED"
-      auth_rejected: You do not had passed verification procedure. Please, make correct photo of your ID Document and recognizable selfie with ID Document and fill the appropriate fields in Account Verification form.
+      auth_rejected: Sorry to inform but you have not passed the verification procedure at Graviex Exchange service. Please, note that the successful verification procedure demands a correct photo of your ID Document and your recognizable selfie with ID Document in hands. Also you should  fill the appropriate fields in the Account Verification form. 
+        If you have not applied for the verification, please, contact us ASAP.
     auth_approved:
       subject: "[GRAVIEX] Your account is Verified!"
       auth_approved: Account verification procedure completed successfully.
@@ -9699,6 +14128,258 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
+    millioncoin:
+      key: Blockchain
+      title: Millioncoin Blockchain
+      intro: Withdraw Millioncoin to your own Millioncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    alphacoin:
+      key: Blockchain
+      title: Alphacoin Blockchain
+      intro: Withdraw Alphacoin to your own Alphacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    zelcashcoin:
+      key: Blockchain
+      title: Zelcashcoin Blockchain
+      intro: Withdraw Zelcashcoin to your own Zelcashcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    amerocoin:
+      key: Blockchain
+      title: Amerocoin Blockchain
+      intro: Withdraw Amerocoin to your own Amerocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    brofistcoin:
+      key: Blockchain
+      title: Brofistcoin Blockchain
+      intro: Withdraw Brofistcoin to your own Brofistcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    friendshipcoin:
+      key: Blockchain
+      title: Friendshipcoin Blockchain
+      intro: Withdraw Friendshipcoin to your own Friendshipcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    salencoin:
+      key: Blockchain
+      title: Salencoin Blockchain
+      intro: Withdraw Salencoin to your own Salencoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    unifiedsocietycoin:
+      key: Blockchain
+      title: Unifiedsocietycoin Blockchain
+      intro: Withdraw Unifiedsocietycoin to your own Unifiedsocietycoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bitspacecoin:
+      key: Blockchain
+      title: Bitspacecoin Blockchain
+      intro: Withdraw Bitspacecoin to your own Bitspacecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    eotcoin:
+      key: Blockchain
+      title: Eotcoin Blockchain
+      intro: Withdraw Eotcoin to your own Eotcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    apolloncoin:
+      key: Blockchain
+      title: Apolloncoin Blockchain
+      intro: Withdraw Apolloncoin to your own Apolloncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    miacoin:
+      key: Blockchain
+      title: Miacoin Blockchain
+      intro: Withdraw Miacoin to your own Miacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    krakencoin:
+      key: Blockchain
+      title: Krakencoin Blockchain
+      intro: Withdraw Krakencoin to your own Krakencoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    archimedcoin:
+      key: Blockchain
+      title: Archimedcoin Blockchain
+      intro: Withdraw Archimedcoin to your own Archimedcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    olympiccoin:
+      key: Blockchain
+      title: Olympiccoin Blockchain
+      intro: Withdraw Olympiccoin to your own Olympiccoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    onzcoin:
+      key: Blockchain
+      title: Onzcoin Blockchain
+      intro: Withdraw Onzcoin to your own Onzcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    agenacoin:
+      key: Blockchain
+      title: Agenacoin Blockchain
+      intro: Withdraw Agenacoin to your own Agenacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    corezcoin:
+      key: Blockchain
+      title: Corezcoin Blockchain
+      intro: Withdraw Corezcoin to your own Corezcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    enixtcoin:
+      key: Blockchain
+      title: Enixtcoin Blockchain
+      intro: Withdraw Enixtcoin to your own Enixtcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    stannumcoin:
+      key: Blockchain
+      title: Stannumcoin Blockchain
+      intro: Withdraw Stannumcoin to your own Stannumcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    quazcoin:
+      key: Blockchain
+      title: Quazcoin Blockchain
+      intro: Withdraw Quazcoin to your own Quazcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    scrivcoin:
+      key: Blockchain
+      title: Scrivcoin Blockchain
+      intro: Withdraw Scrivcoin to your own Scrivcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    ethfcoin:
+      key: Blockchain
+      title: Ethfcoin Blockchain
+      intro: Withdraw Ethfcoin to your own Ethfcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    arepacoin:
+      key: Blockchain
+      title: Arepacoin Blockchain
+      intro: Withdraw Arepacoin to your own Arepacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    sub1xcoin:
+      key: Blockchain
+      title: Sub1xcoin Blockchain
+      intro: Withdraw Sub1xcoin to your own Sub1xcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    cheesecoin:
+      key: Blockchain
+      title: Cheesecoin Blockchain
+      intro: Withdraw Cheesecoin to your own Cheesecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    jiyocoin:
+      key: Blockchain
+      title: Jiyocoin Blockchain
+      intro: Withdraw Jiyocoin to your own Jiyocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    pyrocoin:
+      key: Blockchain
+      title: Pyrocoin Blockchain
+      intro: Withdraw Pyrocoin to your own Pyrocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    rovercoin:
+      key: Blockchain
+      title: Rovercoin Blockchain
+      intro: Withdraw Rovercoin to your own Rovercoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    citruscoin:
+      key: Blockchain
+      title: Citruscoin Blockchain
+      intro: Withdraw Citruscoin to your own Citruscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xeoncoin:
+      key: Blockchain
+      title: Xeoncoin Blockchain
+      intro: Withdraw Xeoncoin to your own Xeoncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    edollarcoin:
+      key: Blockchain
+      title: Edollarcoin Blockchain
+      intro: Withdraw Edollarcoin to your own Edollarcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    curiumcoin:
+      key: Blockchain
+      title: Curiumcoin Blockchain
+      intro: Withdraw Curiumcoin to your own Curiumcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    needlecoin:
+      key: Blockchain
+      title: Needlecoin Blockchain
+      intro: Withdraw Needlecoin to your own Needlecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    zaliascoin:
+      key: Blockchain
+      title: Zaliascoin Blockchain
+      intro: Withdraw Zaliascoin to your own Zaliascoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    protoncoin:
+      key: Blockchain
+      title: Protoncoin Blockchain
+      intro: Withdraw Protoncoin to your own Protoncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
     #withdraw_channel
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
@@ -10435,6 +15116,438 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/muncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/millioncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/alphacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zelcashcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/amerocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/brofistcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/friendshipcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/salencoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/unifiedsocietycoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bitspacecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/eotcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/apolloncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/miacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/krakencoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/archimedcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/olympiccoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/onzcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/agenacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/corezcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/enixtcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/stannumcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/quazcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/scrivcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/ethfcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/arepacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/sub1xcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/cheesecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/jiyocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/pyrocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/rovercoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/citruscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xeoncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/edollarcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/curiumcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/needlecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zaliascoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/protoncoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

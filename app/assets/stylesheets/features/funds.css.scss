@@ -94,7 +94,8 @@
   }
   .currency-logo {
     text-align: center;
-    width: 20%;
+    max-width: 90px;
+    min-width: 90px;
     img {
       max-height: 32px;
       max-width: 32px;
@@ -108,7 +109,8 @@
     }
     .currency-state {
       text-align: center;
-      width: 40%;
+      max-width: 16px;
+      max-height: 16px;
       padding: 3px 0px 0;
       img {
         max-height: 12px;

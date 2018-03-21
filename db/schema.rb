@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180220125955) do
+ActiveRecord::Schema.define(version: 20180413201518) do
 
   create_table "account_versions", force: true do |t|
     t.integer  "member_id"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.decimal  "in",                              precision: 32, scale: 16
     t.decimal  "out",                             precision: 32, scale: 16
     t.integer  "default_withdraw_fund_source_id"
+    t.string   "default_address"
   end
 
   add_index "accounts", ["member_id", "currency"], name: "index_accounts_on_member_id_and_currency", using: :btree
@@ -109,6 +110,19 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.datetime "updated_at"
   end
 
+  create_table "currencies_summary", force: true do |t|
+    t.string   "currency"
+    t.decimal  "locked",     precision: 32, scale: 16
+    t.decimal  "balance",    precision: 32, scale: 16
+    t.decimal  "hot",        precision: 32, scale: 16
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "slice"
+  end
+
+  add_index "currencies_summary", ["created_at"], name: "index_currencies_summary_on_created_at", using: :btree
+  add_index "currencies_summary", ["slice"], name: "index_currencies_summary_on_slice", using: :btree
+
   create_table "deposits", force: true do |t|
     t.integer  "account_id"
     t.integer  "member_id"
@@ -129,7 +143,7 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.integer  "txout"
   end
 
-  add_index "deposits", ["txid", "txout"], name: "index_deposits_on_txid_and_txout", using: :btree
+  add_index "deposits", ["txid", "txout"], name: "index_deposits_on_txid_and_txout", unique: true, using: :btree
 
   create_table "document_translations", force: true do |t|
     t.integer  "document_id", null: false
@@ -311,7 +325,7 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.integer  "txout"
   end
 
-  add_index "payment_transactions", ["txid", "txout"], name: "index_payment_transactions_on_txid_and_txout", using: :btree
+  add_index "payment_transactions", ["txid", "txout"], name: "index_payment_transactions_on_txid_and_txout", unique: true, using: :btree
   add_index "payment_transactions", ["type"], name: "index_payment_transactions_on_type", using: :btree
 
   create_table "proofs", force: true do |t|
@@ -430,6 +444,19 @@ ActiveRecord::Schema.define(version: 20180220125955) do
   add_index "trades", ["created_at"], name: "index_trades_on_created_at", using: :btree
   add_index "trades", ["currency"], name: "index_trades_on_currency", using: :btree
 
+  create_table "turnover_summary", force: true do |t|
+    t.decimal  "btc",        precision: 32, scale: 16
+    t.decimal  "ltc",        precision: 32, scale: 16
+    t.decimal  "doge",       precision: 32, scale: 16
+    t.decimal  "eth",        precision: 32, scale: 16
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "slice"
+  end
+
+  add_index "turnover_summary", ["created_at"], name: "index_turnover_summary_on_created_at", using: :btree
+  add_index "turnover_summary", ["slice"], name: "index_turnover_summary_on_slice", using: :btree
+
   create_table "two_factors", force: true do |t|
     t.integer  "member_id"
     t.string   "otp_secret"
@@ -456,8 +483,8 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.integer  "account_id"
     t.integer  "member_id"
     t.integer  "currency"
-    t.decimal  "amount",     precision: 32, scale: 16
-    t.decimal  "fee",        precision: 32, scale: 16
+    t.decimal  "amount",      precision: 32, scale: 16
+    t.decimal  "fee",         precision: 32, scale: 16
     t.string   "fund_uid"
     t.string   "fund_extra"
     t.datetime "created_at"
@@ -465,8 +492,9 @@ ActiveRecord::Schema.define(version: 20180220125955) do
     t.datetime "done_at"
     t.string   "txid"
     t.string   "aasm_state"
-    t.decimal  "sum",        precision: 32, scale: 16, default: 0.0, null: false
+    t.decimal  "sum",         precision: 32, scale: 16, default: 0.0, null: false
     t.string   "type"
+    t.string   "explanation"
   end
 
 end

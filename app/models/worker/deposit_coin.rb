@@ -4,7 +4,7 @@ module Worker
     def process(payload, metadata, delivery_info)
       payload.symbolize_keys!
 
-      sleep 0.5 # nothing result without sleep by query gettransaction api
+      sleep 0.1 # nothing result without sleep by query gettransaction api
 
       channel_key = payload[:channel_key]
       txid = payload[:txid]
