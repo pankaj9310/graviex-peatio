@@ -138,6 +138,16 @@ en:
         ndc: NDC
         zls: ZLS
         proton: PROTON
+        krait: KRAIT
+        aln: ALN
+        bcp: BCP
+        xmx: XMX
+        ida: IDA
+        unify: UNIFY
+        and: AND
+        vig: VIG
+        peps: PEPS
+        vizz: VIZZ
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -450,6 +460,36 @@ en:
 
       deposit_proton:
         title: PROTON Deposit
+
+      deposit_krait:
+        title: KRAIT Deposit
+
+      deposit_aln:
+        title: ALN Deposit
+
+      deposit_bcp:
+        title: BCP Deposit
+
+      deposit_xmx:
+        title: XMX Deposit
+
+      deposit_ida:
+        title: IDA Deposit
+
+      deposit_unify:
+        title: UNIFY Deposit
+
+      deposit_and:
+        title: AND Deposit
+
+      deposit_vig:
+        title: VIG Deposit
+
+      deposit_peps:
+        title: PEPS Deposit
+
+      deposit_vizz:
+        title: VIZZ Deposit
 
       #deposit
 
@@ -792,6 +832,36 @@ en:
       withdraw_proton:
         title: PROTON Withdraw
 
+      withdraw_krait:
+        title: KRAIT Withdraw
+
+      withdraw_aln:
+        title: ALN Withdraw
+
+      withdraw_bcp:
+        title: BCP Withdraw
+
+      withdraw_xmx:
+        title: XMX Withdraw
+
+      withdraw_ida:
+        title: IDA Withdraw
+
+      withdraw_unify:
+        title: UNIFY Withdraw
+
+      withdraw_and:
+        title: AND Withdraw
+
+      withdraw_vig:
+        title: VIG Withdraw
+
+      withdraw_peps:
+        title: PEPS Withdraw
+
+      withdraw_vizz:
+        title: VIZZ Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -893,6 +963,16 @@ en:
         withdraw_limit_ndc: Withdraw day limit is 200000 for an unverified account.
         withdraw_limit_zls: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_proton: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_krait: Withdraw day limit is 60000 for an unverified account.
+        withdraw_limit_aln: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_bcp: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_xmx: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_ida: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_unify: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_and: Withdraw day limit is 400000 for an unverified account.
+        withdraw_limit_vig: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_peps: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_vizz: Withdraw day limit is 20000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -1042,6 +1122,16 @@ en:
         ndc: NDC Market
         zls: ZLS Market
         proton: PROTON Market
+        krait: KRAIT Market
+        aln: ALN Market
+        bcp: BCP Market
+        xmx: XMX Market
+        ida: IDA Market
+        unify: UNIFY Market
+        and: AND Market
+        vig: VIG Market
+        peps: PEPS Market
+        vizz: VIZZ Market
         #market
 
 

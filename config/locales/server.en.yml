@@ -117,6 +117,16 @@ en:
       withdraws/needlecoin: Withdraw
       withdraws/zaliascoin: Withdraw
       withdraws/protoncoin: Withdraw
+      withdraws/kraitcoin: Withdraw
+      withdraws/alphanodecoin: Withdraw
+      withdraws/bcpcoin: Withdraw
+      withdraws/xumacoin: Withdraw
+      withdraws/idapaycoin: Withdraw
+      withdraws/unifycoin: Withdraw
+      withdraws/andcoin: Withdraw
+      withdraws/thevigcoin: Withdraw
+      withdraws/pepegoldcoin: Withdraw
+      withdraws/vizzotopcoin: Withdraw
       #models
     attributes:
       api_token:
@@ -842,6 +852,66 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/protoncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/kraitcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/alphanodecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bcpcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xumacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/idapaycoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/unifycoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/andcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/thevigcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/pepegoldcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/vizzotopcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -2206,6 +2276,146 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/kraitcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/alphanodecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bcpcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xumacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/idapaycoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/unifycoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/andcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/thevigcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/pepegoldcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/vizzotopcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -2446,6 +2656,26 @@ en:
               zaliascoin_invalid: Invalid Address
               protoncoin_ismine: Used Address
               protoncoin_invalid: Invalid Address
+              kraitcoin_ismine: Used Address
+              kraitcoin_invalid: Invalid Address
+              alphanodecoin_ismine: Used Address
+              alphanodecoin_invalid: Invalid Address
+              bcpcoin_ismine: Used Address
+              bcpcoin_invalid: Invalid Address
+              xumacoin_ismine: Used Address
+              xumacoin_invalid: Invalid Address
+              idapaycoin_ismine: Used Address
+              idapaycoin_invalid: Invalid Address
+              unifycoin_ismine: Used Address
+              unifycoin_invalid: Invalid Address
+              andcoin_ismine: Used Address
+              andcoin_invalid: Invalid Address
+              thevigcoin_ismine: Used Address
+              thevigcoin_invalid: Invalid Address
+              pepegoldcoin_ismine: Used Address
+              pepegoldcoin_invalid: Invalid Address
+              vizzotopcoin_ismine: Used Address
+              vizzotopcoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -3037,6 +3267,66 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/kraitcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/alphanodecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bcpcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xumacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/idapaycoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/unifycoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/andcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/thevigcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/pepegoldcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/vizzotopcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -3179,6 +3469,16 @@ en:
       ndc: NDC
       zls: ZLS
       proton: PROTON
+      krait: KRAIT
+      aln: ALN
+      bcp: BCP
+      xmx: XMX
+      ida: IDA
+      unify: UNIFY
+      and: AND
+      vig: VIG
+      peps: PEPS
+      vizz: VIZZ
       #market1
   currency:
     satoshi:
@@ -3685,6 +3985,56 @@ en:
       key: PROTON
       code: PROTON
       name: Protoncoin
+      format: '0,0.0000'
+    kraitcoin:
+      key: KRAIT
+      code: KRAIT
+      name: Kraitcoin
+      format: '0,0.0000'
+    alphanodecoin:
+      key: ALN
+      code: ALN
+      name: Alphanodecoin
+      format: '0,0.0000'
+    bcpcoin:
+      key: BCP
+      code: BCP
+      name: Bcpcoin
+      format: '0,0.0000'
+    xumacoin:
+      key: XMX
+      code: XMX
+      name: Xumacoin
+      format: '0,0.0000'
+    idapaycoin:
+      key: IDA
+      code: IDA
+      name: Idapaycoin
+      format: '0,0.0000'
+    unifycoin:
+      key: UNIFY
+      code: UNIFY
+      name: Unifycoin
+      format: '0,0.0000'
+    andcoin:
+      key: AND
+      code: AND
+      name: Andcoin
+      format: '0,0.0000'
+    thevigcoin:
+      key: VIG
+      code: VIG
+      name: Thevigcoin
+      format: '0,0.0000'
+    pepegoldcoin:
+      key: PEPS
+      code: PEPS
+      name: Pepegoldcoin
+      format: '0,0.0000'
+    vizzotopcoin:
+      key: VIZZ
+      code: VIZZ
+      name: Vizzotopcoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -4504,6 +4854,76 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    kraitcoin:
+      key: Block Chain
+      title: Kraitcoin Deposits
+      intro: Deposit kraitcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    alphanodecoin:
+      key: Block Chain
+      title: Alphanodecoin Deposits
+      intro: Deposit alphanodecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bcpcoin:
+      key: Block Chain
+      title: Bcpcoin Deposits
+      intro: Deposit bcpcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xumacoin:
+      key: Block Chain
+      title: Xumacoin Deposits
+      intro: Deposit xumacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    idapaycoin:
+      key: Block Chain
+      title: Idapaycoin Deposits
+      intro: Deposit idapaycoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    unifycoin:
+      key: Block Chain
+      title: Unifycoin Deposits
+      intro: Deposit unifycoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    andcoin:
+      key: Block Chain
+      title: Andcoin Deposits
+      intro: Deposit andcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    thevigcoin:
+      key: Block Chain
+      title: Thevigcoin Deposits
+      intro: Deposit thevigcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    pepegoldcoin:
+      key: Block Chain
+      title: Pepegoldcoin Deposits
+      intro: Deposit pepegoldcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    vizzotopcoin:
+      key: Block Chain
+      title: Vizzotopcoin Deposits
+      intro: Deposit vizzotopcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -4812,6 +5232,36 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       protoncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      kraitcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      alphanodecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bcpcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xumacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      idapaycoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      unifycoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      andcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      thevigcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      pepegoldcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      vizzotopcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -6376,6 +6826,156 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      kraitcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      alphanodecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bcpcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xumacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      idapaycoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      unifycoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      andcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      thevigcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      pepegoldcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      vizzotopcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -6543,6 +7143,16 @@ en:
         ndc-assets: NDC Assets
         zls-assets: ZLS Assets
         proton-assets: PROTON Assets
+        krait-assets: KRAIT Assets
+        aln-assets: ALN Assets
+        bcp-assets: BCP Assets
+        xmx-assets: XMX Assets
+        ida-assets: IDA Assets
+        unify-assets: UNIFY Assets
+        and-assets: AND Assets
+        vig-assets: VIG Assets
+        peps-assets: PEPS Assets
+        vizz-assets: VIZZ Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -6642,6 +7252,16 @@ en:
         verify-ndc: Verify My NDC Assets
         verify-zls: Verify My ZLS Assets
         verify-proton: Verify My PROTON Assets
+        verify-krait: Verify My KRAIT Assets
+        verify-aln: Verify My ALN Assets
+        verify-bcp: Verify My BCP Assets
+        verify-xmx: Verify My XMX Assets
+        verify-ida: Verify My IDA Assets
+        verify-unify: Verify My UNIFY Assets
+        verify-and: Verify My AND Assets
+        verify-vig: Verify My VIG Assets
+        verify-peps: Verify My PEPS Assets
+        verify-vizz: Verify My VIZZ Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -6740,6 +7360,16 @@ en:
         ndc-assets-total: 'Total NDC assets of exchange: '
         zls-assets-total: 'Total ZLS assets of exchange: '
         proton-assets-total: 'Total PROTON assets of exchange: '
+        krait-assets-total: 'Total KRAIT assets of exchange: '
+        aln-assets-total: 'Total ALN assets of exchange: '
+        bcp-assets-total: 'Total BCP assets of exchange: '
+        xmx-assets-total: 'Total XMX assets of exchange: '
+        ida-assets-total: 'Total IDA assets of exchange: '
+        unify-assets-total: 'Total UNIFY assets of exchange: '
+        and-assets-total: 'Total AND assets of exchange: '
+        vig-assets-total: 'Total VIG assets of exchange: '
+        peps-assets-total: 'Total PEPS assets of exchange: '
+        vizz-assets-total: 'Total VIZZ assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -7242,6 +7872,56 @@ en:
         intro: All of exchange's PROTON assets are listed here.
         total: Total PROTON Assets
         address: Address
+      krait_assets:
+        title: KRAIT Assets
+        intro: All of exchange's KRAIT assets are listed here.
+        total: Total KRAIT Assets
+        address: Address
+      aln_assets:
+        title: ALN Assets
+        intro: All of exchange's ALN assets are listed here.
+        total: Total ALN Assets
+        address: Address
+      bcp_assets:
+        title: BCP Assets
+        intro: All of exchange's BCP assets are listed here.
+        total: Total BCP Assets
+        address: Address
+      xmx_assets:
+        title: XMX Assets
+        intro: All of exchange's XMX assets are listed here.
+        total: Total XMX Assets
+        address: Address
+      ida_assets:
+        title: IDA Assets
+        intro: All of exchange's IDA assets are listed here.
+        total: Total IDA Assets
+        address: Address
+      unify_assets:
+        title: UNIFY Assets
+        intro: All of exchange's UNIFY assets are listed here.
+        total: Total UNIFY Assets
+        address: Address
+      and_assets:
+        title: AND Assets
+        intro: All of exchange's AND assets are listed here.
+        total: Total AND Assets
+        address: Address
+      vig_assets:
+        title: VIG Assets
+        intro: All of exchange's VIG assets are listed here.
+        total: Total VIG Assets
+        address: Address
+      peps_assets:
+        title: PEPS Assets
+        intro: All of exchange's PEPS assets are listed here.
+        total: Total PEPS Assets
+        address: Address
+      vizz_assets:
+        title: VIZZ Assets
+        intro: All of exchange's VIZZ assets are listed here.
+        total: Total VIZZ Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -7354,6 +8034,16 @@ en:
         ndc_format: '0.00000000'
         zls_format: '0.00000000'
         proton_format: '0.00000000'
+        krait_format: '0.00000000'
+        aln_format: '0.00000000'
+        bcp_format: '0.00000000'
+        xmx_format: '0.00000000'
+        ida_format: '0.00000000'
+        unify_format: '0.00000000'
+        and_format: '0.00000000'
+        vig_format: '0.00000000'
+        peps_format: '0.00000000'
+        vizz_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -7944,6 +8634,66 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          krait:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          aln:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bcp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xmx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ida:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          unify:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          and:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          vig:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          peps:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          vizz:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -8086,6 +8836,16 @@ en:
         ndc_html: "<i class='fa fa-check'></i><span>NDC Markets</span>"
         zls_html: "<i class='fa fa-check'></i><span>ZLS Markets</span>"
         proton_html: "<i class='fa fa-check'></i><span>PROTON Markets</span>"
+        krait_html: "<i class='fa fa-check'></i><span>KRAIT Markets</span>"
+        aln_html: "<i class='fa fa-check'></i><span>ALN Markets</span>"
+        bcp_html: "<i class='fa fa-check'></i><span>BCP Markets</span>"
+        xmx_html: "<i class='fa fa-check'></i><span>XMX Markets</span>"
+        ida_html: "<i class='fa fa-check'></i><span>IDA Markets</span>"
+        unify_html: "<i class='fa fa-check'></i><span>UNIFY Markets</span>"
+        and_html: "<i class='fa fa-check'></i><span>AND Markets</span>"
+        vig_html: "<i class='fa fa-check'></i><span>VIG Markets</span>"
+        peps_html: "<i class='fa fa-check'></i><span>PEPS Markets</span>"
+        vizz_html: "<i class='fa fa-check'></i><span>VIZZ Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -8378,6 +9138,16 @@ en:
         ndc_format: '0.00000000'
         zls_format: '0.00000000'
         proton_format: '0.00000000'
+        krait_format: '0.00000000'
+        aln_format: '0.00000000'
+        bcp_format: '0.00000000'
+        xmx_format: '0.00000000'
+        ida_format: '0.00000000'
+        unify_format: '0.00000000'
+        and_format: '0.00000000'
+        vig_format: '0.00000000'
+        peps_format: '0.00000000'
+        vizz_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -8775,6 +9545,36 @@ en:
         protoncoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        kraitcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        alphanodecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bcpcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xumacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        idapaycoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        unifycoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        andcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        thevigcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        pepegoldcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        vizzotopcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -8997,6 +9797,26 @@ en:
         zaliascoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         protoncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        kraitcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        alphanodecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bcpcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xumacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        idapaycoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        unifycoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        andcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        thevigcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        pepegoldcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        vizzotopcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -9720,6 +10540,76 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        kraitcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Kraitcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        alphanodecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Alphanodecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bcpcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bcpcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xumacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xumacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        idapaycoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Idapaycoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        unifycoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Unifycoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        andcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Andcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        thevigcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Thevigcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        pepegoldcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Pepegoldcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        vizzotopcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Vizzotopcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -10313,6 +11203,66 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       protoncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      kraitcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      alphanodecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bcpcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xumacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      idapaycoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      unifycoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      andcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      thevigcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      pepegoldcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      vizzotopcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -11556,6 +12506,126 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      kraitcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      alphanodecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bcpcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xumacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      idapaycoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      unifycoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      andcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      thevigcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      pepegoldcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      vizzotopcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -12134,6 +13204,66 @@ en:
       checked: Checked
       warning: Warning
   deposits/protoncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/kraitcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/alphanodecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bcpcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xumacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/idapaycoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/unifycoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/andcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/thevigcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/pepegoldcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/vizzotopcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -12973,6 +14103,86 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    kraitcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    alphanodecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bcpcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xumacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    idapaycoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    unifycoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    andcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    thevigcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    pepegoldcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    vizzotopcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -13101,6 +14311,16 @@ en:
       ndc: NDC
       zls: ZLS
       proton: PROTON
+      krait: KRAIT
+      aln: ALN
+      bcp: BCP
+      xmx: XMX
+      ida: IDA
+      unify: UNIFY
+      and: AND
+      vig: VIG
+      peps: PEPS
+      vizz: VIZZ
       #enum_currence
     order:
       state:
@@ -13224,6 +14444,16 @@ en:
         needlecoin: Needlecoin
         zaliascoin: Zaliascoin
         protoncoin: Protoncoin
+        kraitcoin: Kraitcoin
+        alphanodecoin: Alphanodecoin
+        bcpcoin: Bcpcoin
+        xumacoin: Xumacoin
+        idapaycoin: Idapaycoin
+        unifycoin: Unifycoin
+        andcoin: Andcoin
+        thevigcoin: Thevigcoin
+        pepegoldcoin: Pepegoldcoin
+        vizzotopcoin: Vizzotopcoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -14377,6 +15607,76 @@ en:
       key: Blockchain
       title: Protoncoin Blockchain
       intro: Withdraw Protoncoin to your own Protoncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    kraitcoin:
+      key: Blockchain
+      title: Kraitcoin Blockchain
+      intro: Withdraw Kraitcoin to your own Kraitcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    alphanodecoin:
+      key: Blockchain
+      title: Alphanodecoin Blockchain
+      intro: Withdraw Alphanodecoin to your own Alphanodecoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bcpcoin:
+      key: Blockchain
+      title: Bcpcoin Blockchain
+      intro: Withdraw Bcpcoin to your own Bcpcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xumacoin:
+      key: Blockchain
+      title: Xumacoin Blockchain
+      intro: Withdraw Xumacoin to your own Xumacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    idapaycoin:
+      key: Blockchain
+      title: Idapaycoin Blockchain
+      intro: Withdraw Idapaycoin to your own Idapaycoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    unifycoin:
+      key: Blockchain
+      title: Unifycoin Blockchain
+      intro: Withdraw Unifycoin to your own Unifycoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    andcoin:
+      key: Blockchain
+      title: Andcoin Blockchain
+      intro: Withdraw Andcoin to your own Andcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    thevigcoin:
+      key: Blockchain
+      title: Thevigcoin Blockchain
+      intro: Withdraw Thevigcoin to your own Thevigcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    pepegoldcoin:
+      key: Blockchain
+      title: Pepegoldcoin Blockchain
+      intro: Withdraw Pepegoldcoin to your own Pepegoldcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    vizzotopcoin:
+      key: Blockchain
+      title: Vizzotopcoin Blockchain
+      intro: Withdraw Vizzotopcoin to your own Vizzotopcoin wallet
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
@@ -15548,6 +16848,126 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/protoncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/kraitcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/alphanodecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bcpcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xumacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/idapaycoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/unifycoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/andcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/thevigcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/pepegoldcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/vizzotopcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
