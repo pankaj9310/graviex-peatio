@@ -114,6 +114,16 @@ module Admin
       can :manage, ::Deposits::Needlecoin
       can :manage, ::Deposits::Zaliascoin
       can :manage, ::Deposits::Protoncoin
+      can :manage, ::Deposits::Kraitcoin
+      can :manage, ::Deposits::Alphanodecoin
+      can :manage, ::Deposits::Bcpcoin
+      can :manage, ::Deposits::Xumacoin
+      can :manage, ::Deposits::Idapaycoin
+      can :manage, ::Deposits::Unifycoin
+      can :manage, ::Deposits::Andcoin
+      can :manage, ::Deposits::Thevigcoin
+      can :manage, ::Deposits::Pepegoldcoin
+      can :manage, ::Deposits::Vizzotopcoin
       #deposit
 
       can :menu, Withdraw
@@ -215,6 +225,16 @@ module Admin
       can :manage, ::Withdraws::Needlecoin
       can :manage, ::Withdraws::Zaliascoin
       can :manage, ::Withdraws::Protoncoin
+      can :manage, ::Withdraws::Kraitcoin
+      can :manage, ::Withdraws::Alphanodecoin
+      can :manage, ::Withdraws::Bcpcoin
+      can :manage, ::Withdraws::Xumacoin
+      can :manage, ::Withdraws::Idapaycoin
+      can :manage, ::Withdraws::Unifycoin
+      can :manage, ::Withdraws::Andcoin
+      can :manage, ::Withdraws::Thevigcoin
+      can :manage, ::Withdraws::Pepegoldcoin
+      can :manage, ::Withdraws::Vizzotopcoin
       #withdraw
 
     end

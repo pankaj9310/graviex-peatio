@@ -73,7 +73,7 @@
   > tbody > tr > td {
     border-top: none;
     border-bottom: 1px solid #ddd;
-    padding: 20px;
+    padding: 20px 10px 10px 10px;
   }
 }
 .currency-item {
@@ -159,7 +159,7 @@
       margin: 0;
       position: relative;
       &:first-child {
-        margin: -30px 0 20px 0;
+        margin: -50px 0 20px 0;
       }
     }
   }

@@ -16,6 +16,8 @@ class Member < ActiveRecord::Base
 
   has_one :id_document
 
+  has_one :dividend
+
   has_many :authentications, dependent: :destroy
 
   scope :enabled, -> { where(disabled: false) }
@@ -32,7 +34,7 @@ class Member < ActiveRecord::Base
   validates :email, email: true, uniqueness: true, allow_nil: true
 
   before_create :build_default_id_document
-  after_create  :touch_accounts
+  after_create :touch_accounts
   after_update :resend_activation
   after_update :sync_update
 
@@ -105,7 +107,21 @@ class Member < ActiveRecord::Base
     "graviex:member:#{id}:checked_in"
   end
 
+  def default_product
+    if dividend.present?
+      return dividend
+    end
+   
+    product = Product.where(name: 'default').first
+    self.dividend = Dividend.create(member_id: id, product_id: product.id)
+    self.dividend.save!
+  end
+
   def checked_in?
+
+    #touch product
+    default_product
+
     value = true 
     if two_factors.require_signin?
       value = Rails.cache.read(member_checked_in_key) || false
@@ -122,6 +138,10 @@ class Member < ActiveRecord::Base
   end
 
   def has_gio_deposite_50
+    if dividend.is_accepted
+      return false
+    end
+
     @gio_account = self.accounts.with_currency(:gio).first
     if @gio_account
       if @gio_account.balance >= 5000000

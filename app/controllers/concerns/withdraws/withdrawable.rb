@@ -22,6 +22,21 @@ module Withdraws
         return
       end
 
+      sql = "select created_at as result from withdraws where member_id = #{current_user.id} and currency = #{channel.currency_obj.id} order by id desc limit 1";
+      res = ActiveRecord::Base.connection.exec_query(sql).first
+      last_withdraw = DateTime.parse('2018-01-01 00:00:00')
+      if res != nil
+        last_withdraw = res['result']
+      end
+
+      @current_date_time = DateTime.now
+      Rails.logger.info "[Withdraw]: last = " + last_withdraw.to_i.to_s + ", current = " + @current_date_time.to_i.to_s + ", diff = " + (@current_date_time.to_i - last_withdraw.to_i).to_s + ", sql = " + sql
+
+      if @current_date_time.to_i - last_withdraw.to_i < 40
+        render text: 'Withdraw threshold violated', status: 403
+        return
+      end
+
       @current_date = DateTime.now.to_date
       @current_date_time = DateTime.now
       @current_withdraws = Withdraw.with_aasm_state(:done).where(member_id: current_user.id, currency: @channel.currency_obj.id, created_at: @current_date...@current_date_time).pluck(:amount)

@@ -27,6 +27,7 @@ tmp
 /config/markets.yml
 /config/amqp.yml
 /config/banks.yml
+/config/nginx.conf
 
 # Ignore translations.js
 /public/javascripts/translations.js
@@ -58,3 +59,6 @@ tags
 enable_ssl.txt
 run_slanger.sh
 /utils/add_coin_config.json
+/app/models/admin/ability.rb
+.gitignore
+
