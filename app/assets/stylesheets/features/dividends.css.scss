@@ -1,0 +1,87 @@
+.table-dividends {
+  border-radius: 5px;
+  right: -1px;
+  margin-bottom: 0;
+  > tbody > tr > td {
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+  }
+}
+.currency-dividend-item {
+  margin: 0;
+  .currency-dividend-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background-color: #333;
+    &.label-cny {
+      background-color: #EC6060;
+    }
+    &.label-btc {
+      background-color: #DDCD1B;
+    }
+  }
+  .currency-dividend-logo {
+    text-align: center;
+    max-width: 60px;
+    min-width: 10px;
+    img {
+      max-height: 64px;
+      max-width: 64px;
+    }
+    .currency-dividend-symbol {
+      display: block;
+      margin-top: 5px;
+      text-transform: uppercase;
+      color: #999;
+      font-size: 16px;
+    }
+    .currency-dividend-state {
+      text-align: center;
+      max-width: 16px;
+      max-height: 16px;
+      padding: 3px 0px 0;
+      img {
+        max-height: 12px;
+      }
+    }
+  }
+  .currency-dividend-balance-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .currency-dividend-balance {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: -10px 0px 0;
+    margin: 0;
+    .currency-dividend-sign {
+      display: none;
+      font-size: 20px;
+      margin-left: -4px;
+    }
+  }
+  .currency-dividend-balance-locked {
+    display: block;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .currency-dividend-info-ext {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .currency-dividend-info {
+    padding: 5px 0px 0;
+    display: block;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+

@@ -84,11 +84,12 @@ Peatio::Application.routes.draw do
 
     resources :account_versions, :only => :index
 
-    #resources :exchange_assets, :controller => 'assets' do
-    #  member do
-    #    get :partial_tree
-    #  end
-    #end
+    resources :dividends do
+      collection do
+        post :accept_agreement
+        post :revoke_agreement
+      end
+    end
 
     get '/history/orders' => 'history#orders', as: :order_history
     get '/history/trades' => 'history#trades', as: :trade_history

@@ -36,6 +36,22 @@ en:
       add: Add
       remove: Remove
       default: Default
+    dividends:
+      agreement: Contract
+      agreement_accepted: Agreement accepted.
+      agreement_revoked: Agreement revoked.
+      intraday:
+        title: Intraday profit
+        time: Time
+        current: Current
+        previous: Previous
+        proft: Profit
+        no_data: There is no history data
+      daily:
+        title: Daily profit
+        time: Time
+        proft: Profit
+        no_data: There is no history data
     funds:
       deposit: Deposit
       withdraw: Withdraw

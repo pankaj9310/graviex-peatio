@@ -31,6 +31,12 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user ||= Member.current = Member.enabled.where(id: session[:member_id]).first
+#    if @current_user 
+#      Rails.logger.info "[current_user] = " + @current_user.to_json
+#    else
+#      Rails.logger.info "[current_user/absent] id = " + session[:member_id].to_s
+#    end
+    return @current_user
   end
 
   def auth_member!

@@ -7252,6 +7252,8 @@ en:
           Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
       partial_tree:
         success: 'Success! Verification data generated at: %{timestamp}'
+    dividends:
+      agreement: Contract
     funds:
       show_all: Show all
       show:

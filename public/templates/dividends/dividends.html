@@ -1,0 +1,87 @@
+<ng-include src="'/templates/dividends/_flash.html'"></ng-include>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>{{"dividends.agreement" | t}}</h3>
+  </div>
+  <div class="panel-body">
+    <span>{{product.contract}}</span><br/><br/>
+    <input class="bootstrap-switch" type="checkbox" name="sign-checkbox" />
+  </div>
+</div>
+<div class="panel panel-default hide" name="product-panel">
+  <div class="panel-heading">
+    <h3>{{product.description}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-11">
+        <table class="table table-dividends">
+          <tr class="currency-dividend-item">
+            <td class="currency-dividend-logo">
+              <img ng-src="/icon-{{asset.currency}}.png" alt="">
+              <span class="currency-dividend-symbol">{{ asset.currency | uppercase }}</span>
+            </td>
+            <td class="currency-dividend-balance-col">
+              <p class="currency-dividend-balance"><span class="currency-sign"></span>{{asset.balance | round_down}}</p>
+              <span class="currency-dividend-balance-locked"><i class="fa fa-lock"></i> {{asset.locked | round_down}}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-13">
+        <table class="table table-dividends">
+          <tr class="currency-dividend-item">
+            <td class="currency-dividend-logo">
+              <img ng-src="/icon-{{interest.currency}}.png" alt="">
+              <span class="currency-dividend-symbol">{{ interest.currency | uppercase }}</span>
+            </td>
+            <td class="currency-dividend-balance-col">
+              <p class="currency-dividend-balance"><span class="currency-sign"></span>{{interest.balance | round_down}}</p>
+              <span class="currency-dividend-balance-locked"><i class="fa fa-lock"></i> {{interest.locked | round_down}}</span>
+              <span class="currency-dividend-balance-locked"><i class="fa fa-bitcoin"></i> {{interest_total | round_down}}</span>
+              <span class="currency-dividend-balance-locked"><i class="fa fa-clock-o"></i> {{interest_intraday | round_down}}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="panel-title" style="font-size: 20px" >{{ "dividends.intraday.title" | t }}</h3>
+        <br/> 
+        <table class="table" ng-controller="IntradayController as dhCtrl">
+          <tr>
+            <th>{{ "dividends.intraday.time" | t }}</th>
+            <th class="text-right">{{ "dividends.intraday.current" | t }}</th>
+            <th class="text-right">{{ "dividends.intraday.previous" | t }}</th>
+            <th class="text-right">{{ "dividends.intraday.proft" | t }}</th>
+          </tr>
+          <tr ng-class="new-row" ng-repeat="entry in dhCtrl.list">
+            <td>{{entry.created_at | date:'yyyy-MM-dd HH:mm'}}</td>
+            <td class="text-right">{{entry.current | round_down_small}}</td>
+            <td class="text-right">{{entry.previous | round_down_small}}</td>
+            <td class="text-right">{{entry.profit | round_down}}</td>
+          </tr>
+          <tr ng-show="dhCtrl.noRecords()"><td colspan="6"><span class="help-block text-center">{{ "dividends.intraday.no_data" | t }}</span></td></tr>
+        </table>     
+      </div>
+      <div class="col-sm-12">
+        <h3 class="panel-title" style="font-size: 20px" >{{ "dividends.daily.title" | t }}</h3>
+        <br/>
+        <table class="table" ng-controller="DailyController as dayCtrl">
+          <tr>
+            <th>{{ "dividends.daily.time" | t }}</th>
+            <th class="text-right">{{ "dividends.daily.proft" | t }}</th>
+          </tr>
+          <tr ng-class="new-row" ng-repeat="entry in dayCtrl.list">
+            <td>{{entry.created_at | date:'yyyy-MM-dd HH:mm'}}</td>
+            <td class="text-right">{{entry.profit | round_down}}</td>
+          </tr>
+          <tr ng-show="dayCtrl.noRecords()"><td colspan="6"><span class="help-block text-center">{{ "dividends.daily.no_data" | t }}</span></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
