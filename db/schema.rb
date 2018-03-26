@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180413201518) do
+ActiveRecord::Schema.define(version: 20180413201519) do
 
   create_table "account_versions", force: true do |t|
     t.integer  "member_id"
@@ -123,6 +123,15 @@ ActiveRecord::Schema.define(version: 20180413201518) do
   add_index "currencies_summary", ["created_at"], name: "index_currencies_summary_on_created_at", using: :btree
   add_index "currencies_summary", ["slice"], name: "index_currencies_summary_on_slice", using: :btree
 
+  create_table "daily_dividends", force: true do |t|
+    t.integer  "dividend_id"
+    t.decimal  "profit",      precision: 32, scale: 16
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "daily_dividends", ["dividend_id", "created_at"], name: "index_daily_dividends_on_dividend_id_and_created_at", using: :btree
+
   create_table "deposits", force: true do |t|
     t.integer  "account_id"
     t.integer  "member_id"
@@ -144,6 +153,14 @@ ActiveRecord::Schema.define(version: 20180413201518) do
   end
 
   add_index "deposits", ["txid", "txout"], name: "index_deposits_on_txid_and_txout", unique: true, using: :btree
+
+  create_table "dividends", force: true do |t|
+    t.integer  "member_id"
+    t.integer  "product_id"
+    t.string   "aasm_state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "document_translations", force: true do |t|
     t.integer  "document_id", null: false
@@ -208,6 +225,17 @@ ActiveRecord::Schema.define(version: 20180413201518) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "intraday_dividends", force: true do |t|
+    t.integer  "dividend_id"
+    t.decimal  "current",     precision: 32, scale: 16
+    t.decimal  "previous",    precision: 32, scale: 16
+    t.decimal  "profit",      precision: 32, scale: 16
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "intraday_dividends", ["dividend_id", "created_at"], name: "index_intraday_dividends_on_dividend_id_and_created_at", using: :btree
 
   create_table "members", force: true do |t|
     t.string   "sn"
@@ -327,6 +355,19 @@ ActiveRecord::Schema.define(version: 20180413201518) do
 
   add_index "payment_transactions", ["txid", "txout"], name: "index_payment_transactions_on_txid_and_txout", unique: true, using: :btree
   add_index "payment_transactions", ["type"], name: "index_payment_transactions_on_type", using: :btree
+
+  create_table "products", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "asset"
+    t.integer  "interest"
+    t.integer  "maturation"
+    t.decimal  "amount",      precision: 32, scale: 16
+    t.decimal  "rate",        precision: 32, scale: 16
+    t.text     "contract"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "proofs", force: true do |t|
     t.string   "root"
