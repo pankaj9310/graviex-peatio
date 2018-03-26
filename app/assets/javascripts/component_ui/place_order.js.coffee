@@ -188,6 +188,15 @@
       .hide().text(gon.i18n.place_order[data.label]).fadeIn()
 
   @clear = (e) ->
+    if e.currentTarget.checked
+      @disableSubmit()
+      @refreshBalance(null, null)
+      @trigger "place_order::max::#{@usedInput}", max: BigNumber("1000000000000.0")
+      @trigger "place_order::balance::change::#{@panelType()}", balance: BigNumber("1000000000000.0")
+    else
+      @enableSubmit()
+      @refreshBalance(null, null)
+
     @resetForm(e)
     @select('feeLabelSel').fadeOut().text('')
     @select('feeLabelInfo').fadeOut().text('')
@@ -196,16 +205,7 @@
   @calculatorClick = (e) ->
 #    console.log @panelType(), e
 
-    if e.currentTarget.checked
-      @disableSubmit()
-      @refreshBalance(null, null)
-      @trigger "place_order::max::#{@usedInput}", max: BigNumber("1000000000000.0")
-      @trigger "place_order::balance::change::#{@panelType()}", balance: BigNumber("1000000000000.0")
-      @clear(e)
-    else
-      @enableSubmit()
-      @refreshBalance(null, null)
-      @clear(e)
+    @clear(e)
 
   @after 'initialize', ->
     type = @panelType()

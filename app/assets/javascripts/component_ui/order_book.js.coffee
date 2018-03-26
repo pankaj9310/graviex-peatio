@@ -95,23 +95,46 @@
     volume_fun = (memo, num) -> memo.plus(BigNumber(num[1]))
     volume     = _.reduce(orders, volume_fun, BigNumber(0))
 
-    done = false
-    total_fun  = (memo, num) -> 
-      if done 
-        return memo
+    if type == 'bid'
+      done = false
+      total_fun  = (memo, num) -> 
+        if done 
+          return memo
 
-      part = BigNumber(num[0]).times BigNumber(num[1])
-      subtotal = memo.plus(part)
-#      console.log "Check = " + (subtotal).toF(9)
+        part = BigNumber(num[0]).times BigNumber(num[1])
+        subtotal = memo.plus(part)
+#        console.log "Check = " + (subtotal).toF(9)
 
-      if subtotal.greaterThan balance
-        diff = subtotal.minus(balance).dividedBy(BigNumber(num[1]))        
-        volume = volume.minus(diff)
-        subtotal = memo.plus(BigNumber(num[0]).minus(diff).times(BigNumber(num[1])))
-        done = true
+        if subtotal.greaterThan balance
+          diff = subtotal.minus(balance).dividedBy(BigNumber(num[1]))        
+          volume = volume.minus(diff)
+          subtotal = memo.plus(BigNumber(num[0]).minus(diff).times(BigNumber(num[1])))
+          done = true
       
-#      console.log "Return = " + (subtotal).toF(9)
-      return subtotal
+#        console.log "Return = " + (subtotal).toF(9)
+        return subtotal
+
+    if type == 'ask'
+      done = false
+      subamount = BigNumber(0)
+      total_fun  = (memo, num) ->
+        if done
+          return memo
+
+        subamount = subamount.plus(BigNumber(num[1]))
+        part = BigNumber(num[0]).times BigNumber(num[1])
+        subtotal = memo.plus(part)
+#        console.log "Check = " + (subamount).toF(9)
+
+        if subamount.greaterThan balance
+          diff = subamount.minus(balance)
+#          console.log "Diff = " + (diff).toF(9)
+          volume = subamount.minus(diff)
+          subtotal = memo.plus(BigNumber(num[1]).minus(diff).times(BigNumber(num[0])))
+          done = true
+
+#        console.log "Return = " + (subtotal).toF(9)
+        return subtotal
 
     total = _.reduce(orders, total_fun, BigNumber(0))
 
@@ -165,5 +188,5 @@
 
     $('.bids').on 'click', 'tr', (e) =>
       i = $(e.target).closest('tr').data('order')
-      @placeOtherOrder $('#ask_entry'), _.extend(@computeDeep(e, gon.bids, 'ask'), type: 'bid')
-      @placeOrder $('#bid_entry'), {price: BigNumber(gon.bids[i][0]), volume: BigNumber(gon.bids[i][1]), total:  BigNumber(gon.bids[i][0]).times BigNumber(gon.bids[i][1])}
+      @placeOrder $('#ask_entry'), _.extend(@computeDeep(e, gon.bids, 'ask'), type: 'bid')
+      @placeOtherOrder $('#bid_entry'), {price: BigNumber(gon.bids[i][0]), volume: BigNumber(gon.bids[i][1]), total:  BigNumber(gon.bids[i][0]).times BigNumber(gon.bids[i][1])}
