@@ -9,9 +9,6 @@ app.directive 'accounts', ->
     controller: ($scope, $state) ->
       ctrl = @
       @state = $state
-      if window.location.hash == ""
-        @state.transitionTo("deposits.currency", {currency: Account.first().currency})
-
       @initial_state = false
 
       $scope.accounts = Account.select (item) ->
@@ -20,6 +17,9 @@ app.directive 'accounts', ->
       if $scope.accounts.length == 0
         $scope.accounts = Account.all()
         @initial_state = true
+
+      if window.location.hash == ""
+        @state.transitionTo("deposits.currency", {currency: $scope.accounts[0].currency})
 
       $('input[name="showall-checkbox"]').bootstrapSwitch
         labelText: 'Empty'
@@ -35,9 +35,9 @@ app.directive 'accounts', ->
           $scope.$apply()
 
       # Might have a better way
-      # #/deposits/cny
       @selectedCurrency = window.location.hash.split('/')[2] || $scope.accounts[0].currency
       @currentAction = window.location.hash.split('/')[1] || 'deposits'
+
       $scope.currency = @selectedCurrency
 
       @isSelected = (currency) ->

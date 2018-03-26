@@ -44,12 +44,13 @@ en:
         title: Intraday profit
         time: Time
         current: Current
-        previous: Previous
+        previous: Volume
         proft: Profit
         no_data: There is no history data
       daily:
         title: Daily profit
         time: Time
+        volume: Volume
         proft: Profit
         no_data: There is no history data
     funds:

@@ -13,15 +13,30 @@ Signal.trap("TERM") do
   $running = false
 end
 
+def aggregate(currency, datefrom, dateto)
+  sql = "select sum(fee) as result from account_versions where currency = #{currency} and reason = 110 and created_at >= '#{datefrom}' and created_at <= '#{dateto}' group by currency, reason"
+  res = ActiveRecord::Base.connection.exec_query(sql).first
+  amount = 0.0
+  if res != nil
+    amount = res['result'].to_f
+  end
+  return amount
+end
+
 prev = Time.new
 
 while($running) do
   t = Time.now
+  hour_begin = t - 60*60
   if prev.hour != t.hour
   #if prev.min != t.min
     $stdout.print t.to_s + " new hour\n"
     Product.all.each do |product|
       $stdout.print "hour process product " + product[:name] + "\n"
+      fee = aggregate(product.interest, hour_begin, t)
+      dividend_rate = (fee / 2.0) / 575000.0
+      volume = fee*500
+      $stdout.print "hour dividend rate " + dividend_rate.to_s + " volume " + volume.to_s + "\n"
       product.dividends.each do |dividend|
          $stdout.print "hour process dividend for member " + dividend[:member_id].to_s + "\n"
          #member = Member.find_by_id dividend[:member_id]
@@ -29,13 +44,13 @@ while($running) do
          account = dividend.asset
          if account
            #$stdout.print "test " + product.amount.to_s + "\n"
-           hourly_dividend = (account.balance/product.amount).to_i * product.rate
+           hourly_dividend = (account.balance/product.amount).to_i * dividend_rate
            $stdout.print "hour result " + hourly_dividend.to_s + "\n"
            prev_div = nil
            if dividend.intraday_dividends.first
              prev_div = dividend.intraday_dividends.first.current
            end
-           IntradayDividend.create(:dividend_id => dividend.id, :current => account.balance, :previous => prev_div, :profit => hourly_dividend);
+           IntradayDividend.create(:dividend_id => dividend.id, :current => account.balance, :previous => volume, :profit => hourly_dividend);
          end
 
          #$stdout.print member[:email] + "\n"
@@ -52,9 +67,12 @@ while($running) do
       product.dividends.each do |dividend|
         $stdout.print "day process dividend for member " + dividend[:member_id].to_s + "\n"
         day_profit = dividend.intraday_dividends.where(["created_at > ?", day_begin]).sum(:profit)
+        day_volume = dividend.intraday_dividends.where(["created_at > ?", day_begin]).sum(:previous)
         $stdout.print "day profit " + day_profit.to_s + "\n"
         DailyDividend.create(:dividend_id => dividend.id,  :profit => day_profit)
-        dividend.interest.plus_funds(day_profit)
+        if day_profit > 0
+          dividend.interest.plus_funds(day_profit)
+        end
         dividend.intraday_dividends.destroy_all
       end
     end
