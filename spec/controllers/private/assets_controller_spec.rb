@@ -115,6 +115,16 @@ describe Private::AssetsController do
       it { expect(assigns(:ndc_account)).to be_nil }
       it { expect(assigns(:zls_account)).to be_nil }
       it { expect(assigns(:proton_account)).to be_nil }
+      it { expect(assigns(:krait_account)).to be_nil }
+      it { expect(assigns(:aln_account)).to be_nil }
+      it { expect(assigns(:bcp_account)).to be_nil }
+      it { expect(assigns(:xmx_account)).to be_nil }
+      it { expect(assigns(:ida_account)).to be_nil }
+      it { expect(assigns(:unify_account)).to be_nil }
+      it { expect(assigns(:and_account)).to be_nil }
+      it { expect(assigns(:vig_account)).to be_nil }
+      it { expect(assigns(:peps_account)).to be_nil }
+      it { expect(assigns(:vizz_account)).to be_nil }
       #it
 
     end

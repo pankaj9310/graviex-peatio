@@ -100,6 +100,16 @@ module Private
       @ndc_proof   = Proof.current :ndc
       @zls_proof   = Proof.current :zls
       @proton_proof   = Proof.current :proton
+      @krait_proof   = Proof.current :krait
+      @aln_proof   = Proof.current :aln
+      @bcp_proof   = Proof.current :bcp
+      @xmx_proof   = Proof.current :xmx
+      @ida_proof   = Proof.current :ida
+      @unify_proof   = Proof.current :unify
+      @and_proof   = Proof.current :and
+      @vig_proof   = Proof.current :vig
+      @peps_proof   = Proof.current :peps
+      @vizz_proof   = Proof.current :vizz
       #proof
 
       if current_user
@@ -200,6 +210,16 @@ module Private
         @ndc_account = current_user.accounts.with_currency(:ndc).first
         @zls_account = current_user.accounts.with_currency(:zls).first
         @proton_account = current_user.accounts.with_currency(:proton).first
+        @krait_account = current_user.accounts.with_currency(:krait).first
+        @aln_account = current_user.accounts.with_currency(:aln).first
+        @bcp_account = current_user.accounts.with_currency(:bcp).first
+        @xmx_account = current_user.accounts.with_currency(:xmx).first
+        @ida_account = current_user.accounts.with_currency(:ida).first
+        @unify_account = current_user.accounts.with_currency(:unify).first
+        @and_account = current_user.accounts.with_currency(:and).first
+        @vig_account = current_user.accounts.with_currency(:vig).first
+        @peps_account = current_user.accounts.with_currency(:peps).first
+        @vizz_account = current_user.accounts.with_currency(:vizz).first
         #account
       end
     end

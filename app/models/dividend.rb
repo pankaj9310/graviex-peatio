@@ -28,7 +28,7 @@ class Dividend < ActiveRecord::Base
   end
 
   def is_allowed
-    if self.updated_at == nil 
+    if self.updated_at == nil or self.updated_at.to_i - self.created_at.to_i <= 1 
       return true
     end
 

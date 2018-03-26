@@ -138,7 +138,7 @@ class Member < ActiveRecord::Base
   end
 
   def has_gio_deposite_50
-    if dividend.is_accepted
+    if dividend != nil and dividend.is_accepted
       return false
     end
 

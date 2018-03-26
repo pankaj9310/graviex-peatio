@@ -113,6 +113,16 @@ class Withdraw extends PeatioModel.Model
       when 'ndc' then 'needlecoins'
       when 'zls' then 'zaliascoins'
       when 'proton' then 'protoncoins'
+      when 'krait' then 'kraitcoins'
+      when 'aln' then 'alphanodecoins'
+      when 'bcp' then 'bcpcoins'
+      when 'xmx' then 'xumacoins'
+      when 'ida' then 'idapaycoins'
+      when 'unify' then 'unifycoins'
+      when 'and' then 'andcoins'
+      when 'vig' then 'thevigcoins'
+      when 'peps' then 'pepegoldcoins'
+      when 'vizz' then 'vizzotopcoins'
       #currency
 
 window.Withdraw = Withdraw

@@ -1,4 +1,5 @@
 # stop
+bundle exec rake daemon:dividend:stop
 bundle exec rake daemon:matching:stop
 bundle exec rake daemon:withdraw_coin:stop
 bundle exec rake daemon:notification:stop
@@ -21,6 +22,7 @@ bundle exec rake DEPOSIT_COIN=5 daemon:deposit_coin:stop
 # start
 bundle exec rake DEPOSIT_COIN=5 daemon:deposit_coin:start
 
+bundle exec rake daemon:dividend:start
 bundle exec rake daemon:matching:start
 bundle exec rake daemon:withdraw_coin:start
 bundle exec rake daemon:notification:start
