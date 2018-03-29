@@ -1,5 +1,5 @@
-Deploy production server on Ubuntu 14.04
--------------------------------------
+Deploy production server on Ubuntu 14.04 / 16
+---------------------------------------------
 
 ### Overview
 
