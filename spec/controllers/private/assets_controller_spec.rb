@@ -125,6 +125,10 @@ describe Private::AssetsController do
       it { expect(assigns(:vig_account)).to be_nil }
       it { expect(assigns(:peps_account)).to be_nil }
       it { expect(assigns(:vizz_account)).to be_nil }
+      it { expect(assigns(:mon_account)).to be_nil }
+      it { expect(assigns(:lunex_account)).to be_nil }
+      it { expect(assigns(:pruf_account)).to be_nil }
+      it { expect(assigns(:want_account)).to be_nil }
       #it
 
     end

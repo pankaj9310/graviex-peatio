@@ -107,6 +107,10 @@
     li: a.vig-proof href="#vig-proof" data-toggle="tab" == t('.verify-vig')
     li: a.peps-proof href="#peps-proof" data-toggle="tab" == t('.verify-peps')
     li: a.vizz-proof href="#vizz-proof" data-toggle="tab" == t('.verify-vizz')
+    li: a.mon-proof href="#mon-proof" data-toggle="tab" == t('.verify-mon')
+    li: a.lunex-proof href="#lunex-proof" data-toggle="tab" == t('.verify-lunex')
+    li: a.pruf-proof href="#pruf-proof" data-toggle="tab" == t('.verify-pruf')
+    li: a.want-proof href="#want-proof" data-toggle="tab" == t('.verify-want')
     /li
 
   .tab-content
@@ -865,3 +869,31 @@
           == t("currency.icon.vizz")
           = @vizz_proof.sum
       = render 'liability_data', account: @vizz_account, proof: @vizz_proof
+    #mon-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.mon-assets-total')
+        span.currency
+          == t("currency.icon.mon")
+          = @mon_proof.sum
+      = render 'liability_data', account: @mon_account, proof: @mon_proof
+    #lunex-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.lunex-assets-total')
+        span.currency
+          == t("currency.icon.lunex")
+          = @lunex_proof.sum
+      = render 'liability_data', account: @lunex_account, proof: @lunex_proof
+    #pruf-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.pruf-assets-total')
+        span.currency
+          == t("currency.icon.pruf")
+          = @pruf_proof.sum
+      = render 'liability_data', account: @pruf_account, proof: @pruf_proof
+    #want-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.want-assets-total')
+        span.currency
+          == t("currency.icon.want")
+          = @want_proof.sum
+      = render 'liability_data', account: @want_account, proof: @want_proof

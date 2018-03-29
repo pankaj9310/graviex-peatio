@@ -535,3 +535,23 @@
   currency: vizz
   min_confirm: 5
   max_confirm: 6
+- id: 21600
+  key: monsterbitcoin
+  currency: mon
+  min_confirm: 5
+  max_confirm: 6
+- id: 21800
+  key: lunexcoin
+  currency: lunex
+  min_confirm: 5
+  max_confirm: 6
+- id: 22000
+  key: prufuscoin
+  currency: pruf
+  min_confirm: 5
+  max_confirm: 6
+- id: 22200
+  key: wantcoin
+  currency: want
+  min_confirm: 5
+  max_confirm: 6

@@ -855,3 +855,35 @@
   fee: 0.002
   inuse: true
   type: WithdrawChannelVizz
+- id: 21600
+  key: monsterbitcoin
+  currency: mon
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelMon
+- id: 21800
+  key: lunexcoin
+  currency: lunex
+  fixed: 8
+  max: 10000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelLunex
+- id: 22000
+  key: prufuscoin
+  currency: pruf
+  fixed: 8
+  max: 20000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelPruf
+- id: 22200
+  key: wantcoin
+  currency: want
+  fixed: 8
+  max: 30000
+  fee: 0.002
+  inuse: true
+  type: WithdrawChannelWant

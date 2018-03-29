@@ -127,6 +127,10 @@ en:
       withdraws/thevigcoin: Withdraw
       withdraws/pepegoldcoin: Withdraw
       withdraws/vizzotopcoin: Withdraw
+      withdraws/monsterbitcoin: Withdraw
+      withdraws/lunexcoin: Withdraw
+      withdraws/prufuscoin: Withdraw
+      withdraws/wantcoin: Withdraw
       #models
     attributes:
       api_token:
@@ -912,6 +916,30 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/vizzotopcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/monsterbitcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/lunexcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/prufuscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/wantcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -2416,6 +2444,62 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/monsterbitcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/lunexcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/prufuscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/wantcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -2676,6 +2760,14 @@ en:
               pepegoldcoin_invalid: Invalid Address
               vizzotopcoin_ismine: Used Address
               vizzotopcoin_invalid: Invalid Address
+              monsterbitcoin_ismine: Used Address
+              monsterbitcoin_invalid: Invalid Address
+              lunexcoin_ismine: Used Address
+              lunexcoin_invalid: Invalid Address
+              prufuscoin_ismine: Used Address
+              prufuscoin_invalid: Invalid Address
+              wantcoin_ismine: Used Address
+              wantcoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -3327,6 +3419,30 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/monsterbitcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/lunexcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/prufuscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/wantcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -3479,6 +3595,10 @@ en:
       vig: VIG
       peps: PEPS
       vizz: VIZZ
+      mon: MON
+      lunex: LUNEX
+      pruf: PRUF
+      want: WANT
       #market1
   currency:
     satoshi:
@@ -4035,6 +4155,26 @@ en:
       key: VIZZ
       code: VIZZ
       name: Vizzotopcoin
+      format: '0,0.0000'
+    monsterbitcoin:
+      key: MON
+      code: MON
+      name: Monsterbitcoin
+      format: '0,0.0000'
+    lunexcoin:
+      key: LUNEX
+      code: LUNEX
+      name: Lunexcoin
+      format: '0,0.0000'
+    prufuscoin:
+      key: PRUF
+      code: PRUF
+      name: Prufuscoin
+      format: '0,0.0000'
+    wantcoin:
+      key: WANT
+      code: WANT
+      name: Wantcoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -4924,6 +5064,34 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    monsterbitcoin:
+      key: Block Chain
+      title: Monsterbitcoin Deposits
+      intro: Deposit monsterbitcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    lunexcoin:
+      key: Block Chain
+      title: Lunexcoin Deposits
+      intro: Deposit lunexcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    prufuscoin:
+      key: Block Chain
+      title: Prufuscoin Deposits
+      intro: Deposit prufuscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    wantcoin:
+      key: Block Chain
+      title: Wantcoin Deposits
+      intro: Deposit wantcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -5262,6 +5430,18 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       vizzotopcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      monsterbitcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      lunexcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      prufuscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      wantcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -6976,6 +7156,66 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      monsterbitcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      lunexcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      prufuscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      wantcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -7153,6 +7393,10 @@ en:
         vig-assets: VIG Assets
         peps-assets: PEPS Assets
         vizz-assets: VIZZ Assets
+        mon-assets: MON Assets
+        lunex-assets: LUNEX Assets
+        pruf-assets: PRUF Assets
+        want-assets: WANT Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -7262,6 +7506,10 @@ en:
         verify-vig: Verify My VIG Assets
         verify-peps: Verify My PEPS Assets
         verify-vizz: Verify My VIZZ Assets
+        verify-mon: Verify My MON Assets
+        verify-lunex: Verify My LUNEX Assets
+        verify-pruf: Verify My PRUF Assets
+        verify-want: Verify My WANT Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -7370,6 +7618,10 @@ en:
         vig-assets-total: 'Total VIG assets of exchange: '
         peps-assets-total: 'Total PEPS assets of exchange: '
         vizz-assets-total: 'Total VIZZ assets of exchange: '
+        mon-assets-total: 'Total MON assets of exchange: '
+        lunex-assets-total: 'Total LUNEX assets of exchange: '
+        pruf-assets-total: 'Total PRUF assets of exchange: '
+        want-assets-total: 'Total WANT assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -7922,6 +8174,26 @@ en:
         intro: All of exchange's VIZZ assets are listed here.
         total: Total VIZZ Assets
         address: Address
+      mon_assets:
+        title: MON Assets
+        intro: All of exchange's MON assets are listed here.
+        total: Total MON Assets
+        address: Address
+      lunex_assets:
+        title: LUNEX Assets
+        intro: All of exchange's LUNEX assets are listed here.
+        total: Total LUNEX Assets
+        address: Address
+      pruf_assets:
+        title: PRUF Assets
+        intro: All of exchange's PRUF assets are listed here.
+        total: Total PRUF Assets
+        address: Address
+      want_assets:
+        title: WANT Assets
+        intro: All of exchange's WANT assets are listed here.
+        total: Total WANT Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -8046,6 +8318,10 @@ en:
         vig_format: '0.00000000'
         peps_format: '0.00000000'
         vizz_format: '0.00000000'
+        mon_format: '0.00000000'
+        lunex_format: '0.00000000'
+        pruf_format: '0.00000000'
+        want_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -8696,6 +8972,30 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          mon:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          lunex:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          pruf:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          want:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -8848,6 +9148,10 @@ en:
         vig_html: "<i class='fa fa-check'></i><span>VIG Markets</span>"
         peps_html: "<i class='fa fa-check'></i><span>PEPS Markets</span>"
         vizz_html: "<i class='fa fa-check'></i><span>VIZZ Markets</span>"
+        mon_html: "<i class='fa fa-check'></i><span>MON Markets</span>"
+        lunex_html: "<i class='fa fa-check'></i><span>LUNEX Markets</span>"
+        pruf_html: "<i class='fa fa-check'></i><span>PRUF Markets</span>"
+        want_html: "<i class='fa fa-check'></i><span>WANT Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -9150,6 +9454,10 @@ en:
         vig_format: '0.00000000'
         peps_format: '0.00000000'
         vizz_format: '0.00000000'
+        mon_format: '0.00000000'
+        lunex_format: '0.00000000'
+        pruf_format: '0.00000000'
+        want_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -9577,6 +9885,18 @@ en:
         vizzotopcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        monsterbitcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        lunexcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        prufuscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        wantcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -9819,6 +10139,14 @@ en:
         pepegoldcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         vizzotopcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        monsterbitcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        lunexcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        prufuscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        wantcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -10612,6 +10940,34 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        monsterbitcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Monsterbitcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        lunexcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Lunexcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        prufuscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Prufuscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        wantcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Wantcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -11265,6 +11621,30 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       vizzotopcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      monsterbitcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      lunexcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      prufuscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      wantcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -12628,6 +13008,54 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      monsterbitcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      lunexcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      prufuscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      wantcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -13266,6 +13694,30 @@ en:
       checked: Checked
       warning: Warning
   deposits/vizzotopcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/monsterbitcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/lunexcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/prufuscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/wantcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -14185,6 +14637,38 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    monsterbitcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    lunexcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    prufuscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    wantcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -14323,6 +14807,10 @@ en:
       vig: VIG
       peps: PEPS
       vizz: VIZZ
+      mon: MON
+      lunex: LUNEX
+      pruf: PRUF
+      want: WANT
       #enum_currence
     order:
       state:
@@ -14456,6 +14944,10 @@ en:
         thevigcoin: Thevigcoin
         pepegoldcoin: Pepegoldcoin
         vizzotopcoin: Vizzotopcoin
+        monsterbitcoin: Monsterbitcoin
+        lunexcoin: Lunexcoin
+        prufuscoin: Prufuscoin
+        wantcoin: Wantcoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -15679,6 +16171,34 @@ en:
       key: Blockchain
       title: Vizzotopcoin Blockchain
       intro: Withdraw Vizzotopcoin to your own Vizzotopcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    monsterbitcoin:
+      key: Blockchain
+      title: Monsterbitcoin Blockchain
+      intro: Withdraw Monsterbitcoin to your own Monsterbitcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    lunexcoin:
+      key: Blockchain
+      title: Lunexcoin Blockchain
+      intro: Withdraw Lunexcoin to your own Lunexcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    prufuscoin:
+      key: Blockchain
+      title: Prufuscoin Blockchain
+      intro: Withdraw Prufuscoin to your own Prufuscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    wantcoin:
+      key: Blockchain
+      title: Wantcoin Blockchain
+      intro: Withdraw Wantcoin to your own Wantcoin wallet
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
@@ -16970,6 +17490,54 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/vizzotopcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/monsterbitcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/lunexcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/prufuscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/wantcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

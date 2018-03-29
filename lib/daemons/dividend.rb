@@ -34,9 +34,15 @@ while($running) do
     Product.all.each do |product|
       $stdout.print "hour process product " + product[:name] + "\n"
       fee = aggregate(product.interest, hour_begin, t)
-      dividend_rate = (fee / 2.0) / 575000.0
+      currency_code = Currency.find(product.asset).code
+      if !currency_code
+        next
+      end
+      blocks_count = Rails.cache.read("peatio:hotwallet:" + currency_code + ":blocks") || 575000.0
+      dividend_rate = (fee / 2.0) /  blocks_count.to_f
       volume = fee*500
-      $stdout.print "hour dividend rate " + dividend_rate.to_s + " volume " + volume.to_s + "\n"
+      #$stdout.print "hour dividend rate " + dividend_rate.to_s + " volume " + volume.to_s + "\n"
+      $stdout.print "hour blocks count " + blocks_count.to_s + " dividend rate " + dividend_rate.to_s + " volume " + volume.to_s + "\n"
       product.dividends.each do |dividend|
          $stdout.print "hour process dividend for member " + dividend[:member_id].to_s + "\n"
          #member = Member.find_by_id dividend[:member_id]
@@ -69,7 +75,7 @@ while($running) do
         day_profit = dividend.intraday_dividends.where(["created_at > ?", day_begin]).sum(:profit)
         day_volume = dividend.intraday_dividends.where(["created_at > ?", day_begin]).sum(:previous)
         $stdout.print "day profit " + day_profit.to_s + "\n"
-        DailyDividend.create(:dividend_id => dividend.id,  :profit => day_profit)
+        DailyDividend.create(:dividend_id => dividend.id,  :profit => day_profit, :volume => day_volume)
         if day_profit > 0
           dividend.interest.plus_funds(day_profit)
         end

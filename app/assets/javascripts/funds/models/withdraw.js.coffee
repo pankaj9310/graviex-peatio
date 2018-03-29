@@ -123,6 +123,10 @@ class Withdraw extends PeatioModel.Model
       when 'vig' then 'thevigcoins'
       when 'peps' then 'pepegoldcoins'
       when 'vizz' then 'vizzotopcoins'
+      when 'mon' then 'monsterbitcoins'
+      when 'lunex' then 'lunexcoins'
+      when 'pruf' then 'prufuscoins'
+      when 'want' then 'wantcoins'
       #currency
 
 window.Withdraw = Withdraw
