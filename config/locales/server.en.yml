@@ -16890,10 +16890,10 @@ en:
       title: Listing request
       warning: There is coin details provided by the applicant.
     create:
-      notice: Your listing request has beeen submitted
+      notice: Your listing request has been submitted
       alert: Required parameters
     update:
-      notice: Your listing request has beeen submitted
+      notice: Your listing request has been submitted
       alert: Required parameters
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
