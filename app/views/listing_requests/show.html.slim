@@ -19,6 +19,11 @@ hr.split
   = f.input :reddit, label: t('.reddit'), readonly: true
   = f.input :facebook, label: t('.facebook'), readonly: true
   = f.input :telegram, label: t('.telegram'), readonly: true
+  - if is_admin?
+    hr.split
+  = f.input :email, label: t('.email'), readonly: true if is_admin?
+  = f.input :comment, label: t('.comment'), readonly: true if is_admin?
+  = f.input :secret, label: t('.secret'), readonly: true if is_admin?
 
 = content_for :guide do
   p.text-warning
