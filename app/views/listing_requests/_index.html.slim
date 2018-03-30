@@ -1,0 +1,27 @@
+.row
+  .col-xs-24
+    .panel.panel-primary
+      .panel-heading Voting listing
+      .panel-body
+        table.table.table-condensed
+          thead: tr
+            th Ticker
+            th.text-right Name
+            th.text-right Home
+            th.text-right BTT Thread
+            th.text-right Address
+            th.text-right Amount
+
+          tbody
+            - @listing_requests.each do |c|
+              tr
+                td: b = c[:ticker]
+                td.text-right = c[:name]
+                td.text-right = c[:home]
+                td.text-right = c[:btt]
+                td.text-right = c[:address]
+                td.text-right = c[:amount]
+
+      .panel-footer
+        span 
+

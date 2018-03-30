@@ -1,5 +1,5 @@
-Deploy production server on Ubuntu 14.04
--------------------------------------
+Deploy production server on Ubuntu 14.04 / 16
+---------------------------------------------
 
 ### Overview
 
@@ -84,6 +84,10 @@ Please follow instructions here: https://www.rabbitmq.com/install-debian.html
     wget http://localhost:15672/cli/rabbitmqadmin
     chmod +x rabbitmqadmin
     sudo mv rabbitmqadmin /usr/local/sbin
+    
+    rabbitmqctl add_user deploy *****
+    rabbitmqctl set_user_tags deploy administrator
+    rabbitmqctl set_permissions -p / deploy ".*" ".*" ".*"
 
 ### 6. Install Bitcoind
 

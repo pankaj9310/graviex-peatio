@@ -1,0 +1,56 @@
+.div[class="panel panel-default"]
+  .div[class="panel-heading" style="padding: 0px; width: 1138px; height: 100px; overflow: hidden"]
+    img src="/listing-short-list.png" alt=""
+  .row
+    .col-xs-24
+      = table_for(@listing_short_list, class: 'table table-hover') do |t|
+        - t.column "#", class: 'col-xs-1' do |x|
+          span #{x.rowid.to_i}
+          - if x.rowid == 1
+              i[class='fa fa-trophy' style='color: #e6b800']
+          - if x.rowid == 2
+              i[class='fa fa-trophy' style='color: #777777']
+          - if x.rowid == 3
+              i[class='fa fa-trophy' style='color: #A67D3D']
+        - t.column "Ticker", class: 'col-xs-2' do |x|
+          a href='/listing_requests/#{x.id}' target='_blank'
+            span #{x.ticker}
+        - t.column "Name", class: 'col-xs-4'  do |x|
+          span #{x.name}
+        - t.column "Official site", class: 'col-xs-4' do |x|
+          a href='#{x.home}' target='_blank'
+            code.text-info = x.home.truncate(22)
+        - t.column "BTT Thread", class: 'col-xs-4' do |x|
+          a href='#{x.btt}' target='_blank'
+            code.text-info = x.btt.truncate(22)
+        - t.column "Voting GIO Address" do |x|
+          span #{x.address}
+        - t.column "Total Votes", class: 'text-right col-xs-2' do |x|
+          a href='http://blockexplorer.gravio.net/address/#{x.address}' target='_blank'
+            code.text-info = x.amount.nil? ? '0.0000' : "#{'%.4f' % x.amount}"
+
+.div[class="panel panel-default"]
+  .div[class="panel-heading" style="padding: 0px; width: 1138px; height: 100px; overflow: hidden"]
+    img src="/listing-candidates.png" alt=""
+  .row
+    .col-xs-24
+      = table_for(@listing_registers, class: 'table table-hover') do |t|
+        - t.column "#", class: 'col-xs-1' do |x|
+          span #{x.rowid.to_i}
+        - t.column "Ticker", class: 'col-xs-2' do |x|
+          a href='/listing_requests/#{x.id}' target='_blank'
+            span #{x.ticker}
+        - t.column "Name", class: 'col-xs-4'  do |x|
+          span #{x.name}
+        - t.column "Official site", class: 'col-xs-4' do |x|
+          a href='#{x.home}' target='_blank'
+            code.text-info = x.home.truncate(22)
+        - t.column "BTT Thread", class: 'col-xs-4' do |x|
+          a href='#{x.btt}' target='_blank'
+            code.text-info = x.btt.truncate(22)
+        - t.column "Voting GIO Address" do |x|
+          span #{x.address}
+        - t.column "Total Votes", class: 'text-right col-xs-2' do |x|
+          a href='http://blockexplorer.gravio.net/address/#{x.address}' target='_blank'
+            code.text-info = x.amount.nil? ? '0.0000' : "#{'%.4f' % x.amount}"
+

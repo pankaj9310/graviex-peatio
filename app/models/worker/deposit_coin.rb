@@ -64,6 +64,27 @@ module Worker
       return if detail[:category] != "receive"
 
       ActiveRecord::Base.transaction do
+        if channel.key == "gravio" && ListingRequest.where(address: detail[:address]).first
+          return if PaymentTransaction::Normal.where(txid: txid, txout: txout).first
+
+          tx = PaymentTransaction::Normal.create! \
+          txid: txid,
+          txout: txout,
+          address: detail[:address],
+          amount: detail[:amount].to_s.to_d,
+          confirmations: raw[:confirmations],
+          receive_at: Time.at(raw[:time]).to_datetime,
+          currency: channel.currency
+          request = ListingRequest.where(address: detail[:address]).first
+          if request.amount
+            request.amount = request.amount + detail[:amount].to_f
+          else
+            request.amount = detail[:amount].to_f
+          end
+          request.update amount: request.amount, aasm_state: "approved"
+          #request.approve!
+          return
+        end
         unless PaymentAddress.where(currency: channel.currency_obj.id, address: detail[:address]).first
           Rails.logger.info "Deposit address not found, skip. txid: #{txid}, txout: #{txout}, address: #{detail[:address]}, amount: #{detail[:amount]}"
           return
