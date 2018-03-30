@@ -16238,6 +16238,23 @@ en:
         That code/phrase/word will be used as proof of validity. Remember - all official contacts will be made by email with your code/phrase/word.
     show:
       title: Listing request
+      ticker: Coin ticker
+      name: Coin name
+      algo: Algo
+      codebase: Codebase
+      source: Source code repository
+      be: Offitial block explorer
+      home: Official project site
+      btt: BTT Annotation thread
+      lang: Developer team language
+      email: Primary developer e-mail
+      discord: Discord
+      twitter: Twitter
+      reddit: Reddit
+      facebook: Facebook
+      telegram: Telegram
+      comment: Comments
+      secret: Secret code
       warning: There is coin details provided by the applicant.
     create:
       notice: Your listing request has beeen submitted
