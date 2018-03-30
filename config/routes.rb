@@ -45,6 +45,8 @@ Peatio::Application.routes.draw do
   get '/documents/oauth'
   resources :documents, only: [:show]
   resources :two_factors, only: [:show, :index, :update]
+  resources :listing_requests
+  resources :listing_registers
 
   scope module: :private do
     resource  :id_document, only: [:edit, :update]

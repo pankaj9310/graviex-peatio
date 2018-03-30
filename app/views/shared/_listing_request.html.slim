@@ -1,0 +1,30 @@
+.state.clearfix
+  .col-xs-8.text-right
+    h2 = t('.title')
+
+hr.split
+
+= simple_form_for @listing_request do |f|
+  = f.input :ticker, label: t('.ticker')
+  = f.input :name, label: t('.name')
+  = f.input :algo, label: t('.algo')
+  = f.input :codebase, label: t('.codebase')
+  = f.input :source, label: t('.source')
+  = f.input :be, label: t('.be')
+  = f.input :home label: t('.home')
+  = f.input :btt, label: t('.btt')
+  = f.input :lang, label: t('.lang')
+  = f.input :email, label: t('.email')
+  = f.input :discord, label: t('.discord')
+  = f.input :twitter, label: t('.twitter')
+  = f.input :reddit, label: t('.reddit')
+  = f.input :facebook, label: t('.facebook')
+  = f.input :telegram, label: t('.telegram')
+  = f.input :comment, label: t('.comment')
+  = f.input :secret, label: t('.secret')
+  hr.split
+  = f.button :wrapped, cancel: settings_path
+
+= content_for :guide do
+  p.text-warning
+    = t('.warning')
