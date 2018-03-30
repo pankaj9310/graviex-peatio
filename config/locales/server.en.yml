@@ -131,6 +131,11 @@ en:
       withdraws/lunexcoin: Withdraw
       withdraws/prufuscoin: Withdraw
       withdraws/wantcoin: Withdraw
+      withdraws/mmocoin: Withdraw
+      withdraws/carebitcoin: Withdraw
+      withdraws/xt3chcoin: Withdraw
+      withdraws/btcfcoin: Withdraw
+      withdraws/zcorecoin: Withdraw
       #models
     attributes:
       api_token:
@@ -940,6 +945,36 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/wantcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/mmocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/carebitcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/xt3chcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/btcfcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/zcorecoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -2500,6 +2535,76 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/mmocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/carebitcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/xt3chcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/btcfcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/zcorecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -2768,6 +2873,16 @@ en:
               prufuscoin_invalid: Invalid Address
               wantcoin_ismine: Used Address
               wantcoin_invalid: Invalid Address
+              mmocoin_ismine: Used Address
+              mmocoin_invalid: Invalid Address
+              carebitcoin_ismine: Used Address
+              carebitcoin_invalid: Invalid Address
+              xt3chcoin_ismine: Used Address
+              xt3chcoin_invalid: Invalid Address
+              btcfcoin_ismine: Used Address
+              btcfcoin_invalid: Invalid Address
+              zcorecoin_ismine: Used Address
+              zcorecoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -3443,6 +3558,36 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/mmocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/carebitcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/xt3chcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/btcfcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/zcorecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -3599,6 +3744,11 @@ en:
       lunex: LUNEX
       pruf: PRUF
       want: WANT
+      mmo: MMO
+      cbt: CBT
+      xt3: XT3
+      btcf: BTCF
+      zcr: ZCR
       #market1
   currency:
     satoshi:
@@ -4175,6 +4325,31 @@ en:
       key: WANT
       code: WANT
       name: Wantcoin
+      format: '0,0.0000'
+    mmocoin:
+      key: MMO
+      code: MMO
+      name: Mmocoin
+      format: '0,0.0000'
+    carebitcoin:
+      key: CBT
+      code: CBT
+      name: Carebitcoin
+      format: '0,0.0000'
+    xt3chcoin:
+      key: XT3
+      code: XT3
+      name: Xt3chcoin
+      format: '0,0.0000'
+    btcfcoin:
+      key: BTCF
+      code: BTCF
+      name: Btcfcoin
+      format: '0,0.0000'
+    zcorecoin:
+      key: ZCR
+      code: ZCR
+      name: Zcorecoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -5092,6 +5267,41 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    mmocoin:
+      key: Block Chain
+      title: Mmocoin Deposits
+      intro: Deposit mmocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    carebitcoin:
+      key: Block Chain
+      title: Carebitcoin Deposits
+      intro: Deposit carebitcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    xt3chcoin:
+      key: Block Chain
+      title: Xt3chcoin Deposits
+      intro: Deposit xt3chcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    btcfcoin:
+      key: Block Chain
+      title: Btcfcoin Deposits
+      intro: Deposit btcfcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    zcorecoin:
+      key: Block Chain
+      title: Zcorecoin Deposits
+      intro: Deposit zcorecoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -5442,6 +5652,21 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       wantcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      mmocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      carebitcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      xt3chcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      btcfcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      zcorecoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -7216,6 +7441,81 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      mmocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      carebitcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      xt3chcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      btcfcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      zcorecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -7397,6 +7697,11 @@ en:
         lunex-assets: LUNEX Assets
         pruf-assets: PRUF Assets
         want-assets: WANT Assets
+        mmo-assets: MMO Assets
+        cbt-assets: CBT Assets
+        xt3-assets: XT3 Assets
+        btcf-assets: BTCF Assets
+        zcr-assets: ZCR Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -7510,6 +7815,11 @@ en:
         verify-lunex: Verify My LUNEX Assets
         verify-pruf: Verify My PRUF Assets
         verify-want: Verify My WANT Assets
+        verify-mmo: Verify My MMO Assets
+        verify-cbt: Verify My CBT Assets
+        verify-xt3: Verify My XT3 Assets
+        verify-btcf: Verify My BTCF Assets
+        verify-zcr: Verify My ZCR Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -7622,6 +7932,11 @@ en:
         lunex-assets-total: 'Total LUNEX assets of exchange: '
         pruf-assets-total: 'Total PRUF assets of exchange: '
         want-assets-total: 'Total WANT assets of exchange: '
+        mmo-assets-total: 'Total MMO assets of exchange: '
+        cbt-assets-total: 'Total CBT assets of exchange: '
+        xt3-assets-total: 'Total XT3 assets of exchange: '
+        btcf-assets-total: 'Total BTCF assets of exchange: '
+        zcr-assets-total: 'Total ZCR assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -8194,6 +8509,31 @@ en:
         intro: All of exchange's WANT assets are listed here.
         total: Total WANT Assets
         address: Address
+      mmo_assets:
+        title: MMO Assets
+        intro: All of exchange's MMO assets are listed here.
+        total: Total MMO Assets
+        address: Address
+      cbt_assets:
+        title: CBT Assets
+        intro: All of exchange's CBT assets are listed here.
+        total: Total CBT Assets
+        address: Address
+      xt3_assets:
+        title: XT3 Assets
+        intro: All of exchange's XT3 assets are listed here.
+        total: Total XT3 Assets
+        address: Address
+      btcf_assets:
+        title: BTCF Assets
+        intro: All of exchange's BTCF assets are listed here.
+        total: Total BTCF Assets
+        address: Address
+      zcr_assets:
+        title: ZCR Assets
+        intro: All of exchange's ZCR assets are listed here.
+        total: Total ZCR Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -8322,6 +8662,11 @@ en:
         lunex_format: '0.00000000'
         pruf_format: '0.00000000'
         want_format: '0.00000000'
+        mmo_format: '0.00000000'
+        cbt_format: '0.00000000'
+        xt3_format: '0.00000000'
+        btcf_format: '0.00000000'
+        zcr_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -8996,6 +9341,36 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          mmo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          cbt:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          xt3:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          btcf:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zcr:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -9152,6 +9527,11 @@ en:
         lunex_html: "<i class='fa fa-check'></i><span>LUNEX Markets</span>"
         pruf_html: "<i class='fa fa-check'></i><span>PRUF Markets</span>"
         want_html: "<i class='fa fa-check'></i><span>WANT Markets</span>"
+        mmo_html: "<i class='fa fa-check'></i><span>MMO Markets</span>"
+        cbt_html: "<i class='fa fa-check'></i><span>CBT Markets</span>"
+        xt3_html: "<i class='fa fa-check'></i><span>XT3 Markets</span>"
+        btcf_html: "<i class='fa fa-check'></i><span>BTCF Markets</span>"
+        zcr_html: "<i class='fa fa-check'></i><span>ZCR Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -9458,6 +9838,11 @@ en:
         lunex_format: '0.00000000'
         pruf_format: '0.00000000'
         want_format: '0.00000000'
+        mmo_format: '0.00000000'
+        cbt_format: '0.00000000'
+        xt3_format: '0.00000000'
+        btcf_format: '0.00000000'
+        zcr_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -9897,6 +10282,21 @@ en:
         wantcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        mmocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        carebitcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        xt3chcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        btcfcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        zcorecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -10147,6 +10547,16 @@ en:
         prufuscoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         wantcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        mmocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        carebitcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        xt3chcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        btcfcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        zcorecoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -10968,6 +11378,41 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        mmocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Mmocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        carebitcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Carebitcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        xt3chcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Xt3chcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        btcfcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Btcfcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        zcorecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Zcorecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -11645,6 +12090,36 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       wantcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      mmocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      carebitcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      xt3chcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      btcfcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      zcorecoins:
         update:
           notice: The deposit was successful.
         index:
@@ -13056,6 +13531,66 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      mmocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      carebitcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      xt3chcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      btcfcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      zcorecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -13718,6 +14253,36 @@ en:
       checked: Checked
       warning: Warning
   deposits/wantcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/mmocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/carebitcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/xt3chcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/btcfcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/zcorecoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -14669,6 +15234,46 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    mmocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    carebitcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    xt3chcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    btcfcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    zcorecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -14811,6 +15416,11 @@ en:
       lunex: LUNEX
       pruf: PRUF
       want: WANT
+      mmo: MMO
+      cbt: CBT
+      xt3: XT3
+      btcf: BTCF
+      zcr: ZCR
       #enum_currence
     order:
       state:
@@ -14948,6 +15558,11 @@ en:
         lunexcoin: Lunexcoin
         prufuscoin: Prufuscoin
         wantcoin: Wantcoin
+        mmocoin: Mmocoin
+        carebitcoin: Carebitcoin
+        xt3chcoin: Xt3chcoin
+        btcfcoin: Btcfcoin
+        zcorecoin: Zcorecoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -16199,6 +16814,41 @@ en:
       key: Blockchain
       title: Wantcoin Blockchain
       intro: Withdraw Wantcoin to your own Wantcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    mmocoin:
+      key: Blockchain
+      title: Mmocoin Blockchain
+      intro: Withdraw Mmocoin to your own Mmocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    carebitcoin:
+      key: Blockchain
+      title: Carebitcoin Blockchain
+      intro: Withdraw Carebitcoin to your own Carebitcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    xt3chcoin:
+      key: Blockchain
+      title: Xt3chcoin Blockchain
+      intro: Withdraw Xt3chcoin to your own Xt3chcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    btcfcoin:
+      key: Blockchain
+      title: Btcfcoin Blockchain
+      intro: Withdraw Btcfcoin to your own Btcfcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    zcorecoin:
+      key: Blockchain
+      title: Zcorecoin Blockchain
+      intro: Withdraw Zcorecoin to your own Zcorecoin wallet
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
@@ -17538,6 +18188,66 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/wantcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/mmocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/carebitcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/xt3chcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/btcfcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/zcorecoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
