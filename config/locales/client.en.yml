@@ -165,6 +165,10 @@ en:
         vig: VIG
         peps: PEPS
         vizz: VIZZ
+        mon: MON
+        lunex: LUNEX
+        pruf: PRUF
+        want: WANT
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -507,6 +511,18 @@ en:
 
       deposit_vizz:
         title: VIZZ Deposit
+
+      deposit_mon:
+        title: MON Deposit
+
+      deposit_lunex:
+        title: LUNEX Deposit
+
+      deposit_pruf:
+        title: PRUF Deposit
+
+      deposit_want:
+        title: WANT Deposit
 
       #deposit
 
@@ -879,6 +895,18 @@ en:
       withdraw_vizz:
         title: VIZZ Withdraw
 
+      withdraw_mon:
+        title: MON Withdraw
+
+      withdraw_lunex:
+        title: LUNEX Withdraw
+
+      withdraw_pruf:
+        title: PRUF Withdraw
+
+      withdraw_want:
+        title: WANT Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -990,6 +1018,10 @@ en:
         withdraw_limit_vig: Withdraw day limit is 100000 for an unverified account.
         withdraw_limit_peps: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_vizz: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_mon: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_lunex: Withdraw day limit is 10000 for an unverified account.
+        withdraw_limit_pruf: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_want: Withdraw day limit is 30000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -1149,6 +1181,10 @@ en:
         vig: VIG Market
         peps: PEPS Market
         vizz: VIZZ Market
+        mon: MON Market
+        lunex: LUNEX Market
+        pruf: PRUF Market
+        want: WANT Market
         #market
 
 

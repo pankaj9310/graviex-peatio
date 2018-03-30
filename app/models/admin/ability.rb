@@ -124,6 +124,10 @@ module Admin
       can :manage, ::Deposits::Thevigcoin
       can :manage, ::Deposits::Pepegoldcoin
       can :manage, ::Deposits::Vizzotopcoin
+      can :manage, ::Deposits::Monsterbitcoin
+      can :manage, ::Deposits::Lunexcoin
+      can :manage, ::Deposits::Prufuscoin
+      can :manage, ::Deposits::Wantcoin
       #deposit
 
       can :menu, Withdraw
@@ -235,6 +239,10 @@ module Admin
       can :manage, ::Withdraws::Thevigcoin
       can :manage, ::Withdraws::Pepegoldcoin
       can :manage, ::Withdraws::Vizzotopcoin
+      can :manage, ::Withdraws::Monsterbitcoin
+      can :manage, ::Withdraws::Lunexcoin
+      can :manage, ::Withdraws::Prufuscoin
+      can :manage, ::Withdraws::Wantcoin
       #withdraw
 
     end

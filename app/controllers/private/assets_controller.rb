@@ -110,6 +110,10 @@ module Private
       @vig_proof   = Proof.current :vig
       @peps_proof   = Proof.current :peps
       @vizz_proof   = Proof.current :vizz
+      @mon_proof   = Proof.current :mon
+      @lunex_proof   = Proof.current :lunex
+      @pruf_proof   = Proof.current :pruf
+      @want_proof   = Proof.current :want
       #proof
 
       if current_user
@@ -220,6 +224,10 @@ module Private
         @vig_account = current_user.accounts.with_currency(:vig).first
         @peps_account = current_user.accounts.with_currency(:peps).first
         @vizz_account = current_user.accounts.with_currency(:vizz).first
+        @mon_account = current_user.accounts.with_currency(:mon).first
+        @lunex_account = current_user.accounts.with_currency(:lunex).first
+        @pruf_account = current_user.accounts.with_currency(:pruf).first
+        @want_account = current_user.accounts.with_currency(:want).first
         #account
       end
     end

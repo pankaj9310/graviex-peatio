@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180413201519) do
+ActiveRecord::Schema.define(version: 20180413201520) do
 
   create_table "account_versions", force: true do |t|
     t.integer  "member_id"
@@ -128,6 +128,7 @@ ActiveRecord::Schema.define(version: 20180413201519) do
     t.decimal  "profit",      precision: 32, scale: 16
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "volume",      precision: 32, scale: 16
   end
 
   add_index "daily_dividends", ["dividend_id", "created_at"], name: "index_daily_dividends_on_dividend_id_and_created_at", using: :btree
