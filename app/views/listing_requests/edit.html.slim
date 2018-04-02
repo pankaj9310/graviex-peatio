@@ -23,6 +23,13 @@ hr.split
   = f.input :comment, label: t('.comment')
   = f.input :secret, label: t('.secret')
   hr.split
+  = f.input :captcha, required: true, label: t('simple_form.labels.session.captcha') do
+    = show_simple_captcha
+      javascript:
+        $(function() {
+          $('input').attributes['class'].value = 'form-control';
+        });
+  hr.split
   = f.button :wrapped, cancel: settings_path
 
 = content_for :guide do
