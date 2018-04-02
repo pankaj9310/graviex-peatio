@@ -16,6 +16,13 @@ class ListingRequestsController < ApplicationController
     Rails.logger.info params.to_json
     @listing_request = ListingRequest.new(listing_request_params)
     @listing_request.save
+
+    if !simple_captcha_valid?
+      flash.now[:alert] = 'Invalid captcha'
+      render :action => 'edit', :id => @listing_request
+      return
+    end
+
     if listing_request_params && listing_request_params_present
       address  = CoinRPC[:gio].getnewaddress("payment", "")
       Rails.logger.info "Listing req new address " + address
@@ -33,6 +40,13 @@ class ListingRequestsController < ApplicationController
   def update
     @listing_request = ListingRequest.find(params[:id])
     @listing_request.update_attributes(listing_request_params)
+
+    if !simple_captcha_valid?
+      flash.now[:alert] = 'Invalid captcha'
+      render :action => 'edit', :id => @listing_request
+      return
+    end
+
     if listing_request_params && listing_request_params_present
       address  = CoinRPC[:gio].getnewaddress("payment", "")
       Rails.logger.info "Listing req new address " + address
