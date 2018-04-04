@@ -20,8 +20,16 @@ html lang="en"
     = render partial: "private/markets/header"
     #wrap
       .content
-        = render partial: 'market_trades'
-        = render partial: 'market_list'
+        - if gon.markets_pinned == 'true'
+          = render partial: 'market_trades'
+          = render partial: 'market_list'
+        - else
+          left_side_tabs_wrapper.float
+            ul.nav.nav-tabs.tabs-right.sideways
+              li: a href='#left_side_content' data-toggle='tab' = 'Markets'
+            .tab-content
+              left_side_content[class="tab-pane" style="display: block;"]
+                = render partial: 'left_side_dock'
 
         = render partial: 'candlestick'
         = render partial: 'range_switch'
@@ -32,7 +40,7 @@ html lang="en"
             ul.nav.nav-tabs.tabs-right.sideways
               li: a href='#chat_content' data-toggle='tab' = t('.chat')
             .tab-content
-              chat_content.tab-pane
+              chat_content[class="tab-pane" style="display: block;"]
                 = render partial: 'chat'
 
         = render partial: 'order_book'

@@ -123,6 +123,7 @@ CLOSE_IDX = 9
   @adjustChart = () ->
     #console.log('adjustChart', MACD_INDICATOR['MACD'])
     if chart = @$node.find('#candlestick_chart').highcharts()
+
       if MACD_INDICATOR['MACD']
         chart.yAxis[2].update({
           height: "15%",

@@ -290,6 +290,7 @@ header {
 
   &.hover, &.hover-force {
     width: $width;
+    height: $height;
     .tab-content { display: block; }
     .sideways.tabs-left { left: 1px; }
   }
@@ -298,11 +299,24 @@ header {
 chat_tabs_wrapper {
   bottom: $gutter; left: $gutter;
   min-height: 300px;
-  @include float-wrapper(260px, 300px);
+  @include float-wrapper($market-list-width, 300px);
   &.stop-resize {
     height: 100px !important;
     min-height: 100px !important;
     & > ul { top: 140px }
+  }
+}
+
+left_side_tabs_wrapper {
+  /*bottom: $gutter;*/
+  left: $gutter;
+  top: $gutter;
+  z-index: 1000;
+  @include float-wrapper($market-list-width, $side-bar-height);
+  &.stop-resize {
+    height: 100px !important;
+    min-height: 100px !important;
+    & > ul { top: 100px }
   }
 }
 
