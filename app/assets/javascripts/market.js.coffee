@@ -44,20 +44,20 @@ $ ->
 
   BigNumber.config(ERRORS: false)
 
-  if window.innerWidth < 1600
-    console.log 'window.location.href = ' + window.location.href
-    
-    @current_url = window.location.href
-    if @current_url.indexOf('pinned=false') == -1
-      if @current_url.indexOf('pinned=true') >= 0
-        @current_url = @current_url.replace('pinned=true', 'pinned=false') 
-      else 
-        if @current_url.indexOf('pinned=') == -1
-          if @current_url.indexOf('?') == -1
-            @current_url += '?pinned=false'
-          else
-            @current_url += '&pinned=false'
-      window.location.href = @current_url
+#  if window.innerWidth < 1600
+#    console.log 'window.location.href = ' + window.location.href
+#    
+#    @current_url = window.location.href
+#    if @current_url.indexOf('pinned=false') == -1
+#      if @current_url.indexOf('pinned=true') >= 0
+#        @current_url = @current_url.replace('pinned=true', 'pinned=false') 
+#      else 
+#        if @current_url.indexOf('pinned=') == -1
+#          if @current_url.indexOf('?') == -1
+#            @current_url += '?pinned=false'
+#          else
+#            @current_url += '&pinned=false'
+#      window.location.href = @current_url
 
   HeaderUI.attachTo('header')
   AccountSummaryUI.attachTo('#account_summary')
