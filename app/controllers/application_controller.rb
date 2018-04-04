@@ -137,7 +137,6 @@ class ApplicationController < ActionController::Base
         gon.markets_column = params[:column]
         gon.markets_column_order = params[:order]
         gon.markets_unit = params[:unit]
-        gon.markets_pinned = params[:pinned]
       end
 
       if params[:pinned] != nil
