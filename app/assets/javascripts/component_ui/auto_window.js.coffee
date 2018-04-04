@@ -42,6 +42,8 @@ BORDER_WIDTH = 1
 
       # Adjust widths.
       window_w     = window.innerWidth
+      if window_w < 1400
+        window_w = 1400
       markets_w    = $('#market_list').width()
       order_book_w = $('#order_book').width()
       $('#market_list .panel panel-default').width(markets_w)
