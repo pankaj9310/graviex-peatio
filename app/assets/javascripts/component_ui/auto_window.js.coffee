@@ -45,6 +45,10 @@ BORDER_WIDTH = 1
       markets_w    = $('#market_list').width()
       order_book_w = $('#order_book').width()
       $('#market_list .panel panel-default').width(markets_w)
-      $('#candlestick').width(window_w - order_book_w - markets_w - gutter_4x - 20)
+
+      if gon.markets_pinned == 'false'
+        $('#candlestick').width(window_w - order_book_w - gutter_2x - 20)
+      else
+        $('#candlestick').width(window_w - order_book_w - markets_w - gutter_4x - 20)
 
     @$node.resize()

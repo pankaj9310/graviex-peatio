@@ -15,18 +15,38 @@ window.MarketSwitchUI = flight.component ->
     sortUnitDirection: 'span.change_sort_direction'
     sortPriceDirection: 'span.price_sort_direction'
 
+  @setPinned = (pinned) ->
+#    console.log "setPinned = " + pinned
+    if pinned == 'true'
+      $("[data-name='pin-unpin-markets']").find(".fa").removeClass('fa-flip-vertical')
+      $("[data-name='pin-unpin-markets']").find(".info").text("Unpin markets")
+    else
+      if !$("[data-name='pin-unpin-markets']").find(".fa").hasClass('fa-flip-vertical')
+        $("[data-name='pin-unpin-markets']").find(".fa").addClass('fa-flip-vertical')
+      $("[data-name='pin-unpin-markets']").find(".info").text("Pin markets")
+
   @switchMarketGroup = (event, item) ->
     item = $(event.target).closest('a')
     name = item.data('name')
 
-    @markets_filter = name
+#   @select('marketGroupItem').hasClass('fa-flip-vertical')
+    if name == 'pin-unpin-markets'
+      if @markets_trades_pinned == 'true'
+        @markets_trades_pinned = 'false'
+      else
+        @markets_trades_pinned = 'true'
 
-    @select('marketGroupItem').removeClass('active')
-    item.addClass('active')
+      @setPinned(@markets_trades_pinned)
+      @switchMarketByMarket($('.highlight').data('market'))
+    else
+      @markets_filter = name
 
-    @select('marketGroupName').text item.find('span').text()
-    @select('marketsTable').attr("class", "table table-hover markets #{name}")
-    @select('marketsTable').attr("style", "font-size: 12px")
+      @select('marketGroupItem').removeClass('active')
+      item.addClass('active')
+
+      @select('marketGroupName').text item.find('span').text()
+      @select('marketsTable').attr("class", "table table-hover markets #{name}")
+      @select('marketsTable').attr("style", "font-size: 12px")
 
   @setMarketGroup = (market_filter) ->
     @select('marketGroupItem').removeClass('active')
@@ -257,10 +277,13 @@ window.MarketSwitchUI = flight.component ->
       selected.attributes['class'].value = selected.attributes['class'].value.substr(0, selected.attributes['class'].value.indexOf(from) - 1)
       selected.attributes['class'].value += " " + to
 
+  @switchMarketByMarket = (market) ->
+    parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit+'&pinned='+@markets_trades_pinned
+    window.location.href = window.formatter.market_url(market+parameters)
+
   @switchMarket = (e) ->
-    parameters = '?'+'markets='+@markets_filter+'&column='+@current_column+'&order='+@columnOrder(@current_column)+'&unit='+@current_unit
     unless e.target.nodeName == 'I'
-      window.location.href = window.formatter.market_url($(e.target).closest('tr').data('market')+parameters)
+      @switchMarketByMarket($(e.target).closest('tr').data('market'))
 
   @after 'initialize', ->
     @on document, 'market::tickers', @refresh
@@ -275,8 +298,10 @@ window.MarketSwitchUI = flight.component ->
     @markets_filter = gon.markets_filter
     @current_column = gon.markets_column
     @current_unit = gon.markets_unit
+    @markets_trades_pinned = gon.markets_pinned
     @markets_name_filter = ''
 
+    @setPinned(@markets_trades_pinned)
     @resetSort('name')
 
     @setMarketGroup @markets_filter
