@@ -29,7 +29,7 @@ body,
 }
 
 body {
-  min-width: $min-width !important;
+/*  min-width: $min-width !important; */
   min-height: $min-height !important;
 
   // fixed icon spin
@@ -219,7 +219,7 @@ header {
 
 .content {
   top: $navbar-height;
-  min-width: $min-width;
+/*  min-width: $min-width; */
   min-height: $min-height - $navbar-height;
   width: 100%;
   height: 100%;
@@ -259,7 +259,7 @@ header {
     width: auto;
     position: absolute;
 
-    li > a { background: #000; }
+    li > a { background: #364450; }
 
     &.tabs-left {
       left: 3px;
@@ -764,6 +764,7 @@ left_side_tabs_wrapper {
       &.lunex { tr.quote-lunex { display: block; } }
       &.pruf { tr.quote-pruf { display: block; } }
       &.want { tr.quote-want { display: block; } }
+      &.bbrc { tr.quote-bbrc { display: block; } }
       /*markets*/
       }
     }
@@ -775,12 +776,14 @@ left_side_tabs_wrapper {
     position: absolute;
     height: $my-orders-height;
     bottom: $gutter-2x + $right-entry-height; right: $order-book-width + $gutter;
+    z-index: 999;
   }
 }
 
 #my_orders {
   width: $my-orders-width; height: $my-orders-height;
   bottom: $gutter-2x + $right-entry-height; right: $gutter;
+  z-index: 1000;
 
   .panel-body-content {
     height: $my-orders-height - $gutter-2x;
@@ -1001,9 +1004,12 @@ table {
 
 .chart-ticker {
   color: #777;
-  background-color: $panel-bg-alpha;
-  border: 1px solid $navbar-default-border;
-  padding: 6px 0 6px 6px;
+  /*background-color: $panel-bg-alpha;*/
+  /*border: 1px solid $navbar-default-border;*/
+  background-color: transparent;
+  border: 0px;
+
+  padding: 14px 0 6px 6px;
   font-size: 11px;
 
   & > div { display: inline-block; width: 100px; }
