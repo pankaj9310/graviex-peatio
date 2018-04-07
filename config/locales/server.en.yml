@@ -140,6 +140,18 @@ en:
       withdraws/aevocoin: Withdraw
       withdraws/platopaycoin: Withdraw
       withdraws/yobacoin: Withdraw
+      withdraws/nibexcoin: Withdraw
+      withdraws/elliotcoin: Withdraw
+      withdraws/kingstoncoin: Withdraw
+      withdraws/akencoin: Withdraw
+      withdraws/akromacoin: Withdraw
+      withdraws/ravencoin: Withdraw
+      withdraws/posqcoin: Withdraw
+      withdraws/radiuscoin: Withdraw
+      withdraws/discountcoin: Withdraw
+      withdraws/variuscoin: Withdraw
+      withdraws/cyphercoin: Withdraw
+      withdraws/blooddonationcoin: Withdraw
       #models
     attributes:
       api_token:
@@ -1003,6 +1015,78 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/yobacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/nibexcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/elliotcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/kingstoncoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/akencoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/akromacoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/ravencoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/posqcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/radiuscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/discountcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/variuscoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/cyphercoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/blooddonationcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -2689,6 +2773,174 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/nibexcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/elliotcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/kingstoncoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/akencoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/akromacoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/ravencoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/posqcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/radiuscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/discountcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/variuscoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/cyphercoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/blooddonationcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
       #withdraws1
     errors:
       models:
@@ -2975,6 +3227,30 @@ en:
               platopaycoin_invalid: Invalid Address
               yobacoin_ismine: Used Address
               yobacoin_invalid: Invalid Address
+              nibexcoin_ismine: Used Address
+              nibexcoin_invalid: Invalid Address
+              elliotcoin_ismine: Used Address
+              elliotcoin_invalid: Invalid Address
+              kingstoncoin_ismine: Used Address
+              kingstoncoin_invalid: Invalid Address
+              akencoin_ismine: Used Address
+              akencoin_invalid: Invalid Address
+              akromacoin_ismine: Used Address
+              akromacoin_invalid: Invalid Address
+              ravencoin_ismine: Used Address
+              ravencoin_invalid: Invalid Address
+              posqcoin_ismine: Used Address
+              posqcoin_invalid: Invalid Address
+              radiuscoin_ismine: Used Address
+              radiuscoin_invalid: Invalid Address
+              discountcoin_ismine: Used Address
+              discountcoin_invalid: Invalid Address
+              variuscoin_ismine: Used Address
+              variuscoin_invalid: Invalid Address
+              cyphercoin_ismine: Used Address
+              cyphercoin_invalid: Invalid Address
+              blooddonationcoin_ismine: Used Address
+              blooddonationcoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -3704,6 +3980,78 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/nibexcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/elliotcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/kingstoncoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/akencoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/akromacoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/ravencoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/posqcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/radiuscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/discountcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/variuscoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/cyphercoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/blooddonationcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         #withdraws_msg1
         two_factor:
           attributes:
@@ -3869,6 +4217,18 @@ en:
       aevo: AEVO
       ppx: PPX
       yoba: YOBA
+      nbx: NBX
+      elli: ELLI
+      kgx: KGX
+      akn: AKN
+      aka: AKA
+      rvn: RVN
+      posq: POSQ
+      radius: RADIUS
+      dsc: DSC
+      varius: VARIUS
+      cyr: CYR
+      bbrc: BBRC
       #market1
   currency:
     satoshi:
@@ -4490,6 +4850,66 @@ en:
       key: YOBA
       code: YOBA
       name: Yobacoin
+      format: '0,0.0000'
+    nibexcoin:
+      key: NBX
+      code: NBX
+      name: Nibexcoin
+      format: '0,0.0000'
+    elliotcoin:
+      key: ELLI
+      code: ELLI
+      name: Elliotcoin
+      format: '0,0.0000'
+    kingstoncoin:
+      key: KGX
+      code: KGX
+      name: Kingstoncoin
+      format: '0,0.0000'
+    akencoin:
+      key: AKN
+      code: AKN
+      name: Akencoin
+      format: '0,0.0000'
+    akromacoin:
+      key: AKA
+      code: AKA
+      name: Akromacoin
+      format: '0,0.0000'
+    ravencoin:
+      key: RVN
+      code: RVN
+      name: Ravencoin
+      format: '0,0.0000'
+    posqcoin:
+      key: POSQ
+      code: POSQ
+      name: Posqcoin
+      format: '0,0.0000'
+    radiuscoin:
+      key: RADIUS
+      code: RADIUS
+      name: Radiuscoin
+      format: '0,0.0000'
+    discountcoin:
+      key: DSC
+      code: DSC
+      name: Discountcoin
+      format: '0,0.0000'
+    variuscoin:
+      key: VARIUS
+      code: VARIUS
+      name: Variuscoin
+      format: '0,0.0000'
+    cyphercoin:
+      key: CYR
+      code: CYR
+      name: Cyphercoin
+      format: '0,0.0000'
+    blooddonationcoin:
+      key: BBRC
+      code: BBRC
+      name: Blooddonationcoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -5470,6 +5890,90 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+    nibexcoin:
+      key: Block Chain
+      title: Nibexcoin Deposits
+      intro: Deposit nibexcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    elliotcoin:
+      key: Block Chain
+      title: Elliotcoin Deposits
+      intro: Deposit elliotcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    kingstoncoin:
+      key: Block Chain
+      title: Kingstoncoin Deposits
+      intro: Deposit kingstoncoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    akencoin:
+      key: Block Chain
+      title: Akencoin Deposits
+      intro: Deposit akencoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    akromacoin:
+      key: Block Chain
+      title: Akromacoin Deposits
+      intro: Deposit akromacoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    ravencoin:
+      key: Block Chain
+      title: Ravencoin Deposits
+      intro: Deposit ravencoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    posqcoin:
+      key: Block Chain
+      title: Posqcoin Deposits
+      intro: Deposit posqcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    radiuscoin:
+      key: Block Chain
+      title: Radiuscoin Deposits
+      intro: Deposit radiuscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    discountcoin:
+      key: Block Chain
+      title: Discountcoin Deposits
+      intro: Deposit discountcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    variuscoin:
+      key: Block Chain
+      title: Variuscoin Deposits
+      intro: Deposit variuscoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    cyphercoin:
+      key: Block Chain
+      title: Cyphercoin Deposits
+      intro: Deposit cyphercoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    blooddonationcoin:
+      key: Block Chain
+      title: Blooddonationcoin Deposits
+      intro: Deposit blooddonationcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
     #deposit_channel
   deposits/bank:
     aasm_state:
@@ -5847,6 +6351,42 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       yobacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      nibexcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      elliotcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      kingstoncoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      akencoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      akromacoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      ravencoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      posqcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      radiuscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      discountcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      variuscoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      cyphercoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      blooddonationcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -7756,6 +8296,186 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      nibexcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      elliotcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      kingstoncoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      akencoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      akromacoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      ravencoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      posqcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      radiuscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      discountcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      variuscoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      cyphercoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      blooddonationcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
       #withdraws_msgs
     tickets:
       index:
@@ -7946,6 +8666,18 @@ en:
         aevo-assets: AEVO Assets
         ppx-assets: PPX Assets
         yoba-assets: YOBA Assets
+        nbx-assets: NBX Assets
+        elli-assets: ELLI Assets
+        kgx-assets: KGX Assets
+        akn-assets: AKN Assets
+        aka-assets: AKA Assets
+        rvn-assets: RVN Assets
+        posq-assets: POSQ Assets
+        radius-assets: RADIUS Assets
+        dsc-assets: DSC Assets
+        varius-assets: VARIUS Assets
+        cyr-assets: CYR Assets
+        bbrc-assets: BBRC Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -8068,6 +8800,18 @@ en:
         verify-aevo: Verify My AEVO Assets
         verify-ppx: Verify My PPX Assets
         verify-yoba: Verify My YOBA Assets
+        verify-nbx: Verify My NBX Assets
+        verify-elli: Verify My ELLI Assets
+        verify-kgx: Verify My KGX Assets
+        verify-akn: Verify My AKN Assets
+        verify-aka: Verify My AKA Assets
+        verify-rvn: Verify My RVN Assets
+        verify-posq: Verify My POSQ Assets
+        verify-radius: Verify My RADIUS Assets
+        verify-dsc: Verify My DSC Assets
+        verify-varius: Verify My VARIUS Assets
+        verify-cyr: Verify My CYR Assets
+        verify-bbrc: Verify My BBRC Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -8189,6 +8933,18 @@ en:
         aevo-assets-total: 'Total AEVO assets of exchange: '
         ppx-assets-total: 'Total PPX assets of exchange: '
         yoba-assets-total: 'Total YOBA assets of exchange: '
+        nbx-assets-total: 'Total NBX assets of exchange: '
+        elli-assets-total: 'Total ELLI assets of exchange: '
+        kgx-assets-total: 'Total KGX assets of exchange: '
+        akn-assets-total: 'Total AKN assets of exchange: '
+        aka-assets-total: 'Total AKA assets of exchange: '
+        rvn-assets-total: 'Total RVN assets of exchange: '
+        posq-assets-total: 'Total POSQ assets of exchange: '
+        radius-assets-total: 'Total RADIUS assets of exchange: '
+        dsc-assets-total: 'Total DSC assets of exchange: '
+        varius-assets-total: 'Total VARIUS assets of exchange: '
+        cyr-assets-total: 'Total CYR assets of exchange: '
+        bbrc-assets-total: 'Total BBRC assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -8806,6 +9562,66 @@ en:
         intro: All of exchange's YOBA assets are listed here.
         total: Total YOBA Assets
         address: Address
+      nbx_assets:
+        title: NBX Assets
+        intro: All of exchange's NBX assets are listed here.
+        total: Total NBX Assets
+        address: Address
+      elli_assets:
+        title: ELLI Assets
+        intro: All of exchange's ELLI assets are listed here.
+        total: Total ELLI Assets
+        address: Address
+      kgx_assets:
+        title: KGX Assets
+        intro: All of exchange's KGX assets are listed here.
+        total: Total KGX Assets
+        address: Address
+      akn_assets:
+        title: AKN Assets
+        intro: All of exchange's AKN assets are listed here.
+        total: Total AKN Assets
+        address: Address
+      aka_assets:
+        title: AKA Assets
+        intro: All of exchange's AKA assets are listed here.
+        total: Total AKA Assets
+        address: Address
+      rvn_assets:
+        title: RVN Assets
+        intro: All of exchange's RVN assets are listed here.
+        total: Total RVN Assets
+        address: Address
+      posq_assets:
+        title: POSQ Assets
+        intro: All of exchange's POSQ assets are listed here.
+        total: Total POSQ Assets
+        address: Address
+      radius_assets:
+        title: RADIUS Assets
+        intro: All of exchange's RADIUS assets are listed here.
+        total: Total RADIUS Assets
+        address: Address
+      dsc_assets:
+        title: DSC Assets
+        intro: All of exchange's DSC assets are listed here.
+        total: Total DSC Assets
+        address: Address
+      varius_assets:
+        title: VARIUS Assets
+        intro: All of exchange's VARIUS assets are listed here.
+        total: Total VARIUS Assets
+        address: Address
+      cyr_assets:
+        title: CYR Assets
+        intro: All of exchange's CYR assets are listed here.
+        total: Total CYR Assets
+        address: Address
+      bbrc_assets:
+        title: BBRC Assets
+        intro: All of exchange's BBRC assets are listed here.
+        total: Total BBRC Assets
+        address: Address
       #coin_assests
       cny_assets:
         title: CNY Assets
@@ -8943,6 +9759,18 @@ en:
         aevo_format: '0.00000000'
         ppx_format: '0.00000000'
         yoba_format: '0.00000000'
+        nbx_format: '0.00000000'
+        elli_format: '0.00000000'
+        kgx_format: '0.00000000'
+        akn_format: '0.00000000'
+        aka_format: '0.00000000'
+        rvn_format: '0.00000000'
+        posq_format: '0.00000000'
+        radius_format: '0.00000000'
+        dsc_format: '0.00000000'
+        varius_format: '0.00000000'
+        cyr_format: '0.00000000'
+        bbrc_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -9671,6 +10499,78 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          nbx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          elli:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          kgx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          akn:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          aka:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          rvn:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          posq:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          radius:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          dsc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          varius:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          cyr:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bbrc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           #funds_show_reason
         ref:
           system: System
@@ -9836,6 +10736,18 @@ en:
         aevo_html: "<i class='fa fa-check'></i><span>AEVO Markets</span>"
         ppx_html: "<i class='fa fa-check'></i><span>PPX Markets</span>"
         yoba_html: "<i class='fa fa-check'></i><span>YOBA Markets</span>"
+        nbx_html: "<i class='fa fa-check'></i><span>NBX Markets</span>"
+        elli_html: "<i class='fa fa-check'></i><span>ELLI Markets</span>"
+        kgx_html: "<i class='fa fa-check'></i><span>KGX Markets</span>"
+        akn_html: "<i class='fa fa-check'></i><span>AKN Markets</span>"
+        aka_html: "<i class='fa fa-check'></i><span>AKA Markets</span>"
+        rvn_html: "<i class='fa fa-check'></i><span>RVN Markets</span>"
+        posq_html: "<i class='fa fa-check'></i><span>POSQ Markets</span>"
+        radius_html: "<i class='fa fa-check'></i><span>RADIUS Markets</span>"
+        dsc_html: "<i class='fa fa-check'></i><span>DSC Markets</span>"
+        varius_html: "<i class='fa fa-check'></i><span>VARIUS Markets</span>"
+        cyr_html: "<i class='fa fa-check'></i><span>CYR Markets</span>"
+        bbrc_html: "<i class='fa fa-check'></i><span>BBRC Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -10151,6 +11063,18 @@ en:
         aevo_format: '0.00000000'
         ppx_format: '0.00000000'
         yoba_format: '0.00000000'
+        nbx_format: '0.00000000'
+        elli_format: '0.00000000'
+        kgx_format: '0.00000000'
+        akn_format: '0.00000000'
+        aka_format: '0.00000000'
+        rvn_format: '0.00000000'
+        posq_format: '0.00000000'
+        radius_format: '0.00000000'
+        dsc_format: '0.00000000'
+        varius_format: '0.00000000'
+        cyr_format: '0.00000000'
+        bbrc_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -10619,6 +11543,42 @@ en:
         yobacoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
+        nibexcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        elliotcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        kingstoncoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        akencoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        akromacoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        ravencoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        posqcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        radiuscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        discountcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        variuscoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        cyphercoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        blooddonationcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
         #withdraw_amount
     hints:
       deposit:
@@ -10887,6 +11847,30 @@ en:
         platopaycoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         yobacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        nibexcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        elliotcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        kingstoncoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        akencoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        akromacoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        ravencoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        posqcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        radiuscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        discountcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        variuscoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        cyphercoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        blooddonationcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -11771,6 +12755,90 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        nibexcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Nibexcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        elliotcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Elliotcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        kingstoncoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Kingstoncoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        akencoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Akencoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        akromacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Akromacoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        ravencoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Ravencoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        posqcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Posqcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        radiuscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Radiuscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        discountcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Discountcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        variuscoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Variuscoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        cyphercoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Cyphercoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        blooddonationcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Blooddonationcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
         #withdraw_labels
   admin:
     deposits:
@@ -12502,6 +13570,78 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       yobacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      nibexcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      elliotcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      kingstoncoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      akencoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      akromacoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      ravencoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      posqcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      radiuscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      discountcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      variuscoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      cyphercoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      blooddonationcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -14021,6 +15161,150 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      nibexcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      elliotcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      kingstoncoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      akencoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      akromacoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      ravencoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      posqcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      radiuscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      discountcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      variuscoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      cyphercoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      blooddonationcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
       #admin_widraws
   deposits/satoshi:
     aasm_state:
@@ -14737,6 +16021,78 @@ en:
       checked: Checked
       warning: Warning
   deposits/yobacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/nibexcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/elliotcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/kingstoncoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/akencoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/akromacoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/ravencoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/posqcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/radiuscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/discountcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/variuscoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/cyphercoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/blooddonationcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -15760,6 +17116,102 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    nibexcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    elliotcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    kingstoncoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    akencoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    akromacoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    ravencoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    posqcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    radiuscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    discountcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    variuscoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    cyphercoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    blooddonationcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     #easy_table
     bank:
       sn: SN
@@ -15911,6 +17363,18 @@ en:
       aevo: AEVO
       ppx: PPX
       yoba: YOBA
+      nbx: NBX
+      elli: ELLI
+      kgx: KGX
+      akn: AKN
+      aka: AKA
+      rvn: RVN
+      posq: POSQ
+      radius: RADIUS
+      dsc: DSC
+      varius: VARIUS
+      cyr: CYR
+      bbrc: BBRC
       #enum_currence
     order:
       state:
@@ -16057,6 +17521,18 @@ en:
         aevocoin: Aevocoin
         platopaycoin: Platopaycoin
         yobacoin: Yobacoin
+        nibexcoin: Nibexcoin
+        elliotcoin: Elliotcoin
+        kingstoncoin: Kingstoncoin
+        akencoin: Akencoin
+        akromacoin: Akromacoin
+        ravencoin: Ravencoin
+        posqcoin: Posqcoin
+        radiuscoin: Radiuscoin
+        discountcoin: Discountcoin
+        variuscoin: Variuscoin
+        cyphercoin: Cyphercoin
+        blooddonationcoin: Blooddonationcoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -17379,6 +18855,90 @@ en:
       key: Blockchain
       title: Yobacoin Blockchain
       intro: Withdraw Yobacoin to your own Yobacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    nibexcoin:
+      key: Blockchain
+      title: Nibexcoin Blockchain
+      intro: Withdraw Nibexcoin to your own Nibexcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    elliotcoin:
+      key: Blockchain
+      title: Elliotcoin Blockchain
+      intro: Withdraw Elliotcoin to your own Elliotcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    kingstoncoin:
+      key: Blockchain
+      title: Kingstoncoin Blockchain
+      intro: Withdraw Kingstoncoin to your own Kingstoncoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    akencoin:
+      key: Blockchain
+      title: Akencoin Blockchain
+      intro: Withdraw Akencoin to your own Akencoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    akromacoin:
+      key: Blockchain
+      title: Akromacoin Blockchain
+      intro: Withdraw Akromacoin to your own Akromacoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    ravencoin:
+      key: Blockchain
+      title: Ravencoin Blockchain
+      intro: Withdraw Ravencoin to your own Ravencoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    posqcoin:
+      key: Blockchain
+      title: Posqcoin Blockchain
+      intro: Withdraw Posqcoin to your own Posqcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    radiuscoin:
+      key: Blockchain
+      title: Radiuscoin Blockchain
+      intro: Withdraw Radiuscoin to your own Radiuscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    discountcoin:
+      key: Blockchain
+      title: Discountcoin Blockchain
+      intro: Withdraw Discountcoin to your own Discountcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    variuscoin:
+      key: Blockchain
+      title: Variuscoin Blockchain
+      intro: Withdraw Variuscoin to your own Variuscoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    cyphercoin:
+      key: Blockchain
+      title: Cyphercoin Blockchain
+      intro: Withdraw Cyphercoin to your own Cyphercoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    blooddonationcoin:
+      key: Blockchain
+      title: Blooddonationcoin Blockchain
+      intro: Withdraw Blooddonationcoin to your own Blooddonationcoin wallet
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
@@ -18875,6 +20435,150 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/yobacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/nibexcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/elliotcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/kingstoncoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/akencoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/akromacoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/ravencoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/posqcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/radiuscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/discountcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/variuscoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/cyphercoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/blooddonationcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

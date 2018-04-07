@@ -24,14 +24,22 @@ module Worker
 
         begin
 
-          if withdraw.currency == 'eth' || withdraw.currency == 'mix'
+          if withdraw.currency == 'eth' || withdraw.currency == 'mix' || withdraw.currency == 'aka'
             balance = open("#{withdraw.channel.currency_obj.rest}/cgi-bin/total.cgi").read.rstrip.to_f
             raise Account::BalanceError, 'Insufficient coins' if balance < withdraw.sum
 
             fee = [withdraw.fee.to_f || withdraw.channel.try(:fee) || 0.0005, 0.1].min
-            CoinRPC[withdraw.currency].personal_unlockAccount(withdraw.channel.currency_obj.base_account, "", "0x30")
-            # get nonce
-            local_nonce = CoinRPC[withdraw.currency].parity_nextNonce(withdraw.channel.currency_obj.base_account).to_i(16)
+
+            local_nonce = 0
+            if withdraw.channel.currency_obj.code == "aka"
+              CoinRPC[withdraw.currency].personal_unlockAccount(withdraw.channel.currency_obj.base_account, "", 0)
+              # get nonce
+              local_nonce = CoinRPC[withdraw.currency].eth_getTransactionCount(withdraw.channel.currency_obj.base_account, "latest").to_i(16)
+            else
+              CoinRPC[withdraw.currency].personal_unlockAccount(withdraw.channel.currency_obj.base_account, "", "0x30")
+              # get nonce
+              local_nonce = CoinRPC[withdraw.currency].parity_nextNonce(withdraw.channel.currency_obj.base_account).to_i(16)
+            end
 
             # calc amount
             gas_limit = withdraw.channel.currency_obj.gas_limit

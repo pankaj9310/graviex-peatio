@@ -10,7 +10,7 @@ module Worker
       txid = payload[:txid]
 
       channel = DepositChannel.find_by_key(channel_key)
-      if channel.currency_obj.code == 'eth' || channel.currency_obj.code == 'mix'
+      if channel.currency_obj.proto == 'ETH'
         raw  = get_raw_eth channel, txid
         raw.symbolize_keys!
         deposit_eth!(channel, txid, 1, raw)
@@ -74,7 +74,8 @@ module Worker
           amount: detail[:amount].to_s.to_d,
           confirmations: raw[:confirmations],
           receive_at: Time.at(raw[:time]).to_datetime,
-          currency: channel.currency
+          currency: channel.currency,
+          aasm_state: "confirmed"
           request = ListingRequest.where(address: detail[:address]).first
           if request.amount
             request.amount = request.amount + detail[:amount].to_f
@@ -124,7 +125,11 @@ module Worker
     end
 
     def get_raw_eth(channel, txid)
-      CoinRPC[channel.currency_obj.code].eth_getTransactionByHash(txid)
+      raw = CoinRPC[channel.currency_obj.code].eth_getTransactionByHash(txid)
+      if raw == nil
+        raw = CoinRPC[channel.currency_obj.code].eth_getTransaction(txid)
+      end
+      return raw
     end
   end
 end

@@ -7,6 +7,14 @@ GIT
       rest-client (~> 1.6.7)
 
 GIT
+  remote: git://github.com/gravio-net/simple-captcha.git
+  revision: 6bbc83d9a0f91541f4090798a606db51b0dec71c
+  branch: 0.2.2.1
+  specs:
+    simple_captcha (0.2.2)
+      rails (>= 3.1, < 4.1)
+
+GIT
   remote: git://github.com/gravio-net/unread.git
   revision: b8fa0502e9558c93388a104bcbe20376cf43027d
   specs:
@@ -370,8 +378,6 @@ GEM
     shoulda-matchers (2.5.0)
       activesupport (>= 3.0.0)
     signature (0.1.7)
-    simple_captcha2 (0.2.2)
-      rails (>= 3.1, < 4.1)
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -504,7 +510,7 @@ DEPENDENCIES
   sass-rails
   selenium-webdriver
   shoulda-matchers
-  simple_captcha2
+  simple_captcha!
   simple_form (~> 3.1.0)
   slim-rails
   test-unit

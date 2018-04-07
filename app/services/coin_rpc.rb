@@ -574,7 +574,6 @@ class CoinRPC
       raise ConnectionRefusedError
     end
 
-
     def safe_getbalance
       begin
         getbalance
@@ -636,11 +635,20 @@ class CoinRPC
             address: address
           }
         ],
-        changeAddress: "BJt5nFq6JUkWyFV59CTavk1NkYqPAHeUn9XF5TCQDSu1NBJp8XqEyGmUPVbVoJv6zzXZJENsqjR8WaeKKXXNcbasVT8cHB1"
+        changeAddress: "BHuoqU2fRnQ6Cjot9nXbvDKw6y3vpjYA8dTQR9tKMVvxbYDm1w895eGRrKZrrc9q7x5kfiJTBTn8zEx7CWxDVLPMBzKGDYf"
       }
 
       result = handle_one("sendTransaction", parameters)
       return result['transactionHash']
+    end
+
+    def getnewaddress(base_account, digest)
+      parameters =
+      {
+      }.to_json
+
+      result = handle_only("createAddress", "")
+      return result['address']
     end
 
     def getnewaddress(base_account, digest)

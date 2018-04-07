@@ -114,6 +114,27 @@ module Private
       @lunex_proof   = Proof.current :lunex
       @pruf_proof   = Proof.current :pruf
       @want_proof   = Proof.current :want
+      @mmo_proof   = Proof.current :mmo
+      @cbt_proof   = Proof.current :cbt
+      @xt3_proof   = Proof.current :xt3
+      @btcf_proof   = Proof.current :btcf
+      @zcr_proof   = Proof.current :zcr
+      @slrc_proof   = Proof.current :slrc
+      @aevo_proof   = Proof.current :aevo
+      @ppx_proof   = Proof.current :ppx
+      @yoba_proof   = Proof.current :yoba
+      @nbx_proof   = Proof.current :nbx
+      @elli_proof   = Proof.current :elli
+      @kgx_proof   = Proof.current :kgx
+      @akn_proof   = Proof.current :akn
+      @aka_proof   = Proof.current :aka
+      @rvn_proof   = Proof.current :rvn
+      @posq_proof   = Proof.current :posq
+      @radius_proof   = Proof.current :radius
+      @dsc_proof   = Proof.current :dsc
+      @varius_proof   = Proof.current :varius
+      @cyr_proof   = Proof.current :cyr
+      @bbrc_proof   = Proof.current :bbrc
       #proof
 
       if current_user
@@ -228,6 +249,27 @@ module Private
         @lunex_account = current_user.accounts.with_currency(:lunex).first
         @pruf_account = current_user.accounts.with_currency(:pruf).first
         @want_account = current_user.accounts.with_currency(:want).first
+        @mmo_account = current_user.accounts.with_currency(:mmo).first
+        @cbt_account = current_user.accounts.with_currency(:cbt).first
+        @xt3_account = current_user.accounts.with_currency(:xt3).first
+        @btcf_account = current_user.accounts.with_currency(:btcf).first
+        @zcr_account = current_user.accounts.with_currency(:zcr).first
+        @slrc_account = current_user.accounts.with_currency(:slrc).first
+        @aevo_account = current_user.accounts.with_currency(:aevo).first
+        @ppx_account = current_user.accounts.with_currency(:ppx).first
+        @yoba_account = current_user.accounts.with_currency(:yoba).first
+        @nbx_account = current_user.accounts.with_currency(:nbx).first
+        @elli_account = current_user.accounts.with_currency(:elli).first
+        @kgx_account = current_user.accounts.with_currency(:kgx).first
+        @akn_account = current_user.accounts.with_currency(:akn).first
+        @aka_account = current_user.accounts.with_currency(:aka).first
+        @rvn_account = current_user.accounts.with_currency(:rvn).first
+        @posq_account = current_user.accounts.with_currency(:posq).first
+        @radius_account = current_user.accounts.with_currency(:radius).first
+        @dsc_account = current_user.accounts.with_currency(:dsc).first
+        @varius_account = current_user.accounts.with_currency(:varius).first
+        @cyr_account = current_user.accounts.with_currency(:cyr).first
+        @bbrc_account = current_user.accounts.with_currency(:bbrc).first
         #account
       end
     end

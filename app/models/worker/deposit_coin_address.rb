@@ -11,7 +11,7 @@ module Worker
       member = Member.where('id = ?', account.member_id).first
 
       currency = payload[:currency]
-      if currency == 'eth' || currency == 'mix'
+      if currency == 'eth' || currency == 'mix' || currency == 'aka'
         address  = CoinRPC[currency].personal_newAccount("")
       else
         address  = CoinRPC[currency].getnewaddress("payment", member.email + member.id.to_s)

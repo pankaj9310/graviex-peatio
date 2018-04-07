@@ -39,8 +39,11 @@ class PaymentTransaction < ActiveRecord::Base
   end
 
   def refresh_confirmations
-    if deposit.currency == 'eth' || deposit.currency == 'mix'
+    if deposit.currency == 'eth' || deposit.currency == 'mix' || deposit.currency == 'aka'
       raw = CoinRPC[deposit.currency].eth_getTransactionByHash(txid)      
+      if raw == nil
+        raw = CoinRPC[deposit.currency].eth_getTransaction(txid)
+      end
       self.confirmations = CoinRPC[deposit.currency].eth_blockNumber.to_i(16) - raw[:blockNumber].to_i(16)
     else
       raw = CoinRPC[deposit.currency].gettransaction(txid)

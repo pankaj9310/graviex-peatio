@@ -169,6 +169,27 @@ en:
         lunex: LUNEX
         pruf: PRUF
         want: WANT
+        mmo: MMO
+        cbt: CBT
+        xt3: XT3
+        btcf: BTCF
+        zcr: ZCR
+        slrc: SLRC
+        aevo: AEVO
+        ppx: PPX
+        yoba: YOBA
+        nbx: NBX
+        elli: ELLI
+        kgx: KGX
+        akn: AKN
+        aka: AKA
+        rvn: RVN
+        posq: POSQ
+        radius: RADIUS
+        dsc: DSC
+        varius: VARIUS
+        cyr: CYR
+        bbrc: BBRC
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -523,6 +544,69 @@ en:
 
       deposit_want:
         title: WANT Deposit
+
+      deposit_mmo:
+        title: MMO Deposit
+
+      deposit_cbt:
+        title: CBT Deposit
+
+      deposit_xt3:
+        title: XT3 Deposit
+
+      deposit_btcf:
+        title: BTCF Deposit
+
+      deposit_zcr:
+        title: ZCR Deposit
+
+      deposit_slrc:
+        title: SLRC Deposit
+
+      deposit_aevo:
+        title: AEVO Deposit
+
+      deposit_ppx:
+        title: PPX Deposit
+
+      deposit_yoba:
+        title: YOBA Deposit
+
+      deposit_nbx:
+        title: NBX Deposit
+
+      deposit_elli:
+        title: ELLI Deposit
+
+      deposit_kgx:
+        title: KGX Deposit
+
+      deposit_akn:
+        title: AKN Deposit
+
+      deposit_aka:
+        title: AKA Deposit
+
+      deposit_rvn:
+        title: RVN Deposit
+
+      deposit_posq:
+        title: POSQ Deposit
+
+      deposit_radius:
+        title: RADIUS Deposit
+
+      deposit_dsc:
+        title: DSC Deposit
+
+      deposit_varius:
+        title: VARIUS Deposit
+
+      deposit_cyr:
+        title: CYR Deposit
+
+      deposit_bbrc:
+        title: BBRC Deposit
 
       #deposit
 
@@ -907,6 +991,69 @@ en:
       withdraw_want:
         title: WANT Withdraw
 
+      withdraw_mmo:
+        title: MMO Withdraw
+
+      withdraw_cbt:
+        title: CBT Withdraw
+
+      withdraw_xt3:
+        title: XT3 Withdraw
+
+      withdraw_btcf:
+        title: BTCF Withdraw
+
+      withdraw_zcr:
+        title: ZCR Withdraw
+
+      withdraw_slrc:
+        title: SLRC Withdraw
+
+      withdraw_aevo:
+        title: AEVO Withdraw
+
+      withdraw_ppx:
+        title: PPX Withdraw
+
+      withdraw_yoba:
+        title: YOBA Withdraw
+
+      withdraw_nbx:
+        title: NBX Withdraw
+
+      withdraw_elli:
+        title: ELLI Withdraw
+
+      withdraw_kgx:
+        title: KGX Withdraw
+
+      withdraw_akn:
+        title: AKN Withdraw
+
+      withdraw_aka:
+        title: AKA Withdraw
+
+      withdraw_rvn:
+        title: RVN Withdraw
+
+      withdraw_posq:
+        title: POSQ Withdraw
+
+      withdraw_radius:
+        title: RADIUS Withdraw
+
+      withdraw_dsc:
+        title: DSC Withdraw
+
+      withdraw_varius:
+        title: VARIUS Withdraw
+
+      withdraw_cyr:
+        title: CYR Withdraw
+
+      withdraw_bbrc:
+        title: BBRC Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -1022,6 +1169,27 @@ en:
         withdraw_limit_lunex: Withdraw day limit is 10000 for an unverified account.
         withdraw_limit_pruf: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_want: Withdraw day limit is 30000 for an unverified account.
+        withdraw_limit_mmo: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_cbt: Withdraw day limit is 300000 for an unverified account.
+        withdraw_limit_xt3: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_btcf: Withdraw day limit is 60000 for an unverified account.
+        withdraw_limit_zcr: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_slrc: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_aevo: Withdraw day limit is 400000 for an unverified account.
+        withdraw_limit_ppx: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_yoba: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_nbx: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_elli: Withdraw day limit is 40000 for an unverified account.
+        withdraw_limit_kgx: Withdraw day limit is 30000 for an unverified account.
+        withdraw_limit_akn: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_aka: Withdraw day limit is 30000 for an unverified account.
+        withdraw_limit_rvn: Withdraw day limit is 2000000 for an unverified account.
+        withdraw_limit_posq: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_radius: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_dsc: Withdraw day limit is 30000 for an unverified account.
+        withdraw_limit_varius: Withdraw day limit is 30000000 for an unverified account.
+        withdraw_limit_cyr: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_bbrc: Withdraw day limit is 200000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -1185,6 +1353,27 @@ en:
         lunex: LUNEX Market
         pruf: PRUF Market
         want: WANT Market
+        mmo: MMO Market
+        cbt: CBT Market
+        xt3: XT3 Market
+        btcf: BTCF Market
+        zcr: ZCR Market
+        slrc: SLRC Market
+        aevo: AEVO Market
+        ppx: PPX Market
+        yoba: YOBA Market
+        nbx: NBX Market
+        elli: ELLI Market
+        kgx: KGX Market
+        akn: AKN Market
+        aka: AKA Market
+        rvn: RVN Market
+        posq: POSQ Market
+        radius: RADIUS Market
+        dsc: DSC Market
+        varius: VARIUS Market
+        cyr: CYR Market
+        bbrc: BBRC Market
         #market
 
 
