@@ -128,6 +128,7 @@ Peatio::Application.routes.draw do
   post '/webhooks/tx' => 'webhooks#tx'
   post '/webhooks/eth' => 'webhooks#eth'
   post '/webhooks/mix' => 'webhooks#mix'
+  post '/webhooks/aka' => 'webhooks#aka'
 
   draw :admin
 

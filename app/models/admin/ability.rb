@@ -128,6 +128,27 @@ module Admin
       can :manage, ::Deposits::Lunexcoin
       can :manage, ::Deposits::Prufuscoin
       can :manage, ::Deposits::Wantcoin
+      can :manage, ::Deposits::Mmocoin
+      can :manage, ::Deposits::Carebitcoin
+      can :manage, ::Deposits::Xt3chcoin
+      can :manage, ::Deposits::Btcfcoin
+      can :manage, ::Deposits::Zcorecoin
+      can :manage, ::Deposits::Solariumcoin
+      can :manage, ::Deposits::Aevocoin
+      can :manage, ::Deposits::Platopaycoin
+      can :manage, ::Deposits::Yobacoin
+      can :manage, ::Deposits::Nibexcoin
+      can :manage, ::Deposits::Elliotcoin
+      can :manage, ::Deposits::Kingstoncoin
+      can :manage, ::Deposits::Akencoin
+      can :manage, ::Deposits::Akromacoin
+      can :manage, ::Deposits::Ravencoin
+      can :manage, ::Deposits::Posqcoin
+      can :manage, ::Deposits::Radiuscoin
+      can :manage, ::Deposits::Discountcoin
+      can :manage, ::Deposits::Variuscoin
+      can :manage, ::Deposits::Cyphercoin
+      can :manage, ::Deposits::Blooddonationcoin
       #deposit
 
       can :menu, Withdraw
@@ -243,6 +264,27 @@ module Admin
       can :manage, ::Withdraws::Lunexcoin
       can :manage, ::Withdraws::Prufuscoin
       can :manage, ::Withdraws::Wantcoin
+      can :manage, ::Withdraws::Mmocoin
+      can :manage, ::Withdraws::Carebitcoin
+      can :manage, ::Withdraws::Xt3chcoin
+      can :manage, ::Withdraws::Btcfcoin
+      can :manage, ::Withdraws::Zcorecoin
+      can :manage, ::Withdraws::Solariumcoin
+      can :manage, ::Withdraws::Aevocoin
+      can :manage, ::Withdraws::Platopaycoin
+      can :manage, ::Withdraws::Yobacoin
+      can :manage, ::Withdraws::Nibexcoin
+      can :manage, ::Withdraws::Elliotcoin
+      can :manage, ::Withdraws::Kingstoncoin
+      can :manage, ::Withdraws::Akencoin
+      can :manage, ::Withdraws::Akromacoin
+      can :manage, ::Withdraws::Ravencoin
+      can :manage, ::Withdraws::Posqcoin
+      can :manage, ::Withdraws::Radiuscoin
+      can :manage, ::Withdraws::Discountcoin
+      can :manage, ::Withdraws::Variuscoin
+      can :manage, ::Withdraws::Cyphercoin
+      can :manage, ::Withdraws::Blooddonationcoin
       #withdraw
 
     end

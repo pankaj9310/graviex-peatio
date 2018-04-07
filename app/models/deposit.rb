@@ -112,13 +112,21 @@ class Deposit < ActiveRecord::Base
     # we have aggregate scheme with single address
     # so we need to thansfer incoming funds to the internal address
     if channel.currency_obj.base_account != nil
-      if channel.currency_obj.code == "eth" || channel.currency_obj.code == "mix"
+      if channel.currency_obj.proto == 'ETH'
         # collect all deposits on the single account
         payment_tx = PaymentTransaction::Normal.where(txid: txid).first
-        # unlock account
-        CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", "0x30")
-        # get nonce
-        local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
+        local_nonce = 0
+        if channel.currency_obj.code == "aka"
+          # unlock account
+          CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", 0)
+          # get nonce
+          local_nonce = CoinRPC[channel.currency_obj.code].eth_getTransactionCount(payment_tx.address, "latest").to_i(16)
+        else
+          # unlock account
+          CoinRPC[channel.currency_obj.code].personal_unlockAccount(payment_tx.address, "", "0x30")
+          # get nonce
+          local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
+        end
 
         # calc amount
         gas_limit = channel.currency_obj.gas_limit

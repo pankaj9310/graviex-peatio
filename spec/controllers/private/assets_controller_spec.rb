@@ -129,6 +129,27 @@ describe Private::AssetsController do
       it { expect(assigns(:lunex_account)).to be_nil }
       it { expect(assigns(:pruf_account)).to be_nil }
       it { expect(assigns(:want_account)).to be_nil }
+      it { expect(assigns(:mmo_account)).to be_nil }
+      it { expect(assigns(:cbt_account)).to be_nil }
+      it { expect(assigns(:xt3_account)).to be_nil }
+      it { expect(assigns(:btcf_account)).to be_nil }
+      it { expect(assigns(:zcr_account)).to be_nil }
+      it { expect(assigns(:slrc_account)).to be_nil }
+      it { expect(assigns(:aevo_account)).to be_nil }
+      it { expect(assigns(:ppx_account)).to be_nil }
+      it { expect(assigns(:yoba_account)).to be_nil }
+      it { expect(assigns(:nbx_account)).to be_nil }
+      it { expect(assigns(:elli_account)).to be_nil }
+      it { expect(assigns(:kgx_account)).to be_nil }
+      it { expect(assigns(:akn_account)).to be_nil }
+      it { expect(assigns(:aka_account)).to be_nil }
+      it { expect(assigns(:rvn_account)).to be_nil }
+      it { expect(assigns(:posq_account)).to be_nil }
+      it { expect(assigns(:radius_account)).to be_nil }
+      it { expect(assigns(:dsc_account)).to be_nil }
+      it { expect(assigns(:varius_account)).to be_nil }
+      it { expect(assigns(:cyr_account)).to be_nil }
+      it { expect(assigns(:bbrc_account)).to be_nil }
       #it
 
     end
