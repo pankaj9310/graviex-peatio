@@ -1,7 +1,7 @@
 li#settings.dropdown
   a.dropdown-toggle href="#" data-toggle="dropdown"
     i.fa.fa-user
-    span = current_user.email
+    span = current_user.email.truncate(12)
     - if current_user.has_gio_deposite_50
       i#gio_discount_mark class='fa fa-star' style='color: #e6b800'
     - else
