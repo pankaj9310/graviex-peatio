@@ -231,7 +231,13 @@ CLOSE_IDX = 9
           # x = Math.max(10, point.plotX-w-20)
           # y = Math.max(0, Math.floor(point.plotY/grid_h)*grid_h-20)
 
-          if LEGEND_INDICATOR['Legend'] == true && window.innerWidth > 1600
+#          if LEGEND_INDICATOR['Legend'] == true && window.innerWidth > 1600
+#            x = 5
+#          else
+#            x = -800
+#            this.hide()
+
+          if LEGEND_INDICATOR['Legend'] == true
             x = 5
           else
             x = -800

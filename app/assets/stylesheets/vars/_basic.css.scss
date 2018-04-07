@@ -18,6 +18,18 @@ $icon-gutter-width: 5px;
 $up-bg: rgba(89, 132, 50, 1.0);
 $down-bg: rgba(159, 49, 27, 1.0);
 
-@font-face { font-family: graviex-mono; src: url('graviex-mono-regular.ttf'); } 
-@font-face { font-family: graviex-mono; font-weight: bold; src: url('graviex-mono-bold.ttf');}
+@font-face 
+{ 
+  font-family: graviex-mono; 
+  src: url('graviex-mono-regular.eot');
+  src: url('graviex-mono-regular.ttf') format('truetype'), url('graviex-mono-regular.woff') format('woff'), url('graviex-mono-regular.woff2') format('woff2'), url('graviex-mono-regular.svg') format('svg'); 
+}
+
+@font-face 
+{ 
+  font-family: graviex-mono; 
+  font-weight: bold; 
+  src: url('graviex-mono-bold.eot');
+  src: url('graviex-mono-bold.ttf') format('truetype'), url('graviex-mono-bold.woff') format('woff'), url('graviex-mono-bold.woff') format('woff2'), url('graviex-mono-bold.svg') format('svg');
+}
 

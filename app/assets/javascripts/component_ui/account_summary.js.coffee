@@ -25,7 +25,7 @@
         sum += +account.balance * +ticker.last
         sum += +account.locked * +ticker.last
 
-    @select('total_assets').text "#{symbol}#{formatter.round sum, 1}/#{formatter.round available, 1}"
+    @select('total_assets').text "#{formatter.round sum, 1}/#{formatter.round available, 1}"
 
   @after 'initialize', ->
     @accounts = gon.accounts
