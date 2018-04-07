@@ -211,6 +211,9 @@ class CoinRPC
       Rails.logger.info resp
       raise JSONRPCError, resp['error'] if resp['error']
       result = resp['result']
+      if result == nil 
+        return result
+      end
       result.symbolize_keys! if result.is_a? Hash
       result
     end

@@ -136,7 +136,10 @@ en:
       withdraws/xt3chcoin: Withdraw
       withdraws/btcfcoin: Withdraw
       withdraws/zcorecoin: Withdraw
-      withdraws/blooddonationcoin: Withdraw
+      withdraws/solariumcoin: Withdraw
+      withdraws/aevocoin: Withdraw
+      withdraws/platopaycoin: Withdraw
+      withdraws/yobacoin: Withdraw
       #models
     attributes:
       api_token:
@@ -981,7 +984,25 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
-      deposits/blooddonationcoin:
+      deposits/solariumcoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/aevocoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/platopaycoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/yobacoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -2612,7 +2633,49 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
-      withdraws/blooddonationcoin:
+      withdraws/solariumcoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/aevocoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/platopaycoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/yobacoin:
         id: ID
         member_name: Account
         currency_obj_key_text: Currency
@@ -2904,8 +2967,14 @@ en:
               btcfcoin_invalid: Invalid Address
               zcorecoin_ismine: Used Address
               zcorecoin_invalid: Invalid Address
-              blooddonationcoin_ismine: Used Address
-              blooddonationcoin_invalid: Invalid Address
+              solariumcoin_ismine: Used Address
+              solariumcoin_invalid: Invalid Address
+              aevocoin_ismine: Used Address
+              aevocoin_invalid: Invalid Address
+              platopaycoin_ismine: Used Address
+              platopaycoin_invalid: Invalid Address
+              yobacoin_ismine: Used Address
+              yobacoin_invalid: Invalid Address
               #address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
@@ -3611,7 +3680,25 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
-        withdraws/blooddonationcoin:
+        withdraws/solariumcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/aevocoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/platopaycoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/yobacoin:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -3778,7 +3865,10 @@ en:
       xt3: XT3
       btcf: BTCF
       zcr: ZCR
-      bbrc: BBRC
+      slrc: SLRC
+      aevo: AEVO
+      ppx: PPX
+      yoba: YOBA
       #market1
   currency:
     satoshi:
@@ -4381,10 +4471,25 @@ en:
       code: ZCR
       name: Zcorecoin
       format: '0,0.0000'
-    blooddonationcoin:
-      key: BBRC
-      code: BBRC
-      name: Blooddonationcoin
+    solariumcoin:
+      key: SLRC
+      code: SLRC
+      name: Solariumcoin
+      format: '0,0.0000'
+    aevocoin:
+      key: AEVO
+      code: AEVO
+      name: Aevocoin
+      format: '0,0.0000'
+    platopaycoin:
+      key: PPX
+      code: PPX
+      name: Platopaycoin
+      format: '0,0.0000'
+    yobacoin:
+      key: YOBA
+      code: YOBA
+      name: Yobacoin
       format: '0,0.0000'
     #currency
   datagrid:
@@ -5337,10 +5442,31 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
-    blooddonationcoin:
+    solariumcoin:
       key: Block Chain
-      title: Blooddonationcoin Deposits
-      intro: Deposit blooddonationcoin from your own wallet address to GRAVIEX account
+      title: Solariumcoin Deposits
+      intro: Deposit solariumcoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    aevocoin:
+      key: Block Chain
+      title: Aevocoin Deposits
+      intro: Deposit aevocoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    platopaycoin:
+      key: Block Chain
+      title: Platopaycoin Deposits
+      intro: Deposit platopaycoin from your own wallet address to GRAVIEX account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    yobacoin:
+      key: Block Chain
+      title: Yobacoin Deposits
+      intro: Deposit yobacoin from your own wallet address to GRAVIEX account
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
@@ -5711,7 +5837,16 @@ en:
       zcorecoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
-      blooddonationcoins:
+      solariumcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      aevocoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      platopaycoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      yobacoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       #private_deposits
@@ -7561,7 +7696,52 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
-      blooddonationcoins:
+      solariumcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      aevocoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      platopaycoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      yobacoins:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
@@ -7762,7 +7942,10 @@ en:
         xt3-assets: XT3 Assets
         btcf-assets: BTCF Assets
         zcr-assets: ZCR Assets
-        bbrc-assets: BBRC Assets
+        slrc-assets: SLRC Assets
+        aevo-assets: AEVO Assets
+        ppx-assets: PPX Assets
+        yoba-assets: YOBA Assets
         #assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
@@ -7881,7 +8064,10 @@ en:
         verify-xt3: Verify My XT3 Assets
         verify-btcf: Verify My BTCF Assets
         verify-zcr: Verify My ZCR Assets
-        verify-bbrc: Verify My BBRC Assets
+        verify-slrc: Verify My SLRC Assets
+        verify-aevo: Verify My AEVO Assets
+        verify-ppx: Verify My PPX Assets
+        verify-yoba: Verify My YOBA Assets
         #liab_veriffy
         btc-assets-total: 'Total BTC assets of exchange: '
         gio-assets-total: 'Total GIO assets of exchange: '
@@ -7999,7 +8185,10 @@ en:
         xt3-assets-total: 'Total XT3 assets of exchange: '
         btcf-assets-total: 'Total BTCF assets of exchange: '
         zcr-assets-total: 'Total ZCR assets of exchange: '
-        bbrc-assets-total: 'Total BBRC assets of exchange: '
+        slrc-assets-total: 'Total SLRC assets of exchange: '
+        aevo-assets-total: 'Total AEVO assets of exchange: '
+        ppx-assets-total: 'Total PPX assets of exchange: '
+        yoba-assets-total: 'Total YOBA assets of exchange: '
         #liab_assest
       liability_proof:
         title: Proof of Liabilities
@@ -8597,10 +8786,25 @@ en:
         intro: All of exchange's ZCR assets are listed here.
         total: Total ZCR Assets
         address: Address
-      bbrc_assets:
-        title: BBRC Assets
-        intro: All of exchange's BBRC assets are listed here.
-        total: Total BBRC Assets
+      slrc_assets:
+        title: SLRC Assets
+        intro: All of exchange's SLRC assets are listed here.
+        total: Total SLRC Assets
+        address: Address
+      aevo_assets:
+        title: AEVO Assets
+        intro: All of exchange's AEVO assets are listed here.
+        total: Total AEVO Assets
+        address: Address
+      ppx_assets:
+        title: PPX Assets
+        intro: All of exchange's PPX assets are listed here.
+        total: Total PPX Assets
+        address: Address
+      yoba_assets:
+        title: YOBA Assets
+        intro: All of exchange's YOBA assets are listed here.
+        total: Total YOBA Assets
         address: Address
       #coin_assests
       cny_assets:
@@ -8735,7 +8939,10 @@ en:
         xt3_format: '0.00000000'
         btcf_format: '0.00000000'
         zcr_format: '0.00000000'
-        bbrc_format: '0.00000000'
+        slrc_format: '0.00000000'
+        aevo_format: '0.00000000'
+        ppx_format: '0.00000000'
+        yoba_format: '0.00000000'
         #funds_show1
         reason:
           cny:
@@ -9440,7 +9647,25 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
-          bbrc:
+          slrc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          aevo:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ppx:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          yoba:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -9607,7 +9832,10 @@ en:
         xt3_html: "<i class='fa fa-check'></i><span>XT3 Markets</span>"
         btcf_html: "<i class='fa fa-check'></i><span>BTCF Markets</span>"
         zcr_html: "<i class='fa fa-check'></i><span>ZCR Markets</span>"
-        bbrc_html: "<i class='fa fa-check'></i><span>BBRC Markets</span>"
+        slrc_html: "<i class='fa fa-check'></i><span>SLRC Markets</span>"
+        aevo_html: "<i class='fa fa-check'></i><span>AEVO Markets</span>"
+        ppx_html: "<i class='fa fa-check'></i><span>PPX Markets</span>"
+        yoba_html: "<i class='fa fa-check'></i><span>YOBA Markets</span>"
         #market_list
         price: Price
         change: "24h"
@@ -9919,7 +10147,10 @@ en:
         xt3_format: '0.00000000'
         btcf_format: '0.00000000'
         zcr_format: '0.00000000'
-        bbrc_format: '0.00000000'
+        slrc_format: '0.00000000'
+        aevo_format: '0.00000000'
+        ppx_format: '0.00000000'
+        yoba_format: '0.00000000'
         #shared_balances
         total: Total
   guides:
@@ -10376,7 +10607,16 @@ en:
         zcorecoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
-        blooddonationcoin:
+        solariumcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        aevocoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        platopaycoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        yobacoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
         #withdraw_amount
@@ -10640,7 +10880,13 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         zcorecoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
-        blooddonationcoin:
+        solariumcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        aevocoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        platopaycoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        yobacoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         #withdraw_sum
     creating: Creating...
@@ -11497,10 +11743,31 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
-        blooddonationcoin:
+        solariumcoin:
           fee: Fee
           sum: Amount
-          fund_uid: Blooddonationcoin Address
+          fund_uid: Solariumcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        aevocoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Aevocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        platopaycoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Platopaycoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        yobacoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Yobacoin Address
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
@@ -12216,7 +12483,25 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-      blooddonationcoins:
+      solariumcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      aevocoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      platopaycoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      yobacoins:
         update:
           notice: The deposit was successful.
         index:
@@ -13688,7 +13973,43 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
-      blooddonationcoins:
+      solariumcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      aevocoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      platopaycoins:
+        index:
+          one: Pending withdrawals
+          all: Last 72 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      yobacoins:
         index:
           one: Pending withdrawals
           all: Last 72 hours
@@ -14397,7 +14718,25 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
-  deposits/blooddonationcoin:
+  deposits/solariumcoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/aevocoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/platopaycoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/yobacoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -15389,7 +15728,31 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
-    blooddonationcoin:
+    solariumcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    aevocoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    platopaycoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    yobacoin:
       amount: Amount
       txid: TxId
       created_at: Created At
@@ -15544,7 +15907,10 @@ en:
       xt3: XT3
       btcf: BTCF
       zcr: ZCR
-      bbrc: BBRC
+      slrc: SLRC
+      aevo: AEVO
+      ppx: PPX
+      yoba: YOBA
       #enum_currence
     order:
       state:
@@ -15687,7 +16053,10 @@ en:
         xt3chcoin: Xt3chcoin
         btcfcoin: Btcfcoin
         zcorecoin: Zcorecoin
-        blooddonationcoin: Blooddonationcoin
+        solariumcoin: Solariumcoin
+        aevocoin: Aevocoin
+        platopaycoin: Platopaycoin
+        yobacoin: Yobacoin
         #fund_source
         bank: Bank
         ether: Ethereum
@@ -16985,10 +17354,31 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
-    blooddonationcoin:
+    solariumcoin:
       key: Blockchain
-      title: Blooddonationcoin Blockchain
-      intro: Withdraw Blooddonationcoin to your own Blooddonationcoin wallet
+      title: Solariumcoin Blockchain
+      intro: Withdraw Solariumcoin to your own Solariumcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    aevocoin:
+      key: Blockchain
+      title: Aevocoin Blockchain
+      intro: Withdraw Aevocoin to your own Aevocoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    platopaycoin:
+      key: Blockchain
+      title: Platopaycoin Blockchain
+      intro: Withdraw Platopaycoin to your own Platopaycoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    yobacoin:
+      key: Blockchain
+      title: Yobacoin Blockchain
+      intro: Withdraw Yobacoin to your own Yobacoin wallet
       latency: 10 minutes
       transfer: Manual
       go: Withdraw
@@ -18448,7 +18838,43 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
-  withdraws/blooddonationcoin:
+  withdraws/solariumcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/aevocoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/platopaycoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/yobacoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
