@@ -128,13 +128,18 @@ TOTAL_MIN_WIDTH_PINNED = 1664
         if window.innerHeight >= total_min_height_split
           $('#candlestick').css("min-height", candlestick_min_height)
 
-          $('.entry-right').css("left", $('#my_orders').position().left)
-          $('.entry-right').css("top", order_h + ticker_h + depths_h + my_orders_h + gutter_7x)
-
-          $('.entry-left').css("left", $('#my_orders').position().left + gutter_2x + $('.entry-right').width())
+#          $('.entry-left').css("left", $('#my_orders').position().left + gutter_2x + $('.entry-right').width())
+          $('.entry-left').css("left", "")
+          $('.entry-left').css("right", 2)
           $('.entry-left').css("top", order_h + ticker_h + depths_h + my_orders_h + gutter_7x)
 
-          $('#my_orders_wrapper').find(".dropdown-wrapper").css("bottom", 204)
+#          $('.entry-right').css("left", $('#my_orders').position().left)
+          $('.entry-right').css("left", "")
+          $('.entry-right').css("right", $('.entry-left').width() + gutter_2x + 2)
+          $('.entry-right').css("top", order_h + ticker_h + depths_h + my_orders_h + gutter_7x)
+
+#          $('#my_orders_wrapper').find(".dropdown-wrapper").css("bottom", 204)
+          $('#my_orders_wrapper').find(".dropdown-wrapper").css("top", $('#depths_wrapper').position().top + $('#depths_wrapper').height() + gutter_2x)
 
       # ---------------
       # Post processing
