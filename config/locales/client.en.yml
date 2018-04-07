@@ -190,6 +190,7 @@ en:
         varius: VARIUS
         cyr: CYR
         bbrc: BBRC
+        ikt: IKT
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -607,6 +608,9 @@ en:
 
       deposit_bbrc:
         title: BBRC Deposit
+
+      deposit_ikt:
+        title: IKT Deposit
 
       #deposit
 
@@ -1054,6 +1058,9 @@ en:
       withdraw_bbrc:
         title: BBRC Withdraw
 
+      withdraw_ikt:
+        title: IKT Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -1190,6 +1197,7 @@ en:
         withdraw_limit_varius: Withdraw day limit is 30000000 for an unverified account.
         withdraw_limit_cyr: Withdraw day limit is 100000 for an unverified account.
         withdraw_limit_bbrc: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_ikt: Withdraw day limit is 20000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -1374,6 +1382,7 @@ en:
         varius: VARIUS Market
         cyr: CYR Market
         bbrc: BBRC Market
+        ikt: IKT Market
         #market
 
 
