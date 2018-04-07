@@ -1,5 +1,6 @@
 GUTTER = 2 # linkage to market.css.scss $gutter var
 PANEL_TABLE_HEADER_HIGH = 37
+PANEL_MARKETS_SEARCH_HIGH = 42
 PANEL_PADDING = 8
 BORDER_WIDTH = 1
 ORDER_BOOK_MIN_HEIGHT = 214
@@ -26,6 +27,7 @@ TOTAL_MIN_WIDTH_PINNED = 1664
     gutter_8x = GUTTER * 8
     gutter_9x = GUTTER * 9
     panel_table_header_high = PANEL_TABLE_HEADER_HIGH
+    panel_markets_search_high = PANEL_MARKETS_SEARCH_HIGH
     order_book_min_height = ORDER_BOOK_MIN_HEIGHT
     candlestick_min_width = CANDLESTICK_MIN_WIDTH
     candlestick_min_height = CANDLESTICK_MIN_HEIGHT
@@ -142,11 +144,15 @@ TOTAL_MIN_WIDTH_PINNED = 1664
         if !need_rearrange
           window_h_syntetic = navbar_h + $('#candlestick').height() + gutter_3x
 
-        markets_h = (window_h_syntetic - navbar_h) / 2 
+        markets_h = (window_h_syntetic - navbar_h) / 2
+        markets_inner_h = markets_h - (panel_table_header_high + panel_markets_search_high)
         $('#market_list').css("min-height", markets_h)
+        $('#market_list').height(markets_h)
         $('#market_list').find(".panel-default").css("min-height", markets_h)
         $('#market_list').find(".panel-default").height(markets_h)
-        $('#market_list').height(markets_h)
+        $('#market_list').find(".panel-body-content").css("min-height", markets_inner_h)
+        $('#market_list').find(".panel-body-content").height(markets_inner_h-16)
+
         markets_h = $('#market_list').height() + 2*BORDER_WIDTH
 
         trades_h = window_h_syntetic - navbar_h - markets_h - gutter_2x - 2*BORDER_WIDTH
