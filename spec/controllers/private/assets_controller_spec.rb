@@ -150,6 +150,33 @@ describe Private::AssetsController do
       it { expect(assigns(:varius_account)).to be_nil }
       it { expect(assigns(:cyr_account)).to be_nil }
       it { expect(assigns(:bbrc_account)).to be_nil }
+      it { expect(assigns(:ikt_account)).to be_nil }
+      it { expect(assigns(:bsl_account)).to be_nil }
+      it { expect(assigns(:bff_account)).to be_nil }
+      it { expect(assigns(:toba_account)).to be_nil }
+      it { expect(assigns(:alps_account)).to be_nil }
+      it { expect(assigns(:rlm_account)).to be_nil }
+      it { expect(assigns(:vzh_account)).to be_nil }
+      it { expect(assigns(:rco_account)).to be_nil }
+      it { expect(assigns(:cbc_account)).to be_nil }
+      it { expect(assigns(:exam_account)).to be_nil }
+      it { expect(assigns(:nah_account)).to be_nil }
+      it { expect(assigns(:slash_account)).to be_nil }
+      it { expect(assigns(:adr_account)).to be_nil }
+      it { expect(assigns(:htrc_account)).to be_nil }
+      it { expect(assigns(:ice_account)).to be_nil }
+      it { expect(assigns(:ebs_account)).to be_nil }
+      it { expect(assigns(:xeh_account)).to be_nil }
+      it { expect(assigns(:krm_account)).to be_nil }
+      it { expect(assigns(:cgur_account)).to be_nil }
+      it { expect(assigns(:vre_account)).to be_nil }
+      it { expect(assigns(:her_account)).to be_nil }
+      it { expect(assigns(:bzm_account)).to be_nil }
+      it { expect(assigns(:itis_account)).to be_nil }
+      it { expect(assigns(:hpp_account)).to be_nil }
+      it { expect(assigns(:dsn_account)).to be_nil }
+      it { expect(assigns(:demos_account)).to be_nil }
+      it { expect(assigns(:jagar_account)).to be_nil }
       #it
 
     end

@@ -39,6 +39,12 @@ class ListingRequestsController < ApplicationController
 
   def update
     @listing_request = ListingRequest.find(params[:id])
+   
+    if @listing_request.aasm_state != "void"
+      render nothing: true
+      return
+    end
+
     @listing_request.update_attributes(listing_request_params)
 
     if !simple_captcha_valid?

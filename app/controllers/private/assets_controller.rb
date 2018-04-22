@@ -25,7 +25,7 @@ module Private
       @bitg_proof   = Proof.current :bitg
       @crft_proof   = Proof.current :crft
       @env_proof   = Proof.current :env
-      @sng_proof   = Proof.current :sng
+      @xsg_proof   = Proof.current :xsg
       @nyc_proof   = Proof.current :nyc
       @zoc_proof   = Proof.current :zoc
       @btcz_proof   = Proof.current :btcz
@@ -135,6 +135,33 @@ module Private
       @varius_proof   = Proof.current :varius
       @cyr_proof   = Proof.current :cyr
       @bbrc_proof   = Proof.current :bbrc
+      @ikt_proof   = Proof.current :ikt
+      @bsl_proof   = Proof.current :bsl
+      @bff_proof   = Proof.current :bff
+      @toba_proof   = Proof.current :toba
+      @alps_proof   = Proof.current :alps
+      @rlm_proof   = Proof.current :rlm
+      @vzh_proof   = Proof.current :vzh
+      @rco_proof   = Proof.current :rco
+      @cbc_proof   = Proof.current :cbc
+      @exam_proof   = Proof.current :exam
+      @nah_proof   = Proof.current :nah
+      @slash_proof   = Proof.current :slash
+      @adr_proof   = Proof.current :adr
+      @htrc_proof   = Proof.current :htrc
+      @ice_proof   = Proof.current :ice
+      @ebs_proof   = Proof.current :ebs
+      @xeh_proof   = Proof.current :xeh
+      @krm_proof   = Proof.current :krm
+      @cgur_proof   = Proof.current :cgur
+      @vre_proof   = Proof.current :vre
+      @her_proof   = Proof.current :her
+      @bzm_proof   = Proof.current :bzm
+      @itis_proof   = Proof.current :itis
+      @hpp_proof   = Proof.current :hpp
+      @dsn_proof   = Proof.current :dsn
+      @demos_proof   = Proof.current :demos
+      @jagar_proof   = Proof.current :jagar
       #proof
 
       if current_user
@@ -160,7 +187,7 @@ module Private
         @bitg_account = current_user.accounts.with_currency(:bitg).first
         @crft_account = current_user.accounts.with_currency(:crft).first
         @env_account = current_user.accounts.with_currency(:env).first
-        @sng_account = current_user.accounts.with_currency(:sng).first
+        @xsg_account = current_user.accounts.with_currency(:xsg).first
         @nyc_account = current_user.accounts.with_currency(:nyc).first
         @zoc_account = current_user.accounts.with_currency(:zoc).first
         @btcz_account = current_user.accounts.with_currency(:btcz).first
@@ -270,6 +297,33 @@ module Private
         @varius_account = current_user.accounts.with_currency(:varius).first
         @cyr_account = current_user.accounts.with_currency(:cyr).first
         @bbrc_account = current_user.accounts.with_currency(:bbrc).first
+        @ikt_account = current_user.accounts.with_currency(:ikt).first
+        @bsl_account = current_user.accounts.with_currency(:bsl).first
+        @bff_account = current_user.accounts.with_currency(:bff).first
+        @toba_account = current_user.accounts.with_currency(:toba).first
+        @alps_account = current_user.accounts.with_currency(:alps).first
+        @rlm_account = current_user.accounts.with_currency(:rlm).first
+        @vzh_account = current_user.accounts.with_currency(:vzh).first
+        @rco_account = current_user.accounts.with_currency(:rco).first
+        @cbc_account = current_user.accounts.with_currency(:cbc).first
+        @exam_account = current_user.accounts.with_currency(:exam).first
+        @nah_account = current_user.accounts.with_currency(:nah).first
+        @slash_account = current_user.accounts.with_currency(:slash).first
+        @adr_account = current_user.accounts.with_currency(:adr).first
+        @htrc_account = current_user.accounts.with_currency(:htrc).first
+        @ice_account = current_user.accounts.with_currency(:ice).first
+        @ebs_account = current_user.accounts.with_currency(:ebs).first
+        @xeh_account = current_user.accounts.with_currency(:xeh).first
+        @krm_account = current_user.accounts.with_currency(:krm).first
+        @cgur_account = current_user.accounts.with_currency(:cgur).first
+        @vre_account = current_user.accounts.with_currency(:vre).first
+        @her_account = current_user.accounts.with_currency(:her).first
+        @bzm_account = current_user.accounts.with_currency(:bzm).first
+        @itis_account = current_user.accounts.with_currency(:itis).first
+        @hpp_account = current_user.accounts.with_currency(:hpp).first
+        @dsn_account = current_user.accounts.with_currency(:dsn).first
+        @demos_account = current_user.accounts.with_currency(:demos).first
+        @jagar_account = current_user.accounts.with_currency(:jagar).first
         #account
       end
     end

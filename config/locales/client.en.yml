@@ -80,7 +80,7 @@ en:
         bitg: BITG
         crft: CRFT
         env: ENV
-        sng: SNG
+        xsg: XSG
         nyc: NYC
         zoc: ZOC
         btcz: BTCZ
@@ -191,6 +191,32 @@ en:
         cyr: CYR
         bbrc: BBRC
         ikt: IKT
+        bsl: BSL
+        bff: BFF
+        toba: TOBA
+        alps: ALPS
+        rlm: RLM
+        vzh: VZH
+        rco: RCO
+        cbc: CBC
+        exam: EXAM
+        nah: NAH
+        slash: SLASH
+        adr: ADR
+        htrc: HTRC
+        ice: ICE
+        ebs: EBS
+        xeh: XEH
+        krm: KRM
+        cgur: CGUR
+        vre: VRE
+        her: HER
+        bzm: BZM
+        itis: ITIS
+        hpp: HPP
+        dsn: DSN
+        demos: DEMOS
+        jagar: JAGAR
         #funds
       deposit_cny:
         title: Chinese Yuan Deposit
@@ -279,8 +305,8 @@ en:
       deposit_env:
         title: ENV Deposit
 
-      deposit_sng:
-        title: SNG Deposit
+      deposit_xsg:
+        title: XSG Deposit
 
       deposit_nyc:
         title: NYC Deposit
@@ -612,6 +638,84 @@ en:
       deposit_ikt:
         title: IKT Deposit
 
+      deposit_bsl:
+        title: BSL Deposit
+
+      deposit_bff:
+        title: BFF Deposit
+
+      deposit_toba:
+        title: TOBA Deposit
+
+      deposit_alps:
+        title: ALPS Deposit
+
+      deposit_rlm:
+        title: RLM Deposit
+
+      deposit_vzh:
+        title: VZH Deposit
+
+      deposit_rco:
+        title: RCO Deposit
+
+      deposit_cbc:
+        title: CBC Deposit
+
+      deposit_exam:
+        title: EXAM Deposit
+
+      deposit_nah:
+        title: NAH Deposit
+
+      deposit_slash:
+        title: SLASH Deposit
+
+      deposit_adr:
+        title: ADR Deposit
+
+      deposit_htrc:
+        title: HTRC Deposit
+
+      deposit_ice:
+        title: ICE Deposit
+
+      deposit_ebs:
+        title: EBS Deposit
+
+      deposit_xeh:
+        title: XEH Deposit
+
+      deposit_krm:
+        title: KRM Deposit
+
+      deposit_cgur:
+        title: CGUR Deposit
+
+      deposit_vre:
+        title: VRE Deposit
+
+      deposit_her:
+        title: HER Deposit
+
+      deposit_bzm:
+        title: BZM Deposit
+
+      deposit_itis:
+        title: ITIS Deposit
+
+      deposit_hpp:
+        title: HPP Deposit
+
+      deposit_dsn:
+        title: DSN Deposit
+
+      deposit_demos:
+        title: DEMOS Deposit
+
+      deposit_jagar:
+        title: JAGAR Deposit
+
       #deposit
 
       deposit_coin:
@@ -728,8 +832,8 @@ en:
       withdraw_env:
         title: ENV Withdraw
 
-      withdraw_sng:
-        title: SNG Withdraw
+      withdraw_xsg:
+        title: XSG Withdraw
 
       withdraw_nyc:
         title: NYC Withdraw
@@ -1061,6 +1165,84 @@ en:
       withdraw_ikt:
         title: IKT Withdraw
 
+      withdraw_bsl:
+        title: BSL Withdraw
+
+      withdraw_bff:
+        title: BFF Withdraw
+
+      withdraw_toba:
+        title: TOBA Withdraw
+
+      withdraw_alps:
+        title: ALPS Withdraw
+
+      withdraw_rlm:
+        title: RLM Withdraw
+
+      withdraw_vzh:
+        title: VZH Withdraw
+
+      withdraw_rco:
+        title: RCO Withdraw
+
+      withdraw_cbc:
+        title: CBC Withdraw
+
+      withdraw_exam:
+        title: EXAM Withdraw
+
+      withdraw_nah:
+        title: NAH Withdraw
+
+      withdraw_slash:
+        title: SLASH Withdraw
+
+      withdraw_adr:
+        title: ADR Withdraw
+
+      withdraw_htrc:
+        title: HTRC Withdraw
+
+      withdraw_ice:
+        title: ICE Withdraw
+
+      withdraw_ebs:
+        title: EBS Withdraw
+
+      withdraw_xeh:
+        title: XEH Withdraw
+
+      withdraw_krm:
+        title: KRM Withdraw
+
+      withdraw_cgur:
+        title: CGUR Withdraw
+
+      withdraw_vre:
+        title: VRE Withdraw
+
+      withdraw_her:
+        title: HER Withdraw
+
+      withdraw_bzm:
+        title: BZM Withdraw
+
+      withdraw_itis:
+        title: ITIS Withdraw
+
+      withdraw_hpp:
+        title: HPP Withdraw
+
+      withdraw_dsn:
+        title: DSN Withdraw
+
+      withdraw_demos:
+        title: DEMOS Withdraw
+
+      withdraw_jagar:
+        title: JAGAR Withdraw
+
       #withdraw
 
       withdraw_coin:
@@ -1087,7 +1269,7 @@ en:
         withdraw_limit_bitg: Withdraw day limit is 20 000 for an unverified account.
         withdraw_limit_crft: Withdraw day limit is 5000000 for an unverified account.
         withdraw_limit_env: Withdraw day limit is 500000 for an unverified account.
-        withdraw_limit_sng: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_xsg: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_nyc: Withdraw day limit is 5000000 for an unverified account.
         withdraw_limit_zoc: Withdraw day limit is 20000 for an unverified account.
         withdraw_limit_btcz: Withdraw day limit is 50000000 for an unverified account.
@@ -1198,6 +1380,32 @@ en:
         withdraw_limit_cyr: Withdraw day limit is 100000 for an unverified account.
         withdraw_limit_bbrc: Withdraw day limit is 200000 for an unverified account.
         withdraw_limit_ikt: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_bsl: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_bff: Withdraw day limit is 20000000 for an unverified account.
+        withdraw_limit_toba: Withdraw day limit is 10000000 for an unverified account.
+        withdraw_limit_alps: Withdraw day limit is 300000 for an unverified account.
+        withdraw_limit_rlm: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_vzh: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_rco: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_cbc: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_exam: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_nah: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_slash: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_adr: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_htrc: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_ice: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_ebs: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_xeh: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_krm: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_cgur: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_vre: Withdraw day limit is 40000 for an unverified account.
+        withdraw_limit_her: Withdraw day limit is 40000 for an unverified account.
+        withdraw_limit_bzm: Withdraw day limit is 20000 for an unverified account.
+        withdraw_limit_itis: Withdraw day limit is 200000 for an unverified account.
+        withdraw_limit_hpp: Withdraw day limit is 100000 for an unverified account.
+        withdraw_limit_dsn: Withdraw day limit is 40000 for an unverified account.
+        withdraw_limit_demos: Withdraw day limit is 40000 for an unverified account.
+        withdraw_limit_jagar: Withdraw day limit is 5000000 for an unverified account.
         #limit
         label: Label
         balance: Balance
@@ -1272,7 +1480,7 @@ en:
         bitg: BITG Market
         crft: CRFT Market
         env: ENV Market
-        sng: SNG Market
+        xsg: XSG Market
         nyc: NYC Market
         zoc: ZOC Market
         btcz: BTCZ Market
@@ -1383,6 +1591,32 @@ en:
         cyr: CYR Market
         bbrc: BBRC Market
         ikt: IKT Market
+        bsl: BSL Market
+        bff: BFF Market
+        toba: TOBA Market
+        alps: ALPS Market
+        rlm: RLM Market
+        vzh: VZH Market
+        rco: RCO Market
+        cbc: CBC Market
+        exam: EXAM Market
+        nah: NAH Market
+        slash: SLASH Market
+        adr: ADR Market
+        htrc: HTRC Market
+        ice: ICE Market
+        ebs: EBS Market
+        xeh: XEH Market
+        krm: KRM Market
+        cgur: CGUR Market
+        vre: VRE Market
+        her: HER Market
+        bzm: BZM Market
+        itis: ITIS Market
+        hpp: HPP Market
+        dsn: DSN Market
+        demos: DEMOS Market
+        jagar: JAGAR Market
         #market
 
 

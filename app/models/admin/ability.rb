@@ -149,6 +149,33 @@ module Admin
       can :manage, ::Deposits::Variuscoin
       can :manage, ::Deposits::Cyphercoin
       can :manage, ::Deposits::Blooddonationcoin
+      can :manage, ::Deposits::Innoketcoin
+      can :manage, ::Deposits::Bitsolocoin
+      can :manage, ::Deposits::Bffcoin
+      can :manage, ::Deposits::Tobacoin
+      can :manage, ::Deposits::Alpenschillingcoin
+      can :manage, ::Deposits::Relariumcoin
+      can :manage, ::Deposits::Vizehcoin
+      can :manage, ::Deposits::Rampantcoin
+      can :manage, ::Deposits::Cubiscoin
+      can :manage, ::Deposits::Examinationcoin
+      can :manage, ::Deposits::Strayacoin
+      can :manage, ::Deposits::Slashcoin
+      can :manage, ::Deposits::Adirondackcoin
+      can :manage, ::Deposits::Hightemperaturecoin
+      can :manage, ::Deposits::Frozencoin
+      can :manage, ::Deposits::Elbruscoin
+      can :manage, ::Deposits::Xerumcashcoin
+      can :manage, ::Deposits::Kickerroomcoin
+      can :manage, ::Deposits::Allcoingurucoin
+      can :manage, ::Deposits::Versuscoin
+      can :manage, ::Deposits::Heracoin
+      can :manage, ::Deposits::Blazariumcoin
+      can :manage, ::Deposits::Itisnetworkcoin
+      can :manage, ::Deposits::Hppcoin
+      can :manage, ::Deposits::Designcoin
+      can :manage, ::Deposits::Demoscoin
+      can :manage, ::Deposits::Jagaricoinr
       #deposit
 
       can :menu, Withdraw
@@ -285,6 +312,33 @@ module Admin
       can :manage, ::Withdraws::Variuscoin
       can :manage, ::Withdraws::Cyphercoin
       can :manage, ::Withdraws::Blooddonationcoin
+      can :manage, ::Withdraws::Innoketcoin
+      can :manage, ::Withdraws::Bitsolocoin
+      can :manage, ::Withdraws::Bffcoin
+      can :manage, ::Withdraws::Tobacoin
+      can :manage, ::Withdraws::Alpenschillingcoin
+      can :manage, ::Withdraws::Relariumcoin
+      can :manage, ::Withdraws::Vizehcoin
+      can :manage, ::Withdraws::Rampantcoin
+      can :manage, ::Withdraws::Cubiscoin
+      can :manage, ::Withdraws::Examinationcoin
+      can :manage, ::Withdraws::Strayacoin
+      can :manage, ::Withdraws::Slashcoin
+      can :manage, ::Withdraws::Adirondackcoin
+      can :manage, ::Withdraws::Hightemperaturecoin
+      can :manage, ::Withdraws::Frozencoin
+      can :manage, ::Withdraws::Elbruscoin
+      can :manage, ::Withdraws::Xerumcashcoin
+      can :manage, ::Withdraws::Kickerroomcoin
+      can :manage, ::Withdraws::Allcoingurucoin
+      can :manage, ::Withdraws::Versuscoin
+      can :manage, ::Withdraws::Heracoin
+      can :manage, ::Withdraws::Blazariumcoin
+      can :manage, ::Withdraws::Itisnetworkcoin
+      can :manage, ::Withdraws::Hppcoin
+      can :manage, ::Withdraws::Designcoin
+      can :manage, ::Withdraws::Demoscoin
+      can :manage, ::Withdraws::Jagaricoinr
       #withdraw
 
     end

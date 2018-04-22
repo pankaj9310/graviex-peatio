@@ -55,11 +55,11 @@ class TwoFactor < ActiveRecord::Base
   end
 
   def reset_require_signin
-    update require_signin: 0
+    update require_signin: nil
   end
 
   def deactive!
-    update activated: false
+    update activated: false, require_signin: nil
   end
 
   private
