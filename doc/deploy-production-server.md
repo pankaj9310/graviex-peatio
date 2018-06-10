@@ -187,7 +187,9 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
     echo "export RAILS_ENV=production" >> ~/.bashrc
     source ~/.bashrc
+### 11. Install Ghostscrip
 
+    sudo apt-get install ghostscript
 ##### Clone the Source
 
     mkdir -p ~/peatio
