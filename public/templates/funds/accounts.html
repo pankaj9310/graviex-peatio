@@ -7,8 +7,10 @@
     <td class="currency-logo">
       <img ng-src="/icon-{{account.currency}}.png" alt="">
       <span class="currency-symbol">{{ account.currency | uppercase }}</span>
-      <img class="currency-state" ng-src="/icon-{{account.is_online}}.png" alt="">
-      <span class="currency-symbol" style="color: {{ account.is_online == 'online' ? 'green' : 'red' }}" >{{ account.is_online }}</span>
+      <img ng-if="account.currency == 'cny'" class="currency-state" ng-src="/icon-online.png" alt="">
+      <img ng-if="account.currency != 'cny'" class="currency-state" ng-src="/icon-{{account.is_online}}.png" alt="">
+      <span class="currency-symbol" ng-if="account.currency == 'cny'" style="color: green" >ONLINE</span>
+      <span class="currency-symbol" ng-if="account.currency != 'cny'" style="color: {{ account.is_online == 'online' ? 'green' : 'red' }}" >{{ account.is_online }}</span>
     </td>
     <td class="currency-balance-col">
       <p class="currency-balance"><span class="currency-sign"></span>{{account.balance | round_down }}</p>

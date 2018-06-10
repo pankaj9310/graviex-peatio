@@ -120,7 +120,7 @@ class ApplicationController < ActionController::Base
 
   def set_gon
     #Rails.logger.info "[INIT]: " + params.to_json
-    gon.env = Rails.env
+    gon.enviro = Rails.env
     gon.local = I18n.locale
     gon.market = current_market.attributes
     gon.ticker = current_market.ticker

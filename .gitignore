@@ -18,7 +18,7 @@
 # Ignore all logfiles and tempfiles.
 log
 tmp
-
+hup.out
 # Ignore all config files
 /config/application.yml
 /config/database.yml

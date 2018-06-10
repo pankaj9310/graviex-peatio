@@ -25,10 +25,10 @@
                   - if c[:hot] == nil
                     td.text-right = 'N/A'
                   - else
-                    - if c[:sum] - c[:hot] > 0.0 
-                      td[class='text-right' style='color: red'] = c[:sum] - c[:hot]
+                    - if c[:sum].to_d - c[:hot].to_d > 0.0 
+                      td[class='text-right' style='color: red'] = c[:sum].to_d - c[:hot].to_d
                     - else
-                      td[class='text-right'] = c[:sum] - c[:hot]
+                      td[class='text-right'] = c[:sum].to_d - c[:hot].to_d
                 - else
                   td.text-right N/A
                   td.text-right N/A

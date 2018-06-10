@@ -51,9 +51,9 @@ module Admin
     def index
       @daemon_statuses = Global.daemon_statuses
 
-      @currencies_summary = []
-      collect_currencies_summary
-
+      # @currencies_summary = []
+      # collect_currencies_summary
+      @currencies_summary = Currency.all.map(&:summary)
       @register_count = Member.count
 
       @turnover = []

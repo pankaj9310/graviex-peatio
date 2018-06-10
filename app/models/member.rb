@@ -111,10 +111,12 @@ class Member < ActiveRecord::Base
     if dividend.present?
       return dividend
     end
-   
+    # binding.pry   
     product = Product.where(name: 'default').first
-    self.dividend = Dividend.create(member_id: id, product_id: product.id)
-    self.dividend.save!
+    if !product.nil?
+      self.dividend = Dividend.create(member_id: id, product_id: product.id)
+      self.dividend.save!
+    end
   end
 
   def checked_in?
@@ -311,3 +313,4 @@ class Member < ActiveRecord::Base
     ::Pusher["private-#{sn}"].trigger_async('members', { type: 'update', id: self.id, attributes: self.changes_attributes_as_json })
   end
 end
+

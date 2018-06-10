@@ -220,9 +220,9 @@ class Account < ActiveRecord::Base
       "headers" => currency_obj.headers,
       "blocktime" => currency_obj.blocktime,
       "gio_discount" => member.has_gio_deposite_50,
-      "coin_home" => currency_obj.home,
-      "coin_btt" => currency_obj.btt,
-      "coin_be" => currency_obj.be
+      # "coin_home" => currency_obj.home,
+      # "coin_btt" => currency_obj.btt,
+      # "coin_be" => currency_obj.be
     })
   end
 

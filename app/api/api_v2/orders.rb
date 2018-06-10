@@ -7,7 +7,7 @@ module APIv2
     desc 'Get your orders, results is paginated.', scopes: %w(history trade)
     params do
       use :auth
-      optional :market, type: String, default: 'giobtc', values: ::Market.all.map(&:id).push('all'), desc: ::APIv2::Entities::Market.documentation[:id]
+      optional :market, type: String, default: 'btccny', values: ::Market.all.map(&:id).push('all'), desc: ::APIv2::Entities::Market.documentation[:id]
       optional :state, type: String,  default: 'wait', values: Order.state.values, desc: "Filter order by state, default to 'wait' (active orders)."
       optional :limit, type: Integer, default: 100, range: 1..1000, desc: "Limit the number of returned orders, default to 100."
       optional :page,  type: Integer, default: 1, desc: "Specify the page of paginated results."

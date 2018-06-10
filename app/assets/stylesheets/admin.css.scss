@@ -5,9 +5,8 @@
 @import 'bootstrap';
 @import 'bootstrap-switch.min';
 
-@import "bootstrap-wysihtml5/core-b3";
-@import "bootstrap-wysihtml5/wysiwyg-color";
-
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5
 @import 'vars/basic';
 @import 'vars/custom';
 
