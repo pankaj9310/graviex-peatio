@@ -8,6 +8,7 @@ module Private
       @doge_proof   = Proof.current :doge
       @ltc_proof   = Proof.current :ltc
       @eth_proof   = Proof.current :eth
+      @tou_proof   = Proof.current :tou
       @psd_proof   = Proof.current :psd
       @phc_proof   = Proof.current :phc
       @xgc_proof   = Proof.current :xgc

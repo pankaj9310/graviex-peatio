@@ -19,9 +19,9 @@ module Admin
       can :manage, ::Deposits::Bank
       can :manage, ::Deposits::Satoshi
       can :manage, ::Deposits::Gravio
-      can :manage, ::Deposits::Doge
       can :manage, ::Deposits::Ltc
       can :manage, ::Deposits::Ether
+      can :manage, ::Deposits::Touristcoin
       # can :manage, ::Deposits::Poseidon
       # can :manage, ::Deposits::Profithunter
       # can :manage, ::Deposits::Xgoldcoin
@@ -185,6 +185,7 @@ module Admin
       can :manage, ::Withdraws::Doge
       can :manage, ::Withdraws::Ltc
       can :manage, ::Withdraws::Ether
+      can :manage, ::Withdraws::Touristcoin
       # can :manage, ::Withdraws::Poseidon
       # can :manage, ::Withdraws::Profithunter
       # can :manage, ::Withdraws::Xgoldcoin

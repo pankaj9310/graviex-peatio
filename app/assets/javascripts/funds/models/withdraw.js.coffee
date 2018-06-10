@@ -21,6 +21,7 @@ class Withdraw extends PeatioModel.Model
       when 'doge' then 'doges'
       when 'ltc' then 'ltcs'
       when 'eth' then 'ethers'
+      when 'tou' then 'touristcoins'
       when 'psd' then 'poseidons'
       when 'phc' then 'profithunters'
       when 'xgc' then 'xgoldcoins'

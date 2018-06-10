@@ -30,6 +30,8 @@ class CoinRPC
         name = 'CNT'
       elsif c.proto == 'FNT'
         name = 'FNT'
+      elsif c.proto == 'TOU'
+	name = 'TOU'
       else
         name = c[:handler]
       end
@@ -253,6 +255,55 @@ class CoinRPC
     end
   end
 
+  class TOU < self
+    def handle(name, *args)
+      post_body = {"jsonrpc" => "2.0", 'method' => name, 'params' => args, 'id' => '1' }.to_json
+      Rails.logger.info "TOU " +  post_body
+      resp = JSON.parse( http_post_request(post_body) )
+      Rails.logger.info resp
+      raise JSONRPCError, resp['error'] if resp['error']
+      result = resp['result']
+      if result == nil 
+        return result
+      end
+      result.symbolize_keys! if result.is_a? Hash
+      result
+    end
+    def http_post_request(post_body)
+      http    = Net::HTTP.new(@uri.host, @uri.port)
+      request = Net::HTTP::Post.new(@uri.request_uri)
+      request.basic_auth @uri.user, @uri.password
+      request.content_type = 'application/json'
+      request.body = post_body
+      @reply = http.request(request).body
+      # Rails.logger.info @reply
+      return @reply
+    rescue Errno::ECONNREFUSED => e
+      raise ConnectionRefusedError
+    end
+
+    def safe_getbalance
+      begin
+        #Rails.logger.info @rest + " -> " + "#{@rest}/cgi-bin/total.cgi"
+        (open("#{@rest}/cgi-bin/total.cgi").read.rstrip.to_f)
+      rescue => ex
+        Rails.logger.info  "[error]: " + ex.message + "\n" + ex.backtrace.join("\n") + "\n"
+        'N/A'
+      end
+    end
+
+    def getblockchaininfo
+      @lastBlock = eth_getBlockByNumber("latest", true)
+      #Rails.logger.info @lastBlock
+      #Rails.logger.info "number = " + Integer(@lastBlock[:number]).to_s + ", timestamp = " + Integer(@lastBlock[:timestamp]).to_s
+
+      {
+        blocks: Integer(@lastBlock[:number]),
+        headers: 0,
+        mediantime: Integer(@lastBlock[:timestamp])
+      }
+    end
+  end
   class LISK < self
     def handle(name, *args)
       post_body = {"jsonrpc" => "2.0", 'method' => name, 'params' => args, 'id' => '1' }.to_json

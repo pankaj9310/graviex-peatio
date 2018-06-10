@@ -24,7 +24,11 @@
   currency: eth
   min_confirm: 5
   max_confirm: 6
-
+- id: 2000
+  key: touristcoin
+  currency: tou
+  min_confirm: 5
+  max_confirm: 6
 # - id: 1200
 #   key: poseidon
 #   currency: psd

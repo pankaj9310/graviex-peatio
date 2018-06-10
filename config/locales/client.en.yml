@@ -63,6 +63,7 @@ en:
         doge: DOGE
         ltc: LTC
         eth: ETH
+        tou: TOU
         psd: PSD
         phc: PHC
         xgc: XGC
@@ -253,7 +254,8 @@ en:
 
       deposit_eth:
         title: ETH Deposit
-
+      deposit_tou:
+        title: TOU Deposit
       deposit_psd:
         title: PSD Deposit
 
@@ -780,7 +782,8 @@ en:
 
       withdraw_eth:
         title: ETH Withdraw
-
+      withdraw_tou:
+        title: TOU Withdraw
       withdraw_psd:
         title: PSD Withdraw
 
@@ -1252,6 +1255,7 @@ en:
         withdraw_limit_doge: Withdraw day limit is 1 000 000 for an unverified account.
         withdraw_limit_ltc: Withdraw day limit is 1 000 for an unverified account.
         withdraw_limit_eth: Withdraw day limit is 10 for an unverified account.
+        withdraw_limit_tou: Withdraw day limit is 10 for an unverified account.
         withdraw_limit_psd: Withdraw day limit is 200 000 for an unverified account.
         withdraw_limit_phc: Withdraw day limit is 100 000 for an unverified account.
         withdraw_limit_xgc: Withdraw day limit is 10 000 for an unverified account.
@@ -1463,6 +1467,7 @@ en:
         doge: DOGE Market
         ltc: LTC Market
         eth: ETH Market
+        tou: TOU Market
         psd: PSD Market
         phc: PHC Market
         xgc: XGC Market

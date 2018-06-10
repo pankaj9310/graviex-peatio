@@ -14,14 +14,6 @@
   fee: 0.002
   inuse: true
   type: WithdrawChannelGravio
-- id: 600
-  key: doge
-  currency: doge
-  fixed: 8
-  max: 500000
-  fee: 2.0
-  inuse: true
-  type: WithdrawChannelDoge
 - id: 800
   key: ltc
   currency: ltc
@@ -38,6 +30,14 @@
   fee: 0.0055
   inuse: true
   type: WithdrawChannelEth
+- id: 2000
+  key: touristcoin
+  currency: tou
+  fixed: 8
+  max: 1000
+  fee: 0.0055
+  inuse: true
+  type: WithdrawChannelTouristcoin
 
 # - id: 1200
 #   key: poseidon

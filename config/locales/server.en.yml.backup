@@ -5101,6 +5101,7 @@ en:
       code: TOU
       name: Touristcoin
       format: '0,0.0000'
+
     bitsharesx:
       key: BTS
       code: BTSX
@@ -6072,6 +6073,7 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
+
     poseidon:
       key: Block Chain
       title: Poseidon Deposits
@@ -7184,8 +7186,8 @@ en:
       ethers:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
-      touristcoins:
-        gen_address:
+      touristcoin:
+  gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       poseidons:
         gen_address:
@@ -7786,6 +7788,7 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+
       gravios:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
@@ -10231,7 +10234,7 @@ en:
         doge-assets: DOGE Assets
         ltc-assets: LTC Assets
         eth-assets: ETH Assets
-        tou-assets: TOU Assets
+  tou-assets: TOU Assets
         psd-assets: PSD Assets
         phc-assets: PHC Assets
         xgc-assets: XGC Assets
@@ -10554,7 +10557,7 @@ en:
         doge-assets-total: 'Total DOGE assets of exchange: '
         ltc-assets-total: 'Total LTC assets of exchange: '
         eth-assets-total: 'Total ETH assets of exchange: '
-        tou-assets-total: 'Total TOU assets of exchange: '
+  tou-assets-total: 'Total TOU assets of exchange: '
         psd-assets-total: 'Total PSD assets of exchange: '
         phc-assets-total: 'Total PHC assets of exchange: '
         xgc-assets-total: 'Total XGC assets of exchange: '
@@ -11741,7 +11744,7 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
-          tou:
+    tou:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -12721,7 +12724,7 @@ en:
         doge_html: "<i class='fa fa-check'></i><span>DOGE Markets</span>"
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
         eth_html: "<i class='fa fa-check'></i><span>ETH Markets</span>"
-        tou_html: "<i class='fa fa-check'></i><span>TOU Markets</span>"
+  tou_html: "<i class='fa fa-check'></i><span>TOU Markets</span>"
         psd_html: "<i class='fa fa-check'></i><span>PSD Markets</span>"
         phc_html: "<i class='fa fa-check'></i><span>PHC Markets</span>"
         xgc_html: "<i class='fa fa-check'></i><span>XGC Markets</span>"
@@ -13354,7 +13357,7 @@ en:
         ether:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
-        touristcoin:
+  touristcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
         poseidon:
@@ -13858,8 +13861,8 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         ether:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
-        touristcoin:
-          sum: "<a target='_balance' href='#'>Fee structure</a>"
+  touristcoin:
+    sum: "<a target='_balance' href='#'>Fee structure</a>"
         poseidon:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         profithunter:
@@ -14218,7 +14221,7 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
-        touristcoin:
+  touristcoin:
           fee: Fee
           sum: Amount
           fund_uid: Touristcoin in Address
@@ -15377,7 +15380,7 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-      touristcoins:
+      touristcoin:
         update:
           notice: The deposit was successful.
         index:
@@ -18320,7 +18323,7 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
-  deposits/touristcoin:
+ deposits/touristcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
