@@ -74,10 +74,12 @@ Be sure to install the latest stable Redis, as the package in the distro may be 
 
 Please follow instructions here: https://www.rabbitmq.com/install-debian.html
 
-    curl http://www.rabbitmq.com/rabbitmq-signing-key-public.asc | sudo apt-key add -
-    sudo apt-add-repository 'deb http://www.rabbitmq.com/debian/ testing main'
-    sudo apt-get update
-    sudo apt-get install rabbitmq-server
+     echo 'deb http://www.rabbitmq.com/debian/ testing main' |
+        sudo tee /etc/apt/sources.list.d/rabbitmq.list
+        wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc |
+        sudo apt-key add -
+        sudo apt-get update
+        sudo apt-get install rabbitmq-server
 
     sudo rabbitmq-plugins enable rabbitmq_management
     sudo service rabbitmq-server restart
@@ -193,7 +195,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 ##### Clone the Source
 
     mkdir -p ~/peatio
-    git clone git://github.com/peatio/peatio.git ~/peatio/current
+    git clone https://github.com/pankaj9310/graviex-peatio.git ~/peatio/current
     cd peatio/current
 
     ＃ Install dependency gems
