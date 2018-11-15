@@ -31,13 +31,12 @@ class CoinRPC
       elsif c.proto == 'FNT'
         name = 'FNT'
       elsif c.proto == 'TOU'
-	name = 'TOU'
+	     name = 'TOU'
       else
         name = c[:handler]
       end
-
-      Rails.logger.info "Making class " + name + "(" + currency.to_s + ")\n"
-      "::CoinRPC::#{name}".constantize.new(c)
+      Rails.logger.info "Making class " + name.to_s + "(" + currency.to_s + ")\n"
+      "::CoinRPC::#{name.to_s}".constantize.new(c)
     end
   end
 
@@ -53,11 +52,15 @@ class CoinRPC
     def handle(name, *args)
       post_body = { 'method' => name, 'params' => args, 'id' => 'jsonrpc' }.to_json
       resp = JSON.parse( http_post_request(post_body) )
-      raise JSONRPCError, resp['error'] if resp['error']
-      result = resp['result']
-
-      result.symbolize_keys! if result.is_a? Hash
-      result
+      begin
+        result = resp['result']
+        result.symbolize_keys! if result.is_a? Hash
+        result  
+      rescue Exception => e
+        'N/A'
+      end
+      # raise JSONRPCError, resp['error'] if resp['error']
+      
     end
 
     def http_post_request(post_body)

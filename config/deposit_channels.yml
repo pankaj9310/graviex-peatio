@@ -29,6 +29,16 @@
   currency: tou
   min_confirm: 5
   max_confirm: 6
+- id: 900
+  key: bank
+  currency: cny
+  sort_order: 4
+  bank_accounts:
+    -
+      bank: 'Your Bank Name'
+      branch: 'Your Bank Branch'
+      holder: 'Your Account Holder'
+      account: 'Your Account Number'
 # - id: 1200
 #   key: poseidon
 #   currency: psd

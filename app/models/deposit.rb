@@ -36,7 +36,7 @@ class Deposit < ActiveRecord::Base
     state :cancelled
     state :submitted
     state :rejected
-    state :accepted, after_commit: [:do, :aggregate_funds, :send_mail, :send_sms]
+    state :accepted, after_commit: [:do, :send_mail, :send_sms]
     state :checked
     state :warning
 
