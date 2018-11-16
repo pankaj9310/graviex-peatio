@@ -14,7 +14,7 @@ app.directive 'accounts', ->
       $scope.accounts = Account.select (item) ->
         return (parseFloat(item.balance) + parseFloat(item.locked) > 0.0000000001)
       
-      if $scope.accounts.length == 0
+      if $scope.accounts.length == 1 || $scope.accounts.length == 0
         $scope.accounts = Account.all()
         @initial_state = true
 
